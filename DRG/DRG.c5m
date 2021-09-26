@@ -117,16 +117,15 @@ range 10
 aoe 0
 flylook 21
 flysound 27
-flymode 4
-flying 2
+trgrank 8
 dmgtype 3
 dmg 10
 an
 shieldneg
-mundane
 
 
-#Rituals ===============================================================================================================
+#Gunner ================================================================================================================
+#Rituals =====================================================
 
 newritpow #Gunner rituals
 newritual "Gunner Utility"
@@ -183,8 +182,7 @@ cost 0 5
 free
 
 
-#Units =================================================================================================================
-#Gunner Ranks 1-6
+#Gunner Units Ranks 1-6
 newmonster "Gunner Rookie"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
@@ -202,7 +200,7 @@ allitemslots
 power 0 1
 mastery 1
 meleeweapon 3 "Pick Axe"
-rangedweapon50x 1 "DRG Revolver"
+rangedweapon50x 0 "DRG Revolver"
 rangedweapon50s 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
@@ -225,7 +223,7 @@ fastheal
 power 0 2
 mastery 1
 meleeweapon 4 "Pick Axe"
-rangedweapon50x 3 "DRG Revolver"
+rangedweapon50x 7 "DRG Revolver"
 rangedweapon50s 0 "DRG Minigun Mark II"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
@@ -248,7 +246,7 @@ fastheal
 power 0 3
 mastery 1
 meleeweapon 5 "Pick Axe"
-rangedweapon50x 5 "DRG Revolver"
+rangedweapon50x 14 "DRG Revolver"
 rangedweapon50s 0 "DRG Minigun Mark III"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
@@ -273,7 +271,7 @@ fastheal
 power 0 4
 mastery 1
 meleeweapon 6 "Pick Axe"
-rangedweapon50x 7 "DRG Revolver"
+rangedweapon50x 21 "DRG Revolver"
 rangedweapon50s 0 "DRG Minigun Mark IV"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
@@ -298,7 +296,7 @@ fastheal
 power 0 5
 mastery 1
 meleeweapon 7 "Pick Axe"
-rangedweapon50x 9 "DRG Revolver"
+rangedweapon50x 28 "DRG Revolver"
 rangedweapon50s 0 "DRG Minigun Mark V"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
@@ -324,22 +322,45 @@ fastheal
 power 0 6
 #mastery 1
 meleeweapon 8 "Pick Axe"
-rangedweapon50x 11 "DRG Revolver"
+rangedweapon50x 35 "DRG Revolver"
 rangedweapon50s 0 "DRG Minigun Mark VI"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 0 "DRG Minigun"
 
+# Utility units ========================================================================================================
+
+newmonster "Fodder"
+descr "Meat Shield"
+copyspr "Slave"
+armor 2
+rank 1
+frontpos
+hp 10
+str 5
+mr 5
+mor 99
+charmres
+battleslow
+#immobile
+#nozoc
+meleeweapon -1 "fist"
 
 # Class Setup ==========================================================================================================
 newclass
 setclassname "Deep Rock Galactic"
 classdescr "ROCK AND STONE"
-clearrec
-stdtroops
-addcomrec "Gunner Rookie" 90 10 0 0
 clearstartunits
+clearrec
+addunitrec "Fodder" 100 20 5 0 0
+addunitrec "Gunner Rookie" 100 5 1 0 0
+addunitrec "Gunner Veteran" 100 5 2 0 0
+addunitrec "Gunner Expert" 100 5 3 0 0
+addunitrec "Gunner Elite" 100 5 4 0 0
+addunitrec "Gunner Master" 100 5 5 0 0
+addunitrec "Gunner Supreme" 100 5 6 0 0
+addcomrec "Gunner Rookie" 90 1 0 0
 setmaincom "Gunner Rookie"
 addstartcom "Gunner Rookie"
 hometerr 207
