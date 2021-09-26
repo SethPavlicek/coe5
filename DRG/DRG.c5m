@@ -5,33 +5,97 @@ description "DRG"
 #Minigun
 
 newweapon "DRG Minigun"
-aoe -06
+aoe -04
 dmgtype 3
 dmg 4
 range 6
-init 1
+init 2
 rangepen
 flymode 5
 flylook 222
-flysound 13
+flysound 14
+scatter
 mundane
+nostr
+
+newweapon "DRG Minigun Mark II"
+aoe -04
+dmgtype 3
+dmg 5
+range 7
+init 2
+rangepen
+flymode 5
+flylook 222
+flysound 14
+mundane
+nostr
+
+newweapon "DRG Minigun Mark III"
+aoe -06
+dmgtype 3
+dmg 6
+range 8
+init 2
+rangepen
+flymode 5
+flylook 222
+flysound 14
+mundane
+nostr
+
+newweapon "DRG Minigun Mark IV"
+aoe -08
+dmgtype 3
+dmg 7
+range 9
+init 2
+rangepen
+flymode 5
+flylook 222
+flysound 14
+mundane
+nostr
+
+newweapon "DRG Minigun Mark V"
+aoe -10
+dmgtype 3
+dmg 8
+range 10
+init 2
+rangepen
+flymode 5
+flylook 222
+flysound 14
+nostr
+
+newweapon "DRG Minigun Mark VI"
+aoe -12
+dmgtype 3
+dmg 9
+range 10
+init 2
+rangepen
+flymode 5
+flylook 222
+flysound 14
 nostr
 
 #AutoCannon
 newweapon "DRG AutoCannon"
-init 2
+init 1
 flymode 4
 range 8
 aoe 0
 flylook 21
-flysound 13
+flysound 11
 flymode 4
 flying 2
 dmgtype 3
 dmg 7
 an
 mundane
-reload3
+reload2
 reloadsnd -1
 nostr
 nextalways 3
@@ -45,109 +109,228 @@ dmgtype 3
 an
 dmg 2
 
+# Revolver
+newweapon "DRG Revolver"
+init 4
+flymode 4
+range 10
+aoe 0
+flylook 21
+flysound 27
+flymode 4
+flying 2
+dmgtype 3
+dmg 10
+an
+shieldneg
+mundane
+
+
+#Rituals ===============================================================================================================
+
+newritpow #Gunner rituals
+newritual "Gunner Utility"
+level 1
+levelup 1
+newrit 1
+rebatelvl 1
+soundfx 57
+cost 0 5
+free
+
+newritual "Gunner Promotion from Management I"
+level 1
+levelup 2
+newrit 2
+rebatelvl 2
+soundfx 57
+cost 0 5
+free
+
+newritual "Gunner Promotion from Management II"
+level 2
+levelup 3
+newrit 3
+rebatelvl 3
+soundfx 57
+cost 0 5
+free
+
+newritual "Gunner Promotion from Management III"
+level 3
+levelup 4
+newrit 4
+rebatelvl 4
+soundfx 57
+cost 0 5
+free
+
+newritual "Gunner Promotion from Management IV"
+level 4
+levelup 5
+newrit 5
+rebatelvl 5
+soundfx 57
+cost 0 5
+free
+
+newritual "Gunner Promotion from Management V"
+level 5
+levelup 6
+rebatelvl 6
+soundfx 57
+cost 0 5
+free
+
+
 #Units =================================================================================================================
 #Gunner Ranks 1-6
 newmonster "Gunner Rookie"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
+slashres
 armor 2
 shield 1
-rank 1
+rank 0
 rearpos
 hp 18
 str 5
 mr 5
 mor 7
+mountain
 allitemslots
+power 0 1
 mastery 1
-rangedweapon50x 1 "DRG Minigun"
-rangedweapon50x 1 "DRG AutoCannon"
 meleeweapon 3 "Pick Axe"
+rangedweapon50x 1 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
 
 newmonster "Gunner Veteran"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
+slashres
 armor 2
 shield 1
-rank 1
+rank 0
 rearpos
-hp 20
+hp 22
 str 6
 mr 6
 mor 8
+mountain
 allitemslots
+fastheal
+power 0 2
 mastery 1
-rangedweapon50x 1 "DRG Minigun"
-rangedweapon50x 1 "DRG AutoCannon"
-meleeweapon 3 "Pick Axe"
+meleeweapon 4 "Pick Axe"
+rangedweapon50x 3 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun Mark II"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
 
 newmonster "Gunner Expert"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
+slashres
 armor 3
 shield 1
-rank 1
+rank 0
 rearpos
-hp 22
+hp 26
 str 7
 mr 7
 mor 9
+mountain
 allitemslots
+fastheal
+power 0 3
 mastery 1
-rangedweapon50x 1 "DRG Minigun"
-rangedweapon50x 1 "DRG AutoCannon"
-meleeweapon 3 "Pick Axe"
+meleeweapon 5 "Pick Axe"
+rangedweapon50x 5 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun Mark III"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
 
 newmonster "Gunner Elite"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
+slashres
+pierceres
 armor 3
 shield 1
-rank 1
+rank 0
 rearpos
-hp 24
+hp 30
 str 8
 mr 8
 mor 10
+mountain
 allitemslots
+fastheal
+power 0 4
 mastery 1
-rangedweapon50x 1 "DRG Minigun"
-rangedweapon50x 1 "DRG AutoCannon"
-meleeweapon 3 "Pick Axe"
+meleeweapon 6 "Pick Axe"
+rangedweapon50x 7 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun Mark IV"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
 
 newmonster "Gunner Master"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
+slashres
+pierceres
 armor 4
 shield 1
-rank 1
+rank 0
 rearpos
-hp 26
+hp 34
 str 9
 mr 9
 mor 11
+mountain
 allitemslots
+fastheal
+power 0 5
 mastery 1
-rangedweapon50x 1 "DRG Minigun"
-rangedweapon50x 1 "DRG AutoCannon"
-meleeweapon 3 "Pick Axe"
+meleeweapon 7 "Pick Axe"
+rangedweapon50x 9 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun Mark V"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
 
 newmonster "Gunner Supreme"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
+slashres
+pierceres
 armor 5
 shield 1
-rank 1
+rank 0
 rearpos
-hp 30
+hp 40
 str 10
 mr 10
 mor 12
+mountain
 allitemslots
+fastheal
+power 0 6
 #mastery 1
-rangedweapon50x 1 "DRG Minigun"
-rangedweapon50x 1 "DRG AutoCannon"
-meleeweapon 3 "Pick Axe"
+meleeweapon 8 "Pick Axe"
+rangedweapon50x 11 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun Mark VI"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+
 
 # Class Setup ==========================================================================================================
 newclass
