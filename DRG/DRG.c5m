@@ -1,6 +1,7 @@
 icon "DRG.tga"
 description "DRG"
 
+#Weapons ===============================================================================================================
 #Minigun
 
 newweapon "DRG Minigun"
@@ -24,15 +25,14 @@ range 8
 aoe 0
 flylook 21
 flysound 13
+flymode 4
+flying 2
 dmgtype 3
 dmg 7
 an
 mundane
-flymode 4
-flying 2
 reload3
 reloadsnd -1
-an
 nostr
 nextalways 3
 
@@ -45,35 +45,120 @@ dmgtype 3
 an
 dmg 2
 
-#Gunner
-newmonster "Gunner Commander"
+#Units =================================================================================================================
+#Gunner Ranks 1-6
+newmonster "Gunner Rookie"
 descr "100lb guns"
 copyspr "Dwarf Arbalest"
-
-armor 3
+armor 2
 shield 1
 rank 1
-hp 20
-str 6
-mr 6
-mor 8
-
+rearpos
+hp 18
+str 5
+mr 5
+mor 7
 allitemslots
+mastery 1
 rangedweapon50x 1 "DRG Minigun"
 rangedweapon50x 1 "DRG AutoCannon"
 meleeweapon 3 "Pick Axe"
 
+newmonster "Gunner Veteran"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+armor 2
+shield 1
+rank 1
+rearpos
+hp 20
+str 6
+mr 6
+mor 8
+allitemslots
+mastery 1
+rangedweapon50x 1 "DRG Minigun"
+rangedweapon50x 1 "DRG AutoCannon"
+meleeweapon 3 "Pick Axe"
 
-# Class
+newmonster "Gunner Expert"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+armor 3
+shield 1
+rank 1
+rearpos
+hp 22
+str 7
+mr 7
+mor 9
+allitemslots
+mastery 1
+rangedweapon50x 1 "DRG Minigun"
+rangedweapon50x 1 "DRG AutoCannon"
+meleeweapon 3 "Pick Axe"
+
+newmonster "Gunner Elite"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+armor 3
+shield 1
+rank 1
+rearpos
+hp 24
+str 8
+mr 8
+mor 10
+allitemslots
+mastery 1
+rangedweapon50x 1 "DRG Minigun"
+rangedweapon50x 1 "DRG AutoCannon"
+meleeweapon 3 "Pick Axe"
+
+newmonster "Gunner Master"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+armor 4
+shield 1
+rank 1
+rearpos
+hp 26
+str 9
+mr 9
+mor 11
+allitemslots
+mastery 1
+rangedweapon50x 1 "DRG Minigun"
+rangedweapon50x 1 "DRG AutoCannon"
+meleeweapon 3 "Pick Axe"
+
+newmonster "Gunner Supreme"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+armor 5
+shield 1
+rank 1
+rearpos
+hp 30
+str 10
+mr 10
+mor 12
+allitemslots
+#mastery 1
+rangedweapon50x 1 "DRG Minigun"
+rangedweapon50x 1 "DRG AutoCannon"
+meleeweapon 3 "Pick Axe"
+
+# Class Setup ==========================================================================================================
 newclass
 setclassname "Deep Rock Galactic"
 classdescr "ROCK AND STONE"
 clearrec
 stdtroops
-addcomrec "Gunner Commander" 90 10 0 0
+addcomrec "Gunner Rookie" 90 10 0 0
 clearstartunits
-setmaincom "Gunner Commander"
-addstartcom "Gunner Commander"
+setmaincom "Gunner Rookie"
+addstartcom "Gunner Rookie"
 hometerr 207
 clearstartterr
 addstartterr 18
