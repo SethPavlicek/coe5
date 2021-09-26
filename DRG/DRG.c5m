@@ -4,88 +4,89 @@ description "DRG"
 #Weapons ===============================================================================================================
 #Minigun
 
-newweapon "DRG Minigun"
-aoe -04
+newweapon "DRG Minigun Mark I"
+aoe -06
 dmgtype 3
 dmg 4
-range 6
-init 2
+range 5
+init 3
 rangepen
 flymode 5
 flylook 222
 flysound 14
 scatter
 mundane
-nostr
 
 newweapon "DRG Minigun Mark II"
-aoe -04
-dmgtype 3
-dmg 5
-range 7
-init 2
-rangepen
-flymode 5
-flylook 222
-flysound 14
-mundane
-nostr
-
-newweapon "DRG Minigun Mark III"
-aoe -06
-dmgtype 3
-dmg 6
-range 8
-init 2
-rangepen
-flymode 5
-flylook 222
-flysound 14
-mundane
-nostr
-
-newweapon "DRG Minigun Mark IV"
 aoe -08
 dmgtype 3
-dmg 7
-range 9
-init 2
+dmg 4
+range 5
+init 3
 rangepen
 flymode 5
 flylook 222
 flysound 14
+scatter
 mundane
-nostr
 
-newweapon "DRG Minigun Mark V"
+newweapon "DRG Minigun Mark III"
 aoe -10
 dmgtype 3
-dmg 8
-range 10
-init 2
+dmg 4
+range 6
+init 3
 rangepen
 flymode 5
 flylook 222
 flysound 14
-nostr
+scatter
+mundane
 
-newweapon "DRG Minigun Mark VI"
+newweapon "DRG Minigun Mark IV"
 aoe -12
 dmgtype 3
-dmg 9
-range 10
-init 2
+dmg 4
+range 6
+init 3
 rangepen
 flymode 5
 flylook 222
 flysound 14
-nostr
+scatter
+mundane
+
+newweapon "DRG Minigun Mark V"
+aoe -14
+dmgtype 3
+dmg 4
+range 7
+init 3
+rangepen
+flymode 5
+flylook 222
+flysound 14
+scatter
+mundane
+
+newweapon "DRG Minigun Mark VI"
+aoe -16
+dmgtype 3
+dmg 4
+range 7
+init 3
+rangepen
+flymode 5
+flylook 222
+flysound 14
+scatter
+mundane
 
 #AutoCannon
 newweapon "DRG AutoCannon"
 init 1
 flymode 4
-range 8
+range 12
 aoe 0
 flylook 21
 flysound 11
@@ -94,34 +95,36 @@ flying 2
 dmgtype 3
 dmg 7
 an
+scatter
 mundane
-reload2
-reloadsnd -1
-nostr
+#reload2
+#reloadsnd -1
+#nostr
 nextalways 3
 
 newweapon "DRG AutoCannon Explosion"
-aoe 4
+aoe 12
 look 21
 nostr
-#sound 11
-dmgtype 3
+sound 68
+onlyenemy
+dmgtype 10
 an
-dmg 2
+dmg 3
 
 # Revolver
 newweapon "DRG Revolver"
-init 4
+init 3
 flymode 4
 range 10
+reload2
 aoe 0
 flylook 21
 flysound 27
-trgrank 8
+trgrank 9
 dmgtype 3
 dmg 10
 an
-shieldneg
 
 
 #Gunner ================================================================================================================
@@ -133,7 +136,7 @@ level 1
 levelup 1
 newrit 1
 rebatelvl 1
-soundfx 57
+soundfx 31
 cost 0 5
 free
 
@@ -142,7 +145,7 @@ level 1
 levelup 2
 newrit 2
 rebatelvl 2
-soundfx 57
+soundfx 29
 cost 0 5
 free
 
@@ -151,7 +154,7 @@ level 2
 levelup 3
 newrit 3
 rebatelvl 3
-soundfx 57
+soundfx 29
 cost 0 5
 free
 
@@ -160,7 +163,7 @@ level 3
 levelup 4
 newrit 4
 rebatelvl 4
-soundfx 57
+soundfx 29
 cost 0 5
 free
 
@@ -169,18 +172,55 @@ level 4
 levelup 5
 newrit 5
 rebatelvl 5
-soundfx 57
+soundfx 29
 cost 0 5
 free
 
 newritual "Gunner Promotion from Management V"
 level 5
 levelup 6
+gainrit 2
+gainrit 4
 rebatelvl 6
-soundfx 57
+soundfx 29
 cost 0 5
 free
 
+newritual "Switch to AutoCannon IV"
+level 5
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Gunner Master"
+addstring "Gunner B Master"
+
+newritual "Switch to AutoCannon V"
+level 6
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Gunner Supreme"
+addstring "Gunner B Supreme"
+
+newritual "Switch to Minigun IV"
+level 5
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Gunner B Master"
+addstring "Gunner Master"
+
+newritual "Switch to Minigun V"
+level 6
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Gunner B Supreme"
+addstring "Gunner Supreme"
 
 #Gunner Units Ranks 1-6
 newmonster "Gunner Rookie"
@@ -191,6 +231,7 @@ armor 2
 shield 1
 rank 0
 rearpos
+battleslow2
 hp 18
 str 5
 mr 5
@@ -200,134 +241,102 @@ allitemslots
 power 0 1
 mastery 1
 meleeweapon 3 "Pick Axe"
-rangedweapon50x 0 "DRG Revolver"
-rangedweapon50s 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun Mark I"
+rangedweaponbonus 1 "DRG Minigun Mark I"
+rangedweapon 0 "DRG Revolver"
 
+# gain fastheal
 newmonster "Gunner Veteran"
-descr "100lb guns"
-copyspr "Dwarf Arbalest"
-slashres
-armor 2
-shield 1
-rank 0
-rearpos
+copystats "Gunner Rookie"
 hp 22
 str 6
 mr 6
 mor 8
-mountain
-allitemslots
-fastheal
 power 0 2
-mastery 1
+fastheal
+clearweapons
 meleeweapon 4 "Pick Axe"
-rangedweapon50x 7 "DRG Revolver"
-rangedweapon50s 0 "DRG Minigun Mark II"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun Mark II"
+rangedweaponbonus 2 "DRG Minigun Mark II"
+rangedweapon 3 "DRG Revolver"
 
+# armor increase
 newmonster "Gunner Expert"
-descr "100lb guns"
-copyspr "Dwarf Arbalest"
-slashres
+copystats "Gunner Veteran"
 armor 3
-shield 1
-rank 0
-rearpos
 hp 26
 str 7
 mr 7
 mor 9
-mountain
-allitemslots
-fastheal
 power 0 3
-mastery 1
+clearweapons
 meleeweapon 5 "Pick Axe"
-rangedweapon50x 14 "DRG Revolver"
-rangedweapon50s 0 "DRG Minigun Mark III"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun Mark III"
+rangedweaponbonus 3 "DRG Minigun Mark III"
+rangedweapon 6 "DRG Revolver"
 
+# gain pierce res
 newmonster "Gunner Elite"
-descr "100lb guns"
-copyspr "Dwarf Arbalest"
-slashres
+copystats "Gunner Expert"
 pierceres
-armor 3
-shield 1
-rank 0
-rearpos
 hp 30
 str 8
 mr 8
 mor 10
-mountain
-allitemslots
-fastheal
 power 0 4
-mastery 1
+clearweapons
 meleeweapon 6 "Pick Axe"
-rangedweapon50x 21 "DRG Revolver"
-rangedweapon50s 0 "DRG Minigun Mark IV"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun Mark IV"
+rangedweaponbonus 4 "DRG Minigun Mark IV"
+rangedweapon 9 "DRG Revolver"
 
+# armor increase
 newmonster "Gunner Master"
-descr "100lb guns"
-copyspr "Dwarf Arbalest"
-slashres
-pierceres
+copystats "Gunner Elite"
 armor 4
-shield 1
-rank 0
-rearpos
 hp 34
 str 9
 mr 9
 mor 11
-mountain
-allitemslots
-fastheal
 power 0 5
-mastery 1
+clearweapons
 meleeweapon 7 "Pick Axe"
-rangedweapon50x 28 "DRG Revolver"
-rangedweapon50s 0 "DRG Minigun Mark V"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
+rangedweapon50 3 "DRG Minigun Mark V"
+rangedweaponbonus 5 "DRG Minigun Mark V"
+rangedweapon 12 "DRG Revolver"
 
+# armor increase
 newmonster "Gunner Supreme"
-descr "100lb guns"
-copyspr "Dwarf Arbalest"
-slashres
-pierceres
+copystats "Gunner Master"
 armor 5
-shield 1
-rank 0
-rearpos
 hp 40
 str 10
 mr 10
 mor 12
-mountain
-allitemslots
-fastheal
 power 0 6
-#mastery 1
+clearweapons
 meleeweapon 8 "Pick Axe"
+rangedweapon50 3 "DRG Minigun Mark VI"
+rangedweaponbonus 6 "DRG Minigun Mark VI"
+rangedweapon 15 "DRG Revolver"
+
+newmonster "Gunner B Master"
+copystats "Gunner Master"
+clearweapons
+siegeweapon 11 "DRG AutoCannon"
+meleeweapon 7 "Pick Axe"
+rangedweapon50x 28 "DRG Revolver"
+rangedweaponbonus 11 "DRG AutoCannon"
+rangedweaponbonus 11 "DRG AutoCannon"
+
+newmonster "Gunner B Supreme"
+copystats "Gunner Supreme"
+clearweapons
+siegeweapon 13 "DRG AutoCannon"
 rangedweapon50x 35 "DRG Revolver"
-rangedweapon50s 0 "DRG Minigun Mark VI"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
-rangedweapon50 0 "DRG Minigun"
+rangedweaponbonus 13 "DRG AutoCannon"
+rangedweaponbonus 13 "DRG AutoCannon"
+
 
 # Utility units ========================================================================================================
 
@@ -347,7 +356,26 @@ battleslow
 #nozoc
 meleeweapon -1 "fist"
 
+# Garrison/Income ======================================================================================================
+
+newmonster "Garrison MoneyBags"
+name "Garrison MoneyBags"
+descr "Dwarves need money right?"
+copyspr "Hoburg Defender"
+hp 100
+mr 12
+str 12
+armor 12
+mor 99
+rank -1
+charmres
+gathergems
+gold 1000
+stationary
+immobile
+
 # Class Setup ==========================================================================================================
+
 newclass
 setclassname "Deep Rock Galactic"
 classdescr "ROCK AND STONE"
@@ -363,6 +391,8 @@ addunitrec "Gunner Supreme" 100 5 6 0 0
 addcomrec "Gunner Rookie" 90 1 0 0
 setmaincom "Gunner Rookie"
 addstartcom "Gunner Rookie"
+# For testing
+addstartcom "Garrison MoneyBags"
 hometerr 207
 clearstartterr
 addstartterr 18
