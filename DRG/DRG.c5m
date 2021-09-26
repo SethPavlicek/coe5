@@ -1,0 +1,79 @@
+icon "DRG.tga"
+description "DRG"
+
+#Minigun
+
+newweapon "DRG Minigun"
+aoe -06
+dmgtype 3
+dmg 4
+range 6
+init 1
+rangepen
+flymode 5
+flylook 222
+flysound 13
+mundane
+nostr
+
+#AutoCannon
+newweapon "DRG AutoCannon"
+init 2
+flymode 4
+range 8
+aoe 0
+flylook 21
+flysound 13
+dmgtype 3
+dmg 7
+an
+mundane
+flymode 4
+flying 2
+reload3
+reloadsnd -1
+an
+nostr
+nextalways 3
+
+newweapon "DRG AutoCannon Explosion"
+aoe 4
+look 21
+nostr
+#sound 11
+dmgtype 3
+an
+dmg 2
+
+#Gunner
+newmonster "Gunner Commander"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+
+armor 3
+shield 1
+rank 1
+hp 20
+str 6
+mr 6
+mor 8
+
+allitemslots
+rangedweapon50x 1 "DRG Minigun"
+rangedweapon50x 1 "DRG AutoCannon"
+meleeweapon 3 "Pick Axe"
+
+
+# Class
+newclass
+setclassname "Deep Rock Galactic"
+classdescr "ROCK AND STONE"
+clearrec
+stdtroops
+addcomrec "Gunner Commander" 90 10 0 0
+clearstartunits
+setmaincom "Gunner Commander"
+addstartcom "Gunner Commander"
+hometerr 207
+clearstartterr
+addstartterr 18
