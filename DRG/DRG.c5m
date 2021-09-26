@@ -379,6 +379,49 @@ rangedweaponbonus 13 "DRG AutoCannon"
 rangedweaponbonus 13 "DRG AutoCannon"
 
 
+# Engineer =============================================================================================================
+
+newmonster "Engineer Rookie"
+descr "Sentry Gun"
+copyspr "Dwarf Sapper"
+armor 2
+rank 0
+rearpos
+hp 18
+str 5
+mr 5
+mor 7
+mountain
+allitemslots
+power 0 1
+mastery 1
+meleeweapon 3 "Pick Axe"
+rangedweapon50x 0 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+
+# Scout ================================================================================================================
+newmonster "Scout Rookie"
+descr "Yeah, I got a grappling hook. What are you gonna do about it?"
+copyspr "Dwarf Sapper"
+armor 2
+rank -1
+rearpos
+hp 18
+str 5
+mr 5
+mor 7
+mountain
+allitemslots
+power 0 1
+mastery 1
+meleeweapon 3 "Pick Axe"
+rangedweapon50x 0 "DRG Revolver"
+rangedweapon50s 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+
 # Utility units ========================================================================================================
 
 newmonster "Fodder"
