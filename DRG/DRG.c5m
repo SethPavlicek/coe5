@@ -705,6 +705,18 @@ rank -1
 noeyes
 meleeweapon "Bite"
 
+newmonster "Steeve the Dreadnought Hiveguard"
+hp 500
+str 20
+mr 3
+mor 99
+armor 25
+slow
+mountain
+rank -1
+frontpos
+noeyes
+
 # Utility units ========================================================================================================
 
 newmonster "Fodder"
