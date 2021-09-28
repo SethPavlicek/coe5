@@ -177,6 +177,43 @@ shieldneg
 reload2
 sound 11
 
+# Flamethrower =========================================================================================================
+
+newweapon "Flamethrower"
+aoe 3005
+dmgtype 4
+dmg 10
+init 4
+an
+shieldneg
+range 4
+
+# Cryocannon ===========================================================================================================
+
+newweapon "Cryo Cannon"
+aoe 3005
+dmgtype 5
+dmg 10
+init 4
+an
+shieldneg
+range 4
+
+# Dreadnought Attacks ==================================================================================================
+
+newweapon "Dreadnought Fireball"
+aoe 10
+dmgtype 4
+dmg 7
+init 3
+an
+shieldneg
+reload2
+range 8
+
+
+newweapon "Dreadnought Bite"
+
 # Minigun
 
 newweapon "DRG Minigun Mark I"
@@ -659,8 +696,9 @@ rangedweaponbonus "Sentry Gun's Gun"
 
 # Glyphids =============================================================================================================
 
-# Should only be summoned in battle
+# Swarmers Should only be summoned in battle
 newmonster "Glyphid Swarmer"
+descr "Get your stomping boots on."
 hp 1
 rank -1
 frontpos
@@ -669,9 +707,10 @@ mr 2
 mor 5
 noeyes
 evasion 50
-meleeweapon "Bite"
+meleeweapon -1 "Bite"
 
 newmonster "Steeve the Glyphid Grunt"
+descr "If only bugs were allowed on the space rig."
 hp 10
 str 5
 mr 2
@@ -680,9 +719,10 @@ armor 1
 mountain
 rank -1
 noeyes
-meleeweapon "Bite"
+meleeweapon 0 "Bite"
 
 newmonster "Steeve the Glyphid Grunt Slasher"
+descr "Watch the sharp blades!"
 hp 14
 str 8
 mr 2
@@ -691,9 +731,10 @@ armor 1
 mountain
 rank -1
 noeyes
-meleeweapon "Bite"
+meleeweapon 0 "Bite"
 
 newmonster "Steeve the Glyphid Grunt Guard"
+descr "That one is a tough bastard."
 hp 20
 str 5
 mr 3
@@ -703,19 +744,44 @@ shield 1
 mountain
 rank -1
 noeyes
-meleeweapon "Bite"
+meleeweapon 0 "Bite"
 
 newmonster "Steeve the Dreadnought Hiveguard"
+descr "That thing ate bullets like Karl drank beer!"
 hp 500
 str 20
 mr 3
 mor 99
 armor 25
 slow
+battleslow2
 mountain
+huge
 rank -1
 frontpos
 noeyes
+charmres
+fear 1
+miscslots
+rangedweaponbonus 0 "Dreadnought Fireball"
+rangedweaponbonus 0 "Dreadnought Fireball"
+rangedweaponbonus 0 "Dreadnought Fireball"
+
+newmonster "Glyphid Sentinel"
+descr "Burst just like an overripe tomato!"
+hp 30
+str 8
+mr 3
+mor 99
+armor 3
+size2x2
+rank -1
+frontpos
+noeyes
+charmres
+miscslots
+meleeweapon 0 "Bite"
+
 
 # Utility units ========================================================================================================
 
