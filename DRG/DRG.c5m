@@ -132,6 +132,25 @@ mr # normal magic resistance negates
 dmgtype 12
 mind # does not affect mindless
 
+# Sentry Gun's Gun =====================================================================================================
+
+newweapon "Sentry Gun's Gun"
+aoe -03
+init 2
+range 15
+dmgtype 3
+dmg 6
+mundane
+nostr
+flysound 19
+
+# Summon Sentry Gun ====================================================================================================
+
+newweapon "Build Sentry Gun"
+init 1
+range 1
+dmgtype 18
+
 # Pickaxe
 
 newweapon "DRG Pickaxe"
@@ -559,6 +578,18 @@ rangedweapon50 13 "DRG AutoCannon S"
 rangedweaponbonus 13 "DRG AutoCannon"
 rangedweapon 15 "DRG Revolver"
 
+# Driller ==============================================================================================================
+
+newmonster "Bronze Driller"
+descr "I eat rock for breakfast"
+armor 3
+rank -1
+hp 22
+str 8
+mr 5
+mor 7
+mountain
+allitemslots
 
 # Engineer =============================================================================================================
 
@@ -607,6 +638,72 @@ rangedweapon 0 "DRG Revolver"
 #rangedweapon50s 0 "DRG Minigun"
 #rangedweapon50 0 "DRG Minigun"
 #rangedweapon50 0 "DRG Minigun"
+
+# Sentry Gun ===========================================================================================================
+
+newmonster "Sentry Gun"
+descr "Pew Pew Pew"
+copyspr "Ballista"
+armor 2
+rank 1
+hp 20
+str 5
+mr 6
+mor 99
+charmres
+mindless
+immobile
+stationary
+noslots
+rangedweaponbonus "Sentry Gun's Gun"
+
+# Glyphids =============================================================================================================
+
+# Should only be summoned in battle
+newmonster "Glyphid Swarmer"
+hp 1
+rank -1
+frontpos
+str 2
+mr 2
+mor 5
+noeyes
+evasion 50
+meleeweapon "Bite"
+
+newmonster "Steeve the Glyphid Grunt"
+hp 10
+str 5
+mr 2
+mor 5
+armor 1
+mountain
+rank -1
+noeyes
+meleeweapon "Bite"
+
+newmonster "Steeve the Glyphid Grunt Slasher"
+hp 14
+str 8
+mr 2
+mor 6
+armor 1
+mountain
+rank -1
+noeyes
+meleeweapon "Bite"
+
+newmonster "Steeve the Glyphid Grunt Guard"
+hp 20
+str 5
+mr 3
+mor 7
+armor 2
+shield 1
+mountain
+rank -1
+noeyes
+meleeweapon "Bite"
 
 # Utility units ========================================================================================================
 
