@@ -641,7 +641,7 @@ rangedweaponbonus 0 "Cryo Cannon"
 # Engineer =============================================================================================================
 
 newmonster "Engineer Rookie"
-descr "Sentry Gun"
+descr "Infestation problem? Automated turret m8."
 copyspr "Dwarf Sapper"
 armor 2
 rank 0
@@ -702,6 +702,10 @@ mindless
 immobile
 stationary
 noslots
+rangedweaponbonus "Sentry Gun's Gun"
+
+newmonster "Sentry Gun Mk 2"
+copystats "Sentry Gun"
 rangedweaponbonus "Sentry Gun's Gun"
 
 # Glyphids =============================================================================================================
@@ -773,6 +777,7 @@ noeyes
 charmres
 fear 1
 miscslots
+meleeweapon 0 "Dreadnought Bite"
 rangedweaponbonus 0 "Dreadnought Fireball"
 rangedweaponbonus 0 "Dreadnought Fireball"
 rangedweaponbonus 0 "Dreadnought Fireball"
