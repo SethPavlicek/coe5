@@ -180,24 +180,26 @@ sound 11
 # Flamethrower =========================================================================================================
 
 newweapon "Flamethrower"
-aoe 3005
+aoe 3010
 dmgtype 4
 dmg 10
 init 4
 an
 shieldneg
 range 4
+nostr
 
 # Cryocannon ===========================================================================================================
 
 newweapon "Cryo Cannon"
-aoe 3005
+aoe 3010
 dmgtype 5
 dmg 10
 init 4
 an
 shieldneg
 range 4
+nostr
 
 # Dreadnought Attacks ==================================================================================================
 
@@ -213,6 +215,12 @@ range 8
 
 
 newweapon "Dreadnought Bite"
+aoe 0
+dmgtype 1
+dmg 20
+init 4
+shieldneg
+mundane
 
 # Minigun
 
@@ -627,6 +635,8 @@ mr 5
 mor 7
 mountain
 allitemslots
+rangedweaponbonus 0 "Flamethrower"
+rangedweaponbonus 0 "Cryo Cannon"
 
 # Engineer =============================================================================================================
 
