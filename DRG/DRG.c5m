@@ -134,22 +134,42 @@ mind # does not affect mindless
 
 # Sentry Gun's Gun =====================================================================================================
 
-newweapon "Sentry Gun's Gun"
+newweapon "Sentry Gun Weapon"
 aoe -03
 init 2
-range 15
+range 10
 dmgtype 3
-dmg 6
+dmg 3
 mundane
 nostr
+reload1
 flysound 19
+
+newmonster "Sentry Gun"
+descr "Pew Pew Pew"
+copyspr "Ballista"
+armor 2
+rank 1
+hp 20
+str 5
+mr 6
+mor 99
+charmres
+immobile
+stationary
+noslots
+inanimate
+rangedweaponbonus "Sentry Gun Weapon"
 
 # Summon Sentry Gun ====================================================================================================
 
-newweapon "Build Sentry Gun"
-init 1
-range 1
+newweapon "Summon Sentry Gun"
+trgrank 7
+dmg 1
 dmgtype 18
+range 1
+init 8
+oneshot
 
 # Pickaxe
 
@@ -654,10 +674,21 @@ mountain
 allitemslots
 power 0 1
 mastery 1
+rangedweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
 rangedweapon 0 "DRG Revolver"
+
+newmonster "Engineer Veteran"
+copystats "Engineer Rookie"
+clearweapons
+rangedweapon 2 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "Cryo Grenade"
+rangedweapon 0 "DRG Revolver"
+
 #rangedweapon50s 0 "DRG Minigun"
 #rangedweapon50 0 "DRG Minigun"
 #rangedweapon50 0 "DRG Minigun"
@@ -688,38 +719,25 @@ rangedweapon 0 "DRG Revolver"
 
 # Sentry Gun ===========================================================================================================
 
-newmonster "Sentry Gun"
-descr "Pew Pew Pew"
-copyspr "Ballista"
-armor 2
-rank 1
-hp 20
-str 5
-mr 6
-mor 99
-charmres
-mindless
-immobile
-stationary
-noslots
-rangedweaponbonus "Sentry Gun's Gun"
 
 newmonster "Sentry Gun Mk 2"
 copystats "Sentry Gun"
-rangedweaponbonus "Sentry Gun's Gun"
+rangedweaponbonus "Sentry Gun Weapon"
 
 # Glyphids =============================================================================================================
 
 # Swarmers Should only be summoned in battle
 newmonster "Glyphid Swarmer"
 descr "Get your stomping boots on."
+copyspr "Small Spider"
 hp 1
-rank -1
+rank 1
 frontpos
 str 2
 mr 2
 mor 5
 noeyes
+wall
 evasion 50
 meleeweapon -1 "Bite"
 
@@ -731,7 +749,7 @@ mr 2
 mor 5
 armor 1
 mountain
-rank -1
+rank 1
 noeyes
 meleeweapon 0 "Bite"
 
@@ -743,7 +761,7 @@ mr 2
 mor 6
 armor 1
 mountain
-rank -1
+rank 1
 noeyes
 meleeweapon 0 "Bite"
 
@@ -756,7 +774,7 @@ mor 7
 armor 2
 shield 1
 mountain
-rank -1
+rank 1
 noeyes
 meleeweapon 0 "Bite"
 
@@ -771,7 +789,7 @@ slow
 battleslow2
 mountain
 huge
-rank -1
+rank 1
 frontpos
 noeyes
 charmres
@@ -790,7 +808,7 @@ mr 3
 mor 99
 armor 3
 size2x2
-rank -1
+rank 1
 frontpos
 noeyes
 charmres
