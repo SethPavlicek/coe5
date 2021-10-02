@@ -159,7 +159,7 @@ immobile
 stationary
 noslots
 inanimate
-rangedweaponbonus "Sentry Gun Weapon"
+rangedweaponbonus 0 "Sentry Gun Weapon"
 
 # Summon Sentry Gun ====================================================================================================
 
@@ -170,6 +170,24 @@ dmgtype 18
 range 1
 init 8
 oneshot
+
+# Hand-Held Drills =====================================================================================================
+
+newweapon "Hand-Held Drills"
+aoe -02
+init 3
+range 1
+dmgtype 1
+dmg 3
+stonekill
+sweep
+nextdmg64
+nextalways
+
+newweapon "Hand-Held Drills Effect"
+dmgtype 12
+aoe 1
+
 
 # Pickaxe
 
@@ -199,7 +217,7 @@ sound 11
 
 # Flamethrower =========================================================================================================
 
-newweapon "Flamethrower"
+newweapon "Flamethrower Mark I"
 aoe 3010
 dmgtype 4
 dmg 10
@@ -208,6 +226,51 @@ an
 shieldneg
 range 4
 nostr
+onlyenemy
+
+newweapon "Flamethrower Mark II"
+aoe 3013
+dmgtype 4
+dmg 12
+init 4
+an
+shieldneg
+range 4
+nostr
+onlyenemy
+
+newweapon "Flamethrower Mark III"
+aoe 3016
+dmgtype 4
+dmg 14
+init 4
+an
+shieldneg
+range 6
+nostr
+onlyenemy
+
+newweapon "Flamethrower Mark IV"
+aoe 3020
+dmgtype 4
+dmg 16
+init 4
+an
+shieldneg
+range 8
+nostr
+onlyenemy
+
+newweapon "Flamethrower Mark V"
+aoe 3025
+dmgtype 4
+dmg 20
+init 4
+an
+shieldneg
+range 10
+nostr
+onlyenemy
 
 # Cryocannon ===========================================================================================================
 
@@ -646,17 +709,77 @@ rangedweapon 15 "DRG Revolver"
 # Driller ==============================================================================================================
 
 newmonster "Bronze Driller"
-descr "I eat rock for breakfast"
+descr "I eat rock for breakfast!"
 armor 3
-rank -1
+rank 1
 hp 22
 str 8
 mr 5
 mor 7
 mountain
+battleslow2
+tunnel
 allitemslots
-rangedweaponbonus 0 "Flamethrower"
-rangedweaponbonus 0 "Cryo Cannon"
+fireres 25
+coldres 25
+shockres 25
+power 0 1
+mastery 1
+meleeweaponbonus 0 "Hand-Held Drills"
+rangedweaponbonus 0 "Flamethrower Mark I"
+
+#gain snowmove and fastheal
+newmonster "Silver Driller"
+copystats "Bronze Driller"
+clearweapons
+armor 4
+hp 26
+mr 6
+mor 8
+snow
+fastheal
+fireres 50
+coldres 50
+shockres 50
+power 0 2
+meleeweaponbonus 1 "Hand-Held Drills"
+rangedweaponbonus 0 "Flamethrower Mark II"
+
+newmonster "Gold Driller"
+copystats "Silver Driller"
+clearweapons
+armor 5
+hp 30
+mr 7
+mor 10
+fireres 75
+coldres 75
+shockres 75
+meleeweaponbonus 2 "Hand-Held Drills"
+rangedweaponbonus 0 "Flamethrower Mark III"
+
+newmonster "Platinum Driller"
+copystats "Gold Driller"
+clearweapons
+armor 6
+hp 35
+mr 9
+mor 12
+fireres 100
+coldres 100
+shockres 100
+meleeweaponbonus 3 "Hand-Held Drills"
+rangedweaponbonus 0 "Flamethrower Mark IV"
+
+newmonster "Diamond Driller"
+copystats "Platinum Driller"
+clearweapons
+armor 6
+hp 40
+mr 10
+mor 15
+meleeweaponbonus 5 "Hand-Held Drills"
+rangedweaponbonus 0 "Flamethrower Mark V"
 
 # Engineer =============================================================================================================
 
