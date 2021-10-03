@@ -716,11 +716,12 @@ armor 3
 rank 1
 hp 22
 str 8
-mr 5
-mor 7
+mr 6
+mor 9
 mountain
 battleslow
 tunnel
+rearpos
 allitemslots
 fireres 25
 coldres 25
@@ -734,10 +735,11 @@ rangedweaponbonus 0 "Flamethrower Mark I"
 newmonster "Silver Driller"
 copystats "Bronze Driller"
 clearweapons
-armor 4
+armor 3
 hp 26
-mr 6
-mor 8
+str 9
+mr 7
+mor 10
 snow
 fastheal
 fireres 50
@@ -750,10 +752,11 @@ rangedweaponbonus 0 "Flamethrower Mark II"
 newmonster "Gold Driller"
 copystats "Silver Driller"
 clearweapons
-armor 5
+armor 4
 hp 30
-mr 7
-mor 10
+str 10
+mr 8
+mor 11
 fireres 75
 coldres 75
 shockres 75
@@ -764,8 +767,9 @@ rangedweaponbonus 0 "Flamethrower Mark III"
 newmonster "Platinum Driller"
 copystats "Gold Driller"
 clearweapons
-armor 6
+armor 5
 hp 35
+str 11
 mr 9
 mor 12
 fireres 100
@@ -780,8 +784,9 @@ copystats "Platinum Driller"
 clearweapons
 armor 6
 hp 40
+str 12
 mr 10
-mor 15
+mor 13
 power 0 5
 meleeweaponbonus 5 "Hand-Held Drills"
 rangedweaponbonus 0 "Flamethrower Mark V"
@@ -800,6 +805,7 @@ mr 5
 mor 7
 mountain
 allitemslots
+battleslow
 power 0 1
 mastery 1
 rangedweapon 1 "Summon Sentry Gun"
