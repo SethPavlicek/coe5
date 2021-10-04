@@ -1,1 +1,191 @@
-# Engineer stuff
+# Sentry Gun's Gun =====================================================================================================
+
+newweapon "Sentry Gun Weapon"
+aoe -03
+init 2
+range 10
+dmgtype 3
+dmg 3
+mundane
+nostr
+reload1
+flysound 19
+
+newmonster "Sentry Gun"
+descr "Pew Pew Pew"
+copyspr "Ballista"
+armor 2
+rank 1
+hp 20
+str 5
+mr 6
+mor 99
+charmres
+immobile
+stationary
+noslots
+inanimate
+rangedweaponbonus 0 "Sentry Gun Weapon"
+
+# Summon Sentry Gun ====================================================================================================
+
+newweapon "Summon Sentry Gun"
+trgrank 7
+dmg 1
+dmgtype 18
+range 1
+init 8
+oneshot
+
+# Breach Cutter
+
+newweapon "Breach Cutter"
+aoe 5015
+onlyenemy
+dmgtype 7
+dmg 10
+init 3
+range 15
+an
+shieldneg
+reload2
+look 79
+sound 24
+
+# Grenade Launcher
+
+newweapon "Grenade Launcher"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 1
+range 10
+lob
+init 3
+reload2
+scatter
+flymode 1
+flylook 33
+look 21
+nextalways
+nextdmg 8
+newweapon "Grenade Launcher Explosion"
+aoe 20
+look 21
+nostr
+sound 68
+onlyenemy
+dmgtype 1
+
+# SMG
+
+newweapon "SMG"
+aoe -3
+dmgtype 3
+dmg 3
+range 5
+init 3
+next
+nextdmg 3
+newweapon "SMG Lightning"
+dmgtype 6
+
+# Engineer =============================================================================================================
+
+newmonster "Bronze Engineer"
+descr "Infestation problem? Automated turret m8."
+copyspr "Dwarf Sapper"
+armor 2
+rank 0
+rearpos
+hp 16
+str 5
+mr 6
+mor 7
+snow
+mountain
+slashres
+fireres 15
+coldres 15
+shockres 15
+allitemslots
+battleslow
+power 0 1
+mastery 1
+rangedweapon 0 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "SMG"
+rangedweapon50 0 "Breach Cutter"
+
+newmonster "Silver Engineer"
+copystats "Bronze Engineer"
+clearweapons
+hp 20
+mr 7
+mor 8
+fastheal
+fireres 25
+coldres 25
+shockres 25
+rangedweapon 1 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "SMG"
+rangedweapon50 1 "Breach Cutter"
+rangedweapon50 1 "Breach Cutter"
+
+newmonster "Gold Engineer"
+copystats "Silver Engineer"
+clearweapons
+hp 24
+str 6
+mr 8
+mor 9
+armor 3
+fireres 35
+coldres 35
+shockres 35
+rangedweapon 2 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "SMG"
+rangedweapon50 3 "Breach Cutter"
+rangedweapon50 3 "Breach Cutter"
+
+newmonster "Platinum Engineer"
+copystats "Gold Engineer"
+clearweapons
+hp 28
+str 6
+mr 9
+mor 10
+fireres 45
+coldres 45
+shockres 45
+rangedweapon 3 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "SMG"
+rangedweapon50 3 "Breach Cutter"
+rangedweapon50 3 "Breach Cutter"
+rangedweapon50 3 "Breach Cutter"
+
+newmonster "Platinum Engineer"
+copystats "Gold Engineer"
+clearweapons
+hp 32
+str 7
+mr 10
+mor 11
+armor 4
+fireres 55
+coldres 55
+shockres 55
+rangedweapon 4 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "SMG"
+rangedweapon50 5 "Breach Cutter"
+rangedweapon50 5 "Breach Cutter"
+rangedweapon50 5 "Breach Cutter"

@@ -1,1 +1,216 @@
-# Gunner stuff
+# Gunner Weapons
+
+# Minigun
+newweapon "DRG Minigun"
+aoe -04
+dmgtype 3
+dmg 4
+range 6
+init 3
+rangepen
+flymode 5
+flylook 222
+flysound 14
+scatter
+mundane
+
+#AutoCannon
+newweapon "DRG AutoCannon S"
+init 1
+flymode 4
+lob
+range 20
+aoe 0
+flylook 32
+flysound 11
+flymode 1
+flying 2
+dmgtype 3
+dmg 10
+an
+scatter
+mundane
+reload2
+#nostr
+nextalways 3
+
+newweapon "DRG AutoCannon S Explosion"
+aoe 3
+look 21
+nostr
+sound 105 # tail sweep
+onlyenemy
+dmgtype 10
+an
+dmg 4
+
+newweapon "DRG AutoCannon"
+init 1
+flymode 4
+range 12
+aoe 0
+flylook 32
+flysound 11
+flymode 1
+flying 2
+dmgtype 3
+dmg 7
+an
+scatter
+mundane
+#reload1
+#reloadsnd -1
+#nostr
+nextalways
+newweapon "DRG AutoCannon Explosion"
+aoe 6
+look 21
+nostr
+sound 105 # tail sweep
+onlyenemy
+dmgtype 10
+an
+dmg 2
+
+# Revolver
+newweapon "DRG Revolver"
+init 3
+flymode 4
+range 8
+rangepen
+reload1
+aoe 0
+flylook 21
+flysound 27
+trgrank 9
+dmgtype 3
+dmg 10
+an
+
+#Gunner Units Ranks 1-6
+newmonster "Bronze Gunner"
+descr "100lb guns"
+copyspr "Dwarf Arbalest"
+slashres
+armor 2
+shield 1
+rank 0
+rearpos
+battleslow
+hp 18
+str 5
+mr 5
+mor 7
+mountain
+allitemslots
+power 0 1
+mastery 1
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon 0 "DRG Revolver"
+
+# gain fastheal
+newmonster "Silver Gunner"
+copystats "Bronze Gunner"
+hp 22
+str 6
+mr 6
+mor 8
+power 0 2
+fastheal
+clearweapons
+meleeweapon50s 4 "DRG Pickaxe"
+meleeweaponbonus 1 "Power Pickaxe"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon 3 "DRG Revolver"
+
+# armor increase, 1-shot grenade added
+newmonster "Gold Gunner"
+copystats "Silver Gunner"
+armor 3
+hp 26
+str 7
+mr 7
+mor 9
+power 0 3
+clearweapons
+meleeweapon50s 5 "DRG Pickaxe"
+meleeweaponbonus 2 "Power Pickaxe"
+rangedweapon 0 "Frag Grenade"
+rangedweapon50 0 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon 6 "DRG Revolver"
+
+# gain pierce res
+newmonster "Platinum Gunner"
+copystats "Gold Gunner"
+pierceres
+hp 30
+str 8
+mr 8
+mor 10
+power 0 4
+clearweapons
+meleeweapon50s 6 "DRG Pickaxe"
+meleeweaponbonus 3 "Power Pickaxe"
+rangedweapon 0 "Frag Grenade"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon50 3 "DRG Minigun"
+rangedweapon50 3 "DRG Minigun"
+rangedweapon 9 "DRG Revolver"
+
+# armor increase
+newmonster "Diamond Gunner"
+copystats "Platinum Gunner"
+armor 4
+hp 34
+str 9
+mr 9
+mor 11
+power 0 5
+clearweapons
+meleeweapon50s 7 "DRG Pickaxe"
+meleeweaponbonus 4 "Power Pickaxe"
+rangedweapon 0 "Frag Grenade"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 1 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon50 2 "DRG Minigun"
+rangedweapon50 3 "DRG Minigun"
+rangedweapon50 3 "DRG Minigun"
+rangedweapon50 4 "DRG Minigun"
+rangedweapon 12 "DRG Revolver"
+
+newmonster "Platinum Gunner B"
+copystats "Platinum Gunner"
+clearweapons
+siegeweapon 9 "DRG AutoCannon S"
+meleeweapon50s 6 "DRG Pickaxe"
+meleeweaponbonus 3 "Power Pickaxe"
+rangedweapon 0 "Incendiary Grenade"
+rangedweapon50 9 "DRG AutoCannon S"
+rangedweaponbonus 9 "DRG AutoCannon"
+rangedweapon 9 "DRG Revolver"
+
+newmonster "Diamond Gunner B"
+copystats "Diamond Gunner"
+clearweapons
+siegeweapon 11 "DRG AutoCannon S"
+meleeweapon50s 7 "DRG Pickaxe"
+meleeweaponbonus 4 "Power Pickaxe"
+rangedweapon 0 "Incendiary Grenade"
+rangedweapon50 11 "DRG AutoCannon S"
+rangedweaponbonus 11 "DRG AutoCannon"
+rangedweapon 12 "DRG Revolver"
