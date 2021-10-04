@@ -1,3 +1,6 @@
 # IntellJ
 .idea
 *.iml
+
+# DRG Build
+*.final
