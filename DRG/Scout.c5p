@@ -1,1 +1,124 @@
-# Scout stuff
+# Scout Weapons
+newweapon "M1000 Classic"
+trgrank 8
+dmgtype 3
+dmg 10
+an
+reload1
+
+newweapon "Sawed Off"
+aoe 3005
+range 3
+dmgtype 3
+dmg 6
+shieldneg
+reload1
+
+# Scout ================================================================================================================
+newmonster "Bronze Scout"
+descr "Yeah, I got a grappling hook. What are you gonna do about it?"
+copyspr "Dwarf Sapper"
+armor 1
+rank -1
+rearpos
+hp 16
+str 5
+mr 5
+mor 7
+mountain
+allitemslots
+battleslow
+slashres
+snow
+fast
+fireres 10
+coldres 10
+shockres 10
+stealth
+acutesenses
+power 0 1
+mastery 1
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "M1000 Classic"
+rangedweapon 0 "Sawed Off"
+
+newmonster "Silver Scout"
+copystats "Bronze Scout"
+clearweapons
+hp 19
+mr 6
+mor 8
+fastheal
+fireres 20
+coldres 20
+shockres 20
+power 0 2
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 5 "M1000 Classic"
+rangedweapon50 0 "Sawed Off"
+
+newmonster "Gold Scout"
+copystats "Silver Scout"
+clearweapons
+hp 22
+str 6
+mr 7
+mor 9
+armor 2
+fastheal
+fireres 30
+coldres 30
+shockres 30
+power 0 3
+farsight 1
+float
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "Cryo Grenade"
+rangedweapon 5 "M1000 Classic"
+rangedweapon50 0 "Sawed Off"
+rangedweaponbonus 0 "Sawed Off"
+
+newmonster "Platinum Scout"
+copystats "Gold Scout"
+clearweapons
+hp 25
+str 6
+mr 8
+mor 10
+armor 2
+fireres 40
+coldres 40
+shockres 40
+power 0 4
+pierceres
+spiritsight
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "Cryo Grenade"
+rangedweapon 5 "M1000 Classic"
+rangedweapon 5 "M1000 Classic"
+rangedweapon50 0 "Sawed Off"
+rangedweaponbonus 0 "Sawed Off"
+
+newmonster "Diamond Scout"
+copystats "Platinum Scout"
+clearweapons
+hp 25
+str 7
+mr 9
+mor 11
+armor 3
+fireres 50
+coldres 50
+shockres 50
+power 0 5
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon 0 "Cryo Grenade"
+rangedweapon 5 "M1000 Classic"
+rangedweapon 5 "M1000 Classic"
+rangedweapon50 0 "Sawed Off"
+rangedweaponbonus 0 "Sawed Off"

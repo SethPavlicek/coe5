@@ -8,12 +8,11 @@ dmgtype 1
 dmg 3
 stonekill
 sweep
-nextdmg64
-nextalways
-
-newweapon "Hand-Held Drills Effect"
-dmgtype 12
-aoe 1
+#nextalways
+#nextdmg64
+#newweapon "Hand-Held Drills Effect"
+#dmgtype 12
+#aoe 1
 
 # Flamethrower =========================================================================================================
 
@@ -88,6 +87,7 @@ nostr
 
 newmonster "Bronze Driller"
 descr "I eat rock for breakfast!"
+copyspr "Dwarf Commander"
 armor 3
 rank 1
 hp 22

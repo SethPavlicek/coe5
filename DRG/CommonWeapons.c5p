@@ -1,0 +1,140 @@
+# Grenades
+
+newweapon "Frag Grenade"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 1
+range 10
+lob
+init 3
+oneshot
+scatter
+flymode 1
+flylook 33
+look 21
+nextalways
+nextdmg 7
+newweapon "Frag Grenade Explosion"
+aoe 16
+look 21
+nostr
+sound 68
+onlyenemy
+dmgtype 1
+
+
+newweapon "Cryo Grenade"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 1
+range 10
+lob
+init 3
+oneshot
+scatter
+flymode 2
+flylook 94 # icicle - fly
+look 90 # frost
+nextalways
+nextdmg 2
+newweapon "Cryo Grenade Explosion"
+aoe 16
+look 12
+nostr
+sound 39 # frost
+onlyenemy
+dmgtype 5
+an
+next
+nextdmg 1024 # Imprison in Ice
+newweapon "Cryo Grenade Encase"
+aoe 0
+mr
+dmgtype 12
+
+newweapon "Incendiary Grenade"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 1
+range 10
+lob
+init 3
+oneshot
+scatter
+#flymode 1
+#flylook 19 # fire bola sprite
+flymode 6 # only show single projectile
+flylook 65 # fireball
+#look 47 # smokeless flame
+#sound 16 # fire
+#onlyenemy
+nextalways
+nextdmg 7
+newweapon "Incendiary Grenade Explosion"
+aoe 16
+look 47
+nostr
+mr
+an
+sound 16 # fire
+onlyenemy
+dmgtype 4
+next
+nextdmg 32 # burn
+newweapon "Incendiary Grenade Effect"
+aoe 0
+dmgtype 12
+
+newweapon "Pheromone Grenade"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 1
+range 10
+lob
+init 3
+oneshot
+scatter
+flymode 2
+flylook 72 # bolts of light - fly
+look 176 # purple summon circle
+sound 22 # fear
+onlyenemy
+nextalways
+nextdmg 262144 # confusion
+newweapon "Pheromone Grenade Explosion"
+aoe 16
+look 176
+onlyenemy
+mr # normal magic resistance negates
+dmgtype 12
+mind # does not affect mindless
+
+# Pickaxe
+
+newweapon "DRG Pickaxe"
+aoe 0
+init 5
+range 1
+dmgtype 3
+dmg 7
+an
+shieldneg
+stonekill
+sweep
+
+newweapon "Power Pickaxe"
+aoe 5
+#trgrank 1
+dmgtype 2
+dmg 10
+range 1
+init 5
+an
+onlyenemy
+shieldneg
+reload2
+sound 11

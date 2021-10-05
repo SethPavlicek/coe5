@@ -1,0 +1,42 @@
+# Garrison/Income ======================================================================================================
+
+newmonster "Garrison MoneyBags"
+name "Garrison MoneyBags"
+descr "Dwarves need money right?"
+copyspr "Hoburg Defender"
+hp 100
+mr 12
+str 12
+armor 12
+mor 99
+rank -1
+charmres
+gathergems
+gold 1000
+stationary
+immobile
+
+# Class Setup ==========================================================================================================
+
+newclass
+setclassname "Deep Rock Galactic"
+classdescr "ROCK AND STONE"
+clearstartunits
+clearrec
+addunitrec "Fodder" 100 20 5 0 0
+# Steeve the Glyphid Grunt
+addunitrec "Glyphid Swarmer" 100 15 5 0 0
+addunitrec "Glyphid Grunt" 100 5 5 0 0
+addunitrec "Glyphid Slasher" 100 5 5 0 0
+addunitrec "Glyphid Guard" 100 5 5 0 0
+addcomrec "Bronze Gunner" 90 1 0 0
+addcomrec "Bronze Driller" 90 1 0 0
+addcomrec "Bronze Engineer" 90 1 0 0
+addcomrec "Bronze Scout" 90 1 0 0
+setmaincom "Bronze Gunner"
+addstartcom "Bronze Gunner"
+# For testing
+# addstartcom "Garrison MoneyBags"
+hometerr 207
+clearstartterr
+addstartterr 18

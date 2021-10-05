@@ -1,0 +1,83 @@
+#Rituals =====================================================
+
+newritpow #Gunner rituals
+newritual "Gunner Utility"
+level 1
+levelup 1
+newrit 1
+rebatelvl 1
+soundfx 31
+cost 0 5
+free
+
+newritual "Promotion from Management I"
+level 1
+levelup 2
+newrit 2
+rebatelvl 2
+soundfx 29
+cost 0 5
+free
+
+newritual "Promotion from Management II"
+level 2
+levelup 3
+newrit 3
+rebatelvl 3
+soundfx 29
+cost 0 5
+free
+
+newritual "Promotion from Management III"
+level 3
+levelup 4
+newrit 4
+rebatelvl 4
+soundfx 29
+cost 0 5
+free
+
+newritual "Promotion from Management IV"
+level 4
+levelup 5
+newrit 5
+rebatelvl 5
+soundfx 29
+cost 0 5
+free
+
+newritual "Switch to AutoCannon V"
+level 5
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Diamond Gunner"
+addstring "Diamond Gunner B"
+
+newritual "Switch to AutoCannon IV"
+level 4
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Platinum Gunner"
+addstring "Platinum Gunner B"
+
+newritual "Switch to Minigun V"
+level 5
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Diamond Gunner B"
+addstring "Diamond Gunner"
+
+newritual "Switch to Minigun IV"
+level 4
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Platinum Gunner B"
+addstring "Platinum Gunner"
