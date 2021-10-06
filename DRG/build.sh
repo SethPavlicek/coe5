@@ -11,7 +11,7 @@ cat \
     Driller.c5p \
     Scout.c5p \
     class.c5p\
-  > DRG.c5m.final
+  > DRG.c5m
 set +x # echo off
 echo "Done joining files."
 
