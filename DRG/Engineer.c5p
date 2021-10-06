@@ -109,6 +109,8 @@ mor 7
 snow
 mountain
 slashres
+gatheranygems
+seegems
 fireres 15
 coldres 15
 shockres 15
@@ -116,7 +118,7 @@ allitemslots
 battleslow
 power 0 1
 mastery 1
-rangedweapon 0 "Summon Sentry Gun"
+rangedweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "SMG"

@@ -1,14 +1,14 @@
 #Rituals =====================================================
 
 newritpow #Gunner rituals
-newritual "Gunner Utility"
-level 1
-levelup 1
-newrit 1
-rebatelvl 1
-soundfx 31
-cost 0 5
-free
+#newritual "Gunner Utility"
+#level 1
+#levelup 1
+#newrit 1
+#rebatelvl 1
+#soundfx 31
+#cost 0 5
+#free
 
 newritual "Promotion from Management I"
 level 1
@@ -16,7 +16,7 @@ levelup 2
 newrit 2
 rebatelvl 2
 soundfx 29
-cost 0 5
+cost 15 30
 free
 
 newritual "Promotion from Management II"
@@ -25,7 +25,7 @@ levelup 3
 newrit 3
 rebatelvl 3
 soundfx 29
-cost 0 5
+cost 15 60
 free
 
 newritual "Promotion from Management III"
@@ -34,7 +34,7 @@ levelup 4
 newrit 4
 rebatelvl 4
 soundfx 29
-cost 0 5
+cost 15 120
 free
 
 newritual "Promotion from Management IV"
@@ -43,7 +43,7 @@ levelup 5
 newrit 5
 rebatelvl 5
 soundfx 29
-cost 0 5
+cost 15 180
 free
 
 newritual "Switch to AutoCannon V"

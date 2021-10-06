@@ -16,6 +16,10 @@ gold 1000
 stationary
 immobile
 
+newmonster "Garrison Gunner"
+copystats "Bronze Gunner"
+stationary
+
 # Class Setup ==========================================================================================================
 
 newclass
@@ -25,20 +29,23 @@ clearstartunits
 clearrec
 addunitrec "Fodder" 100 20 5 0 0
 # Steeve the Glyphid Grunt
-addunitrec "Glyphid Swarmer" 100 15 5 0 0
-addunitrec "Glyphid Grunt" 100 5 5 0 0
-addunitrec "Glyphid Slasher" 100 5 5 0 0
-addunitrec "Glyphid Guard" 100 5 5 0 0
-addcomrec "Bronze Gunner" 90 1 0 0
-addcomrec "Bronze Driller" 90 1 0 0
-addcomrec "Bronze Engineer" 90 1 0 0
-addcomrec "Bronze Scout" 90 1 0 0
+addunitrec "Glyphid Swarmer" 100 15 40 0 0
+addunitrec "Glyphid Grunt" 100 5 50 0 0
+addunitrec "Glyphid Slasher" 100 5 50 0 5
+addunitrec "Glyphid Guard" 100 5 60 0 5
+addcomrec "Bronze Gunner" 90 75 0 0
+addcomrec "Bronze Driller" 90 75 0 0
+addcomrec "Bronze Engineer" 90 75 0 0
+addcomrec "Bronze Scout" 90 75 0 0
 setmaincom "Bronze Scout"
 addstartcom "Bronze Gunner"
 addstartcom "Bronze Engineer"
 addstartcom "Bronze Driller"
 # For testing
-# addstartcom "Garrison MoneyBags"
-hometerr 207
+addstartcom "Garrison Gunner"
+addstartunits "Garrison Gunner" 1
+#hometerr 207 # Capital
+hometerr 126 # Dwarven City
 clearstartterr
-addstartterr 18
+#addstartterr 18 # village
+addstartterr 105 # coal mine

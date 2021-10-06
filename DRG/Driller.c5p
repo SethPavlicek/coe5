@@ -111,6 +111,8 @@ tunnel
 slashres
 rearpos
 allitemslots
+gatheranygems
+seegems
 fireres 35
 coldres 35
 shockres 35
