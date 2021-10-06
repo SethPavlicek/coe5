@@ -49,6 +49,8 @@ armor 1
 mountain
 rank 1
 noeyes
+wall
+snow
 meleeweapon 2 "Bite"
 
 newmonster "Glyphid Slasher"
@@ -62,6 +64,8 @@ armor 1
 mountain
 rank 1
 noeyes
+wall
+snow
 meleeweapon 6 "Bite"
 
 newmonster "Glyphid Guard"
@@ -76,6 +80,8 @@ shield 1
 mountain
 rank 1
 noeyes
+wall
+snow
 meleeweapon 3 "Bite"
 
 newmonster "Steeve the Dreadnought Hiveguard"
@@ -93,6 +99,8 @@ rank 1
 frontpos
 noeyes
 charmres
+wall
+snow
 fear 1
 miscslots
 meleeweapon 0 "Dreadnought Bite"
