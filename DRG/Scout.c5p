@@ -4,22 +4,22 @@ init 1
 range 12
 trgrank 8
 #aoe 0
-flylook 32
+flylook 35
 flysound 11
 flymode 1
 dmgtype 3
 dmg 16
 an
-#reload1
+reload1
 #nostr
 #nextalways 3
 
 newweapon "Sawed Off"
 init 4
-range 4
+range 3
 trgrank 1
-aoe 3007
-flylook 214
+aoe 3006
+flylook 222
 flysound 11
 flymode 5
 dmgtype 3
@@ -41,6 +41,7 @@ mor 7
 mountain
 allitemslots
 battleslow
+evasion
 slashres
 snow
 fast
@@ -51,9 +52,10 @@ stealth
 acutesenses
 power 0 1
 mastery 1
+assassinweapon -8 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon50s 0 "Sawed Off"
+rangedweapon50 0 "Sawed Off"
 rangedweapon 0 "M1000 Classic"
 
 newmonster "Silver Scout"
@@ -67,9 +69,10 @@ fireres 20
 coldres 20
 shockres 20
 power 0 2
+assassinweapon -4 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon50s 1 "Sawed Off"
+rangedweapon50 1 "Sawed Off"
 rangedweapon 4 "M1000 Classic"
 
 newmonster "Gold Scout"
@@ -87,12 +90,15 @@ shockres 30
 power 0 3
 farsight 1
 float
+assassinweapon 0 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon50s 2 "Sawed Off"
+rangedweapon50 2 "Sawed Off"
+rangedweaponbonus 1 "Sawed Off"
 rangedweapon 8 "M1000 Classic"
-rangedweaponbonus 0 "Sawed Off"
+rangedweapon50x 4 "M1000 Classic"
+
 
 newmonster "Platinum Scout"
 copystats "Gold Scout"
@@ -108,13 +114,15 @@ shockres 40
 power 0 4
 pierceres
 spiritsight
+assassinweapon 4 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon50s 3 "Sawed Off"
+rangedweapon50 3 "Sawed Off"
+rangedweaponbonus 1 "Sawed Off"
 rangedweapon 12 "M1000 Classic"
-rangedweapon 0 "M1000 Classic"
-rangedweaponbonus 0 "Sawed Off"
+rangedweapon50x 6 "M1000 Classic"
+
 
 newmonster "Diamond Scout"
 copystats "Platinum Scout"
@@ -128,10 +136,12 @@ fireres 50
 coldres 50
 shockres 50
 power 0 5
+assassinweapon 8 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon50s 4 "Sawed Off"
+rangedweapon50 4 "Sawed Off"
+rangedweaponbonus 2 "Sawed Off"
 rangedweapon 16 "M1000 Classic"
-rangedweapon 0 "M1000 Classic"
-rangedweaponbonus 0 "Sawed Off"
+rangedweapon50x 8 "M1000 Classic"
+
