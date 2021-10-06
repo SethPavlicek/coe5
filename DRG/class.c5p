@@ -33,10 +33,10 @@ addunitrec "Glyphid Swarmer" 100 15 40 0 0
 addunitrec "Glyphid Grunt" 100 5 50 0 0
 addunitrec "Glyphid Slasher" 100 5 50 0 5
 addunitrec "Glyphid Guard" 100 5 60 0 5
-addcomrec "Bronze Gunner" 90 75 0 0
-addcomrec "Bronze Driller" 90 75 0 0
-addcomrec "Bronze Engineer" 90 75 0 0
-addcomrec "Bronze Scout" 90 75 0 0
+addcomrec "Bronze Gunner" 25 50 0 15
+addcomrec "Bronze Driller" 25 60 0 10
+addcomrec "Bronze Engineer" 25 60 0 10
+addcomrec "Bronze Scout" 25 75 0 5
 setmaincom "Bronze Scout"
 addstartcom "Bronze Gunner"
 addstartcom "Bronze Engineer"
