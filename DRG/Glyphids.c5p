@@ -25,6 +25,8 @@ mundane
 newmonster "Glyphid Swarmer"
 descr "Get your stomping boots on."
 copyspr "Small Spider"
+copystats "Small Spider"
+clearweapons
 hp 1
 rank 1
 frontpos
@@ -34,7 +36,6 @@ mor 5
 noeyes
 wall
 battlefast
-evasion 50
 meleeweapon 1 "Bite"
 
 newmonster "Glyphid Grunt"
