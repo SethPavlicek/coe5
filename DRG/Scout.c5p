@@ -1,28 +1,31 @@
 # Scout Weapons
 newweapon "M1000 Classic"
 init 1
-flymode 4
 range 12
 trgrank 8
 #aoe 0
 flylook 32
 flysound 11
 flymode 1
-flying 2
 dmgtype 3
-dmg 10
+dmg 16
 an
-reload1
+#reload1
 #nostr
 #nextalways 3
 
 newweapon "Sawed Off"
-aoe 3005
-range 3
+init 4
+range 4
+trgrank 1
+aoe 3007
+flylook 214
+flysound 11
+flymode 5
 dmgtype 3
 dmg 6
 shieldneg
-reload1
+#reload1
 
 # Scout ================================================================================================================
 newmonster "Bronze Scout"
@@ -50,8 +53,8 @@ power 0 1
 mastery 1
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
+rangedweapon50s 0 "Sawed Off"
 rangedweapon 0 "M1000 Classic"
-rangedweapon 0 "Sawed Off"
 
 newmonster "Silver Scout"
 copystats "Bronze Scout"
@@ -66,8 +69,8 @@ shockres 20
 power 0 2
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon 5 "M1000 Classic"
-rangedweapon50 0 "Sawed Off"
+rangedweapon50s 1 "Sawed Off"
+rangedweapon 4 "M1000 Classic"
 
 newmonster "Gold Scout"
 copystats "Silver Scout"
@@ -87,8 +90,8 @@ float
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon 5 "M1000 Classic"
-rangedweapon50 0 "Sawed Off"
+rangedweapon50s 2 "Sawed Off"
+rangedweapon 8 "M1000 Classic"
 rangedweaponbonus 0 "Sawed Off"
 
 newmonster "Platinum Scout"
@@ -108,9 +111,9 @@ spiritsight
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon 5 "M1000 Classic"
-rangedweapon 5 "M1000 Classic"
-rangedweapon50 0 "Sawed Off"
+rangedweapon50s 3 "Sawed Off"
+rangedweapon 12 "M1000 Classic"
+rangedweapon 0 "M1000 Classic"
 rangedweaponbonus 0 "Sawed Off"
 
 newmonster "Diamond Scout"
@@ -128,7 +131,7 @@ power 0 5
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon 5 "M1000 Classic"
-rangedweapon 5 "M1000 Classic"
-rangedweapon50 0 "Sawed Off"
+rangedweapon50s 4 "Sawed Off"
+rangedweapon 16 "M1000 Classic"
+rangedweapon 0 "M1000 Classic"
 rangedweaponbonus 0 "Sawed Off"
