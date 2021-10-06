@@ -39,6 +39,7 @@ meleeweapon -1 "Bite"
 
 newmonster "Glyphid Grunt"
 descr "If only bugs were allowed on the space rig."
+copyspr "Giant Spider"
 hp 10
 str 5
 mr 2
@@ -51,6 +52,7 @@ meleeweapon 0 "Bite"
 
 newmonster "Glyphid Slasher"
 descr "Watch the sharp blades!"
+copyspr "Giant Spider"
 hp 14
 str 8
 mr 2
@@ -63,6 +65,7 @@ meleeweapon 0 "Bite"
 
 newmonster "Glyphid Guard"
 descr "That one is a tough bastard."
+copyspr "Giant Spider"
 hp 20
 str 5
 mr 3

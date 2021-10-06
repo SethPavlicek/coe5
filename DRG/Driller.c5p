@@ -26,6 +26,7 @@ shieldneg
 range 4
 nostr
 onlyenemy
+flylook 65
 
 newweapon "Flamethrower Mark II"
 aoe 3013
@@ -37,6 +38,7 @@ shieldneg
 range 4
 nostr
 onlyenemy
+flylook 65
 
 newweapon "Flamethrower Mark III"
 aoe 3016
@@ -45,9 +47,10 @@ dmg 14
 init 4
 an
 shieldneg
-range 6
+range 5
 nostr
 onlyenemy
+flylook 65
 
 newweapon "Flamethrower Mark IV"
 aoe 3020
@@ -56,9 +59,10 @@ dmg 16
 init 4
 an
 shieldneg
-range 8
+range 6
 nostr
 onlyenemy
+flylook 65
 
 newweapon "Flamethrower Mark V"
 aoe 3025
@@ -67,9 +71,10 @@ dmg 20
 init 4
 an
 shieldneg
-range 10
+range 7
 nostr
 onlyenemy
+flylook 65
 
 # Cryocannon ===========================================================================================================
 

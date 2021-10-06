@@ -48,6 +48,7 @@ init 3
 an
 shieldneg
 reload2
+range 10
 look 79
 sound 24
 
