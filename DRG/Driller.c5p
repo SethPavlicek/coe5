@@ -27,6 +27,7 @@ range 4
 nostr
 onlyenemy
 flylook 65
+flymode 2
 
 newweapon "Flamethrower Mark II"
 aoe 3013
@@ -39,6 +40,7 @@ range 4
 nostr
 onlyenemy
 flylook 65
+flymode 2
 
 newweapon "Flamethrower Mark III"
 aoe 3016
@@ -51,6 +53,7 @@ range 5
 nostr
 onlyenemy
 flylook 65
+flymode 2
 
 newweapon "Flamethrower Mark IV"
 aoe 3020
@@ -63,6 +66,7 @@ range 6
 nostr
 onlyenemy
 flylook 65
+flymode 2
 
 newweapon "Flamethrower Mark V"
 aoe 3025
@@ -75,6 +79,7 @@ range 7
 nostr
 onlyenemy
 flylook 65
+flymode 2
 
 # Cryocannon ===========================================================================================================
 

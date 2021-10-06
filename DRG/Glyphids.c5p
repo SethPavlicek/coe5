@@ -35,7 +35,7 @@ noeyes
 wall
 battlefast
 evasion 50
-meleeweapon -1 "Bite"
+meleeweapon 1 "Bite"
 
 newmonster "Glyphid Grunt"
 descr "If only bugs were allowed on the space rig."
@@ -48,7 +48,7 @@ armor 1
 mountain
 rank 1
 noeyes
-meleeweapon 0 "Bite"
+meleeweapon 2 "Bite"
 
 newmonster "Glyphid Slasher"
 descr "Watch the sharp blades!"
@@ -61,7 +61,7 @@ armor 1
 mountain
 rank 1
 noeyes
-meleeweapon 0 "Bite"
+meleeweapon 6 "Bite"
 
 newmonster "Glyphid Guard"
 descr "That one is a tough bastard."
@@ -75,7 +75,7 @@ shield 1
 mountain
 rank 1
 noeyes
-meleeweapon 0 "Bite"
+meleeweapon 3 "Bite"
 
 newmonster "Steeve the Dreadnought Hiveguard"
 descr "That thing ate bullets like Karl drank beer!"

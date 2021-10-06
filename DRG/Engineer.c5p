@@ -10,6 +10,8 @@ mundane
 nostr
 reload1
 flysound 19
+flylook 34
+flymode 1
 
 newmonster "Sentry Gun"
 descr "Pew Pew Pew"
@@ -40,7 +42,7 @@ oneshot
 # Breach Cutter
 
 newweapon "Breach Cutter"
-aoe 5015
+aoe 1015
 onlyenemy
 dmgtype 7
 dmg 10
@@ -85,6 +87,8 @@ dmgtype 3
 dmg 3
 range 5
 init 3
+flylook 34
+flymode 1
 next
 nextdmg 3
 newweapon "SMG Lightning"
