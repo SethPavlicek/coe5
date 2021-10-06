@@ -105,6 +105,9 @@ mountain
 snow
 gatheranygems
 seegems
+fireres 20
+coldres 20
+shockres 20
 allitemslots
 power 0 1
 mastery 1
@@ -124,6 +127,9 @@ mr 6
 mor 8
 power 0 2
 fastheal
+fireres 30
+coldres 30
+shockres 30
 clearweapons
 meleeweapon50s 4 "DRG Pickaxe"
 meleeweaponbonus 1 "Power Pickaxe"
@@ -142,6 +148,9 @@ str 7
 mr 7
 mor 9
 power 0 3
+fireres 40
+coldres 40
+shockres 40
 clearweapons
 meleeweapon50s 5 "DRG Pickaxe"
 meleeweaponbonus 2 "Power Pickaxe"
@@ -162,6 +171,9 @@ str 8
 mr 8
 mor 10
 power 0 4
+fireres 50
+coldres 50
+shockres 50
 clearweapons
 meleeweapon50s 6 "DRG Pickaxe"
 meleeweaponbonus 3 "Power Pickaxe"
