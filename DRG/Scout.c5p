@@ -1,10 +1,20 @@
 # Scout Weapons
 newweapon "M1000 Classic"
+init 1
+flymode 4
+range 12
 trgrank 8
+#aoe 0
+flylook 32
+flysound 11
+flymode 1
+flying 2
 dmgtype 3
 dmg 10
 an
 reload1
+#nostr
+#nextalways 3
 
 newweapon "Sawed Off"
 aoe 3005

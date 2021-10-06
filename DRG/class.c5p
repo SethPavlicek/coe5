@@ -33,8 +33,10 @@ addcomrec "Bronze Gunner" 90 1 0 0
 addcomrec "Bronze Driller" 90 1 0 0
 addcomrec "Bronze Engineer" 90 1 0 0
 addcomrec "Bronze Scout" 90 1 0 0
-setmaincom "Bronze Gunner"
+setmaincom "Bronze Scout"
 addstartcom "Bronze Gunner"
+addstartcom "Bronze Engineer"
+addstartcom "Bronze Driller"
 # For testing
 # addstartcom "Garrison MoneyBags"
 hometerr 207
