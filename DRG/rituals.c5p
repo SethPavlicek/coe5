@@ -1,14 +1,14 @@
 #Rituals =====================================================
 
 newritpow #Gunner rituals
-#newritual "Gunner Utility"
-#level 1
-#levelup 1
-#newrit 1
-#rebatelvl 1
-#soundfx 31
-#cost 0 5
-#free
+newritual "Summon BET-C"
+level 1
+rebatelvl 1
+soundfx 31
+summoning
+addstring "BET-C"
+cost 0 5
+free
 
 newritual "Promotion from Management I"
 level 1

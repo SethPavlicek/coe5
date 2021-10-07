@@ -1,37 +1,65 @@
 # BET-C Weapons
 
 newweapon "BET-C Turret"
-aoe -6
-range 7
+aoe -06
+range 6
 dmgtype 3
 dmg 6
 flylook 34
 flymode 1
 
 newweapon "BET-C Sticky Bomb"
-aoe 10
-range 7
-dmgtype 3
-dmg 5
+init 1
+flymode 4
+range 12
 reload1
-an
+flylook 32
+flysound 11
+flymode 1
+flying 2
+dmgtype 3
+dmg 1
+scatter
+mundane
+nextalways
+newweapon "Sticky Bomb Explosion"
+aoe 10
+look 41
+nostr
+sound 105 # tail sweep
+onlyenemy
+dmgtype 10
 shieldneg
-
+dmg 6
 # Mules
 
 newmonster "BET-C"
+spr1 "BET-C.tga"
 hp 50
 str 8
 mr 12
 mor 99
 armor 5
-piercres
+pierceres
 slashres
 bluntres
+rank 1
 fireres 75
 coldres 75
 shockres 25
+poisonres 100
 mountain
 snow
-wallclimbing
+size2x2
+swallowres
+wall
 charmres
+noeyes
+miscslots
+water
+battleslow
+noheal
+inanimate
+shardexpl 10
+rangedweaponbonus 0 "BET-C Turret"
+rangedweaponbonus 0 "BET-C Sticky Bomb"
