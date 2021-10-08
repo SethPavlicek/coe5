@@ -1,18 +1,18 @@
-# Hand-Held Drills =====================================================================================================
+# Drill =====================================================================================================
 
-newweapon "Hand-Held Drills"
-aoe -02
-init 3
-range 1
-dmgtype 1
-dmg 3
-stonekill
-sweep
-#nextalways
-#nextdmg64
-#newweapon "Hand-Held Drills Effect"
-#dmgtype 12
-#aoe 1
+#newweapon "Drill"
+#aoe -02
+#init 3
+#range 1
+#dmgtype 1
+#dmg 3
+#stonekill
+#sweep
+##nextalways
+##nextdmg64
+##newweapon "Drill Effect"
+##dmgtype 12
+##aoe 1
 
 # Flamethrower =========================================================================================================
 
@@ -118,7 +118,7 @@ coldres 35
 shockres 35
 power 0 1
 mastery 1
-meleeweaponbonus 0 "Hand-Held Drills"
+meleeweaponbonus 0 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark I"
 
 #gain fastheal
@@ -135,7 +135,7 @@ fireres 45
 coldres 45
 shockres 45
 power 0 2
-meleeweaponbonus 1 "Hand-Held Drills"
+meleeweaponbonus 1 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark II"
 
 newmonster "Gold Driller"
@@ -150,7 +150,7 @@ fireres 55
 coldres 55
 shockres 55
 power 0 3
-meleeweaponbonus 2 "Hand-Held Drills"
+meleeweaponbonus 2 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark III"
 
 newmonster "Platinum Driller"
@@ -166,7 +166,7 @@ fireres 65
 coldres 65
 shockres 65
 power 0 4
-meleeweaponbonus 3 "Hand-Held Drills"
+meleeweaponbonus 3 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark IV"
 
 newmonster "Diamond Driller"
@@ -181,5 +181,5 @@ fireres 75
 coldres 75
 shockres 75
 power 0 5
-meleeweaponbonus 5 "Hand-Held Drills"
+meleeweaponbonus 5 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark V"

@@ -170,7 +170,7 @@ dmgtype 3      # pierce
 dmg 2
 flylook 35     # spike=35, shard=34, stone=33, boulder=32, slingstone=2, javelin=1, arrow=0, ballista=7
 flymode 1
-flysound 46    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
+flysound 27    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
 mundane
 
 newweapon "AutoGun HunterV3"
@@ -181,27 +181,40 @@ dmgtype 3      # pierce
 dmg 2
 flylook 35     # spike=35, shard=34, stone=33, boulder=32, slingstone=2, javelin=1, arrow=0, ballista=7
 flymode 1
-flysound 46    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
+flysound 27    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
 mundane
 
 newweapon "AutoGun SlayerV2"
 aoe -02
-range 7
+range 10
 init 3
 dmgtype 3      # pierce
 dmg 2
 flylook 35     # spike=35, shard=34, stone=33, boulder=32, slingstone=2, javelin=1, arrow=0, ballista=7
 flymode 1
-flysound 46    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
+flysound 11    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
 mundane
 
 newweapon "AutoGun SlayerV3"
 aoe -03
-range 7
+range 10
 init 3
 dmgtype 3      # pierce
 dmg 2
 flylook 35     # spike=35, shard=34, stone=33, boulder=32, slingstone=2, javelin=1, arrow=0, ballista=7
 flymode 1
-flysound 46    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
+flysound 11    # blowpipe=46, heavyblow=11, crossbow=13, bow=14, tailsweep=105
 mundane
+
+# Drillll
+
+newweapon "Drill"
+aoe -02
+init 3
+range 1
+dmgtype 1
+dmg 3
+stonekill
+sweep
+sound 96
+

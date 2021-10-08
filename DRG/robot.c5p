@@ -22,6 +22,7 @@ onlyenemy
 dmgtype 10
 shieldneg
 dmg 6
+
 # Mules
 
 newmonster "BET-C"
@@ -114,3 +115,41 @@ noheal
 inanimate
 rangedweaponbonus 0 "AutoGun CompactV2"
 rangedweaponbonus 0 "AutoGun CompactV2"
+
+newmonster "Doretta"
+descr "This bad boy can drill so many tunnels!"
+copyspr "Purple Worm"
+hp 100
+str 15
+mr 12
+mor 99
+armor 6
+pierceres
+slashres
+bluntres
+rank 1
+frontpos
+fireres 75
+coldres 75
+shockres 50
+poisonres 100
+swallowres
+charmres
+huge
+mountain
+snow
+wall
+desert
+swamp
+miscslots
+noheal
+battlefast
+inanimate
+noeyes
+water
+#tunnelmove 3
+siegetunnel 80
+tunnel
+trample 10
+tramplexsize 1
+meleeweapon 27 "Drill"
