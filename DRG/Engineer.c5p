@@ -15,7 +15,7 @@ flymode 1
 
 newmonster "Sentry Gun"
 descr "Pew Pew Pew"
-copyspr "Ballista"
+spr1 "SentryGun.tga"
 armor 2
 rank 1
 hp 20
