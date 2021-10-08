@@ -10,6 +10,24 @@ addstring "BET-C"
 cost 0 5
 free
 
+newritual "Summon Bosco"
+level 1
+rebatelvl 1
+soundfx 31
+summoning
+addstring "Bosco"
+cost 0 5
+free
+
+newritual "Summon M.U.L.E"
+level 1
+rebatelvl 1
+soundfx 31
+summoning
+addstring "M.U.L.E"
+cost 0 5
+free
+
 newritual "Promotion from Management I"
 level 1
 levelup 2

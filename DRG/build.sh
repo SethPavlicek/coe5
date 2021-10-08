@@ -15,5 +15,9 @@ cat \
   > DRG.c5m
 set +x # echo off
 echo "Done joining files."
+set -x # echo on
+cp -f DRG.c5m DRGmod/
+set +x # echo off
+echo "Copied DRG.c5m to DRG mod folder."
 
 # misc, rituals, weapons (universal), glyphids, commanders (already there), class (last)

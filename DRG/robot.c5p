@@ -1,3 +1,13 @@
+# Bosco Weapons
+newweapon "Bosco's Guns"
+aoe -4
+range 5
+dmgtype 3
+dmg 2
+flylook 35
+flymode 1
+flysound 46
+
 # BET-C Weapons
 
 newweapon "BET-C Turret"
@@ -34,6 +44,7 @@ dmg 6
 # Mules
 
 newmonster "BET-C"
+descr "What a chonker."
 spr1 "BET-C.tga"
 hp 50
 str 8
@@ -63,3 +74,60 @@ inanimate
 shardexpl 10
 rangedweaponbonus 0 "BET-C Turret"
 rangedweaponbonus 0 "BET-C Sticky Bomb"
+
+newmonster "M.U.L.E"
+descr "Molly! My most trustiest of mules!"
+spr1 "Molly.tga"
+hp 20
+str 6
+mr 8
+mor 99
+armor 3
+pierceres
+slashres
+bluntres
+rank 1
+frontpos
+fireres 75
+coldres 75
+shockres 25
+poisonres 100
+mountain
+snow
+swallowres
+wall
+charmres
+noeyes
+miscslots
+water
+battlefast
+noheal
+inanimate
+trample 4
+tramplexsize 1
+
+# Bosco
+
+newmonster "Bosco"
+descr "Support fire please!!!"
+spr1 "Bosco.tga"
+hp 10
+str 5
+mr 8
+mor 99
+armor 2
+pierceres
+slashres
+bluntres
+rank 1
+fireres 75
+coldres 75
+shockres 25
+poisonres 100
+float
+swallowres
+charmres
+miscslots
+noheal
+inanimate
+rangedweaponbonus 0 "Bosco's Guns"
