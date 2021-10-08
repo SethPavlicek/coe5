@@ -1,18 +1,5 @@
 # Sentry Gun's Gun =====================================================================================================
 
-newweapon "Sentry Gun Weapon"
-aoe -03
-init 2
-range 10
-dmgtype 3
-dmg 3
-mundane
-nostr
-reload1
-flysound 19
-flylook 34
-flymode 1
-
 newmonster "Sentry Gun"
 descr "Pew Pew Pew"
 spr1 "SentryGun.tga"
@@ -27,7 +14,7 @@ immobile
 stationary
 noslots
 inanimate
-rangedweaponbonus 0 "Sentry Gun Weapon"
+rangedweaponbonus 0 "AutoGun SlayerV3"
 
 # Summon Sentry Gun ====================================================================================================
 
