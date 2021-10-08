@@ -1,23 +1,4 @@
-# Bosco Weapons
-newweapon "Bosco's Guns"
-aoe -4
-range 5
-dmgtype 3
-dmg 2
-flylook 35
-flymode 1
-flysound 46
-
 # BET-C Weapons
-
-newweapon "BET-C Turret"
-aoe -06
-range 6
-dmgtype 3
-dmg 6
-flylook 34
-flymode 1
-
 newweapon "BET-C Sticky Bomb"
 init 1
 flymode 4
@@ -72,7 +53,8 @@ battleslow
 noheal
 inanimate
 shardexpl 10
-rangedweaponbonus 0 "BET-C Turret"
+rangedweaponbonus 4 "AutoGun HunterV3"
+rangedweaponbonus 4 "AutoGun HunterV3"
 rangedweaponbonus 0 "BET-C Sticky Bomb"
 
 newmonster "M.U.L.E"
@@ -130,4 +112,5 @@ charmres
 miscslots
 noheal
 inanimate
-rangedweaponbonus 0 "Bosco's Guns"
+rangedweaponbonus 0 "AutoGun CompactV2"
+rangedweaponbonus 0 "AutoGun CompactV2"
