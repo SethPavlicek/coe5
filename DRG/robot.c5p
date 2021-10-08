@@ -118,7 +118,7 @@ rangedweaponbonus 0 "AutoGun CompactV2"
 
 newmonster "Doretta"
 descr "This bad boy can drill so many tunnels!"
-copyspr "Purple Worm"
+spr1 "Drilldozer.tga"
 hp 100
 str 15
 mr 12
@@ -138,6 +138,7 @@ charmres
 huge
 mountain
 snow
+fast
 wall
 desert
 swamp
