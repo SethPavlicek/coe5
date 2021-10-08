@@ -86,7 +86,7 @@ dmgtype 6
 
 newmonster "Bronze Engineer"
 descr "Infestation problem? Automated turret m8."
-copyspr "Dwarf Sapper"
+spr1 "Engineer.tga"
 armor 2
 rank 0
 rearpos
