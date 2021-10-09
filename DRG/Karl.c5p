@@ -8,11 +8,11 @@ hp 75
 str 15
 mr 15
 mor 50
-armor 7
-fireres 90
-coldres 90
-shockres 90
-poisonres 90
+armor 6
+fireres 75
+coldres 75
+shockres 75
+poisonres 50
 fastheal
 mountain
 snow
@@ -21,6 +21,7 @@ tunnel
 slashres
 pierceres
 bluntres
+unaging
 allitemslots
 gatheranygems
 seegems
@@ -32,11 +33,7 @@ meleeweaponbonus 5 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark V"
 rangedweaponbonus 0 "Cryocannon Mark V"
 rangedweaponbonus 5 "SMG"
-rangedweaponbonus 5 "SMG"
 rangedweaponbonus 5 "Breach Cutter"
-rangedweaponbonus 5 "Breach Cutter"
-rangedweaponbonus 5 "DRG Minigun"
-rangedweaponbonus 5 "DRG Minigun"
 rangedweaponbonus 5 "DRG Minigun"
 rangedweaponbonus 5 "DRG Minigun"
 rangedweaponbonus 11 "DRG AutoCannon"
