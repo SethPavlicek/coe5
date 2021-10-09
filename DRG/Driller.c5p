@@ -83,7 +83,7 @@ flymode 2
 
 # Cryocannon ===========================================================================================================
 
-newweapon "Cryo Cannon"
+newweapon "Cryocannon Mark I"
 aoe 3010
 dmgtype 5
 dmg 10
@@ -92,12 +92,67 @@ an
 shieldneg
 range 4
 nostr
+onlyenemy
+flylook 88
+flymode 2
+
+newweapon "Cryocannon Mark II"
+aoe 3013
+dmgtype 5
+dmg 12
+init 4
+an
+shieldneg
+range 4
+nostr
+onlyenemy
+flylook 88
+flymode 2
+
+newweapon "Cryocannon Mark III"
+aoe 3016
+dmgtype 5
+dmg 14
+init 4
+an
+shieldneg
+range 5
+nostr
+onlyenemy
+flylook 88
+flymode 2
+
+newweapon "Cryocannon Mark IV"
+aoe 3020
+dmgtype 5
+dmg 16
+init 4
+an
+shieldneg
+range 6
+nostr
+onlyenemy
+flylook 88
+flymode 2
+
+newweapon "Cryocannon Mark V"
+aoe 3025
+dmgtype 5
+dmg 20
+init 4
+an
+shieldneg
+range 7
+nostr
+onlyenemy
+flylook 88
+flymode 2
 
 # Driller ==============================================================================================================
 
 newmonster "Bronze Driller"
 descr "I eat rock for breakfast!"
-copyspr "Dwarf Commander"
+spr1 "Driller.tga"
 armor 3
 rank 1
 hp 22

@@ -18,6 +18,10 @@ immobile
 
 newmonster "Garrison Gunner"
 copystats "Bronze Gunner"
+#testing only
+gold 2000
+iron 1000
+trade 500
 stationary
 
 # Class Setup ==========================================================================================================

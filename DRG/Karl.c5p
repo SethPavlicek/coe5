@@ -1,0 +1,46 @@
+# KARL
+
+newmonster "Karl"
+descr "We can't find an image of Karl so here is a barrel."
+spr1 "barrel.tga"
+rank 0
+hp 75
+str 15
+mr 15
+mor 50
+armor 7
+fireres 90
+coldres 90
+shockres 90
+poisonres 90
+fastheal
+mountain
+snow
+battleslow
+tunnel
+slashres
+pierceres
+bluntres
+allitemslots
+gatheranygems
+seegems
+fast
+spiritsight
+power 0 5
+meleeweaponbonus 5 "Drill"
+meleeweaponbonus 5 "Drill"
+rangedweaponbonus 0 "Flamethrower Mark V"
+rangedweaponbonus 0 "Cryocannon Mark V"
+rangedweaponbonus 5 "SMG"
+rangedweaponbonus 5 "SMG"
+rangedweaponbonus 5 "Breach Cutter"
+rangedweaponbonus 5 "Breach Cutter"
+rangedweaponbonus 5 "DRG Minigun"
+rangedweaponbonus 5 "DRG Minigun"
+rangedweaponbonus 5 "DRG Minigun"
+rangedweaponbonus 5 "DRG Minigun"
+rangedweaponbonus 11 "DRG AutoCannon"
+rangedweaponbonus 12 "DRG Revolver"
+rangedweaponbonus 5 "Sawed Off"
+rangedweaponbonus 16 "M1000 Classic"
+

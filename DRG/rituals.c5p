@@ -7,8 +7,8 @@ level 1
 soundfx 31
 summoning
 addstring "1d2+1*Bosco"
-cost 1 30
-cost 15 30
+cost 1 10
+cost 15 5
 free
 
 newritual "Build M.U.L.Es"
@@ -16,8 +16,8 @@ level 2
 soundfx 31
 summoning
 addstring "1d3+1*M.U.L.E"
-cost 1 40
-cost 15 60
+cost 1 20
+cost 15 10
 free
 
 newritual "Build BET-C"
@@ -26,7 +26,7 @@ soundfx 31
 summoning
 addstring "BET-C"
 cost 1 50
-cost 15 75
+cost 15 30
 free
 
 newritual "Build DrillDozer"
@@ -42,14 +42,44 @@ newritual "Manufacture Mining Robots"
 level 5
 soundfx 31
 summoning
-addstring "c*BET-C"
-addstring "1d3*BET-C"
-addstring "5d2*M.U.L.E."
-addstring "5d2*Bosco"
-addstring "1d2*DrillDozer"
+addstring "c*Karl & 1d3+1*BET-C & 5d2*M.U.L.E & 5d2*Bosco & 1d2*DrillDozer"
 cost 1 250
 cost 15 150
 free
+
+newritual "Repair Robots (Promotion)"
+level 1
+soundfx 57
+cost 0 5
+free
+promotion -1
+addstring "Doretta"
+addstring "Doretta"
+addstring "BET-C"
+addstring "BET-C"
+
+newritual "Repair Robots (Transform 1)"
+level 1
+soundfx 57
+cost 0 5
+free
+transformtarg 1
+addstring "Doretta"
+addstring "Doretta"
+addstring "BET-C"
+addstring "BET-C"
+
+newritual "Repair Robots (Transform 2)"
+level 1
+soundfx 57
+cost 0 5
+free
+transformtarg 2
+addstring "Doretta"
+addstring "Doretta"
+addstring "BET-C"
+addstring "BET-C"
+
 
 newritual "Promotion from Management I"
 level 1

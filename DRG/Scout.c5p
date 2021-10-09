@@ -30,7 +30,7 @@ shieldneg
 # Scout ================================================================================================================
 newmonster "Bronze Scout"
 descr "Yeah, I got a grappling hook. What are you gonna do about it?"
-copyspr "Dwarf Sapper"
+spr1 "Scout.tga"
 armor 1
 rank -1
 rearpos

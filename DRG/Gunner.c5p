@@ -90,7 +90,7 @@ an
 #Gunner Units Ranks 1-6
 newmonster "Bronze Gunner"
 descr "100lb guns"
-copyspr "Dwarf Arbalest"
+spr1 "Gunner.tga"
 slashres
 armor 2
 shield 1

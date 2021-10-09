@@ -1,0 +1,86 @@
+
+newritual     "Build Hills"
+#ritpow              	30 # Councilor
+level               	1
+free
+cost              		0 25 # 25 Gold
+cost					1 50  # 50 iron
+apcost              	5
+planereq				0
+terr                	-71 # Flat Terrain
+aiwhere					73
+alterloc          		73 # Hills
+soundfx             	57
+descr "Tell the driller to stop eating the rocks and put them into a hill."
+
+newritual     "Build Coal Mine"
+#ritpow              	30 # Councilor
+level               	1
+free
+cost              		0 25 # 25 Gold and 5 iron
+cost					1 5
+apcost              	1
+terr                	73 # Hills
+aiwhere					73
+alterloc            	105 # Coal Mine
+soundfx             	57
+descr "Smells like nitra."
+
+newritual     "Build Iron Mine"
+#ritpow              	30 # Councilor
+level               	2
+free
+cost              		0 25 # 25 Gold and 15 iron
+cost              		1 15
+apcost              	2
+terr                	12 # Mountain
+aiwhere					12
+alterloc            	14 # Iron Mine
+nonearby1req 			14
+ainotclose1				14
+soundfx             	57
+descr "Precious minerals will be ours! Must be 1 square from nearest iron mine."
+
+newritual     "Upgrade Iron Mine"
+#ritpow              	30 # Councilor
+level               	2
+free
+cost              		0 75 # 75 Gold and 50 iron
+cost              		1 50
+apcost              	3
+terr                	14 # Iron Mine
+aiwhere					14
+alterloc            	15 # Silver Mine
+nonearby3req 			15
+ainotclose3				15
+soundfx             	57
+descr "."
+
+newritual     "Pan for Gold"
+#ritpow              	30 # Councilor
+level               	3
+free
+cost              		0 50 # 50 Gold and 10 iron
+cost              		1 10
+apcost              	2
+terr                	12 # Mountain
+aiwhere					12
+alterloc            	33 # Gold Stream
+nonearby3req			33
+ainotclose3				33
+soundfx             	57
+descr "The Councilor can taste traces of alluvial gold in a mountain stream's mud and calls for prospectors to start panning at this location. Must be 3 squares from nearest gold stream."
+
+newritual     "Upgrade Silver Mine"
+#ritpow              	30 # Councilor
+level               	3
+free
+cost              		0 150 # 150 Gold and 50 iron
+cost              		1 50
+apcost              	4
+terr                	15 # Silver Mine
+aiwhere					15
+alterloc            	34 # Gold Mine
+nonearby5req        	34
+soundfx             	57
+descr "Gorl, konk, galaz, and other types of gold - the most noble of metals - have been found deep within the mountain and the Councilor joyously orders the existing mines expanded even further despite the expense. Must be 5 squares from nearest gold mine."

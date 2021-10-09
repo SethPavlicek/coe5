@@ -4,6 +4,7 @@ set -x # echo on
 cat \
     misc.c5p\
     rituals.c5p\
+    Mining.c5p\
     CommonWeapons.c5p\
     Glyphids.c5p\
     robot.c5p\
@@ -11,6 +12,7 @@ cat \
     Engineer.c5p \
     Driller.c5p \
     Scout.c5p \
+    Karl.c5p\
     class.c5p\
   > DRG.c5m
 set +x # echo off
