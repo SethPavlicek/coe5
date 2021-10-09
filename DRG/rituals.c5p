@@ -42,12 +42,31 @@ newritual "Manufacture Mining Robots"
 level 5
 soundfx 31
 summoning
-addstring "c*Karl & 1d3+1*BET-C & 5d2*M.U.L.E & 5d2*Bosco & 1d2*DrillDozer"
+addstring "1d3+1*BET-C & 5d2*M.U.L.E & 5d2*Bosco & 1d2*DrillDozer"
 cost 1 250
 cost 15 150
 free
 
-newritual "Repair Robots (Promotion)"
+newritual "Scan for Karl's Drop Pod"
+level 5
+soundfx 31
+farsummon
+summoning
+addstring "Karl's Drop Pod"
+cost 1 250
+cost 15 150
+free
+
+newritual "Open Karl's Drop Pod"
+level 5
+soundfx 57
+cost 1 250
+cost 15 150
+promotion -1
+addstring "Karl's Drop Pod"
+addstring "c*Karl"
+
+newritual "REPAIR THE DRILLDOZER!!!"
 level 1
 soundfx 57
 cost 0 5
@@ -55,31 +74,7 @@ free
 promotion -1
 addstring "Doretta"
 addstring "Doretta"
-addstring "BET-C"
-addstring "BET-C"
-
-newritual "Repair Robots (Transform 1)"
-level 1
-soundfx 57
-cost 0 5
-free
-transformtarg 1
-addstring "Doretta"
-addstring "Doretta"
-addstring "BET-C"
-addstring "BET-C"
-
-newritual "Repair Robots (Transform 2)"
-level 1
-soundfx 57
-cost 0 5
-free
-transformtarg 2
-addstring "Doretta"
-addstring "Doretta"
-addstring "BET-C"
-addstring "BET-C"
-
+descr "This will promote one Doretta, which will effectively heal it. It will promote fully healed Dorettas."
 
 newritual "Promotion from Management I"
 level 1

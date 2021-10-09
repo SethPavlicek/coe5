@@ -41,3 +41,22 @@ rangedweaponbonus 12 "DRG Revolver"
 rangedweaponbonus 5 "Sawed Off"
 rangedweaponbonus 16 "M1000 Classic"
 
+newmonster "Karl's Drop Pod"
+descr "Open for a surprise."
+spr1 "DropPod.tga"
+hp 250
+str 8
+mr 15
+mor 99
+armor 6
+fireres 50
+coldres 50
+shockres 50
+pierceres
+slashres
+stationary
+tunnelmove 40
+huge
+noheal
+inanimate
+meleeweapon 37 "Drill"

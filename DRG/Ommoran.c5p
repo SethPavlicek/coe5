@@ -1,0 +1,74 @@
+# Summon Rock
+
+newweapon "Flying Rock Explosion"
+aoe 25
+init 7
+dmgtype 3
+dmg 10
+look 47
+nextalways
+newweapon "Self Destruct"
+dmgtype 7
+init 7
+dmg 999
+trgrank 0
+
+
+newmonster "Flying Rock"
+descr "The Ommoran is throwing rocks at Doretta!!"
+spr1 "FlyingRock.tga"
+hp 15
+str 8
+mr 6
+mor 99
+armor 2
+fireres 50
+coldres 50
+shockres 50
+pierceres
+slashres
+fast
+flying
+float
+stonebeing
+noheal
+inanimate
+meleeweapon 0 "Flying Rock Explosion"
+
+newweapon "Summon Flying Rock"
+trgrank 7
+dmg 1
+dmgtype 18
+range 1
+init 8
+
+newweapon "Ommoran Beamer"
+aoe 1010
+range 10
+init 7
+dmgtype 7
+dmg 6
+flymode 5
+flylook 80
+sound 24
+
+newmonster "Ommoran"
+descr "The Ommoran Heartstone is inside."
+spr1 "Ommoran.tga"
+hp 250
+str 8
+mr 15
+mor 99
+armor 6
+fireres 50
+coldres 50
+shockres 50
+pierceres
+slashres
+stationary
+immobile
+huge
+rangedweaponbonus 2 "Summon Flying Rock"
+rangedweaponbonus 0 "Ommoran Beamer"
+rangedweaponbonus 0 "Ommoran Beamer"
+rangedweaponbonus 0 "Ommoran Beamer"
