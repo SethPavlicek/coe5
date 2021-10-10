@@ -64,7 +64,7 @@ newritual "Manufacture Mining Robots"
 level 5
 soundfx 31
 summoning
-addstring "1d3+1*BET-C & 5d2*M.U.L.E & 5d2*Bosco & 1d2*DrillDozer"
+addstring "c*Doretta & 1d3+1*BET-C & 5d2*M.U.L.E & 5d2*Bosco"
 cost 1 250
 cost 15 150
 free
@@ -91,14 +91,14 @@ addstring "Karl"
 free
 
 newritual "REPAIR THE DRILLDOZER!!!"
-level 1
+level 4
 soundfx 57
 cost 0 5
 free
 promotion -1
 addstring "Doretta"
 addstring "Doretta"
-descr "This will promote one Doretta, which will effectively heal it. It will promote fully healed Dorettas. You should move the injured Doretta to an empty square to heal it."
+descr "This will promote one Doretta, which will effectively heal it. Be sure to have only the damaged Dorretta in the space where you use this ritual."
 
 newritual "Promotion from Management I"
 level 1
@@ -136,38 +136,56 @@ soundfx 29
 cost 15 180
 free
 
-newritual "Switch to AutoCannon V"
-level 5
+newritual "Switch to Siege Gunner"
+level 1
 soundfx 57
-cost 0 5
+cost 1 5
 free
 promotion -1
-addstring "Diamond Gunner"
-addstring "Diamond Gunner B"
+addstring "Bronze Gunner"
+addstring "Bronze Siege Gunner"
 
-newritual "Switch to AutoCannon IV"
-level 4
+newritual "Switch to Normal Gunner"
+level 1
 soundfx 57
-cost 0 5
+cost 1 -5
 free
 promotion -1
-addstring "Platinum Gunner"
-addstring "Platinum Gunner B"
+addstring "Bronze Siege Gunner"
+addstring "Bronze Gunner"
 
-newritual "Switch to Minigun V"
-level 5
-soundfx 57
-cost 0 5
-free
-promotion -1
-addstring "Diamond Gunner B"
-addstring "Diamond Gunner"
-
-newritual "Switch to Minigun IV"
-level 4
-soundfx 57
-cost 0 5
-free
-promotion -1
-addstring "Platinum Gunner B"
-addstring "Platinum Gunner"
+#newritual "Switch to AutoCannon V"
+#level 5
+#soundfx 57
+#cost 0 5
+#free
+#promotion -1
+#addstring "Diamond Gunner"
+#addstring "Diamond Siege Gunner"
+#
+#newritual "Switch to AutoCannon IV"
+#level 4
+#soundfx 57
+#cost 0 5
+#free
+#promotion -1
+#addstring "Platinum Gunner"
+#addstring "Platinum Siege Gunner"
+#
+#newritual "Switch to Minigun V"
+#level 5
+#soundfx 57
+#cost 0 5
+#free
+#promotion -1
+#addstring "Diamond Siege Gunner"
+#addstring "Diamond Gunner"
+#
+#newritual "Switch to Minigun IV"
+#level 4
+#soundfx 57
+#cost 0 5
+#free
+#promotion -1
+#addstring "Platinum Siege Gunner"
+#addstring "Platinum Gunner"

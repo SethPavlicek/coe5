@@ -71,10 +71,10 @@ dmgtype 7
 dmg 10
 init 7
 #flymode 5
-#flylook 80
+flylook 80 # yellow beam
 #sound 24
 flymode 5
-flylook 124
+#flylook 124 # purple beam
 sound 24
 
 newmonster "Ommoran"
