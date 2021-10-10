@@ -2,6 +2,15 @@
 
 newritpow # rituals
 
+newritual "Lloyd's Tipping Jar"
+level 1
+soundfx 31
+summoning
+addstring "Tipping Jar"
+cost 0 20
+cost 15 5
+free
+
 newritual "Charm Glyphid Swarm"
 level 1
 soundfx 31

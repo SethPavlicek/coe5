@@ -60,7 +60,7 @@ rangedweaponbonus 0 "BET-C Sticky Bomb"
 
 newmonster "Mini M.U.L.E"
 descr "Molly! My mini mule!"
-spr1 "Molly.tga"
+spr1 "MiniMule.tga"
 hp 10
 str 6
 mr 6
@@ -148,7 +148,7 @@ rangedweaponbonus 0 "AutoGun CompactV2"
 
 newmonster "Lloyd"
 descr "I am a sucker for the wee drawings in the foam."
-spr1 "Bosco.tga"
+spr1 "Lloyd.tga"
 hp 10
 str 5
 mr 8
@@ -243,3 +243,33 @@ trample 4
 tramplexsize 1
 rangedweaponbonus 0 "AutoGun HunterV2"
 rangedweaponbonus 0 "AutoGun HunterV2"
+
+newmonster "Tipping Jar"
+name "Tipping Jar"
+descr "Dwarves gotta tip sometimes. Maybe they'll get something out of it? (NOTE: This grants 1 trade)"
+spr1 "TippingRobot.tga"
+hp 5
+str 6
+mr 16
+mor 99
+armor 1
+pierceres
+slashres
+bluntres
+rank -1
+rearpos
+fireres 100
+coldres 100
+shockres 100
+poisonres 100
+acidres 100
+swallowres
+charmres
+noeyes
+noslots
+water
+inanimate
+trade 1
+unimportant
+stationary
+immobile
