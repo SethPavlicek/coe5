@@ -208,7 +208,40 @@ rangedweapon50 3 "DRG Minigun"
 rangedweapon50 4 "DRG Minigun"
 rangedweapon 12 "DRG Revolver"
 
-newmonster "Platinum Gunner B"
+newmonster "Bronze Siege Gunner"
+copystats "Bronze Gunner"
+clearweapons
+siegeweapon 3 "DRG AutoCannon S"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0"Power Pickaxe"
+rangedweapon 0 "Incendiary Grenade"
+rangedweapon50 3 "DRG AutoCannon S"
+rangedweaponbonus 3 "DRG AutoCannon"
+rangedweapon 0 "DRG Revolver"
+
+newmonster "Silver Siege Gunner"
+copystats "Silver Gunner"
+clearweapons
+siegeweapon 5 "DRG AutoCannon S"
+meleeweapon50s 4 "DRG Pickaxe"
+meleeweaponbonus 1 "Power Pickaxe"
+rangedweapon 0 "Incendiary Grenade"
+rangedweapon50 5 "DRG AutoCannon S"
+rangedweaponbonus 5 "DRG AutoCannon"
+rangedweapon 3 "DRG Revolver"
+
+newmonster "Silver Siege Gunner"
+copystats "Silver Gunner"
+clearweapons
+siegeweapon 7 "DRG AutoCannon S"
+meleeweapon50s 5 "DRG Pickaxe"
+meleeweaponbonus 2 "Power Pickaxe"
+rangedweapon 0 "Incendiary Grenade"
+rangedweapon50 7 "DRG AutoCannon S"
+rangedweaponbonus 7 "DRG AutoCannon"
+rangedweapon 6 "DRG Revolver"
+
+newmonster "Platinum Siege Gunner"
 copystats "Platinum Gunner"
 clearweapons
 siegeweapon 9 "DRG AutoCannon S"
@@ -219,7 +252,7 @@ rangedweapon50 9 "DRG AutoCannon S"
 rangedweaponbonus 9 "DRG AutoCannon"
 rangedweapon 9 "DRG Revolver"
 
-newmonster "Diamond Gunner B"
+newmonster "Diamond Siege Gunner"
 copystats "Diamond Gunner"
 clearweapons
 siegeweapon 11 "DRG AutoCannon S"
