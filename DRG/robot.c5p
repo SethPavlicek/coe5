@@ -154,3 +154,36 @@ tunnel
 trample 10
 tramplexsize 1
 meleeweapon 27 "Drill"
+
+newmonster "Mining Crew"
+descr "How does Bosco order Molly around?"
+spr1 "MiningCrew.tga"
+hp 30
+str 6
+mr 8
+mor 99
+armor 3
+pierceres
+slashres
+bluntres
+rank 0
+fireres 75
+coldres 75
+shockres 25
+poisonres 100
+swallowres
+charmres
+noeyes
+miscslots
+water
+battlefast
+noheal
+inanimate
+stationary
+limitgold 1
+limitiron 1
+trade 1
+trample 4
+tramplexsize 1
+rangedweaponbonus 0 "AutoGun CompactV2"
+rangedweaponbonus 0 "AutoGun CompactV2"

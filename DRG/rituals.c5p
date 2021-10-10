@@ -20,6 +20,15 @@ cost 1 20
 cost 15 10
 free
 
+newritual "Build Mining Crew"
+level 2
+soundfx 31
+summoning
+addstring "Mining Crew"
+cost 1 20
+cost 15 10
+free
+
 newritual "Build BET-C"
 level 3
 soundfx 31
