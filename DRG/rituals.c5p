@@ -2,22 +2,49 @@
 
 newritpow # rituals
 
-newritual "Build APDs"
+newritual "Charm Glyphid Swarm"
 level 1
 soundfx 31
 summoning
-addstring "1d2+1*Bosco"
-cost 1 10
+addstring "5d4*Glyphid Swarmer"
+cost 0 20
 cost 15 5
 free
 
-newritual "Build M.U.L.Es"
+newritual "Charm Glyphid Slashers"
 level 2
 soundfx 31
 summoning
-addstring "1d3+1*M.U.L.E"
-cost 1 20
+addstring "3d4*Glyphid Slasher"
+cost 0 60
+cost 15 15
+free
+
+newritual "Charm Glyphid Guards"
+level 3
+soundfx 31
+summoning
+addstring "3d4*Glyphid Guard"
+cost 0 90
+cost 15 30
+free
+
+newritual "Build APDs"
+level 2
+soundfx 31
+summoning
+addstring "c*Lloyd & 1d3+1*Bosco"
+cost 1 30
 cost 15 10
+free
+
+newritual "Build M.U.L.Es"
+level 1
+soundfx 31
+summoning
+addstring "M.U.L.E"
+cost 1 15
+cost 15 5
 free
 
 newritual "Build Mining Crew"
@@ -25,8 +52,8 @@ level 2
 soundfx 31
 summoning
 addstring "Mining Crew"
-cost 1 20
-cost 15 10
+cost 1 24
+cost 15 8
 free
 
 newritual "Build BET-C"
@@ -34,8 +61,8 @@ level 3
 soundfx 31
 summoning
 addstring "BET-C"
-cost 1 50
-cost 15 30
+cost 1 60
+cost 15 20
 free
 
 newritual "Scan for Ommoran Heartstone"
@@ -48,7 +75,7 @@ farsummon
 addstring "Ommoran"
 descr "This will summon an Ommoran somewhere on the map. It will drop 500 gold and 250 iron upon defeat. You cannot control it."
 cost 0 100
-cost 1 25
+cost 1 15
 free
 
 
@@ -57,8 +84,8 @@ level 4
 soundfx 31
 summoning
 addstring "c*Doretta"
-cost 1 75
-cost 15 90
+cost 1 120
+cost 15 40
 free
 
 newritual "Manufacture Mining Robots"
@@ -66,8 +93,8 @@ level 5
 soundfx 31
 summoning
 addstring "c*Doretta & 1d3+1*BET-C & 5d2*M.U.L.E & 5d2*Bosco"
-cost 1 250
-cost 15 150
+cost 1 360
+cost 15 60
 free
 
 newritual "Scan for Karl's Drop Pod"
@@ -105,6 +132,7 @@ newritual "Promotion from Management I"
 level 1
 levelup 2
 newrit 2
+forgetcurrit
 rebatelvl 2
 soundfx 29
 cost 15 30
@@ -114,6 +142,7 @@ newritual "Promotion from Management II"
 level 2
 levelup 3
 newrit 3
+forgetcurrit
 rebatelvl 3
 soundfx 29
 cost 15 60
@@ -123,6 +152,7 @@ newritual "Promotion from Management III"
 level 3
 levelup 4
 newrit 4
+forgetcurrit
 rebatelvl 4
 soundfx 29
 cost 15 120
@@ -132,6 +162,7 @@ newritual "Promotion from Management IV"
 level 4
 levelup 5
 newrit 5
+forgetcurrit
 rebatelvl 5
 soundfx 29
 cost 15 180

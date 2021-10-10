@@ -222,6 +222,7 @@ coldres 65
 shockres 65
 power 0 4
 meleeweaponbonus 3 "Drill"
+rangedweapon 0 "Frag Grenade"
 rangedweaponbonus 0 "Flamethrower Mark IV"
 
 newmonster "Diamond Driller"
@@ -237,4 +238,5 @@ coldres 75
 shockres 75
 power 0 5
 meleeweaponbonus 5 "Drill"
+rangedweapon 0 "Frag Grenade"
 rangedweaponbonus 0 "Flamethrower Mark V"

@@ -57,7 +57,7 @@ mastery 1
 assassinweapon -8 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon50 0 "Sawed Off"
+rangedweaponbonus 0 "Sawed Off"
 rangedweapon 0 "M1000 Classic"
 
 newmonster "Silver Scout"
@@ -66,7 +66,6 @@ clearweapons
 hp 19
 mr 6
 mor 8
-fastheal
 fireres 20
 coldres 20
 shockres 20
@@ -74,7 +73,7 @@ power 0 2
 assassinweapon -4 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon50 1 "Sawed Off"
+rangedweaponbonus 1 "Sawed Off"
 rangedweapon 4 "M1000 Classic"
 
 newmonster "Gold Scout"
@@ -96,10 +95,8 @@ assassinweapon 0 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon50 2 "Sawed Off"
-rangedweaponbonus 1 "Sawed Off"
+rangedweaponbonus 2 "Sawed Off"
 rangedweapon 8 "M1000 Classic"
-rangedweapon50x 4 "M1000 Classic"
 
 
 newmonster "Platinum Scout"
@@ -120,10 +117,9 @@ assassinweapon 4 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon50 3 "Sawed Off"
+rangedweaponbonus 3 "Sawed Off"
 rangedweaponbonus 1 "Sawed Off"
 rangedweapon 12 "M1000 Classic"
-rangedweapon50x 6 "M1000 Classic"
 
 
 newmonster "Diamond Scout"
@@ -142,8 +138,8 @@ assassinweapon 8 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
-rangedweapon50 4 "Sawed Off"
+rangedweaponbonus 4 "Sawed Off"
 rangedweaponbonus 2 "Sawed Off"
 rangedweapon 16 "M1000 Classic"
-rangedweapon50x 8 "M1000 Classic"
+rangedweapon 8 "M1000 Classic"
 

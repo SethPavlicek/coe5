@@ -31,11 +31,14 @@ classdescr "ROCK AND STONE"
 classminecit 1
 clearstartunits
 clearrec
+nostdtroops
 # Steeve the Glyphid Grunt
-addunitrec "Glyphid Swarmer" 100 15 40 0 0
-addunitrec "Glyphid Grunt" 100 5 50 0 0
-addunitrec "Glyphid Slasher" 100 5 50 0 5
-addunitrec "Glyphid Guard" 100 5 60 0 5
+#addunitrec "Glyphid Swarmer" 100 15 40 0 0
+#addunitrec "Glyphid Grunt" 100 5 50 0 0
+#addunitrec "Glyphid Slasher" 100 5 50 0 5
+#addunitrec "Glyphid Guard" 100 5 60 0 5
+addunitrec "Bosco" 100 4 50 0 4
+addunitrec "Mini M.U.L.E" 100 3 50 0 6
 addcomrec "Bronze Gunner" 10 50 0 10
 addcomrec "Bronze Driller" 10 60 0 10
 addcomrec "Bronze Engineer" 10 60 0 10

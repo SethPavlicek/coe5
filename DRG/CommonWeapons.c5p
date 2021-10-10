@@ -117,7 +117,7 @@ mind # does not affect mindless
 
 newweapon "DRG Pickaxe"
 aoe 0
-init 5
+init 7
 range 1
 dmgtype 3
 dmg 7

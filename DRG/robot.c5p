@@ -37,9 +37,9 @@ pierceres
 slashres
 bluntres
 rank 1
-fireres 75
-coldres 75
-shockres 25
+fireres 50
+coldres 50
+#shockres 25
 poisonres 100
 mountain
 snow
@@ -58,22 +58,22 @@ rangedweaponbonus 4 "AutoGun HunterV3"
 rangedweaponbonus 4 "AutoGun HunterV3"
 rangedweaponbonus 0 "BET-C Sticky Bomb"
 
-newmonster "M.U.L.E"
-descr "Molly! My most trustiest of mules!"
+newmonster "Mini M.U.L.E"
+descr "Molly! My mini mule!"
 spr1 "Molly.tga"
-hp 20
+hp 10
 str 6
-mr 8
+mr 6
 mor 99
-armor 3
+armor 1
 pierceres
 slashres
 bluntres
 rank 1
 frontpos
-fireres 75
-coldres 75
-shockres 25
+fireres 50
+coldres 50
+#shockres 25
 poisonres 100
 mountain
 snow
@@ -86,13 +86,68 @@ water
 battlefast
 noheal
 inanimate
-trample 4
+trample 3
+tramplexsize 1
+
+newmonster "M.U.L.E"
+descr "Molly! My most trustiest of mules!"
+spr1 "Molly.tga"
+hp 20
+str 6
+mr 6
+mor 99
+armor 3
+pierceres
+slashres
+bluntres
+rank 1
+frontpos
+fireres 50
+coldres 50
+#shockres 25
+poisonres 100
+mountain
+snow
+swallowres
+wall
+charmres
+noeyes
+miscslots
+water
+battlefast
+noheal
+inanimate
+trample 5
 tramplexsize 1
 
 # Bosco
 
 newmonster "Bosco"
 descr "Support fire please!!!"
+spr1 "Bosco.tga"
+hp 6
+str 5
+mr 6
+mor 99
+armor 1
+pierceres
+slashres
+bluntres
+rank 1
+fireres 50
+coldres 50
+#shockres 25
+poisonres 100
+float
+swallowres
+charmres
+miscslots
+noheal
+inanimate
+rangedweaponbonus 0 "AutoGun CompactV2"
+
+newmonster "Lloyd"
+descr "I am a sucker for the wee drawings in the foam."
 spr1 "Bosco.tga"
 hp 10
 str 5
@@ -103,9 +158,9 @@ pierceres
 slashres
 bluntres
 rank 1
-fireres 75
-coldres 75
-shockres 25
+fireres 50
+coldres 50
+#shockres 25
 poisonres 100
 float
 swallowres
@@ -113,8 +168,8 @@ charmres
 miscslots
 noheal
 inanimate
-rangedweaponbonus 0 "AutoGun CompactV2"
-rangedweaponbonus 0 "AutoGun CompactV2"
+rangedweaponbonus 0 "AutoGun HunterV2"
+rangedweaponbonus 0 "AutoGun HunterV2"
 
 newmonster "Doretta"
 descr "This bad boy can drill so many tunnels!"
@@ -129,8 +184,8 @@ slashres
 bluntres
 rank 1
 frontpos
-fireres 75
-coldres 75
+fireres 50
+coldres 50
 shockres 50
 poisonres 100
 swallowres
@@ -167,9 +222,10 @@ pierceres
 slashres
 bluntres
 rank 0
-fireres 75
-coldres 75
-shockres 25
+rearpos
+fireres 50
+coldres 50
+#shockres 25
 poisonres 100
 swallowres
 charmres
@@ -182,8 +238,8 @@ inanimate
 stationary
 limitgold 1
 limitiron 1
-trade 1
+#trade 1
 trample 4
 tramplexsize 1
-rangedweaponbonus 0 "AutoGun CompactV2"
-rangedweaponbonus 0 "AutoGun CompactV2"
+rangedweaponbonus 0 "AutoGun HunterV2"
+rangedweaponbonus 0 "AutoGun HunterV2"
