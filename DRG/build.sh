@@ -13,6 +13,7 @@ cat \
     Driller.c5p \
     Scout.c5p \
     Karl.c5p\
+    Ommoran.c5p\
     class.c5p\
   > DRG.c5m
 set +x # echo off

@@ -41,6 +41,7 @@ addcomrec "Bronze Gunner" 25 50 0 15
 addcomrec "Bronze Driller" 25 60 0 10
 addcomrec "Bronze Engineer" 25 60 0 10
 addcomrec "Bronze Scout" 25 75 0 5
+addcomrec "Ommoran" 100 5 0 0
 setmaincom "Bronze Scout"
 addstartcom "Bronze Gunner"
 addstartcom "Bronze Engineer"

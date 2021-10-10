@@ -30,14 +30,14 @@ oneshot
 
 newweapon "Breach Cutter"
 aoe 1015
-onlyenemy
+range 10
 dmgtype 7
 dmg 10
 init 3
 an
 shieldneg
 reload2
-range 10
+onlyenemy
 flymode 5
 flylook 124
 sound 24

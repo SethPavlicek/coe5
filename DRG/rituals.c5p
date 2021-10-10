@@ -29,6 +29,19 @@ cost 1 50
 cost 15 30
 free
 
+newritual "Scan for Ommoran Heartstone"
+level 3
+soundfx 31
+randnewloc -5
+scryloc 1
+setplayer 24
+farsummon
+addstring "Ommoran"
+descr "This will summon an Ommoran somewhere on the map. It will drop 500 gold and 250 iron upon defeat. You cannot control it."
+cost 0 5
+free
+
+
 newritual "Build DrillDozer"
 level 4
 soundfx 31
@@ -50,8 +63,9 @@ free
 newritual "Scan for Karl's Drop Pod"
 level 5
 soundfx 31
+randnewloc -5
+scryloc 1
 farsummon
-summoning
 addstring "Karl's Drop Pod"
 cost 1 250
 cost 15 150
@@ -64,7 +78,8 @@ cost 1 250
 cost 15 150
 promotion -1
 addstring "Karl's Drop Pod"
-addstring "c*Karl"
+addstring "Karl"
+free
 
 newritual "REPAIR THE DRILLDOZER!!!"
 level 1
@@ -74,7 +89,7 @@ free
 promotion -1
 addstring "Doretta"
 addstring "Doretta"
-descr "This will promote one Doretta, which will effectively heal it. It will promote fully healed Dorettas."
+descr "This will promote one Doretta, which will effectively heal it. It will promote fully healed Dorettas. You should move the injured Doretta to an empty square to heal it."
 
 newritual "Promotion from Management I"
 level 1
