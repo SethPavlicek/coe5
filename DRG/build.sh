@@ -15,7 +15,9 @@ cat \
     Karl.c5p\
     Ommoran.c5p\
     class.c5p\
-  > DRG.c5m
+  > DRG.c5mCRL
+dos2unix -n DRG.c5mCRL DRG.c5m
+rm DRG.c5mCRL
 set +x # echo off
 echo "Done joining files."
 set -x # echo on
