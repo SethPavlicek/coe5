@@ -99,8 +99,8 @@ bluntres
 #stationary
 immobile
 huge
-#goldcarrier 500
-#ironcarrier 250
+goldcarrier 500
+ironcarrier 250
 prebatweapon 3 "Summon Flying Rock"
 rangedweaponbonus 1 "Summon Flying Rock"
 #rangedweapon 2 "Summon Flying Rock"

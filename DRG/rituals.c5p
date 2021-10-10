@@ -47,7 +47,8 @@ setplayer 24
 farsummon
 addstring "Ommoran"
 descr "This will summon an Ommoran somewhere on the map. It will drop 500 gold and 250 iron upon defeat. You cannot control it."
-cost 0 5
+cost 0 100
+cost 1 25
 free
 
 
@@ -98,7 +99,7 @@ free
 promotion -1
 addstring "Doretta"
 addstring "Doretta"
-descr "This will promote one Doretta, which will effectively heal it. Be sure to have only the damaged Dorretta in the space where you use this ritual."
+descr "This will promote one Doretta, which will effectively heal it. Be sure to have only the damaged Doretta in the space where you use this ritual."
 
 newritual "Promotion from Management I"
 level 1
