@@ -230,8 +230,8 @@ rangedweapon50 5 "DRG AutoCannon S"
 rangedweaponbonus 5 "DRG AutoCannon"
 rangedweapon 3 "DRG Revolver"
 
-newmonster "Silver Siege Gunner"
-copystats "Silver Gunner"
+newmonster "Gold Siege Gunner"
+copystats "Gold Gunner"
 clearweapons
 siegeweapon 7 "DRG AutoCannon S"
 meleeweapon50s 5 "DRG Pickaxe"
