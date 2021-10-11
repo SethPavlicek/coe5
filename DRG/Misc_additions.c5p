@@ -1,0 +1,2 @@
+# This file is for making new additions that won't break existing save games.
+# NOTE: To use this correctly always add new elements to the end of this file. It is included last in the build script (except for class).

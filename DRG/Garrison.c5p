@@ -1,0 +1,24 @@
+# Garrison/Income ======================================================================================================
+
+newmonster "DRG MoneyBags"
+name "DRG MoneyBags"
+descr "Dwarves need money right?"
+copyspr "Hoburg Defender"
+hp 100
+mr 12
+str 12
+armor 12
+mor 99
+rank -1
+charmres
+gathergems
+gold 2000
+iron 1000
+trade 500
+stationary
+immobile
+
+newmonster "Garrison Bosco"
+copystats "Bosco"
+rank 0
+stationary

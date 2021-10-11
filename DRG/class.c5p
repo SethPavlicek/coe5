@@ -1,28 +1,3 @@
-# Garrison/Income ======================================================================================================
-
-newmonster "DRG MoneyBags"
-name "DRG MoneyBags"
-descr "Dwarves need money right?"
-copyspr "Hoburg Defender"
-hp 100
-mr 12
-str 12
-armor 12
-mor 99
-rank -1
-charmres
-gathergems
-gold 2000
-iron 1000
-trade 500
-stationary
-immobile
-
-newmonster "Garrison Bosco"
-copystats "Bosco"
-rank 0
-stationary
-
 # Class Setup ==========================================================================================================
 
 newclass
@@ -37,6 +12,7 @@ nostdtroops
 #addunitrec "Glyphid Grunt" 100 5 50 0 0
 #addunitrec "Glyphid Slasher" 100 5 50 0 5
 #addunitrec "Glyphid Guard" 100 5 60 0 5
+addunitrec "Barrel" 100 8 40 0 0
 addunitrec "Bosco" 100 4 50 0 4
 addunitrec "Mini M.U.L.E" 100 3 50 0 6
 addcomrec "Bronze Gunner" 10 50 0 10

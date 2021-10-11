@@ -19,7 +19,7 @@ newritual "Charm Glyphid Swarm"
 level 1
 soundfx 31
 summoning
-addstring "5d4*Glyphid Swarmer"
+addstring "5d6*Glyphid Swarmer"
 cost 0 20
 cost 15 5
 free
@@ -28,7 +28,7 @@ newritual "Charm Glyphid Slashers"
 level 2
 soundfx 31
 summoning
-addstring "3d4*Glyphid Slasher"
+addstring "4d4*Glyphid Slasher"
 cost 0 60
 cost 15 10
 free
@@ -37,7 +37,7 @@ newritual "Charm Glyphid Guards"
 level 3
 soundfx 31
 summoning
-addstring "3d4*Glyphid Guard"
+addstring "4d4*Glyphid Guard"
 cost 0 90
 cost 15 15
 free

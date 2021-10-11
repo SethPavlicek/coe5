@@ -14,6 +14,8 @@ cat \
     Scout.c5p \
     Karl.c5p\
     Ommoran.c5p\
+    Garrison.c5p\
+    Misc_additions.c5p\
     class.c5p\
   > DRG.c5mCRL
 dos2unix -n DRG.c5mCRL DRG.c5m

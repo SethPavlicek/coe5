@@ -275,3 +275,33 @@ trade 2
 unimportant
 stationary
 immobile
+
+newmonster "Barrel"
+descr "Get behind these barrels for cover!"
+spr1 "barrel.tga"
+hp 10
+str 2
+mr 2
+mor 99
+armor 0
+pierceres
+slashres
+bluntres
+rank 1
+frontpos
+fireres 30
+coldres 30
+shockres 30
+poisonres 100
+mountain
+snow
+swallowres
+charmres
+noeyes
+allitemslots
+water
+battleslow2
+noheal
+inanimate
+trample 1
+tramplexsize 1
