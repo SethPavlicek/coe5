@@ -46,7 +46,6 @@ sound 24
 # Grenade Launcher
 
 newweapon "Grenade Launcher"
-aoe 0
 trgrank 9
 dmgtype 2
 dmg 1
@@ -67,6 +66,28 @@ nostr
 sound 68
 onlyenemy
 dmgtype 1
+
+newweapon "Fat Boy Launcher"
+trgrank 9
+dmgtype 2
+dmg 1
+range 14
+lob
+init 3
+reload2
+scatter
+flymode 2
+flylook 118
+look 119
+nextalways
+nextdmg 25
+newweapon "Fat Boy Explosion"
+aoe 60
+look 142
+nostr
+sound 68
+onlyenemy
+dmgtype 7
 
 # SMG
 
@@ -168,8 +189,8 @@ rangedweaponbonus 3 "SMG"
 rangedweapon 4 "Breach Cutter"
 rangedweapon 4 "Breach Cutter"
 
-newmonster "Platinum Engineer"
-copystats "Gold Engineer"
+newmonster "Diamond Engineer"
+copystats "Platinum Engineer"
 clearweapons
 hp 32
 str 7
@@ -188,3 +209,55 @@ rangedweaponbonus 4 "SMG"
 rangedweapon 5 "Breach Cutter"
 rangedweapon 5 "Breach Cutter"
 rangedweapon 5 "Breach Cutter"
+
+# Grenade Launcher Engineer
+
+newmonster "Bronze Explosives Engineer"
+copystats "Bronze Engineer"
+clearweapons
+rangedweapon 1 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 0 "SMG"
+rangedweapon 0 "Grenade Launcher"
+
+newmonster "Silver Explosives Engineer"
+copystats "Silver Engineer"
+clearweapons
+rangedweapon 2 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 1 "Power Pickaxe"
+rangedweaponbonus 2 "SMG"
+rangedweapon 0 "Grenade Launcher"
+
+newmonster "Gold Explosives Engineer"
+copystats "Gold Engineer"
+clearweapons
+rangedweapon 2 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 2 "SMG"
+rangedweaponbonus 2 "SMG"
+rangedweapon 0 "Grenade Launcher"
+rangedweapon 0 "Grenade Launcher"
+
+newmonster "Platinum Explosives Engineer"
+copystats "Platinum Engineer"
+clearweapons
+rangedweapon 3 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 3 "SMG"
+rangedweaponbonus 3 "SMG"
+rangedweapon 0 "Grenade Launcher"
+rangedweapon 0 "Grenade Launcher"
+
+newmonster "Diamond Explosives Engineer"
+copystats "Diamond Engineer"
+clearweapons
+rangedweapon 4 "Summon Sentry Gun"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 4 "SMG"
+rangedweaponbonus 4 "SMG"
+rangedweapon 0 "Fat Boy Launcher"
