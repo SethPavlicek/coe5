@@ -173,6 +173,7 @@ coldres 35
 shockres 35
 power 0 1
 mastery 1
+burnforest 1
 meleeweaponbonus 0 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark I"
 
@@ -222,7 +223,7 @@ coldres 65
 shockres 65
 power 0 4
 meleeweaponbonus 3 "Drill"
-rangedweapon 0 "Frag Grenade"
+rangedweapon 0 "Neurotoxin Grenade"
 rangedweaponbonus 0 "Flamethrower Mark IV"
 
 newmonster "Diamond Driller"
@@ -238,5 +239,38 @@ coldres 75
 shockres 75
 power 0 5
 meleeweaponbonus 5 "Drill"
-rangedweapon 0 "Frag Grenade"
+rangedweapon 0 "Neurotoxin Grenade"
 rangedweaponbonus 0 "Flamethrower Mark V"
+
+
+newmonster "Bronze Cryo Driller"
+copystats "Bronze Driller"
+clearweapons
+meleeweaponbonus 0 "Drill"
+rangedweaponbonus 0 "Cryocannon Mark I"
+
+newmonster "Silver Cryo Driller"
+copystats "Silver Driller"
+clearweapons
+meleeweaponbonus 0 "Drill"
+rangedweaponbonus 0 "Cryocannon Mark II"
+
+newmonster "Gold Cryo Driller"
+copystats "Gold Driller"
+clearweapons
+meleeweaponbonus 0 "Drill"
+rangedweaponbonus 0 "Cryocannon Mark III"
+
+newmonster "Platinum Cryo Driller"
+copystats "Platinum Driller"
+clearweapons
+meleeweaponbonus 0 "Drill"
+rangedweapon 0 "Neurotoxin Grenade"
+rangedweaponbonus 0 "Cryocannon Mark IV"
+
+newmonster "Diamond Cryo Driller"
+copystats "Diamond Driller"
+clearweapons
+meleeweaponbonus 0 "Drill"
+rangedweapon 0 "Neurotoxin Grenade"
+rangedweaponbonus 0 "Cryocannon Mark V"

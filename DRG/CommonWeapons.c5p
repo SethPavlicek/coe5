@@ -7,7 +7,7 @@ dmgtype 2
 dmg 1
 range 10
 lob
-init 3
+init 9
 oneshot
 scatter
 flymode 1
@@ -23,6 +23,36 @@ sound 68
 onlyenemy
 dmgtype 1
 
+newweapon "Neurotoxin Grenade"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 1
+range 10
+lob
+init 9
+oneshot
+scatter
+flymode 2
+flylook 60
+look 114 # Poison Mist = 114, Poison Cloud = 168
+nextalways
+nextdmg 9
+newweapon "Neurotoxin Grenade Explosion"
+aoe 16
+look 114 # Poison Mist = 114, Poison Cloud = 168
+nostr
+sound 89
+onlyenemy
+dmgtype 9 # poison
+next
+nextdmg 262144 # confusion
+newweapon "Neurotoxin Grenade Effect"
+aoe 0
+mr # normal magic resistance negates
+dmgtype 12
+mind # does not affect mindless
+
 
 newweapon "Cryo Grenade"
 aoe 0
@@ -31,7 +61,7 @@ dmgtype 2
 dmg 1
 range 10
 lob
-init 3
+init 9
 oneshot
 scatter
 flymode 2
@@ -61,7 +91,7 @@ dmgtype 2
 dmg 1
 range 10
 lob
-init 3
+init 9
 oneshot
 scatter
 #flymode 1
@@ -95,7 +125,7 @@ dmgtype 2
 dmg 1
 range 10
 lob
-init 3
+init 9
 oneshot
 scatter
 flymode 2

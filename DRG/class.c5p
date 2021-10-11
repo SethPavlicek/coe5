@@ -40,7 +40,9 @@ nostdtroops
 addunitrec "Bosco" 100 4 50 0 4
 addunitrec "Mini M.U.L.E" 100 3 50 0 6
 addcomrec "Bronze Gunner" 10 50 0 10
+addcomrec "Bronze Siege Gunner" 5 60 0 10
 addcomrec "Bronze Driller" 10 60 0 10
+addcomrec "Bronze Cryo Driller" 100 60 0 10
 addcomrec "Bronze Engineer" 10 60 0 10
 addcomrec "Bronze Scout" 10 75 0 5
 addcomrec "DRG MoneyBags" 100 1 0 0 # Testing
