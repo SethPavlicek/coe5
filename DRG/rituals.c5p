@@ -3,12 +3,16 @@
 newritpow # rituals
 
 newritual "Lloyd's Tipping Jar"
+descr "Dwarves gotta tip sometimes. Maybe they'll get something in exchange? (Max 1 per location)"
 level 1
 soundfx 31
+terr -9 # fortified citadel
 summoning
 addstring "Tipping Jar"
-cost 0 20
-cost 15 5
+nomonreq
+addstring "(-)Tipping Jar"
+cost 0 15
+cost 15 1
 free
 
 newritual "Charm Glyphid Swarm"
@@ -26,7 +30,7 @@ soundfx 31
 summoning
 addstring "3d4*Glyphid Slasher"
 cost 0 60
-cost 15 15
+cost 15 10
 free
 
 newritual "Charm Glyphid Guards"
@@ -35,7 +39,7 @@ soundfx 31
 summoning
 addstring "3d4*Glyphid Guard"
 cost 0 90
-cost 15 30
+cost 15 15
 free
 
 newritual "Build APDs"

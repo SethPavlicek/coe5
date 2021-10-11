@@ -248,7 +248,7 @@ rangedweaponbonus 0 "AutoGun HunterV2"
 
 newmonster "Tipping Jar"
 name "Tipping Jar"
-descr "Dwarves gotta tip sometimes. Maybe they'll get something out of it? (NOTE: This grants 1 trade)"
+descr "Put something in, get something out. (NOTE: Grants 2 trade)"
 spr1 "TippingRobot.tga"
 hp 5
 str 6
@@ -271,7 +271,7 @@ noeyes
 noslots
 water
 inanimate
-trade 1
+trade 2
 unimportant
 stationary
 immobile
