@@ -46,7 +46,7 @@ newritual "Build APDs"
 level 2
 soundfx 31
 summoning
-addstring "c*Lloyd & 1d3+1*Bosco"
+addstring "c*Lloyd & 2d3+3*Bosco"
 cost 1 30
 cost 15 10
 free
@@ -101,7 +101,7 @@ cost 1 120
 cost 15 40
 free
 
-newritual "Manufacture Mining Robots"
+newritual "Manufacture Mining Exploration Team"
 level 5
 soundfx 31
 summoning
@@ -134,7 +134,7 @@ free
 newritual "REPAIR THE DRILLDOZER!!!"
 level 4
 soundfx 57
-cost 0 5
+cost 1 66
 free
 promotion -1
 addstring "Doretta"
@@ -181,23 +181,23 @@ soundfx 29
 cost 15 180
 free
 
-newritual "Switch to Siege Gunner"
-level 1
-soundfx 57
-cost 1 5
-free
-promotion -1
-addstring "Bronze Gunner"
-addstring "Bronze Siege Gunner"
-
-newritual "Switch to Normal Gunner"
-level 1
-soundfx 57
-cost 1 -5
-free
-promotion -1
-addstring "Bronze Siege Gunner"
-addstring "Bronze Gunner"
+#newritual "Switch to Siege Gunner"
+#level 1
+#soundfx 57
+#cost 1 5
+#free
+#promotion -1
+#addstring "Bronze Gunner"
+#addstring "Bronze Siege Gunner"
+#
+#newritual "Switch to Normal Gunner"
+#level 1
+#soundfx 57
+#cost 1 -5
+#free
+#promotion -1
+#addstring "Bronze Siege Gunner"
+#addstring "Bronze Gunner"
 
 #newritual "Switch to AutoCannon V"
 #level 5

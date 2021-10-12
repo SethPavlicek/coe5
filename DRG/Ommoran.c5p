@@ -39,6 +39,7 @@ mor 99
 armor 0
 rank 1
 frontpos
+maxsum 999
 charmres
 fireres 50
 coldres 50
@@ -55,7 +56,6 @@ inanimate
 #spread 2
 shardexpl 6
 unimportant
-maxsum 999
 #meleeweapon 0 "Flying Rock Explosion"
 
 newweapon "Summon Flying Rock"
@@ -65,11 +65,11 @@ dmgtype 18
 range 3
 init 8
 
-newweapon "Ommoran Beamer"
+newweapon "Ommoran Beam"
 aoe 1012
 range 12
 dmgtype 7
-dmg 10
+dmg 4
 init 7
 #flymode 5
 flylook 80 # yellow beam
@@ -77,6 +77,39 @@ flylook 80 # yellow beam
 flymode 5
 #flylook 124 # purple beam
 sound 24
+
+newmonster "Ommoran Beamer"
+descr "Defender of the Ommoran. Pew Pew."
+spr1 "OmmoranBeamer.tga"
+hp 8
+str 3
+mr 6
+mor 99
+armor 1
+rank 0
+maxsum 25
+fireres 25
+coldres 25
+shockres 25
+poisonres 100
+noeyes
+unimportant
+stonebeing
+charmres
+pierceres
+slashres
+bluntres
+stationary
+immobile
+rangedweaponbonus 0 "Ommoran Beam"
+
+newweapon "Summon Ommoran Beamer"
+trgrank 7
+dmg 1
+dmgtype 18
+range 1
+init 7
+reload2
 
 newmonster "Ommoran"
 descr "The Ommoran Heartstone is inside."
@@ -104,8 +137,5 @@ goldcarrier 500
 ironcarrier 250
 prebatweapon 3 "Summon Flying Rock"
 rangedweaponbonus 1 "Summon Flying Rock"
-#rangedweapon 2 "Summon Flying Rock"
-#rangedweapon 2 "Summon Flying Rock"
-#rangedweaponbonus 0 "Breach Cutter"
-#rangedweaponbonus 0 "Breach Cutter"
-rangedweaponbonus 0 "Ommoran Beamer"
+rangedweaponbonus 1 "Summon Ommoran Beamer"
+rangedweaponbonus 8 "Ommoran Beam"

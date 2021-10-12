@@ -150,7 +150,7 @@ rangedweaponbonus 0 "AutoGun CompactV2"
 newmonster "Lloyd"
 descr "I am a sucker for the wee drawings in the foam."
 spr1 "Lloyd.tga"
-hp 10
+hp 14
 str 5
 mr 8
 mor 99
