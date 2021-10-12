@@ -3,20 +3,23 @@ set -x # echo on
 # list files in order with a backslash "\" at the end of each line
 cat \
     misc.c5p\
-    rituals.c5p\
-    Mining.c5p\
     CommonWeapons.c5p\
     Glyphids.c5p\
     robot.c5p\
     rituals.c5p\
+    Mining.c5p\
     Driller.c5p \
     rituals.c5p\
+    Mining.c5p\
     Engineer.c5p \
     rituals.c5p\
+    Mining.c5p\
     Gunner.c5p \
     rituals.c5p\
+    Mining.c5p\
     Scout.c5p \
     rituals.c5p\
+    Mining.c5p\
     Karl.c5p\
     Ommoran.c5p\
     Garrison.c5p\

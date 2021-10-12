@@ -70,6 +70,7 @@ cost 15 10
 free
 
 newritual "Build M.U.L.Es"
+descr "Just one simple M.U.L.E"
 level 1
 soundfx 31
 summoning
