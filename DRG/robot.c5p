@@ -170,8 +170,8 @@ charmres
 miscslots
 noheal
 inanimate
-rangedweaponbonus 0 "AutoGun HunterV2"
-rangedweaponbonus 0 "AutoGun HunterV2"
+rangedweaponbonus 1 "AutoGun HunterV2"
+rangedweaponbonus 1 "AutoGun HunterV2"
 
 newmonster "Doretta"
 descr "This bad boy can drill so many tunnels!"
@@ -243,8 +243,8 @@ limitiron 1
 #trade 1
 trample 4
 tramplexsize 1
-rangedweaponbonus 0 "AutoGun HunterV2"
-rangedweaponbonus 0 "AutoGun HunterV2"
+rangedweaponbonus 1 "AutoGun HunterV2"
+rangedweaponbonus 1 "AutoGun HunterV2"
 
 newmonster "Tipping Jar"
 name "Tipping Jar"
