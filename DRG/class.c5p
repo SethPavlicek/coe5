@@ -22,7 +22,7 @@ addcomrec "Bronze Cryo Driller" 5 60 0 10
 addcomrec "Bronze Engineer" 10 60 0 10
 addcomrec "Bronze Explosives Engineer" 5 60 0 15
 addcomrec "Bronze Scout" 10 75 0 5
-#addcomrec "DRG MoneyBags" 100 1 0 0 # Testing
+addcomrec "DRG MoneyBags" 100 1 0 0 # Testing
 #addcomrec "Ommoran" 100 5 0 0 # Testing
 setmaincom "Bronze Scout"
 addstartcom "Bronze Gunner"

@@ -1,3 +1,52 @@
+# Scout promotion rituals
+# Gem type:
+# Scout     Diamond  - 9  (Air)
+
+#newritpow # INDEX 4 - Scout
+
+newritual "Scout Promotion from Management I"
+level 1
+levelup 2
+newrit 2
+forgetcurrit
+rebatelvl 2
+soundfx 29
+cost 9 30
+free
+
+newritual "Scout Promotion from Management II"
+level 2
+levelup 3
+newrit 3
+forgetcurrit
+rebatelvl 3
+soundfx 29
+cost 9 60
+free
+
+
+newritual "Scout Promotion from Management III"
+level 3
+levelup 4
+newrit 4
+forgetcurrit
+rebatelvl 4
+soundfx 29
+cost 9 120
+free
+
+
+newritual "Scout Promotion from Management IV"
+level 4
+levelup 5
+newrit 5
+forgetcurrit
+rebatelvl 5
+soundfx 29
+cost 9 180
+free
+
+
 # Scout Weapons
 newweapon "M1000 Classic"
 init 1
@@ -45,7 +94,7 @@ evasion
 slashres
 snow
 fast
-gatheranygems
+gathergems
 seegems
 fireres 10
 coldres 10
@@ -53,6 +102,7 @@ shockres 10
 stealth
 acutesenses
 power 0 1
+#power -4 1
 mastery 1
 assassinweapon -8 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
@@ -70,6 +120,7 @@ fireres 20
 coldres 20
 shockres 20
 power 0 2
+#power -4 2
 assassinweapon -4 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
@@ -89,6 +140,7 @@ fireres 30
 coldres 30
 shockres 30
 power 0 3
+#power -4 3
 farsight 1
 float
 assassinweapon 0 "M1000 Classic"
@@ -111,6 +163,7 @@ fireres 40
 coldres 40
 shockres 40
 power 0 4
+#power -4 4
 pierceres
 spiritsight
 assassinweapon 4 "M1000 Classic"
@@ -134,6 +187,7 @@ fireres 50
 coldres 50
 shockres 50
 power 0 5
+#power -4 5
 assassinweapon 8 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"

@@ -1,18 +1,48 @@
-# Drill =====================================================================================================
+# Driller promotion rituals
+# Gem type:
+# Driller   Ruby     - 7  (Fire)
 
-#newweapon "Drill"
-#aoe -02
-#init 3
-#range 1
-#dmgtype 1
-#dmg 3
-#stonekill
-#sweep
-##nextalways
-##nextdmg64
-##newweapon "Drill Effect"
-##dmgtype 12
-##aoe 1
+#newritpow # INDEX 1 - Driller
+
+newritual "Driller Promotion from Management I"
+level 1
+levelup 2
+newrit 2
+forgetcurrit
+rebatelvl 2
+soundfx 29
+cost 7 30
+free
+
+newritual "Driller Promotion from Management II"
+level 2
+levelup 3
+newrit 3
+forgetcurrit
+rebatelvl 3
+soundfx 29
+cost 7 60
+free
+
+newritual "Driller Promotion from Management III"
+level 3
+levelup 4
+newrit 4
+forgetcurrit
+rebatelvl 4
+soundfx 29
+cost 7 120
+free
+
+newritual "Driller Promotion from Management IV"
+level 4
+levelup 5
+newrit 5
+forgetcurrit
+rebatelvl 5
+soundfx 29
+cost 7 180
+free
 
 # Flamethrower =========================================================================================================
 
@@ -166,11 +196,12 @@ tunnel
 slashres
 rearpos
 allitemslots
-gatheranygems
+gathergems
 seegems
 fireres 35
 coldres 35
 shockres 35
+#power -1 1
 power 0 1
 mastery 1
 burnforest 1
@@ -190,6 +221,7 @@ fastheal
 fireres 45
 coldres 45
 shockres 45
+#power -1 2
 power 0 2
 meleeweaponbonus 1 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark II"
@@ -205,6 +237,7 @@ mor 11
 fireres 55
 coldres 55
 shockres 55
+#power -1 3
 power 0 3
 meleeweaponbonus 2 "Drill"
 rangedweaponbonus 0 "Flamethrower Mark III"
@@ -221,6 +254,7 @@ pierceres
 fireres 65
 coldres 65
 shockres 65
+#power -1 4
 power 0 4
 meleeweaponbonus 3 "Drill"
 rangedweapon 0 "Neurotoxin Grenade"
@@ -237,6 +271,7 @@ mor 13
 fireres 75
 coldres 75
 shockres 75
+#power -1 5
 power 0 5
 meleeweaponbonus 5 "Drill"
 rangedweapon 0 "Neurotoxin Grenade"

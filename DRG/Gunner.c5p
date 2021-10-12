@@ -1,3 +1,53 @@
+# Gunner promotion rituals
+# Gem type:
+# Gunner    Emerald  - 10 (Earth)
+
+#newritpow # INDEX 3 - Gunner
+
+newritual "Gunner Promotion from Management I"
+level 1
+levelup 2
+newrit 2
+forgetcurrit
+rebatelvl 2
+soundfx 29
+cost 10 30
+free
+
+
+newritual "Gunner Promotion from Management II"
+level 2
+levelup 3
+newrit 3
+forgetcurrit
+rebatelvl 3
+soundfx 29
+cost 10 60
+free
+
+
+newritual "Gunner Promotion from Management III"
+level 3
+levelup 4
+newrit 4
+forgetcurrit
+rebatelvl 4
+soundfx 29
+cost 10 120
+free
+
+
+newritual "Gunner Promotion from Management IV"
+level 4
+levelup 5
+newrit 5
+forgetcurrit
+rebatelvl 5
+soundfx 29
+cost 10 180
+free
+
+
 # Gunner Weapons
 
 # Minigun
@@ -103,12 +153,13 @@ mr 5
 mor 7
 mountain
 snow
-gatheranygems
+gathergems
 seegems
 fireres 20
 coldres 20
 shockres 20
 allitemslots
+#power -3 1
 power 0 1
 mastery 1
 meleeweapon50s 3 "DRG Pickaxe"
@@ -124,6 +175,7 @@ hp 22
 str 6
 mr 6
 mor 8
+#power -3 2
 power 0 2
 fireres 30
 coldres 30
@@ -145,6 +197,7 @@ str 7
 mr 7
 mor 9
 fastheal
+#power -3 3
 power 0 3
 fireres 40
 coldres 40
@@ -167,6 +220,7 @@ hp 30
 str 8
 mr 8
 mor 10
+#power -3 4
 power 0 4
 fireres 50
 coldres 50
@@ -190,6 +244,7 @@ hp 34
 str 9
 mr 9
 mor 11
+#power -3 5
 power 0 5
 clearweapons
 meleeweapon50s 7 "DRG Pickaxe"

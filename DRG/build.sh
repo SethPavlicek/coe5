@@ -8,10 +8,15 @@ cat \
     CommonWeapons.c5p\
     Glyphids.c5p\
     robot.c5p\
-    Gunner.c5p \
-    Engineer.c5p \
+    rituals.c5p\
     Driller.c5p \
+    rituals.c5p\
+    Engineer.c5p \
+    rituals.c5p\
+    Gunner.c5p \
+    rituals.c5p\
     Scout.c5p \
+    rituals.c5p\
     Karl.c5p\
     Ommoran.c5p\
     Garrison.c5p\

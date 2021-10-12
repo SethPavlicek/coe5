@@ -1,3 +1,50 @@
+# Engineer promotion rituals
+# Gem type:
+# Engineer  Sapphire - 8  (Water)
+
+#newritpow # INDEX 2 - Engineer
+
+newritual "Engineer Promotion from Management I"
+level 1
+levelup 2
+newrit 2
+forgetcurrit
+rebatelvl 2
+soundfx 29
+cost 8 30
+free
+
+newritual "Engineer Promotion from Management II"
+level 2
+levelup 3
+newrit 3
+forgetcurrit
+rebatelvl 3
+soundfx 29
+cost 8 60
+free
+
+newritual "Engineer Promotion from Management III"
+level 3
+levelup 4
+newrit 4
+forgetcurrit
+rebatelvl 4
+soundfx 29
+cost 8 120
+free
+
+newritual "Engineer Promotion from Management IV"
+level 4
+levelup 5
+newrit 5
+forgetcurrit
+rebatelvl 5
+soundfx 29
+cost 8 180
+free
+
+
 # Sentry Gun's Gun =====================================================================================================
 
 newmonster "Sentry Gun"
@@ -15,7 +62,7 @@ stationary
 noslots
 inanimate
 unimportant
-rangedweaponbonus 0 "AutoGun SlayerV3"
+rangedweaponbonus 1 "AutoGun SlayerV3"
 
 # Summon Sentry Gun ====================================================================================================
 
@@ -119,13 +166,14 @@ mor 7
 snow
 mountain
 slashres
-gatheranygems
+gathergems
 seegems
 fireres 15
 coldres 15
 shockres 15
 allitemslots
 battleslow
+#power -2 1
 power 0 1
 mastery 1
 rangedweapon 1 "Summon Sentry Gun"
@@ -143,6 +191,7 @@ mor 8
 fireres 25
 coldres 25
 shockres 25
+#power -2 2
 power 0 2
 rangedweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
@@ -162,6 +211,7 @@ armor 3
 fireres 35
 coldres 35
 shockres 35
+#power -2 3
 power 0 3
 rangedweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
@@ -180,8 +230,9 @@ mor 10
 fireres 45
 coldres 45
 shockres 45
+#power -2 4
 power 0 4
-rangedweapon 3 "Summon Sentry Gun"
+rangedweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 3 "SMG"
@@ -200,8 +251,9 @@ armor 4
 fireres 55
 coldres 55
 shockres 55
+#power -2 5
 power 0 5
-rangedweapon 4 "Summon Sentry Gun"
+rangedweapon 3 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 4 "SMG"
@@ -224,7 +276,7 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Silver Explosives Engineer"
 copystats "Silver Engineer"
 clearweapons
-rangedweapon 2 "Summon Sentry Gun"
+rangedweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 1 "Power Pickaxe"
 rangedweaponbonus 2 "SMG"
@@ -244,7 +296,7 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Platinum Explosives Engineer"
 copystats "Platinum Engineer"
 clearweapons
-rangedweapon 3 "Summon Sentry Gun"
+rangedweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 3 "SMG"
@@ -255,7 +307,7 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Diamond Explosives Engineer"
 copystats "Diamond Engineer"
 clearweapons
-rangedweapon 4 "Summon Sentry Gun"
+rangedweapon 3 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 4 "SMG"
