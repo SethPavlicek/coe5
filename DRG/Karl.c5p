@@ -6,7 +6,7 @@ spr1 "barrel.tga"
 rank 0
 hp 75
 str 15
-mr 15
+mr 12
 mor 50
 armor 6
 fireres 75
@@ -50,9 +50,10 @@ str 8
 mr 15
 mor 99
 armor 6
-fireres 50
-coldres 50
-shockres 50
+fireres 75
+coldres 75
+shockres 75
+poisonres 100
 pierceres
 slashres
 stationary

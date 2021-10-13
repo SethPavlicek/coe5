@@ -155,6 +155,7 @@ an
 shieldneg
 stonekill
 sweep
+mundane
 
 newweapon "Power Pickaxe"
 aoe 5
@@ -247,4 +248,5 @@ dmg 3
 stonekill
 sweep
 sound 96
+mundane
 
