@@ -79,20 +79,17 @@ dmg 7
 newmonster "Cover"
 descr "Get behind cover!"
 spr1 "barrel.tga"
-hp 10
+hp 6
 str 2
 mr 2
 mor 99
 armor 0
 pierceres
-slashres
-bluntres
 rank 1
 frontpos
-fireres 30
-coldres 30
-shockres 30
 poisonres 100
+maxsum 12
+stonebeing
 mountain
 snow
 swallowres
@@ -100,7 +97,6 @@ charmres
 noeyes
 allitemslots
 water
-battleslow2
 noheal
 inanimate
 immobile
@@ -110,7 +106,7 @@ newweapon "Summon Cover"
 trgrank 7
 dmg 1
 dmgtype 18
-range 1
+range 4
 init 8
 
 newweapon "Sawed Off"
@@ -295,5 +291,5 @@ rangedweapon 5 "Summon Cover"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 4 "Sawed Off"
-rangedweapon 6 "Laser Assault Rifle"
+rangedweapon 3 "Laser Assault Rifle"
 rangedweapon 6 "Laser Assault Rifle"
