@@ -61,8 +61,57 @@ dmg 16
 an
 shieldneg
 reload1
+
+newweapon "Laser Assault Rifle"
+aoe -3
+init 3
+range 8
+trgrank 9
+#aoe 0
+flylook 214 # 70=phantasmal bolts, 129=bolt of unlife(fly), 20=bolt of unlife, 28=stellar bolt, 170=pain line
+flysound 24 # 18=lifedrain, 66 wind, 104 spell,24 lightning, 22 fear
+flymode 2
+dmgtype 7
+dmg 7
 #nostr
 #nextalways 3
+
+newmonster "Cover"
+descr "Get behind cover!"
+spr1 "barrel.tga"
+hp 10
+str 2
+mr 2
+mor 99
+armor 0
+pierceres
+slashres
+bluntres
+rank 1
+frontpos
+fireres 30
+coldres 30
+shockres 30
+poisonres 100
+mountain
+snow
+swallowres
+charmres
+noeyes
+allitemslots
+water
+battleslow2
+noheal
+inanimate
+immobile
+unimportant
+
+newweapon "Summon Cover"
+trgrank 7
+dmg 1
+dmgtype 18
+range 1
+init 8
 
 newweapon "Sawed Off"
 init 4
@@ -198,3 +247,53 @@ rangedweaponbonus 2 "Sawed Off"
 rangedweapon 16 "M1000 Classic"
 rangedweapon 8 "M1000 Classic"
 
+newmonster "Bronze Assault Scout"
+copystats "Bronze Scout"
+clearweapons
+prebatweapon 3 "Summon Cover"
+rangedweapon 1 "Summon Cover"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 0 "Sawed Off"
+rangedweapon 0 "Laser Assault Rifle"
+
+newmonster "Silver Assault Scout"
+copystats "Silver Scout"
+clearweapons
+prebatweapon 4 "Summon Cover"
+rangedweapon 2 "Summon Cover"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 1 "Sawed Off"
+rangedweapon 2 "Laser Assault Rifle"
+
+newmonster "Gold Assault Scout"
+copystats "Gold Scout"
+clearweapons
+prebatweapon 5 "Summon Cover"
+rangedweapon 3 "Summon Cover"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 2 "Sawed Off"
+rangedweapon 4 "Laser Assault Rifle"
+
+newmonster "Platinum Assault Scout"
+copystats "Platinum Scout"
+clearweapons
+prebatweapon 6 "Summon Cover"
+rangedweapon 4 "Summon Cover"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 3 "Sawed Off"
+rangedweapon 6 "Laser Assault Rifle"
+
+newmonster "Diamond Assault Scout"
+copystats "Diamond Scout"
+clearweapons
+prebatweapon 7 "Summon Cover"
+rangedweapon 5 "Summon Cover"
+meleeweapon50s 3 "DRG Pickaxe"
+meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 4 "Sawed Off"
+rangedweapon 6 "Laser Assault Rifle"
+rangedweapon 6 "Laser Assault Rifle"
