@@ -59,6 +59,7 @@ flymode 1
 dmgtype 3
 dmg 16
 an
+shieldneg
 reload1
 #nostr
 #nextalways 3
@@ -73,7 +74,7 @@ flysound 11
 flymode 5
 dmgtype 3
 dmg 6
-shieldneg
+mundane
 #reload1
 
 # Scout ================================================================================================================

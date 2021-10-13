@@ -104,6 +104,7 @@ scatter
 flymode 1
 flylook 33
 look 21
+mundane
 nextalways
 nextdmg 8
 newweapon "Grenade Launcher Explosion"
@@ -126,6 +127,7 @@ scatter
 flymode 2
 flylook 118
 look 119
+mundane
 nextalways
 nextdmg 25
 newweapon "Fat Boy Explosion"
@@ -146,6 +148,7 @@ range 5
 init 3
 flylook 34
 flymode 1
+mundane
 next
 nextdmg 3
 newweapon "SMG Lightning"
