@@ -1,5 +1,4 @@
 # Class Setup ==========================================================================================================
-
 newclass
 setclassname "Deep Rock Galactic"
 classdescr "ROCK AND STONE"
@@ -7,11 +6,6 @@ classminecit 1
 clearstartunits
 clearrec
 nostdtroops
-# Steeve the Glyphid Grunt
-#addunitrec "Glyphid Swarmer" 100 15 40 0 0
-#addunitrec "Glyphid Grunt" 100 5 50 0 0
-#addunitrec "Glyphid Slasher" 100 5 50 0 5
-#addunitrec "Glyphid Guard" 100 5 60 0 5
 addunitrec "Barrel" 100 8 40 0 0
 addunitrec "Bosco" 100 4 50 0 4
 addunitrec "Mini M.U.L.E" 100 3 50 0 6
@@ -22,18 +16,16 @@ addcomrec "Bronze Cryo Driller" 5 60 0 10
 addcomrec "Bronze Engineer" 10 60 0 10
 addcomrec "Bronze Explosives Engineer" 5 60 0 15
 addcomrec "Bronze Scout" 10 75 0 5
-addcomrec "DRG MoneyBags" 100 1 0 0 # Testing
-#addcomrec "Ommoran" 100 5 0 0 # Testing
+#addcomrec "DRG MoneyBags" 100 1 0 0  # Testing
+#addcomrec "Ommoran" 100 5 0 0        # Testing
 setmaincom "Bronze Scout"
 addstartcom "Bronze Gunner"
 addstartcom "Bronze Engineer"
 addstartcom "Bronze Driller"
-# Garrison
+addstartunits "Barrel" 8
+# Garrison units
 addstartcom "Mining Crew"
 addstartunits "Garrison Bosco" 2
-addstartunits "Barrel" 8
-#hometerr 207 # Capital
 hometerr 126 # Dwarven City
 clearstartterr
-#addstartterr 18 # village
 addstartterr 105 # coal mine

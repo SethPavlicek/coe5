@@ -1,3 +1,6 @@
+# START mining Rituals =================================================================================================
+#
+# Graciously borrowed from and credit to: ________
 
 newritual     "Build Hills"
 #ritpow              	30 # Councilor
@@ -84,3 +87,5 @@ alterloc            	34 # Gold Mine
 nonearby5req        	34
 soundfx             	57
 descr "Gorl, konk, galaz, and other types of gold - the most noble of metals - have been found deep within the mountain and the Councilor joyously orders the existing mines expanded even further despite the expense. Must be 5 squares from nearest gold mine."
+
+# END   mining Rituals =================================================================================================

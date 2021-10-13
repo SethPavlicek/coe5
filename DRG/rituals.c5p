@@ -1,24 +1,15 @@
-#Rituals =====================================================
-
-# Gem types
+# START common Rituals =================================================================================================
+# NOTE: This section is repeated for each Dwarf class because modding system doesn't handle multiple ritual schools well
+#       (In the source code, this file exists only once, and is "included" multiple times)
 #
-# Driller   Diamond  - 9  (Air)
-# Engineer  Ruby     - 7  (Fire)
-# Gunner    Emerald  - 10 (Earth)
-# Scout     Sapphire - 8  (Water)
-#
-# OR...
+# Gem types for DRG Classes:
 #
 # Driller   Ruby     - 7  (Fire)
 # Engineer  Sapphire - 8  (Water)
 # Gunner    Emerald  - 10 (Earth)
 # Scout     Diamond  - 9  (Air)
-# Driller
-# Engineer
-# Gunner    Emerald  - 10 (Earth)
-# Scout
 
-newritpow # INDEX 0 - rituals shared across all dwarves
+newritpow # This will be repeated for each DRG class, plus Karl.
 
 newritual "Lloyd's Tipping Jar"
 descr "Dwarves gotta tip sometimes. Maybe they'll get something in exchange? (Max 1 per location)"
@@ -110,7 +101,6 @@ cost 0 100
 cost 1 15
 free
 
-
 newritual "Build DrillDozer"
 level 4
 soundfx 31
@@ -160,96 +150,4 @@ addstring "Doretta"
 addstring "Doretta"
 descr "This will promote one Doretta, which will effectively heal it. Be sure to have only the damaged Doretta in the space where you use this ritual."
 
-#newritual "Promotion from Management I"
-#level 1
-#levelup 2
-#newrit 2
-#forgetcurrit
-#rebatelvl 2
-#soundfx 29
-#cost 15 30
-#free
-#
-#newritual "Promotion from Management II"
-#level 2
-#levelup 3
-#newrit 3
-#forgetcurrit
-#rebatelvl 3
-#soundfx 29
-#cost 15 60
-#free
-#
-#newritual "Promotion from Management III"
-#level 3
-#levelup 4
-#newrit 4
-#forgetcurrit
-#rebatelvl 4
-#soundfx 29
-#cost 15 120
-#free
-#
-#newritual "Promotion from Management IV"
-#level 4
-#levelup 5
-#newrit 5
-#forgetcurrit
-#rebatelvl 5
-#soundfx 29
-#cost 15 180
-#free
-
-#newritual "Switch to Siege Gunner"
-#level 1
-#soundfx 57
-#cost 1 5
-#free
-#promotion -1
-#addstring "Bronze Gunner"
-#addstring "Bronze Siege Gunner"
-#
-#newritual "Switch to Normal Gunner"
-#level 1
-#soundfx 57
-#cost 1 -5
-#free
-#promotion -1
-#addstring "Bronze Siege Gunner"
-#addstring "Bronze Gunner"
-
-#newritual "Switch to AutoCannon V"
-#level 5
-#soundfx 57
-#cost 0 5
-#free
-#promotion -1
-#addstring "Diamond Gunner"
-#addstring "Diamond Siege Gunner"
-#
-#newritual "Switch to AutoCannon IV"
-#level 4
-#soundfx 57
-#cost 0 5
-#free
-#promotion -1
-#addstring "Platinum Gunner"
-#addstring "Platinum Siege Gunner"
-#
-#newritual "Switch to Minigun V"
-#level 5
-#soundfx 57
-#cost 0 5
-#free
-#promotion -1
-#addstring "Diamond Siege Gunner"
-#addstring "Diamond Gunner"
-#
-#newritual "Switch to Minigun IV"
-#level 4
-#soundfx 57
-#cost 0 5
-#free
-#promotion -1
-#addstring "Platinum Siege Gunner"
-#addstring "Platinum Gunner"
+# END   common Rituals =================================================================================================

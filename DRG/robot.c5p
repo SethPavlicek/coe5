@@ -30,7 +30,7 @@ descr "What a chonker."
 spr1 "BET-C.tga"
 hp 50
 str 8
-mr 12
+mr 8
 mor 99
 armor 5
 pierceres
@@ -63,7 +63,7 @@ descr "Molly! My mini mule!"
 spr1 "MiniMule.tga"
 hp 10
 str 6
-mr 6
+mr 5
 mor 99
 armor 1
 pierceres
@@ -127,7 +127,7 @@ descr "Support fire please!!!"
 spr1 "Bosco.tga"
 hp 6
 str 5
-mr 6
+mr 5
 mor 99
 armor 1
 pierceres
@@ -178,7 +178,7 @@ descr "This bad boy can drill so many tunnels!"
 spr1 "Drilldozer.tga"
 hp 100
 str 15
-mr 12
+mr 10
 mor 99
 armor 6
 pierceres
