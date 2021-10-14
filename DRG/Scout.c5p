@@ -78,7 +78,7 @@ dmg 7
 
 newmonster "Cover"
 descr "Get behind cover!"
-spr1 "barrel.tga"
+spr1 "FlyingRock.tga"
 hp 6
 str 2
 mr 2
@@ -104,7 +104,7 @@ unimportant
 
 newweapon "Summon Cover"
 trgrank 7
-dmg 1
+dmg 0
 dmgtype 18
 range 4
 init 8
@@ -247,8 +247,7 @@ newmonster "Bronze Assault Scout"
 copystats "Bronze Scout"
 clearweapons
 prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
+prebatweapon 3 "Summon Cover"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 0 "Sawed Off"
@@ -259,8 +258,7 @@ copystats "Silver Scout"
 clearweapons
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
+prebatweapon 3 "Summon Cover"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 1 "Sawed Off"
@@ -272,11 +270,10 @@ clearweapons
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
+prebatweapon 3 "Summon Cover"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon 0 "Cryo Grenade"
+rangedweapon 0 "Flare Gun"
 rangedweaponbonus 2 "Sawed Off"
 rangedweapon 4 "Laser Assault Rifle"
 
@@ -287,11 +284,10 @@ prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
+prebatweapon 3 "Summon Cover"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon 0 "Cryo Grenade"
+rangedweapon 0 "Flare Gun"
 rangedweaponbonus 3 "Sawed Off"
 rangedweapon 6 "Laser Assault Rifle"
 
@@ -303,11 +299,10 @@ prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
 prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
-prebatweapon 2 "Summon Cover"
+prebatweapon 3 "Summon Cover"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweapon 0 "Cryo Grenade"
+rangedweapon 0 "Flare Gun"
 rangedweaponbonus 4 "Sawed Off"
 rangedweapon 3 "Laser Assault Rifle"
 rangedweapon 6 "Laser Assault Rifle"

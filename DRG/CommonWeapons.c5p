@@ -143,6 +143,34 @@ mr # normal magic resistance negates
 dmgtype 12
 mind # does not affect mindless
 
+
+newweapon "Flare Gun"
+aoe 0
+trgrank 9
+dmgtype 2
+dmg 2
+range 10
+lob
+init 9
+oneshot
+scatter
+flymode 2
+flylook 72 # bolts of light - fly
+look 176 # purple summon circle
+sound 22 # fear
+onlyenemy
+nextalways
+nextdmg 67108864     # blindness
+newweapon "Flare Gun Explosion"
+aoe 16
+look 176
+onlyenemy
+mr # normal magic resistance check negates
+arrow # air shield can prevent
+stone # stone beings not affected
+tree # tree units immune
+dmgtype 12
+
 # Pickaxe
 
 newweapon "DRG Pickaxe"

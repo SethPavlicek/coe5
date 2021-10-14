@@ -96,9 +96,8 @@ scryloc 1
 setplayer 24
 farsummon
 addstring "Ommoran"
-descr "This will summon an Ommoran somewhere on the map. It will drop 500 gold and 250 iron upon defeat. You cannot control it."
-cost 0 100
-cost 1 15
+descr "This will summon an independent Ommoran somewhere on the map. If you defeat it, you will be rewarded with metal."
+cost 0 200
 free
 
 newritual "Build DrillDozer"

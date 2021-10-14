@@ -68,9 +68,9 @@ rangedweaponbonus 1 "AutoGun SlayerV3"
 
 newweapon "Summon Sentry Gun"
 trgrank 7
-dmg 1
+dmg 0
 dmgtype 18
-range 1
+range 2
 init 8
 oneshot
 
@@ -179,7 +179,7 @@ battleslow
 #power -2 1
 power 0 1
 mastery 1
-rangedweapon 1 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 0 "SMG"
@@ -196,7 +196,7 @@ coldres 25
 shockres 25
 #power -2 2
 power 0 2
-rangedweapon 1 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 1 "SMG"
@@ -216,7 +216,8 @@ coldres 35
 shockres 35
 #power -2 3
 power 0 3
-rangedweapon 2 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 2 "SMG"
@@ -235,7 +236,8 @@ coldres 45
 shockres 45
 #power -2 4
 power 0 4
-rangedweapon 2 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 3 "SMG"
@@ -256,7 +258,8 @@ coldres 55
 shockres 55
 #power -2 5
 power 0 5
-rangedweapon 3 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 4 "SMG"
@@ -270,7 +273,7 @@ rangedweapon 5 "Breach Cutter"
 newmonster "Bronze Explosives Engineer"
 copystats "Bronze Engineer"
 clearweapons
-rangedweapon 1 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 0 "SMG"
@@ -279,7 +282,7 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Silver Explosives Engineer"
 copystats "Silver Engineer"
 clearweapons
-rangedweapon 1 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 1 "Power Pickaxe"
 rangedweaponbonus 2 "SMG"
@@ -288,7 +291,8 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Gold Explosives Engineer"
 copystats "Gold Engineer"
 clearweapons
-rangedweapon 2 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 2 "SMG"
@@ -299,7 +303,8 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Platinum Explosives Engineer"
 copystats "Platinum Engineer"
 clearweapons
-rangedweapon 2 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 3 "SMG"
@@ -310,7 +315,8 @@ rangedweapon 0 "Grenade Launcher"
 newmonster "Diamond Explosives Engineer"
 copystats "Diamond Engineer"
 clearweapons
-rangedweapon 3 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 4 "SMG"

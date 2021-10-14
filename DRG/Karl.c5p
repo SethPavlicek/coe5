@@ -1,8 +1,8 @@
 # KARL
 
 newmonster "Karl"
-descr "We can't find an image of Karl so here is a barrel."
-spr1 "barrel.tga"
+descr "For Karl!!"
+spr1 "Karl.tga"
 rank 0
 hp 75
 str 15
