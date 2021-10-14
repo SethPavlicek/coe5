@@ -12,7 +12,7 @@
 newritpow # This will be repeated for each DRG class, plus Karl.
 
 newritual "Lloyd's Tipping Jar"
-descr "Dwarves gotta tip sometimes. Maybe they'll get something in exchange? (Max 1 per location)"
+descr "Dwarves gotta tip sometimes. Maybe they'll get something in exchange? (Max 1 per location, increases trade by 2)"
 level 1
 soundfx 31
 terr -9 # fortified citadel
@@ -25,6 +25,7 @@ cost 15 1
 free
 
 newritual "Charm Glyphid Swarm"
+descr "Charm a swarm of Glyphid Swarmers. The enemy should get their stomping boots on."
 level 1
 soundfx 31
 summoning
@@ -34,6 +35,7 @@ cost 15 5
 free
 
 newritual "Charm Glyphid Slashers"
+descr "Charm a bunch of Glyphid Slashers. They have sharp blades."
 level 2
 soundfx 31
 summoning
@@ -43,6 +45,7 @@ cost 15 10
 free
 
 newritual "Charm Glyphid Guards"
+descr "Charm a bunch of Glyphid Guards. They are tough bastards."
 level 3
 soundfx 31
 summoning
@@ -52,6 +55,7 @@ cost 15 15
 free
 
 newritual "Build APDs"
+descr "Build one Lloyd and a bunch of Boscos. They give you support fire."
 level 2
 soundfx 31
 summoning
@@ -61,7 +65,7 @@ cost 15 10
 free
 
 newritual "Build M.U.L.Es"
-descr "Just one simple M.U.L.E"
+descr "Build one M.U.L.E. Molly will push her enemies off of cliffs."
 level 1
 soundfx 31
 summoning
@@ -71,6 +75,7 @@ cost 15 5
 free
 
 newritual "Build Mining Crew"
+descr "Build an upgraded Bosco linked to a M.U.L.E. The Mining Crew will increase the income of a location."
 level 2
 soundfx 31
 summoning
@@ -80,6 +85,7 @@ cost 15 8
 free
 
 newritual "Build BET-C"
+descr "Build one BET-C. She is a chonker."
 level 3
 soundfx 31
 summoning
@@ -96,11 +102,12 @@ scryloc 1
 setplayer 24
 farsummon
 addstring "Ommoran"
-descr "This will summon an independent Ommoran somewhere on the map. If you defeat it, you will be rewarded with metal."
+descr "The Heartstone would really spiff up my cabin. This will summon an independent Ommoran somewhere on the map. If you defeat it, you will be rewarded with a lot of iron."
 cost 0 200
 free
 
 newritual "Build DrillDozer"
+descr "Build one DrillDozer. Now you can afford one for yourself and it comes in red and black (no not really it comes in yellow)!"
 level 4
 soundfx 31
 summoning
@@ -110,6 +117,7 @@ cost 15 40
 free
 
 newritual "Manufacture Mining Exploration Team"
+descr "Build one DrillDozer, some BET-Cs, a bunch of M.U.L.Es, and a bunch of Boscos."
 level 5
 soundfx 31
 summoning
@@ -119,6 +127,7 @@ cost 15 60
 free
 
 newritual "Scan for Karl's Drop Pod"
+descr "Scan for Karl's Drop Pod. This will summon Karl's Drop Pod somewhere on the map. You can open Karl's Drop Pod to reveal the legendary Dwarf Karl."
 level 5
 soundfx 31
 randnewloc -5
@@ -130,6 +139,7 @@ cost 15 150
 free
 
 newritual "Open Karl's Drop Pod"
+descr "Open Karl's Drop Pod to reveal the legendary Dwarf Karl. FOR KARL!!"
 level 5
 soundfx 57
 cost 1 250
