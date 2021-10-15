@@ -31,7 +31,7 @@
 
 newmonster "Flying Rock"
 descr "The Ommoran is throwing rocks at Doretta!!"
-spr1 "FlyingRock.tga"
+spr1 "images/FlyingRock.tga"
 hp 3
 str 8
 mr 6
@@ -80,7 +80,7 @@ sound 24
 
 newmonster "Ommoran Beamer"
 descr "Destroy the Beamers with your picks!"
-spr1 "OmmoranBeamer.tga"
+spr1 "images/OmmoranBeamer.tga"
 hp 8
 str 3
 mr 6
@@ -113,7 +113,7 @@ reload2
 
 newmonster "Ommoran"
 descr "The Ommoran Heartstone is inside."
-spr1 "Ommoran.tga"
+spr1 "images/Ommoran.tga"
 hp 250
 str 8
 mr 15

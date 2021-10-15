@@ -17,7 +17,7 @@ addcomrec "Bronze Engineer" 10 60 0 10
 addcomrec "Bronze Explosives Engineer" 5 60 0 15
 addcomrec "Bronze Scout" 10 60 0 10
 addcomrec "Bronze Assault Scout" 5 60 0 15
-#addcomrec "Bronze Assault Scout" 100 5 0 0
+#addcomrec "Bronze Assault Scout" 100 5 0 0 # Testing
 #addcomrec "Karl" 100 5 0 0           # Testing
 #addcomrec "DRG MoneyBags" 100 1 0 0  # Testing
 #addcomrec "Ommoran" 100 5 0 0        # Testing

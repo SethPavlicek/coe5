@@ -32,7 +32,10 @@ set +x # echo off
 echo "Done joining files."
 set -x # echo on
 cp -f DRG.c5m DRGmod/
-cp -f images/*.tga DRGmod/
+mkdir -p DRGmod/images
+cp -f images/*.tga DRGmod/images/
+cp -f images/banner.png DRGmod/
+cp -f coe5ws.txt DRGmod/
 set +x # echo off
 echo "Copied DRG.c5m to DRG mod folder."
 

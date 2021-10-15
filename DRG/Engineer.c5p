@@ -53,7 +53,7 @@ free
 
 newmonster "Sentry Gun"
 descr "Pew Pew Pew"
-spr1 "SentryGun.tga"
+spr1 "images/SentryGun.tga"
 armor 2
 rank 1
 hp 20
@@ -162,7 +162,7 @@ dmgtype 6
 
 newmonster "Bronze Engineer"
 descr "Infestation problem? Automated turret m8."
-spr1 "Engineer.tga"
+spr1 "images/Engineer.tga"
 armor 2
 rank 0
 rearpos

@@ -27,7 +27,7 @@ dmg 6
 
 newmonster "BET-C"
 descr "Whatta chonker."
-spr1 "BET-C.tga"
+spr1 "images/BET-C.tga"
 hp 50
 str 8
 mr 8
@@ -60,7 +60,7 @@ rangedweaponbonus 0 "BET-C Sticky Bomb"
 
 newmonster "Mini M.U.L.E"
 descr "Molly! My mini mule!"
-spr1 "MiniMule.tga"
+spr1 "images/MiniMule.tga"
 hp 10
 str 6
 mr 5
@@ -91,7 +91,7 @@ tramplexsize 1
 
 newmonster "M.U.L.E"
 descr "Molly! My most trustiest of mules!"
-spr1 "Molly.tga"
+spr1 "images/Molly.tga"
 hp 20
 str 6
 mr 6
@@ -124,7 +124,7 @@ tramplexsize 1
 
 newmonster "Bosco"
 descr "Support fire please!!!"
-spr1 "Bosco.tga"
+spr1 "images/Bosco.tga"
 hp 6
 str 5
 mr 5
@@ -149,7 +149,7 @@ rangedweaponbonus 0 "AutoGun CompactV2"
 
 newmonster "Lloyd"
 descr "I am a sucker for the wee drawings in the foam."
-spr1 "Lloyd.tga"
+spr1 "images/Lloyd.tga"
 hp 14
 str 5
 mr 8
@@ -175,7 +175,7 @@ rangedweaponbonus 1 "AutoGun HunterV2"
 
 newmonster "Doretta"
 descr "This bad boy can drill so many tunnels!"
-spr1 "Drilldozer.tga"
+spr1 "images/Drilldozer.tga"
 hp 100
 str 15
 mr 10
@@ -214,7 +214,7 @@ meleeweapon 27 "Drill"
 
 newmonster "Mining Crew"
 descr "How does Bosco order Molly around?"
-spr1 "MiningCrew.tga"
+spr1 "images/MiningCrew.tga"
 hp 30
 str 6
 mr 8
@@ -249,7 +249,7 @@ rangedweaponbonus 1 "AutoGun HunterV2"
 newmonster "Tipping Jar"
 name "Tipping Jar"
 descr "Put something in, get something out. (NOTE: Grants 2 trade)"
-spr1 "TippingRobot.tga"
+spr1 "images/TippingRobot.tga"
 hp 5
 str 6
 mr 16
@@ -278,7 +278,7 @@ immobile
 
 newmonster "Barrel"
 descr "Get behind these barrels for cover!"
-spr1 "barrel.tga"
+spr1 "images/barrel.tga"
 hp 10
 str 2
 mr 2

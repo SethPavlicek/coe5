@@ -2,7 +2,7 @@
 
 newmonster "Karl"
 descr "For Karl!! Definitely not a statue."
-spr1 "Karl.tga"
+spr1 "images/Karl.tga"
 rank 0
 hp 75
 str 15
@@ -44,7 +44,7 @@ rangedweaponbonus 16 "M1000 Classic"
 
 newmonster "Karl's Drop Pod"
 descr "Open for a surprise."
-spr1 "DropPod.tga"
+spr1 "images/DropPod.tga"
 hp 250
 str 8
 mr 15
