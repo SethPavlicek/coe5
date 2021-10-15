@@ -4,7 +4,7 @@
 
 #newritpow # INDEX 3 - Gunner
 
-newritual "Gunner Promotion from Management I"
+newritual "Gunner Promotion - Silver"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 1
 levelup 2
@@ -16,7 +16,7 @@ cost 10 30
 free
 
 
-newritual "Gunner Promotion from Management II"
+newritual "Gunner Promotion - Gold"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 2
 levelup 3
@@ -28,7 +28,7 @@ cost 10 60
 free
 
 
-newritual "Gunner Promotion from Management III"
+newritual "Gunner Promotion - Platinum
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 3
 levelup 4
@@ -40,13 +40,16 @@ cost 10 120
 free
 
 
-newritual "Gunner Promotion from Management IV"
-descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
+newritual "Gunner Promotion - Diamond
+descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner! (Only one Gunner can be Diamond at a time.)"
 level 4
 levelup 5
 newrit 5
 forgetcurrit
 rebatelvl 5
+nomonplayerreq 1
+addstring "(-)Diamond Gunner"
+addstring "(-)Diamond Siege Gunner"
 soundfx 29
 cost 10 180
 free

@@ -4,7 +4,7 @@
 
 #newritpow # INDEX 2 - Engineer
 
-newritual "Engineer Promotion from Management I"
+newritual "Engineer Promotion - Silver"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 1
 levelup 2
@@ -15,7 +15,7 @@ soundfx 29
 cost 8 30
 free
 
-newritual "Engineer Promotion from Management II"
+newritual "Engineer Promotion - Gold"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 2
 levelup 3
@@ -26,7 +26,7 @@ soundfx 29
 cost 8 60
 free
 
-newritual "Engineer Promotion from Management III"
+newritual "Engineer Promotion - Platinum
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 3
 levelup 4
@@ -37,13 +37,16 @@ soundfx 29
 cost 8 120
 free
 
-newritual "Engineer Promotion from Management IV"
-descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
+newritual "Engineer Promotion - Diamond
+descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner! (Only one Engineer can be Diamond at a time.)"
 level 4
 levelup 5
 newrit 5
 forgetcurrit
 rebatelvl 5
+nomonplayerreq 1
+addstring "(-)Diamond Engineer"
+addstring "(-)Diamond Explosives Engineer"
 soundfx 29
 cost 8 180
 free
