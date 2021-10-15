@@ -5,6 +5,7 @@
 #newritpow # INDEX 3 - Gunner
 
 newritual "Gunner Promotion from Management I"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 1
 levelup 2
 newrit 2
@@ -16,6 +17,7 @@ free
 
 
 newritual "Gunner Promotion from Management II"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 2
 levelup 3
 newrit 3
@@ -27,6 +29,7 @@ free
 
 
 newritual "Gunner Promotion from Management III"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 3
 levelup 4
 newrit 4
@@ -38,6 +41,7 @@ free
 
 
 newritual "Gunner Promotion from Management IV"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 4
 levelup 5
 newrit 5
@@ -139,7 +143,7 @@ an
 
 #Gunner Units Ranks 1-6
 newmonster "Bronze Gunner"
-descr "100lb guns"
+descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
 spr1 "Gunner.tga"
 slashres
 armor 2

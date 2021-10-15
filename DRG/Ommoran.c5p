@@ -79,7 +79,7 @@ flymode 5
 sound 24
 
 newmonster "Ommoran Beamer"
-descr "Defender of the Ommoran. Pew Pew."
+descr "Destroy the Beamers with your picks!"
 spr1 "OmmoranBeamer.tga"
 hp 8
 str 3

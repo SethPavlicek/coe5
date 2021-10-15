@@ -5,6 +5,7 @@
 #newritpow # INDEX 1 - Driller
 
 newritual "Driller Promotion from Management I"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 1
 levelup 2
 newrit 2
@@ -15,6 +16,7 @@ cost 7 30
 free
 
 newritual "Driller Promotion from Management II"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 2
 levelup 3
 newrit 3
@@ -25,6 +27,7 @@ cost 7 60
 free
 
 newritual "Driller Promotion from Management III"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 3
 levelup 4
 newrit 4
@@ -35,6 +38,7 @@ cost 7 120
 free
 
 newritual "Driller Promotion from Management IV"
+descr "For your excellent performance at Deep Rock Galactic Management has granted you a promotion. Rock and stone miner!"
 level 4
 levelup 5
 newrit 5
