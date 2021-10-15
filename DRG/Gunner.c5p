@@ -144,7 +144,7 @@ an
 #Gunner Units Ranks 1-6
 newmonster "Bronze Gunner"
 descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
-spr1 "Gunner.tga"
+spr1 "images/Gunner.tga"
 slashres
 armor 2
 shield 1

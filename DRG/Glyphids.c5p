@@ -25,7 +25,7 @@ mundane
 newmonster "Glyphid Swarmer"
 descr "Get your stomping boots on."
 copystats "Small Spider"
-spr1 "GlyphidSwarmer.tga"
+spr1 "images/GlyphidSwarmer.tga"
 clearweapons
 hp 1
 rank 1
@@ -42,7 +42,7 @@ meleeweapon 1 "Bite"
 
 newmonster "Glyphid Grunt"
 descr "If only bugs were allowed on the space rig."
-spr1 "GlyphidGrunt.tga"
+spr1 "images/GlyphidGrunt.tga"
 hp 10
 str 5
 mr 2
@@ -57,7 +57,7 @@ meleeweapon 2 "Bite"
 
 newmonster "Glyphid Slasher"
 descr "Watch the sharp blades!"
-spr1 "GlyphidSlasher.tga"
+spr1 "images/GlyphidSlasher.tga"
 hp 14
 str 8
 mr 2
@@ -72,7 +72,7 @@ meleeweapon 6 "Bite"
 
 newmonster "Glyphid Guard"
 descr "That one is a tough bastard."
-spr1 "GlyphidGuard.tga"
+spr1 "images/GlyphidGuard.tga"
 hp 20
 str 5
 mr 3

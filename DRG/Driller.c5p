@@ -186,7 +186,7 @@ flymode 2
 
 newmonster "Bronze Driller"
 descr "I eat rock for breakfast!"
-spr1 "Driller.tga"
+spr1 "images/Driller.tga"
 armor 3
 rank 1
 hp 22

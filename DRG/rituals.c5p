@@ -64,8 +64,8 @@ cost 1 30
 cost 15 10
 free
 
-newritual "Build M.U.L.Es"
-descr "Build one M.U.L.E. Molly will push her enemies off of cliffs."
+newritual "Build M.U.L.E"
+descr "Build a M.U.L.E. Molly will push her enemies off cliffs."
 level 1
 soundfx 31
 summoning

@@ -89,7 +89,7 @@ dmg 9
 
 newmonster "Rock Cover"
 descr "These rocks grant a little cover."
-spr1 "FlyingRock.tga"
+spr1 "images/FlyingRock.tga"
 hp 6
 str 2
 mr 2
@@ -136,7 +136,7 @@ mundane
 # Scout ================================================================================================================
 newmonster "Bronze Scout"
 descr "Yeah, I got a grappling hook. What are you gonna do about it?"
-spr1 "Scout.tga"
+spr1 "images/Scout.tga"
 armor 1
 rank -1
 rearpos
