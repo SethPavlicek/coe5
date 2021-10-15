@@ -133,7 +133,10 @@ soundfx 31
 randnewloc -5
 scryloc 1
 farsummon
+nomonplayerreq 1
 addstring "Karl's Drop Pod"
+addstring "(-)Karl"
+addstring "(-)Karl's Drop Pod"
 cost 1 250
 cost 15 150
 free

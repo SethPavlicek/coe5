@@ -4,7 +4,7 @@
 
 #newritpow # INDEX 2 - Engineer
 
-newritual "Engineer Promotion from Management I"
+newritual "Engineer Promotion - Silver"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 1
 levelup 2
@@ -15,7 +15,7 @@ soundfx 29
 cost 8 30
 free
 
-newritual "Engineer Promotion from Management II"
+newritual "Engineer Promotion - Gold"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 2
 levelup 3
@@ -26,7 +26,7 @@ soundfx 29
 cost 8 60
 free
 
-newritual "Engineer Promotion from Management III"
+newritual "Engineer Promotion - Platinum
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 3
 levelup 4
@@ -37,13 +37,16 @@ soundfx 29
 cost 8 120
 free
 
-newritual "Engineer Promotion from Management IV"
-descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
+newritual "Engineer Promotion - Diamond
+descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner! (Only one Engineer can be Diamond at a time.)"
 level 4
 levelup 5
 newrit 5
 forgetcurrit
 rebatelvl 5
+nomonplayerreq 1
+addstring "(-)Diamond Engineer"
+addstring "(-)Diamond Explosives Engineer"
 soundfx 29
 cost 8 180
 free
@@ -84,7 +87,7 @@ newweapon "Breach Cutter"
 aoe 1015
 range 10
 dmgtype 7
-dmg 10
+dmg 7
 init 3
 an
 shieldneg
@@ -205,7 +208,7 @@ prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 1 "SMG"
-rangedweapon 2 "Breach Cutter"
+rangedweapon 1 "Breach Cutter"
 
 newmonster "Gold Engineer"
 copystats "Silver Engineer"
@@ -222,13 +225,12 @@ coldres 35
 shockres 35
 #power -2 3
 power 0 3
-prebatweapon 1 "Summon Sentry Gun"
-prebatweapon 1 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 2 "SMG"
-rangedweapon 3 "Breach Cutter"
-rangedweapon 3 "Breach Cutter"
+rangedweapon 1 "Breach Cutter"
+rangedweapon 2 "Breach Cutter"
 
 newmonster "Platinum Engineer"
 copystats "Gold Engineer"
@@ -244,13 +246,13 @@ shockres 45
 #power -2 4
 power 0 4
 prebatweapon 1 "Summon Sentry Gun"
-prebatweapon 2 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 2 "SMG"
 rangedweaponbonus 3 "SMG"
-rangedweaponbonus 3 "SMG"
-rangedweapon 4 "Breach Cutter"
-rangedweapon 4 "Breach Cutter"
+rangedweapon 2 "Breach Cutter"
+rangedweapon 3 "Breach Cutter"
 
 newmonster "Diamond Engineer"
 copystats "Platinum Engineer"
@@ -270,11 +272,11 @@ prebatweapon 2 "Summon Sentry Gun"
 prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
+rangedweaponbonus 3 "SMG"
 rangedweaponbonus 4 "SMG"
-rangedweaponbonus 4 "SMG"
-rangedweapon 5 "Breach Cutter"
-rangedweapon 5 "Breach Cutter"
-rangedweapon 5 "Breach Cutter"
+rangedweapon 2 "Breach Cutter"
+rangedweapon 3 "Breach Cutter"
+rangedweapon 4 "Breach Cutter"
 
 # Grenade Launcher Engineer
 
@@ -302,11 +304,10 @@ newmonster "Gold Explosives Engineer"
 copystats "Gold Engineer"
 descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
-prebatweapon 1 "Summon Sentry Gun"
-prebatweapon 1 "Summon Sentry Gun"
+prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweaponbonus 2 "SMG"
+rangedweaponbonus 1 "SMG"
 rangedweaponbonus 2 "SMG"
 rangedweapon 0 "Grenade Launcher"
 rangedweapon 0 "Grenade Launcher"
@@ -316,10 +317,10 @@ copystats "Platinum Engineer"
 descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
 prebatweapon 1 "Summon Sentry Gun"
-prebatweapon 2 "Summon Sentry Gun"
+prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweaponbonus 3 "SMG"
+rangedweaponbonus 2 "SMG"
 rangedweaponbonus 3 "SMG"
 rangedweapon 0 "Grenade Launcher"
 rangedweapon 0 "Grenade Launcher"
@@ -332,6 +333,6 @@ prebatweapon 2 "Summon Sentry Gun"
 prebatweapon 2 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
-rangedweaponbonus 4 "SMG"
+rangedweaponbonus 3 "SMG"
 rangedweaponbonus 4 "SMG"
 rangedweapon 0 "Fat Boy Launcher"

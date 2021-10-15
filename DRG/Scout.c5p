@@ -4,7 +4,7 @@
 
 #newritpow # INDEX 4 - Scout
 
-newritual "Scout Promotion from Management I"
+newritual "Scout Promotion - Silver"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 1
 levelup 2
@@ -15,7 +15,7 @@ soundfx 29
 cost 9 30
 free
 
-newritual "Scout Promotion from Management II"
+newritual "Scout Promotion - Gold"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 2
 levelup 3
@@ -27,8 +27,8 @@ cost 9 60
 free
 
 
-newritual "Scout Promotion from Management III"
-descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
+newritual "Scout Promotion - Platinum
+descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotionto rank Platinum. Rock and stone miner!"
 level 3
 levelup 4
 newrit 4
@@ -39,13 +39,16 @@ cost 9 120
 free
 
 
-newritual "Scout Promotion from Management IV"
-descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
+newritual "Scout Promotion - Diamond
+descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner! (Only one Scout can be Diamond at a time.)"
 level 4
 levelup 5
 newrit 5
 forgetcurrit
 rebatelvl 5
+nomonplayerreq 1
+addstring "(-)Diamond Scout"
+addstring "(-)Diamond Assault Scout"
 soundfx 29
 cost 9 180
 free
