@@ -169,6 +169,7 @@ rangedweapon 0 "M1000 Classic"
 
 newmonster "Silver Scout"
 copystats "Bronze Scout"
+descr "Yeah, I got a grappling hook. What are you gonna do about it?"
 clearweapons
 hp 19
 mr 6
@@ -186,6 +187,7 @@ rangedweapon 4 "M1000 Classic"
 
 newmonster "Gold Scout"
 copystats "Silver Scout"
+descr "Yeah, I got a grappling hook. What are you gonna do about it?"
 clearweapons
 hp 22
 str 6
@@ -210,6 +212,7 @@ rangedweapon 8 "M1000 Classic"
 
 newmonster "Platinum Scout"
 copystats "Gold Scout"
+descr "Yeah, I got a grappling hook. What are you gonna do about it?"
 clearweapons
 hp 25
 str 6
@@ -234,6 +237,7 @@ rangedweapon 12 "M1000 Classic"
 
 newmonster "Diamond Scout"
 copystats "Platinum Scout"
+descr "Yeah, I got a grappling hook. What are you gonna do about it?"
 clearweapons
 hp 25
 str 7
@@ -256,6 +260,7 @@ rangedweapon 8 "M1000 Classic"
 
 newmonster "Bronze Assault Scout"
 copystats "Bronze Scout"
+descr "Afraid of the darkness? No need, you got me!"
 clearweapons
 prebatweapon 2 "Summon Rock Cover"
 prebatweapon 3 "Summon Rock Cover"
@@ -266,6 +271,7 @@ rangedweapon 0 "Laser Assault Rifle RF"
 
 newmonster "Silver Assault Scout"
 copystats "Silver Scout"
+descr "Afraid of the darkness? No need, you got me!"
 clearweapons
 prebatweapon 2 "Summon Rock Cover"
 prebatweapon 2 "Summon Rock Cover"
@@ -277,6 +283,7 @@ rangedweapon 1 "Laser Assault Rifle RF"
 
 newmonster "Gold Assault Scout"
 copystats "Gold Scout"
+descr "Afraid of the darkness? No need, you got me!"
 clearweapons
 prebatweapon 2 "Summon Rock Cover"
 prebatweapon 2 "Summon Rock Cover"
@@ -292,6 +299,7 @@ rangedweapon 0 "Laser Assault Rifle LR"
 
 newmonster "Platinum Assault Scout"
 copystats "Platinum Scout"
+descr "Afraid of the darkness? No need, you got me!"
 clearweapons
 prebatweapon 2 "Summon Rock Cover"
 prebatweapon 2 "Summon Rock Cover"
@@ -308,6 +316,7 @@ rangedweapon 2 "Laser Assault Rifle LR"
 
 newmonster "Diamond Assault Scout"
 copystats "Diamond Scout"
+descr "Afraid of the darkness? No need, you got me!"
 clearweapons
 prebatweapon 2 "Summon Rock Cover"
 prebatweapon 2 "Summon Rock Cover"
