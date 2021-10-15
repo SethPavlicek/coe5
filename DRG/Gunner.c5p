@@ -138,7 +138,7 @@ flylook 21
 flysound 27
 trgrank 9
 dmgtype 3
-dmg 10
+dmg 8
 an
 
 #Gunner Units Ranks 1-6
@@ -191,7 +191,7 @@ meleeweaponbonus 1 "Power Pickaxe"
 rangedweapon50 0 "DRG Minigun"
 rangedweapon50 1 "DRG Minigun"
 rangedweapon50 2 "DRG Minigun"
-rangedweapon 3 "DRG Revolver"
+rangedweapon 2 "DRG Revolver"
 
 # armor increase, 1-shot grenade added
 newmonster "Gold Gunner"
@@ -216,7 +216,7 @@ rangedweapon50 0 "DRG Minigun"
 rangedweapon50 1 "DRG Minigun"
 rangedweapon50 1 "DRG Minigun"
 rangedweapon50 2 "DRG Minigun"
-rangedweapon 6 "DRG Revolver"
+rangedweapon 4 "DRG Revolver"
 
 # gain pierce res
 newmonster "Platinum Gunner"
@@ -241,7 +241,7 @@ rangedweapon50 1 "DRG Minigun"
 rangedweapon50 2 "DRG Minigun"
 rangedweapon50 2 "DRG Minigun"
 rangedweapon50 3 "DRG Minigun"
-rangedweapon 9 "DRG Revolver"
+rangedweapon 6 "DRG Revolver"
 
 # armor increase
 newmonster "Diamond Gunner"
@@ -264,7 +264,7 @@ rangedweapon50 2 "DRG Minigun"
 rangedweapon50 2 "DRG Minigun"
 rangedweapon50 3 "DRG Minigun"
 rangedweapon50 4 "DRG Minigun"
-rangedweapon 12 "DRG Revolver"
+rangedweapon 8 "DRG Revolver"
 
 newmonster "Bronze Siege Gunner"
 copystats "Bronze Gunner"
@@ -284,7 +284,7 @@ siegeweapon 5 "DRG AutoCannon S"
 meleeweapon50s 4 "DRG Pickaxe"
 meleeweaponbonus 1 "Power Pickaxe"
 rangedweaponbonus 5 "DRG AutoCannon"
-rangedweapon 3 "DRG Revolver"
+rangedweapon 2 "DRG Revolver"
 
 newmonster "Gold Siege Gunner"
 copystats "Gold Gunner"
@@ -296,7 +296,7 @@ meleeweaponbonus 2 "Power Pickaxe"
 rangedweapon 0 "Incendiary Grenade"
 rangedweapon50x 7 "DRG AutoCannon S"
 rangedweaponbonus 7 "DRG AutoCannon"
-rangedweapon 6 "DRG Revolver"
+rangedweapon 4 "DRG Revolver"
 
 newmonster "Platinum Siege Gunner"
 copystats "Platinum Gunner"
@@ -308,7 +308,7 @@ meleeweaponbonus 3 "Power Pickaxe"
 rangedweapon 0 "Incendiary Grenade"
 rangedweapon50 9 "DRG AutoCannon S"
 rangedweaponbonus 9 "DRG AutoCannon"
-rangedweapon 9 "DRG Revolver"
+rangedweapon 6 "DRG Revolver"
 
 newmonster "Diamond Siege Gunner"
 copystats "Diamond Gunner"
@@ -321,4 +321,4 @@ rangedweapon 0 "Incendiary Grenade"
 rangedweapon 0 "Incendiary Grenade"
 rangedweapon50 11 "DRG AutoCannon S"
 rangedweaponbonus 11 "DRG AutoCannon"
-rangedweapon 12 "DRG Revolver"
+rangedweapon 8 "DRG Revolver"
