@@ -64,8 +64,7 @@ flylook 35
 flysound 11
 flymode 1
 dmgtype 3
-dmg 16
-an
+dmg 10
 shieldneg
 reload1
 
@@ -164,7 +163,7 @@ acutesenses
 power 0 1
 #power -4 1
 mastery 1
-assassinweapon -8 "M1000 Classic"
+assassinweapon -2 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 0 "Sawed Off"
@@ -182,11 +181,11 @@ coldres 20
 shockres 20
 power 0 2
 #power -4 2
-assassinweapon -4 "M1000 Classic"
+assassinweapon 0 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 1 "Sawed Off"
-rangedweapon 4 "M1000 Classic"
+rangedweapon 3 "M1000 Classic"
 
 newmonster "Gold Scout"
 copystats "Silver Scout"
@@ -205,12 +204,12 @@ power 0 3
 #power -4 3
 farsight 1
 float
-assassinweapon 0 "M1000 Classic"
+assassinweapon 2 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
 rangedweaponbonus 2 "Sawed Off"
-rangedweapon 8 "M1000 Classic"
+rangedweapon 6 "M1000 Classic"
 
 
 newmonster "Platinum Scout"
@@ -235,7 +234,7 @@ meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
 rangedweaponbonus 3 "Sawed Off"
 rangedweaponbonus 1 "Sawed Off"
-rangedweapon 12 "M1000 Classic"
+rangedweapon 9 "M1000 Classic"
 
 
 newmonster "Diamond Scout"
@@ -252,14 +251,14 @@ coldres 50
 shockres 50
 power 0 5
 #power -4 5
-assassinweapon 8 "M1000 Classic"
+assassinweapon 6 "M1000 Classic"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
 rangedweaponbonus 4 "Sawed Off"
 rangedweaponbonus 2 "Sawed Off"
-rangedweapon 16 "M1000 Classic"
-rangedweapon 8 "M1000 Classic"
+rangedweapon 12 "M1000 Classic"
+rangedweapon 9 "M1000 Classic"
 
 newmonster "Bronze Assault Scout"
 copystats "Bronze Scout"
