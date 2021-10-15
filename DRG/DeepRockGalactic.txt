@@ -1,0 +1,44 @@
+Summary:
+
+Do you like dwarves but wish they had guns, robots, and cute insect pets? Do you think that the vanilla dwarves sit in their mines until the end of the game?
+Then this the mod for you.
+This mod adds monsters and rituals based on the game Deep Rock Galactic. There are four different dwarves each with two subtypes, quite a few robots, three new insects, and a few unique monsters.
+
+Feature List:
+-Dwarves:
+    -Scout: A fast stealthy unit meant to take out elite troops.
+    -Driller: Burns his enemies to the ground (great for crowd control).
+    -Gunner: Has giant guns to unload on the enemy.
+    -Engineer: Summons turrets and shoots purple beams or explosives.
+
+-Insects (Glypids):
+    -Glyphid Swarmers: Super wimpy and tiny units meant to swarm the enemy.
+    -Glyphid Slashers: Somewhat tanky monsters that hit pretty hard.
+    -Glyphid Guards: Tanky bugs that will soak up some damage.
+
+-Robots:
+    -Tipping Jar: A happy robot that will increase your trade by 2.
+    -Bosco: An armored patrol drone (APD) that can provide support fire.
+    -Lloyd: A better version of a Bosco.
+    -Mini M.U.L.E: A small robot that will trample your enemies.
+    -M.U.L.E: A medium sized robot that will trample your enemies.
+    -Mining Crew: A Bosco and a M.U.L.E that will increase the income of the square they occupy.
+    -BET-C: A large M.U.L.E that shoots a powerful gun and explosives.
+    -Drilldozer: A big bulldozer with a drill on the front.
+
+-Unique:
+    -Ommoran: Summons flying rocks and beamers to protect itself.
+    -Karl: Big dwarf with many many many guns....
+
+-Balance:
+    Should be balanced, mostly...
+    Please give me your balance suggestions.
+
+Compatibility:
+
+Your saved games will most likely break if you enable this mod. No other issues are known.
+
+Credits:
+I pulled most of the images off of the internet.
+Thank you to Commisar Jon Fuklaw. I copied his mining rituals from his dwarf overhaul mod into this mod.
+
