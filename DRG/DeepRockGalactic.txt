@@ -3,7 +3,7 @@ Summary:
 Do you like dwarves but wish they had guns, robots, and cute insect pets? Do you think that the vanilla dwarves sit in their mines until the end of the game?
 If you answer yes to any of these, then this the mod for you!
 
-This mod adds monsters and rituals based on the game Deep Rock Galactic. There are four different dwarves each with two subtypes, quite a few robots, three new insects, and a few unique monsters.
+This mod adds a new class with new monsters and rituals based on the game Deep Rock Galactic. There are four different dwarves each with two subtypes, quite a few robots, three new insects, and a few unique monsters.
 
 Feature List:
 -Dwarves:
