@@ -29,6 +29,7 @@ Feature List:
 -Unique:
     -Ommoran: Summons flying rocks and beamers to protect itself.
     -Karl: Big dwarf with many many many guns....
+    -Barrel: It is a barrel.
 
 -Balance:
     Should be balanced, mostly...
