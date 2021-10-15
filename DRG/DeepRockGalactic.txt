@@ -33,13 +33,14 @@ Feature List:
     -Barrel: It is a barrel.
 
 Balance and Defects:
-    We tried to balance this, but noticed this class gets somewhat powerful later on (hopefully the complete overhaul mod makes up for it).
-    Balance suggestions are welcome. No known defects, but if you find any issues, please let me know!
+    We tried to balance this in relation to the Complete Overhaul mod (by Commisar Jon Fuklaw).
+    This class seems to get powerful late game, but it is hard to compare it to all other late-game builds.
+    Feedback is welcome -- either balance issues or defects. Please let me know!
 
 Compatibility:
-    Your saved games will most likely break if you enable this mod. No other issues are known.
+    Your previous saved games will most likely break if you enable this mod. No other issues are known.
 
 Credits:
     I pulled most of the images off the internet.
-    Thank you to Commisar Jon Fuklaw. I copied his mining rituals from his dwarf overhaul mod into this mod.
+    Thank you to Commisar Jon Fuklaw for his mining rituals from the dwarf overhaul (we borrowed them for ours).
 
