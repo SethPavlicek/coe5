@@ -1,7 +1,8 @@
 Summary:
 
 Do you like dwarves but wish they had guns, robots, and cute insect pets? Do you think that the vanilla dwarves sit in their mines until the end of the game?
-Then this the mod for you.
+If you answer yes to any of these, then this the mod for you!
+
 This mod adds monsters and rituals based on the game Deep Rock Galactic. There are four different dwarves each with two subtypes, quite a few robots, three new insects, and a few unique monsters.
 
 Feature List:
@@ -30,15 +31,14 @@ Feature List:
     -Ommoran: Summons flying rocks and beamers to protect itself.
     -Karl: Big dwarf with many many many guns....
 
--Balance:
-    Should be balanced, mostly...
-    Please give me your balance suggestions.
+Balance and Defects:
+    We tried to balance this, but noticed this class gets somewhat powerful later on (hopefully the complete overhaul mod makes up for it).
+    Balance suggestions are welcome. No known defects, but if you find any issues, please let me know!
 
 Compatibility:
-
-Your saved games will most likely break if you enable this mod. No other issues are known.
+    Your saved games will most likely break if you enable this mod. No other issues are known.
 
 Credits:
-I pulled most of the images off of the internet.
-Thank you to Commisar Jon Fuklaw. I copied his mining rituals from his dwarf overhaul mod into this mod.
+    I pulled most of the images off the internet.
+    Thank you to Commisar Jon Fuklaw. I copied his mining rituals from his dwarf overhaul mod into this mod.
 
