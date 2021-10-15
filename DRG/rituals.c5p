@@ -127,7 +127,7 @@ cost 15 60
 free
 
 newritual "Scan for Karl's Drop Pod"
-descr "Scan for Karl's Drop Pod. This will summon Karl's Drop Pod somewhere on the map. Maybe something is inside?"
+descr "Scan for Karl's Drop Pod. Maybe something is inside? (This will summon Karl's Drop Pod somewhere on the map.)"
 level 5
 soundfx 31
 randnewloc -5
