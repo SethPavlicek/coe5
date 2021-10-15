@@ -70,6 +70,7 @@ aoe 1012
 range 12
 dmgtype 7
 dmg 4
+an
 init 7
 #flymode 5
 flylook 80 # yellow beam
@@ -137,4 +138,4 @@ ironcarrier 300
 prebatweapon 3 "Summon Flying Rock"
 rangedweaponbonus 1 "Summon Flying Rock"
 rangedweaponbonus 1 "Summon Ommoran Beamer"
-rangedweaponbonus 8 "Ommoran Beam"
+rangedweaponbonus 6 "Ommoran Beam"

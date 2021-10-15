@@ -158,8 +158,8 @@ armor 2
 pierceres
 slashres
 bluntres
-rank 0
-rearpos
+rank -1
+frontpos
 fireres 50
 coldres 50
 #shockres 25

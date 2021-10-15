@@ -59,7 +59,7 @@ descr "Build one Lloyd and a bunch of Boscos. They give you support fire."
 level 2
 soundfx 31
 summoning
-addstring "c*Lloyd & 2d3+3*Bosco"
+addstring "c*Lloyd & 2d3+2*Bosco"
 cost 1 30
 cost 15 10
 free
