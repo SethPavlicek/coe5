@@ -37,6 +37,6 @@ cp -f images/*.tga DRGmod/images/
 cp -f images/banner.png DRGmod/
 cp -f coe5ws.txt DRGmod/
 set +x # echo off
-echo "Copied DRG.c5m to DRG mod folder."
+echo "Copied all DRG files to DRG mod folder."
 
 # misc, rituals, weapons (universal), glyphids, commanders (already there), class (last)
