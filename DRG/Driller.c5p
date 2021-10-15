@@ -26,7 +26,7 @@ soundfx 29
 cost 7 60
 free
 
-newritual "Driller Promotion - Platinum
+newritual "Driller Promotion - Platinum"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner!"
 level 3
 levelup 4
@@ -37,7 +37,7 @@ soundfx 29
 cost 7 120
 free
 
-newritual "Driller Promotion - Diamond
+newritual "Driller Promotion - Diamond"
 descr "For your excellent performance at Deep Rock Galactic, Management has granted you a promotion. Rock and stone miner! (Only one Driller can be Diamond at a time.)"
 level 4
 levelup 5
