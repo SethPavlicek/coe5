@@ -175,6 +175,7 @@ rangedweapon 0 "DRG Revolver"
 # gain fastheal
 newmonster "Silver Gunner"
 copystats "Bronze Gunner"
+descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
 hp 22
 str 6
 mr 6
@@ -195,6 +196,7 @@ rangedweapon 3 "DRG Revolver"
 # armor increase, 1-shot grenade added
 newmonster "Gold Gunner"
 copystats "Silver Gunner"
+descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
 armor 3
 hp 26
 str 7
@@ -219,6 +221,7 @@ rangedweapon 6 "DRG Revolver"
 # gain pierce res
 newmonster "Platinum Gunner"
 copystats "Gold Gunner"
+descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
 pierceres
 hp 30
 str 8
@@ -243,6 +246,7 @@ rangedweapon 9 "DRG Revolver"
 # armor increase
 newmonster "Diamond Gunner"
 copystats "Platinum Gunner"
+descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
 armor 4
 hp 34
 str 9
@@ -264,6 +268,7 @@ rangedweapon 12 "DRG Revolver"
 
 newmonster "Bronze Siege Gunner"
 copystats "Bronze Gunner"
+descr "Time to turn some aliens into thin green paste!"
 clearweapons
 siegeweapon 3 "DRG AutoCannon S"
 meleeweapon50s 3 "DRG Pickaxe"
@@ -273,6 +278,7 @@ rangedweapon 0 "DRG Revolver"
 
 newmonster "Silver Siege Gunner"
 copystats "Silver Gunner"
+descr "It ain't a gun if it doesn't weigh at least 100 pounds!"
 clearweapons
 siegeweapon 5 "DRG AutoCannon S"
 meleeweapon50s 4 "DRG Pickaxe"
@@ -282,6 +288,7 @@ rangedweapon 3 "DRG Revolver"
 
 newmonster "Gold Siege Gunner"
 copystats "Gold Gunner"
+descr "Time to turn some aliens into thin green paste!"
 clearweapons
 siegeweapon 7 "DRG AutoCannon S"
 meleeweapon50s 5 "DRG Pickaxe"
@@ -293,6 +300,7 @@ rangedweapon 6 "DRG Revolver"
 
 newmonster "Platinum Siege Gunner"
 copystats "Platinum Gunner"
+descr "Time to turn some aliens into thin green paste!"
 clearweapons
 siegeweapon 9 "DRG AutoCannon S"
 meleeweapon50s 6 "DRG Pickaxe"
@@ -304,6 +312,7 @@ rangedweapon 9 "DRG Revolver"
 
 newmonster "Diamond Siege Gunner"
 copystats "Diamond Gunner"
+descr "Time to turn some aliens into thin green paste!"
 clearweapons
 siegeweapon 11 "DRG AutoCannon S"
 meleeweapon50s 7 "DRG Pickaxe"

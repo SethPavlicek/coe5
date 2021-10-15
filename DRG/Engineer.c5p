@@ -191,6 +191,7 @@ rangedweapon 0 "Breach Cutter"
 
 newmonster "Silver Engineer"
 copystats "Bronze Engineer"
+descr "Infestation problem? Automated turret m8."
 clearweapons
 hp 20
 mr 7
@@ -208,6 +209,7 @@ rangedweapon 2 "Breach Cutter"
 
 newmonster "Gold Engineer"
 copystats "Silver Engineer"
+descr "Infestation problem? Automated turret m8."
 clearweapons
 hp 24
 str 6
@@ -230,6 +232,7 @@ rangedweapon 3 "Breach Cutter"
 
 newmonster "Platinum Engineer"
 copystats "Gold Engineer"
+descr "Infestation problem? Automated turret m8."
 clearweapons
 hp 28
 str 6
@@ -251,6 +254,7 @@ rangedweapon 4 "Breach Cutter"
 
 newmonster "Diamond Engineer"
 copystats "Platinum Engineer"
+descr "Infestation problem? Automated turret m8."
 clearweapons
 hp 32
 str 7
@@ -276,6 +280,7 @@ rangedweapon 5 "Breach Cutter"
 
 newmonster "Bronze Explosives Engineer"
 copystats "Bronze Engineer"
+descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
 prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
@@ -285,6 +290,7 @@ rangedweapon 0 "Grenade Launcher"
 
 newmonster "Silver Explosives Engineer"
 copystats "Silver Engineer"
+descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
 prebatweapon 1 "Summon Sentry Gun"
 meleeweapon50s 3 "DRG Pickaxe"
@@ -294,6 +300,7 @@ rangedweapon 0 "Grenade Launcher"
 
 newmonster "Gold Explosives Engineer"
 copystats "Gold Engineer"
+descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
 prebatweapon 1 "Summon Sentry Gun"
 prebatweapon 1 "Summon Sentry Gun"
@@ -306,6 +313,7 @@ rangedweapon 0 "Grenade Launcher"
 
 newmonster "Platinum Explosives Engineer"
 copystats "Platinum Engineer"
+descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
 prebatweapon 1 "Summon Sentry Gun"
 prebatweapon 2 "Summon Sentry Gun"
@@ -318,6 +326,7 @@ rangedweapon 0 "Grenade Launcher"
 
 newmonster "Diamond Explosives Engineer"
 copystats "Diamond Engineer"
+descr "Turrets and explosions, you've come to the right place m8."
 clearweapons
 prebatweapon 2 "Summon Sentry Gun"
 prebatweapon 2 "Summon Sentry Gun"
