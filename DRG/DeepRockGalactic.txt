@@ -1,3 +1,5 @@
+CoE5 DRG Mod v1.0
+
 Summary:
 
 Do you like dwarves but wish they had guns, robots, and cute insect pets? Do you think that the vanilla dwarves sit in their mines until the end of the game?
@@ -43,4 +45,3 @@ Compatibility:
 Credits:
     I pulled most of the images off the internet.
     Thank you to Commisar Jon Fuklaw for his mining rituals from the dwarf overhaul (we borrowed them for ours).
-
