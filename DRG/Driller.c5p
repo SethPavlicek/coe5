@@ -69,7 +69,7 @@ flymode 2
 newweapon "Flamethrower Mark II"
 aoe 3013
 dmgtype 4
-dmg 8
+dmg 9
 init 4
 an
 shieldneg
@@ -82,7 +82,7 @@ flymode 2
 newweapon "Flamethrower Mark III"
 aoe 3016
 dmgtype 4
-dmg 8
+dmg 10
 init 4
 an
 shieldneg
@@ -95,7 +95,7 @@ flymode 2
 newweapon "Flamethrower Mark IV"
 aoe 3020
 dmgtype 4
-dmg 8
+dmg 11
 init 4
 an
 shieldneg
@@ -108,7 +108,7 @@ flymode 2
 newweapon "Flamethrower Mark V"
 aoe 3025
 dmgtype 4
-dmg 8
+dmg 13
 init 4
 an
 shieldneg
@@ -136,7 +136,7 @@ flymode 2
 newweapon "Cryocannon Mark II"
 aoe 3013
 dmgtype 5
-dmg 8
+dmg 9
 init 4
 an
 shieldneg
@@ -149,7 +149,7 @@ flymode 2
 newweapon "Cryocannon Mark III"
 aoe 3016
 dmgtype 5
-dmg 8
+dmg 10
 init 4
 an
 shieldneg
@@ -162,7 +162,7 @@ flymode 2
 newweapon "Cryocannon Mark IV"
 aoe 3020
 dmgtype 5
-dmg 8
+dmg 11
 init 4
 an
 shieldneg
@@ -175,7 +175,7 @@ flymode 2
 newweapon "Cryocannon Mark V"
 aoe 3025
 dmgtype 5
-dmg 8
+dmg 13
 init 4
 an
 shieldneg
@@ -232,7 +232,7 @@ shockres 45
 #power -1 2
 power 0 2
 meleeweaponbonus 1 "Drill"
-rangedweaponbonus 1 "Flamethrower Mark II"
+rangedweaponbonus 0 "Flamethrower Mark II"
 
 newmonster "Gold Driller"
 copystats "Silver Driller"
@@ -249,7 +249,7 @@ shockres 55
 #power -1 3
 power 0 3
 meleeweaponbonus 2 "Drill"
-rangedweaponbonus 2 "Flamethrower Mark III"
+rangedweaponbonus 0 "Flamethrower Mark III"
 
 newmonster "Platinum Driller"
 copystats "Gold Driller"
@@ -268,7 +268,7 @@ shockres 65
 power 0 4
 meleeweaponbonus 3 "Drill"
 rangedweapon 0 "Neurotoxin Grenade"
-rangedweaponbonus 3 "Flamethrower Mark IV"
+rangedweaponbonus 0 "Flamethrower Mark IV"
 
 newmonster "Diamond Driller"
 copystats "Platinum Driller"
@@ -286,7 +286,7 @@ shockres 75
 power 0 5
 meleeweaponbonus 5 "Drill"
 rangedweapon 0 "Neurotoxin Grenade"
-rangedweaponbonus 5 "Flamethrower Mark V"
+rangedweaponbonus 0 "Flamethrower Mark V"
 
 
 newmonster "Bronze Cryo Driller"
@@ -301,14 +301,14 @@ copystats "Silver Driller"
 descr "Who wants a cold one?"
 clearweapons
 meleeweaponbonus 1 "Drill"
-rangedweaponbonus 1 "Cryocannon Mark II"
+rangedweaponbonus 0 "Cryocannon Mark II"
 
 newmonster "Gold Cryo Driller"
 copystats "Gold Driller"
 descr "Who wants a cold one?"
 clearweapons
 meleeweaponbonus 2 "Drill"
-rangedweaponbonus 2 "Cryocannon Mark III"
+rangedweaponbonus 0 "Cryocannon Mark III"
 
 newmonster "Platinum Cryo Driller"
 copystats "Platinum Driller"
@@ -316,7 +316,7 @@ descr "Who wants a cold one?"
 clearweapons
 meleeweaponbonus 3 "Drill"
 rangedweapon 0 "Neurotoxin Grenade"
-rangedweaponbonus 3 "Cryocannon Mark IV"
+rangedweaponbonus 0 "Cryocannon Mark IV"
 
 newmonster "Diamond Cryo Driller"
 copystats "Diamond Driller"
@@ -324,4 +324,4 @@ descr "Who wants a cold one?"
 clearweapons
 meleeweaponbonus 5 "Drill"
 rangedweapon 0 "Neurotoxin Grenade"
-rangedweaponbonus 5 "Cryocannon Mark V"
+rangedweaponbonus 0 "Cryocannon Mark V"
