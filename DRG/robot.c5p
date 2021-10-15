@@ -26,7 +26,7 @@ dmg 6
 # Mules
 
 newmonster "BET-C"
-descr "What a chonker."
+descr "Whatta chonker."
 spr1 "BET-C.tga"
 hp 50
 str 8

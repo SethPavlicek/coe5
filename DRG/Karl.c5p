@@ -1,7 +1,7 @@
 # KARL
 
 newmonster "Karl"
-descr "For Karl!! Definitely not an image of a statue."
+descr "For Karl!! Definitely not a statue."
 spr1 "Karl.tga"
 rank 0
 hp 75

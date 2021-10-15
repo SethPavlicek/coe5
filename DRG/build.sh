@@ -2,7 +2,7 @@
 set -x # echo on
 # list files in order with a backslash "\" at the end of each line
 cat \
-    misc.c5p\
+    mod_header.c5p\
     CommonWeapons.c5p\
     Glyphids.c5p\
     robot.c5p\

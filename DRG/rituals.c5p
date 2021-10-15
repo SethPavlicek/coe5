@@ -85,7 +85,7 @@ cost 15 8
 free
 
 newritual "Build BET-C"
-descr "Build one BET-C. She is a chonker."
+descr "Build a BET-C. Whatta chonker!"
 level 3
 soundfx 31
 summoning
@@ -102,12 +102,12 @@ scryloc 1
 setplayer 24
 farsummon
 addstring "Ommoran"
-descr "The Heartstone would really spiff up my cabin. This will summon an independent Ommoran somewhere on the map. If you defeat it, you will be rewarded with a lot of iron."
+descr "This will summon an independent Ommoran somewhere on the map. If you defeat it, you can get its Heartstone. The Heartstone would really spiff up my cabin! (reward is lots of iron)."
 cost 0 200
 free
 
 newritual "Build DrillDozer"
-descr "Build one DrillDozer. Now you can afford one for yourself and it comes in red and black (no not really it comes in yellow)!"
+descr "Build a DrillDozer. Now you can afford one for yourself and it comes in red and black (no not really it comes in yellow)!"
 level 4
 soundfx 31
 summoning
@@ -117,7 +117,7 @@ cost 15 40
 free
 
 newritual "Manufacture Mining Exploration Team"
-descr "Build one DrillDozer, some BET-Cs, a bunch of M.U.L.Es, and a bunch of Boscos."
+descr "Build a DrillDozer, some BET-Cs, a bunch of M.U.L.Es, and a bunch of Boscos. If you can afford it..."
 level 5
 soundfx 31
 summoning
@@ -127,7 +127,7 @@ cost 15 60
 free
 
 newritual "Scan for Karl's Drop Pod"
-descr "Scan for Karl's Drop Pod. This will summon Karl's Drop Pod somewhere on the map. You can open Karl's Drop Pod to reveal the legendary Dwarf Karl."
+descr "Scan for Karl's Drop Pod. This will summon Karl's Drop Pod somewhere on the map. Maybe something is inside?"
 level 5
 soundfx 31
 randnewloc -5
@@ -139,7 +139,7 @@ cost 15 150
 free
 
 newritual "Open Karl's Drop Pod"
-descr "Open Karl's Drop Pod to reveal the legendary Dwarf Karl. FOR KARL!!"
+descr "Open Karl's Drop Pod to reveal a surprise. FOR KARL!!"
 level 5
 soundfx 57
 cost 1 250
@@ -157,6 +157,6 @@ free
 promotion -1
 addstring "Doretta"
 addstring "Doretta"
-descr "This will promote one Doretta, which will effectively heal it. Be sure to have only the damaged Doretta in the space where you use this ritual."
+descr "This will heal one Doretta (using promotion). Be sure to have only one damaged Doretta in the space where you use this ritual."
 
 # END   common Rituals =================================================================================================
