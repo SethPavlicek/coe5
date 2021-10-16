@@ -1,47 +1,55 @@
-CoE5 DRG Mod v1.0
-
-Summary:
+[h1]Summary[/h1]
 
 Do you like dwarves but wish they had guns, robots, and cute insect pets? Do you think that the vanilla dwarves sit in their mines until the end of the game?
 If you answer yes to any of these, then this the mod for you!
 
 This mod adds a new class with new monsters and rituals based on the game Deep Rock Galactic. There are four different dwarves each with two subtypes, quite a few robots, three new insects, and a few unique monsters.
 
-Feature List:
--Dwarves:
-    -Scout: A fast stealthy unit meant to take out elite troops.
-    -Driller: Burns his enemies to the ground (great for crowd control).
-    -Gunner: Has giant guns to unload on the enemy.
-    -Engineer: Summons turrets and shoots purple beams or explosives.
+[h1]Feature List[/h1]
+Dwarves:
+[list]
+    [*]Scout: A fast stealthy unit meant to take out elite troops.
+    [*]Driller: Burns his enemies to the ground (great for crowd control).
+    [*]Gunner: Has giant guns to unload on the enemy.
+    [*]Engineer: Summons turrets and shoots purple beams or explosives.
+[/list]
 
--Insects (Glypids):
-    -Glyphid Swarmers: Super wimpy and tiny units meant to swarm the enemy.
-    -Glyphid Slashers: Somewhat tanky monsters that hit pretty hard.
-    -Glyphid Guards: Tanky bugs that will soak up some damage.
+Insects (Glypids):
+[list]
+    [*]Glyphid Swarmers: Super wimpy and tiny units meant to swarm the enemy.
+    [*]Glyphid Slashers: Somewhat tanky monsters that hit pretty hard.
+    [*]Glyphid Guards: Tanky bugs that will soak up some damage.
+[/list]
 
--Robots:
-    -Tipping Jar: A happy robot that will increase your trade by 2.
-    -Bosco: An armored patrol drone (APD) that can provide support fire.
-    -Lloyd: A better version of a Bosco.
-    -Mini M.U.L.E: A small robot that will trample your enemies.
-    -M.U.L.E: A medium sized robot that will trample your enemies.
-    -Mining Crew: A Bosco and a M.U.L.E that will increase the income of the square they occupy.
-    -BET-C: A large M.U.L.E that shoots a powerful gun and explosives.
-    -Drilldozer: A big bulldozer with a drill on the front.
+Robots:
+[list]
+    [*]Tipping Jar: A happy robot that will increase your trade by 2.
+    [*]Bosco: An armored patrol drone (APD) that can provide support fire.
+    [*]Lloyd: A better version of a Bosco.
+    [*]Mini M.U.L.E: A small robot that will trample your enemies.
+    [*]M.U.L.E: A medium sized robot that will trample your enemies.
+    [*]Mining Crew: A Bosco and a M.U.L.E that will increase the income of the square they occupy.
+    [*]BET-C: A large M.U.L.E that shoots a powerful gun and explosives.
+    [*]Drilldozer: A big bulldozer with a drill on the front.
+[/list]
 
--Unique:
-    -Ommoran: Summons flying rocks and beamers to protect itself.
-    -Karl: Big dwarf with many many many guns....
-    -Barrel: It is a barrel.
+Unique:
+[list]
+    [*]Ommoran: Summons flying rocks and beamers to protect itself.
+    [*]Karl: Big dwarf with many many many guns....
+    [*]Barrel: It is a barrel.
+[/list]
 
-Balance and Defects:
-    We tried to balance this in relation to the Complete Overhaul mod (by Commisar Jon Fuklaw).
-    This class seems to get powerful late game, but it is hard to compare it to all other late-game builds.
-    Feedback is welcome -- either balance issues or defects. Please let me know!
+[h1]Balance and Defects[/h1]
+    [*]We tried to balance this in relation to the Complete Overhaul mod (by Commisar Jon).
+    [*]This class seems to get powerful late game, but it is hard to compare it to all other late-game builds.
+    [*]Feedback is welcome -- either balance issues or defects. Please let me know!
 
-Compatibility:
+[h1]Compatibility[/h1]
     Your previous saved games will most likely break if you enable this mod. No other issues are known.
 
-Credits:
+[h1]Credits[/h1]
     I pulled most of the images off the internet.
-    Thank you to Commisar Jon Fuklaw for his mining rituals from the dwarf overhaul (we borrowed them for ours).
+    Thank you to Commisar Jon for his mining rituals from the dwarf overhaul (we borrowed them for ours).
+
+[i]version 1.0[/i]
