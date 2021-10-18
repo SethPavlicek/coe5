@@ -549,7 +549,7 @@ setmaincom "Prince of Thieves"
 addstartcom "Assassin"
 
 addstartcom "Garrison Poacher"
-addstartunits "Garrison Poacher" 7
+addstartunits "Garrison Poacher" 20
 
 hometerr 125
 #addstartterr 140 debugging
