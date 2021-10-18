@@ -534,6 +534,10 @@ meleeweapon 2 "Staff"
 allitemslots
 human
 
+newmonster "Garrison Poacher"
+copystats "Poacher"
+stationary
+
 newclass
 setclassname "Prince of Thieves"
 classdescr "Life in Elysium's criminal underworld corresponds in many ways to life among decent common folk. Just as the peasants owe fealty to their lord who in turn serves his liege, brigands and thieves invariably answer to bandit chiefs and outlaw ringleaders. At the center of this shadowy web of allegiances is a mysterious figure who claims authority over all of Elysium's outlaws and miscreants.^^Whispers and rumors abound about this criminal overlord and their empire of robbery and deception. Life in Elysium is harsh for the common people and many of them look up to the Prince of Thieves as their champion against the depradations of the nobility. Some even whisper that the Prince of Thieves is a wrongfully disgraced noble themselves, come to avenge themselves and the land from usurpers. However, his reputation is formidable and frightening and some would claim that his black heart dabbles in unspeakable deeds."
@@ -543,6 +547,10 @@ addstartunits "Bandit" 10
 addstartunits "Poacher" 5
 setmaincom "Prince of Thieves"
 addstartcom "Assassin"
+
+addstartcom "Garrison Poacher"
+addstartunits "Garrison Poacher" 7
+
 hometerr 125
 #addstartterr 140 debugging
 #addstartterr 153 debugging
