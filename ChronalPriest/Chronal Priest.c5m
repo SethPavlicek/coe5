@@ -1,0 +1,2119 @@
+icon "./CHRONALBANNER.tga"
+description "The Chronal Priest mod adds a new class to the game, the 'Chronal Priest'. Please view the README supplied with the mod for help and other information."
+newclass
+setclassname "Chronal Priest"
+classdescr "In the deserts of Elysium a small group of nomads witnessed a column of sand falling from the night sky. Those nomads would be the ones to found the Chronal Priesthood. The priesthood claims that a man and woman fell with those sands, and they taught them the essence of time control, before disappearing again into the void. The El worshippers view the Chronal Priests as somewhat harmless heretics, and although the Chronal Priests clearly believe in a coming apocalypse, nobody can determine if they have any allegiance at all to El.^^The Chronal Priests, being founded by simple nomads, live in remote regions which makes gathering soldiers a difficult and costly task, they've taken to collecting gems as bribery to entice more soldiers to their cause. This has led them to discover illusionary rituals, and even more curious rituals augmented with their strange time magics. The Chronal Priesthood have an obsession with cats, and using relics have found some odd way of attracting them in a practice they call 'Catmancy'. The priesthood claims this is a legitimate magical practice and often take offense when it is treated as attracting cats with shiny baubles.^^The high Chronal Priests known as Timekeepers act obsessive and paranoid, they tend to unnerve the soldiers in their employ. They are more likely to to be seen with the strange creatures that they can call from the void than with ordinary men. Despite this, Timekeepers are solely responsible for the training of nomads who wish to join the Priesthood, while the lesser priests focus more on their own training and the collecting of relics. Ultimately the goal of the Chronal Priests is to leave Elysium and discover the other worlds described to them by the enigmatic duo, which fell along with the sands in the desert on that fateful night."
+classabdescr "Chronal Priests collect relics and gems.^Limited and expensive basic recruitment, with frequent mercenary options.^Relics and Gems can be used in summoning rituals.^High level priests can recruit zealots.^Starts with a market village.^Chronal Priests can create mirage soldiers to defend locations."
+
+#This section sets the class tune
+sample 197 "./CHRONALASSETS/ChronalHymn.sw2"
+sampleismusic 197
+classtune 197
+
+#This section creates the time rituals
+newritpow
+
+#newritual "TESTING RITUAL"
+#descr "Does whatever the fuck it needs to."
+#free
+#level 1
+#cost 12 -500
+#cost 15 -500
+#cost 1 -500
+#cost 0 -500
+
+newritual "Expedient Time Mastery Ritual"
+descr "Grants a new first level ritual."
+free
+level 1
+newrit 1
+soundfx 31
+cost 12 15
+
+newritual "Routine Time Mastery Ritual" #level 2 mastery upgrade
+descr "Grants a new second level ritual. If the caster is currently unable to use second level rituals, it will be leveled up as well."
+free
+airare 60
+level 1
+levelup 2
+newrit 2
+soundfx 31
+cost 12 80 #80 after testing
+apcost 2 #2 after testing
+rebatelvl 2
+
+newritual "Lengthy Time Mastery Ritual" #lv 3 mastery upgrade
+descr "Grants a new third level ritual. If the caster is currently unable to use third level rituals, it will be leveled up as well. Casting this mastery ritual also increases the divine favor of your blessed units."
+free
+aialways 999
+level 2
+levelup 3
+newrit 3
+soundfx 31
+rebatelvl 3
+gainbless 100
+apcost 8 #8 after testing
+cost 12 140 #140 after testing
+
+newritual "Calico Summoning"
+descr "This ritual summons a Stray Calico to wander the land. The cat will wander of its own accord, providing scouting information and revealing nearby invisible units. The cat cannot be detected except by those who can detect invisible units." 
+level 1
+cost 12 3
+airare 20
+summoning
+addstring "Stray Calico"
+
+newritual "Lesser Catmancy"
+descr "The caster uses Catmancy to call felines to their aid, occasionally attracting larger cats. ^^The Chronal Priests insist that cats are useful in battle, and that you can tell time by their eyes, but the truth is most cats have hard won loyalty and are debateable as valid combatants at best."
+level 1
+cost 12 20
+aiweakonly 320
+summoning
+sum0chance 5
+sum1chance 8
+addstring "White Cat"
+addstring "1*Tiger"
+addstring "5*Mountain Lion"
+addstring "1d7+3*Bobcat"
+addstring "4*Lynx & 1d6*Bobcat"
+addstring "3*Mountain Lion"
+addstring "1*Mountain Lion & 1*Snow Leopard"
+addstring "2*Snow Leopard & 3*Lynx"
+addstring "1d4+2*Lynx"
+
+newritual "Minor Mirage"
+descr "The caster summons a mirage at their location, creating a small number of mirage soldiers to defend the area. Mirage soldiers are stationary and look just like normal soldiers."
+level 1
+rarestart
+aiwhere -32 #village or larger
+cost 15 5
+summoning
+addstring "1d5+1*Nomad Longbowman Mirage"
+addstring "5*Nomad Mercenary Mirage"
+addstring "1d6+3*Nomad Mercenary Mirage"
+addstring "4*Nomad Mercenary Mirage & 4*Nomad Longbowman Mirage"
+addstring "1d4+3*Nomad Longbowman Mirage"
+
+newritual "Catmancy"
+descr "The caster uses Catmancy to call many felines to his aid. Occasionally this spell will summon a very powerful cat."
+level 2
+cost 12 50
+airare 70
+summoning
+sum0chance 2
+addstring "3*Displacer Beast"
+addstring "Northern Tiger"
+addstring "1*Kithaironic Lion & 4*Lion"
+addstring "7*Lion & 1d4*Snow Leopard & 1d6*Lynx"
+addstring "6*Lion & 4*Tiger"
+addstring "5*Tiger & 1d5*Mountain Lion & 1d6*Bobcat"
+addstring "2d7*Mountain Lion"
+
+newritual "Major Mirage"
+descr "The caster summons a mirage at their location, creating a large number of mirage soldiers to defend the area. Mirage soldiers are stationary and look just like normal soldiers."
+level 2
+cost 15 10
+aiwhere -32 #village or larger
+summoning
+addstring "12*Light Zealot Mirage & 12*Dark Zealot Mirage"
+addstring "2d5*Dark Zealot Mirage & 2d5*Light Zealot Mirage"
+addstring "2d4*Skirmisher Crossbowman Mirage & 2d4*Light Zealot Mirage & 2d4*Dark Zealot Mirage"
+addstring "1d9*Light Zealot Mirage & 2d5*Skirmisher Crossbowman Mirage"
+addstring "5*Light Zealot Mirage & 10*Dark Zealot Mirage"
+addstring "12*Skirmisher Crossbowman Mirage"
+addstring "10*Dark Zealot Mirage"
+addstring "10*Light Zealot Mirage"
+
+newritual "Past Time Distortion Portal"
+descr "A lesser rift in space time is created by the caster, allowing some entities from times before us to pass through. Unfortunately these creatures tend to be uncooperative. It is highly recommended that you have some soldiers at the ready if you wish to survive." 
+level 2
+rarestart
+airare 40
+apcost 1
+cost 12 10 
+cost 15 40 
+summoning
+sum0chance 15
+addstring "Ancient Megalocrab & 1d2*Ancient Crabling"
+addstring "2*Primordial Leech"
+addstring "3*Primordial Leech"
+addstring "1d3*Primordial Leech & 1d3*Formless Angel"
+addstring "4*Formless Angel"
+addstring "2d3*Formless Angel"
+defctrl 65
+
+newritual "Strange Catmancy"
+descr "The caster uses Catmancy to call unusual cat-like beasts, sometimes just results in a few strong cats."
+level 3
+cost 12 100
+airare 50
+summoning
+sum0chance 3
+sum1chance 16
+addstring "2d5*Float Cat Horror"
+addstring "2*Northern Tiger"
+addstring "3*Kithaironic Lion & 1d5*Lion"
+addstring "4d7*Leogryph"
+addstring "2*Chimaera"
+addstring "2*Gryphon"
+addstring "Dracolion"
+
+newritual "Future Time Distortion Portal"
+descr "A greater rift in space time is created by the caster, allowing many entities from ages beyond our time to pass through. Be warned, what comes through can not always be reasoned with."
+level 3
+rarestart
+airare 70
+cost 12 20 
+cost 15 100
+apcost 2
+summoning
+sum0chance 12
+sum1chance 70
+addstring "c*Apocalypse Angel & 2d8*Time Lost Dark One & 2d8*Time Lost Light One"
+addstring "9*Time Lost Dark One & 9*Time Lost Light One"
+addstring "3d8*Time Lost Dark One"
+addstring "3d8*Time Lost Light One"
+defctrl 85
+
+newritual "Craft Millennium Gate"
+descr "The Timekeeper constructs a special gateway that allows intermittent recruitment of time-travellers. The gateway will be destroyed if you lose your citadel.^^Recruitment:^Millennium Mages^(Unique)Cryptic Nomad^(Unique)Lightseeker^Chronal Beasts^Celestial Diviners"
+level 3
+aialways 999
+ainosimul
+aiwhere 377
+cost 12 75
+cost 1 75 
+terr 377
+apcost 5 #5 after test
+summoning
+nomonreq
+addstring "(-)Millennium Gate" 
+
+newritual "Build Sundial"
+descr "The Timekeeper builds an Old Metal Sundial in an open plain, the sundial becomes a catalyst for the most unusual rituals they can perform. Sundials provide 1 relic per month."
+level 3
+cost 1 150 #iron cost
+cost 0 100 #Gold cost
+terr 0
+aiwhere 0
+aimaxcast 2
+apcost 2
+closewin
+soundfx 57
+alterloc 378
+nexttoo
+
+newritual "Voidwalk"
+descr "Enter the void.^^Timekeepers have some madness about them which grants them a little protection from the void, however it is a hostile environment, humans are not meant to spend time there. This ritual will send the Timekeeper alone into the void."
+nostart
+level 3
+airare -1
+terr 378
+setplane 9
+randterrloc 50
+teleportloc 1
+centercaster
+closewin
+soundfx 57
+cost 12 5
+cost 15 5
+nexttoo
+
+newritual "Void Anchor"
+descr "The Timekeeper uses an Old Metal Sundial as an anchor to find his way back to Elysium. The power of the void gate allows for the Timekeeper's army to follow him through. If there are multiple Sundials on the map the destination is random."
+nostart
+level 3
+apcost 2
+airare -1
+soundfx 57
+setplane 0
+planereq 9
+terr -53 #void gate locations
+randterrloc 378
+teleportloc 2
+centercaster
+closewin
+nexttoo
+
+newritual "Call Beyond Reality" 
+descr "There is an enigma hidden in the void, in a place where time has no meaning, this ritual will call it into existence to serve the Timekeeper."
+level 3
+nostart
+cost 12 777 
+terr 250
+nomonworldreq
+airare -1
+addstring "(-)Triptych"
+summoning
+nexttoo
+
+newritual "Reality End" #testthis
+descr "Choose a location to bring an ancient void beast into the world to attack that area, this monster is always hostile and cannot be controlled."
+level 3
+nostart
+cost 15 400
+cost 12 50
+terr 378
+aiwhere 378
+aialways 10
+aitarg 1
+ainosimul
+chooseterrloc -42
+setplayer 26 #Horrors
+farsummon
+addstring "Soul Panther"
+
+newritual "Clockwise Time-Spiral" #new for CoE5
+descr "A twist in time exchanges one object for another, in this instance the Timekeeper exchanges gems and relics. The ritual isn't completely efficient, but reversing the direction of the spiral seems to also reverse the outcome."
+free
+level 3
+airare -1
+soundfx 57
+cost 12 -15
+cost 15 20
+
+newritual "Anti-Clockwise Time-Spiral" #new for CoE5
+descr "A twist in time exchanges one object for another, in this instance the Timekeeper exchanges gems and relics. The ritual isn't completely efficient, but reversing the direction of the spiral seems to also reverse the outcome."
+free
+level 3
+airare -1
+soundfx 57
+cost 12 20
+cost 15 -15
+
+#This section creates the citadel
+selectterr 377
+spr "./CHRONALASSETS/Clocktower.tga"
+name "Timekeeper's Clocktower"
+apcost 1
+ownable
+gold 1
+sacr 2
+dead 1
+hands 1
+pop 10
+desertok
+snowok
+irongate
+citadel
+walls
+batmap 10
+settlement
+temple
+
+#chance to spawn in desert/tundra
+likessouth 7
+likesnorth -2
+likescoast -4
+
+#sets 377 as class citadel
+hometerr 377
+
+#bonus starting terrain is a market village
+addstartterr 206
+
+selectterr 378
+spr "./CHRONALASSETS/Sundial.tga"
+name "Old Metal Sundial"
+clearspec
+clearfort
+apcost 1
+ownable
+pop 0
+desertok
+bonusrelics 1
+snowok
+unique
+voidret
+nosight
+nostart
+
+#this section adds weapons and creatures to the class
+newweapon "Spearblade Thrust" #weapon for Nomad Mercenary
+selectweapon "Spearblade Thrust"
+init 5
+trgrank 1
+dmgtype 3
+range 1
+mundane
+dmg 4
+sound 1
+
+newweapon "Spearblade Slash" #nomad merc subweapon
+selectweapon "Spearblade Slash"
+init 2
+trgrank 1
+dmgtype 1
+range 1
+mundane
+sound 8
+sweep
+dmg 3
+
+newweapon "Mirage SpearBlade" #weapon for mirage nomads
+selectweapon "Mirage SpearBlade"
+init 4
+trgrank 1
+dmgtype 1
+range 1
+sound 1
+dmg 3
+mr
+
+newweapon "Mirage Crossbow" #weapon for mirage skirms
+selectweapon "Mirage Crossbow"
+init 2
+trgrank 1
+dmgtype 3
+range 5
+dmg 4
+flymode 1
+flysound 13
+flylook 0
+lob
+reload1
+mr
+
+newweapon "Mirage Shortsword" #weapon for mirage skirms
+selectweapon "Mirage Shortsword"
+init 3
+trgrank 1
+dmgtype 1
+range 1
+sound 8
+dmg 4
+mr
+
+
+newmonster "Nomad Mercenary"
+descr "These nomad warriors wander the deserts searching for gems. The Timekeepers found them useful guides for the desert as the nomads knew the desert as well as any lion tribesman, but lacked the savage hostility than runs in the lion tribe blood.^^ The Nomad Mercenaries wield a peculiar weapon halfway between a spear and a greatsword, although in the desert it serves more time as a glorified walking stick. They fight using their whole body to perform spinning strikes with the heavy blade. Most nomads are covered in scars as the result of their reckless combat style.^^ The Nomad Mercenaries can be easily recognized by their white cloaks, sporting only a small oval buckler strapped to their forearms as protection."
+spr1 "./CHRONALASSETS/MercNomad.tga" #default sprite
+spr2 "./CHRONALASSETS/MercNomadATK.tga" #attack image sprite
+size1x1
+human
+hp 5
+str 4
+mor 4
+mr 4
+armor 0
+rank 1
+desert2
+temple2
+aihold 0
+noleader
+desert
+poisonres 50
+meleeweapon 0 "Spearblade Thrust"
+meleeweaponbonus 0 "Spearblade Slash"
+meleeweaponbonus 0 "Spearblade Slash"
+shield
+allitemslots
+meleeambush 1
+
+newmonster "Skirmisher Crossbowman"
+descr "These Crossbow wielding soldiers tend to work for those who can pay the most handsomely, observing no particular allegiance to anyone outside their regiment. Although these men rely more on their crossbow, they are well trained with shortswords and have no quarrel with melee combat."
+spr1 "./CHRONALASSETS/Skirmisher.tga" #default sprite
+spr2 "./CHRONALASSETS/SkirmisherATK.tga" #attack image sprite
+size1x1
+human
+hp 6
+str 5
+mor 6
+mr 4
+armor 1
+rank 0
+frontpos
+desert
+south1
+money2
+aihold 0
+noleader
+rangedweapon 0 "Crossbow"
+meleeweapon 1 "Shortsword"
+allitemslots
+
+newmonster "Skirmisher Crossbowman Mirage"
+descr "Although these look like they might be real soldiers it's just a trick of the mind. Don't take that to mean these are harmless, as any good illusionist knows: in the realm of experiences, perception is king."
+spr1 "./CHRONALASSETS/MirageSkirmisher.tga" #default sprite
+spr2 "./CHRONALASSETS/MirageSkirmisherATK.tga" #attack image sprite
+size1x1
+lookslike -1
+inanimate
+hp 1
+str 5
+mor 99
+mr 8
+armor 1
+rank 0
+frontpos
+aihold 0
+noleader
+poisonres 100
+sleepres
+charmres
+diseaseres
+unaging
+stationary
+rangedweapon25 0 "Mirage Crossbow"
+meleeweapon 0 "Mirage Shortsword"
+noslots
+
+newmonster "Nomad Mercenary Mirage"
+descr "How unusual a sight it would be to see an army of nomad mercenaries. Half of them just mirages I'm sure, the desert is as dangerous to your troops as an army of men. ^^Chronal Priests are not quite used to dealing with illusionary soldiers, and it's not uncommon to see a Tempo Mage mistakenly barking orders at one of these mirages."
+spr1 "./CHRONALASSETS/MirageMercNomad.tga" #default sprite
+spr2 "./CHRONALASSETS/MirageMercNomadATK.tga" #attack image sprite
+lookslike -3
+size1x1
+hp 2
+str 4
+mor 99
+mr 8
+armor 0
+rank 1
+aihold 0
+battlefast
+noleader
+poisonres 100
+sleepres
+charmres
+diseaseres
+unaging
+inanimate
+stationary
+meleeweapon 0 "Mirage Spearblade"
+meleeweaponbonus 0 "Mirage Spearblade"
+shield
+noslots
+meleeambush 1
+
+newmonster "Nomad Longbowman"
+descr "The nomads who hunt for their food use longbows, the lack of game to hunt in the desert regions makes bow hunting require exceptional skill. The question isn't whether you can or cannot sustain yourself with a bow in the desert, it's whether it is easier than working as a mercenary instead. On this, the nomads are divided pretty evenly."
+spr1 "./CHRONALASSETS/NomadBowman.tga" #default sprite
+spr2 "./CHRONALASSETS/NomadBowmanATK.tga" #attack image sprite
+size1x1
+human
+hp 5
+str 4
+mor 4
+mr 4
+armor 0
+rank 0
+desert
+desert2
+temple2
+aihold 0
+noleader
+
+poisonres 50
+meleeweapon 0 "Dagger"
+rangedweapon 0 "Longbow"
+allitemslots
+
+newweapon "Mirage Longbow" #weapon for mirage bowman
+selectweapon "Mirage Longbow"
+init 2
+trgrank 1
+dmgtype 3
+range 6
+dmg 2
+flymode 1
+flysound 14
+flylook 0
+lob
+mr
+
+newmonster "Nomad Longbowman Mirage"
+descr "These mirages wield illusory bows that sting; at least a little. They seem to be quite skilled at scaring off wandering animals, although a more discerning armed force might not be fooled so easily."
+spr1 "./CHRONALASSETS/MNomadBowman.tga" #default sprite
+spr2 "./CHRONALASSETS/MNomadBowmanATK.tga" #attack image sprite
+size1x1
+lookslike -1
+inanimate
+hp 1
+str 5
+mor 99
+mr 8
+armor 1
+rank 0
+frontpos
+aihold 0
+noleader
+poisonres 100
+sleepres
+charmres
+diseaseres
+unaging
+stationary
+rangedweaponbonus 0 "Mirage Longbow"
+noslots
+
+newweapon "Pounce Tackle" #northern tiger weapon
+selectweapon "Pounce Tackle"
+init 7
+trgrank 1
+dmgtype 2
+range 1
+mundane
+sound 11
+strresist
+huge
+next
+nextdmg 30
+
+newweapon "Crushing Bite" #always hits if pounce tackle connects
+selectweapon "Crushing Bite"
+dmg 25
+init 9
+trgrank 1
+dmgtype 3
+range 1
+mundane
+sound 1
+shieldneg
+onlyenemy
+look 182
+
+newmonster "Northern Tiger"
+descr "These massive tigers began to appear in snowy northern regions shortly after the first falling sands were witnessed in the desert. Their sharp senses are revered by the Chronal Priests who believe the Northern Tiger traveled here from a past age to witness the apocalypse. These thick furred animals are elusive ambush predators who are ferociously fast in short bursts, once they tackle their prey the Tiger will crush their skull with its powerful bite.^^Northern Tigers are territorial and if you happen to see one you should pray to whatever god you worship, for it is already too late to run."
+spr1 "./CHRONALASSETS/NorthernTigerZ.tga" #default sprite
+spr2 "./CHRONALASSETS/NorthernTigerATKZ.tga" #attack sprite
+size2x2
+animal
+hp 88
+str 10
+mor 12
+mr 7
+armor 2
+rank 1
+snow
+aggressive
+coldres 50
+slashres
+aihold 0
+north1
+noleader
+snowstealth
+acutesenses
+fast
+meleeweapon 22 "Claw"
+meleeweaponbonus 5 "Pounce Tackle"
+meleeambush 1
+miscslots
+
+newmonster "Stray Calico"
+descr "The Timekeepers considered the Calico to be the most mystical feline. Although these cats aren't useful in any combat scenario, the Catmancers have made of them excellent spies and scouts. If you happen to spot a wild calico cat in an unfamiliar place, you should consider the possibility that it's spying on you."
+spr1 "./CHRONALASSETS/StrayCalico.tga" #default sprite
+size1x1
+animal
+hp 1
+str 1
+mor 3
+mr 7
+armor 0
+rank -1
+#stupid
+loner 1
+nocombat
+noleader
+acutesenses
+spiritsight
+stealth
+noslots
+meleeweapon 0 "Claw"
+
+newmonster "White Cat"
+descr "An angry cat can leave a pretty nasty scratch, and for whatever reason the white ones seem to be more vicious than most. If you befriend one it will attempt to hurt your enemies but it probably won't succeed. Many apprentice Catmancers have given up the pursuit entirely after attracting such a meager combatant."
+spr1 "./CHRONALASSETS/WhiteCat.tga"                   
+size1x1
+animal
+hp 1
+str 1
+mor 2
+mr 6
+armor 0
+rank 1
+noleader
+fast
+miscslots
+meleeweapon 1 "Claw"
+
+newmonster "Lynx"
+descr "Lynxes are often mistaken for bobcats, however they have distinctive large black tufts of fur on the tips of their ears, as well as a thick fur coat to help protect them from the cold regions they inhabit."
+spr1 "./CHRONALASSETS/Lynx.tga" #default sprite
+spr2 "./CHRONALASSETS/LynxATK.tga" #attack sprite
+size1x1
+animal
+hp 3
+str 3
+mor 4
+mr 4
+armor 0
+rank 1
+snowstealth
+foreststealth
+noleader
+snow
+fast
+miscslots
+meleeweapon 2 "Bite"
+meleeweaponbonus 2 "Claw"
+
+newmonster "Bobcat"
+descr "Bobcats are closely related to Lynxes, often their names are used interchangeably, however there are small differences between the animals in size, fur, and geographical regions. Although these beasts aren't as powerful and lack the stamina of war dogs, their sharp claws make them especially dangerous to unarmored opponents."
+spr1 "./CHRONALASSETS/Bobcat.tga" #default sprite
+spr2 "./CHRONALASSETS/BobcatATK.tga" #attack sprite
+size1x1
+animal
+hp 3
+str 3
+mor 3
+mr 3
+armor 0
+rank 1
+noleader
+fast
+foreststealth
+miscslots
+meleeweapon 2 "Bite"
+meleeweaponbonus 2 "Claw"
+
+newweapon "Rewinding Fate" #chronal weapon
+selectweapon "Rewinding Fate"
+init 1
+trgrank -9
+sound 31
+look 32
+dmgtype 13
+range 7
+aoe 2
+onlyfriend
+
+newmonster "Tempo Mage"
+descr "The Timekeepers begin their studies as a Tempo Mage. During battles they mark the length and significant events with a clockwork tool they call a pocket-watch. They use these pocket-watches as magical tools as well to cast their unique Time spells. ^Tempo Mages often act as leaders in battle, using their impeccable timing strategies to direct allies on the battlefield."
+spr1 "./CHRONALASSETS/TempoMage.tga" #default sprite
+spr2 "./CHRONALASSETS/TempoMageATK.tga" #attack image sprite
+size1x1
+human
+nametype 6
+hp 5
+str 4
+mor 4
+mr 8
+armor 0
+rank -1
+desert
+aigoldrally 150
+rangedweaponbonus 4096 "Rewinding Fate"
+meleeweapon 1 "Fist"
+power 0 1
+allitemslots
+gatherrelics
+gatheranygems
+mastery 1
+
+newweapon "Cog Staff" #Chronal Priest Weapon
+selectweapon "Cog Staff"
+init 4
+dmg 3
+trgrank 1
+dmgtype 2
+range 1
+mundane
+sound 1
+
+newweapon "Mass Rewinding" #chronal spell
+selectweapon "Mass Rewinding"
+init 1
+trgrank -9
+sound 31
+look 32
+dmgtype 13
+range 7
+aoe 6
+reload1
+onlyfriend
+
+newweapon "Time-Stop" #chronal priest spell
+selectweapon "Time-Stop"
+init 1
+trgrank 9
+sound 39
+look 12
+dmgtype 12
+range 8
+reload1
+hardmr
+inanimate
+
+newmonster "Chronal Priest"
+descr "When a Tempo Mage graduates they hang up their golden coat and begin their faith training in earnest. The study of Time in magical applications does not end there however, the Chronal Priests improve upon the skills they learned as a Tempo Mage, while also learning the religious rituals of the priesthood to spread word of the coming apocalypse. Many soldiers dislike working for a Chronal Priest, there is a rumor that the priests know when each soldier is going to die and that if the priest is being short with you it probably means they are trying to emotionally distance themselves for your coming death. However they still infinitely prefer a Chronal Priest commanding them than the erratic Timekeepers. ^^Fighting a Chronal Priest is a frustrating experience, arrow riddled soldiers on the brink of death suddenly charging forward, unwounded, as if nothing happened is not an uncommon sight."
+spr1 "./CHRONALASSETS/ChronalPriest.tga" #default sprite
+spr2 "./CHRONALASSETS/ChronalPriestATK.tga" #attack image sprite
+size1x1
+human
+nametype 6
+hp 5
+str 4
+mor 4
+mr 9
+armor 0
+rank -1
+desert
+power 0 1
+power 0 2
+aigoldrally 150
+ainofollower
+rangedweaponbonus 4096 "Mass Rewinding"
+rangedweaponbonus 16 "Time-Stop"
+spellweapon 25 1
+meleeweapon 0 "Cog Staff"
+allitemslots
+gatheranygems
+gatherrelics
+mastery 1
+
+newweapon "Katar" #specialized melee weapon
+selectweapon "Katar"
+init 2
+dmg 3
+trgrank 1
+dmgtype 3
+range 1
+mundane
+sound 1
+
+newweapon "Time-Stop Field" #timekeeper spell
+selectweapon "Time-Stop Field"
+init 1
+trgrank 9
+sound 39
+look 12
+dmgtype 12
+inanimate
+range 9
+reload3
+mr
+aoe 12
+
+newweapon "Curse of Entropy" #timekeeper spell
+selectweapon "Curse of Entropy"
+init 1
+trgrank 9
+sound 18
+look 37
+dmgtype 12
+inanimate
+undead
+stone
+reload1
+range 9
+hardmr
+
+newmonster "Timekeeper"
+descr "The Timekeepers are elite Chronal Priests, they wear black cloaks with shimmering gold running through them, and a mask that is half black and half white to signify the cycles of day and night.^The Cog Staff they once used is given to graduating Tempo Mage, and the Chronal Priest is given an hourglass filled with special sands carefully procured by the priesthood. Although chiefly still a mage of time, they are trained by elite desert nomads to fight with Katar punch-daggers and can fight quite formidably in this way.^Timekeepers can cause a whole squad of soldiers to become frozen in time, while at the same time causing another to age rapidly until death. The mere sight of a Timekeeper at work has converted enemies to their cause. The Timekeepers proclaim that their art transcends dimensions, and they will be recognized for their holy purpose by the angels of the apocalypse."
+spr1 "./CHRONALASSETS/Timekeeper.tga" #default sprite
+spr2 "./CHRONALASSETS/TimekeeperATK.tga" #attack image sprite
+size1x1
+human
+nametype 6
+hp 6
+str 4
+mor 4
+mr 10
+armor 1
+rank -1
+desert
+power 0 1
+power 0 2
+power 0 3
+aigoldrally 150
+holy
+voidsanity 2
+saner 1
+spellweapon 25 2
+rangedweaponbonus 4096 "Mass Rewinding"
+rangedweaponbonus 16 "Time-Stop Field"
+rangedweaponbonus 4 "Curse of Entropy"
+meleeweapon 1 "Katar"
+allitemslots
+gatherrelics
+gatheranygems
+
+newweapon "Mirage Katar" #mdarklegionnaire weapon
+selectweapon "Mirage Katar"
+init 4
+trgrank 1
+dmgtype 3
+range 1
+sound 8
+dmg 3
+mr
+
+newmonster "Dark Zealot"
+descr "The situation between the nomads and the Timekeepers is a relationship of convenience; the Timekeepers live in remote regions and need soldiers, and the nomads need resources and protection. Despite the nature of their relationship, it is inevitable that many nomads convert to the Chronal faith, those nomads become Zealots. The ones who wear black armor train with twin Katars to become fearless warriors.^^The Timekeepers say the Dark Zealot's armor is the likeness of the man of legend, rumored to be the first to control time." 
+spr1 "./CHRONALASSETS/DarkLegionnaire.tga" #default sprite
+spr2 "./CHRONALASSETS/DarkLegionnaireATK.tga" #attack
+size1x1
+human
+hp 7
+str 4
+mor 6
+mr 5
+armor 2 
+rank 1
+desert
+aihold 0
+holy
+noleader
+fireres 75
+berserker
+meleeweapon 3 "Katar"
+meleeweaponbonus 3 "Katar"
+allitemslots
+meleeambush 1
+
+newmonster "Dark Zealot Mirage"
+descr "Just as intimidating as the real thing, albeit a bit infirm. A mockery of illusionary soldiers at best, it still proves to be an excellent method of distraction."
+spr1 "./CHRONALASSETS/MDarkLegionnaire.tga" #default sprite
+spr2 "./CHRONALASSETS/MDarkLegionnaireATK.tga" #attack image sprite
+size1x1
+lookslike -1
+hp 2
+str 4
+mor 99
+mr 8
+armor 0
+rank 1
+aihold 0
+noleader
+poisonres 100
+sleepres
+charmres
+diseaseres
+unaging
+inanimate
+stationary
+meleeweapon 0 "Mirage Katar"
+meleeweaponbonus 0 "Mirage Katar"
+meleeweaponbonus 0 "Mirage Katar"
+meleeweaponbonus 0 "Mirage Katar"
+noslots
+
+newweapon "Cross Spear" #weapon for LZ
+selectweapon "Cross Spear"
+init 6
+trgrank 1
+dmgtype 3
+range 1
+mundane
+dmg 5
+sound 1
+
+newweapon "Mirage Cross Spear" #MLZ weapon
+selectweapon "Mirage Cross Spear"
+init 6
+trgrank 1
+dmgtype 3
+range 1
+sound 1
+dmg 4
+mr
+
+newmonster "Light Zealot"
+descr "The situation between the nomads and the Timekeepers is a relationship of convenience; the Timekeepers live in remote regions and need soldiers, and the nomads need resources and protection. Despite the nature of their relationship, it is inevitable that many nomads convert to the Chronal faith, those nomads become Zealots. The ones who wear shining silver armor train with spears and shields to become unbreakable warriors. Their heavy armor may make them less agile than other warriors but they make up for it with defensive strength.^^The Timekeepers say the Light Zealot's armor designs are reminiscent of the first priestess, who fell from the sky along with the first man to control time."
+spr1 "./CHRONALASSETS/LightLegionnaire.tga" #default sprite
+spr2 "./CHRONALASSETS/LightLegionnaireATK.tga" #attack image sprite
+size1x1
+human
+hp 9
+str 4
+mor 5
+mr 6
+armor 2 
+rank 1
+desert
+aihold 0
+noleader 
+holy
+largeshield
+slow
+meleeweapon 0 "Cross Spear"
+allitemslots
+
+newmonster "Light Zealot Mirage"
+descr "Looks just like the real thing from far away! Illusionists would likely scoff at the quality of these imitations, however they prove to be about as effective as the illusionist tricks regardless."
+spr1 "./CHRONALASSETS/MLightLegionnaire.tga" #default sprite
+spr2 "./CHRONALASSETS/MLightLegionnaireATK.tga" #attack image sprite
+size1x1
+lookslike -1
+hp 4
+str 4
+mor 99
+mr 8
+armor 0
+rank 1
+aihold 0
+noleader
+poisonres 100
+sleepres
+charmres
+diseaseres
+unaging
+inanimate
+stationary
+meleeweapon 0 "Mirage Cross Spear"
+noslots
+
+newmonster "Snow Leopard"
+descr "Snow Leopards are quite elusive and rare in Elysium, but the Catmancers have lured them from their snowy mountains to aid them during the apocalypse; or at least this is what they would say. Luring a cat with a chunk of raw cockatrice is easy enough, calling it a magical ability is a bit of a reach. However they may work their Catmancy, no one can doubt that the snow leopards seem to listen to the Catmancers. These cats are quite dangerous and they seem to be more magically resistant than other common cats, though not quite as robust."
+spr1 "./CHRONALASSETS/SnowLeopard.tga" #default sprite
+spr2 "./CHRONALASSETS/SnowLeopardATK.tga" #attack image sprite
+size1x1
+animal
+hp 16
+str 7
+mor 4
+mr 6
+armor 0
+rank 1
+snow
+coldres 50
+aihold 0
+north1
+noleader
+snowstealth
+fast
+meleeweapon 6 "Bite"
+meleeweaponbonus 5 "Claw"
+meleeambush 1
+miscslots
+
+newmonster "Mountain Lion"
+descr "These beasts look kind of like big house cats with a fur coat like a deer. There haven't been many sightings of this animal in Elysium, it is as though they followed the Chronal Priests here."
+spr1 "./CHRONALASSETS/Cougar.tga" #default sprite
+spr2 "./CHRONALASSETS/CougarATK.tga" #attack image sprite
+size1x1
+animal
+hp 18
+str 7
+mor 6
+mr 2
+armor 0
+rank 1
+aihold 0
+noleader
+fast
+snow
+meleeweapon 6 "Bite"
+meleeweaponbonus 5 "Claw"
+meleeambush 1
+miscslots
+
+newweapon "Souldrain Claw" #SoulPanther weapons
+selectweapon "Souldrain Claw"
+init 2
+trgrank 1
+sound 22
+look 131
+dmgtype 1
+range 1
+sweep
+an
+next
+
+newweapon "Consume Essence" #soulclaw harvest
+selectweapon "Consume Essence"
+init 7
+trgrank 9
+dmgtype 7
+dmg 999
+undead
+inanimate
+hardmr
+
+newweapon "Souldrain Bite" #SoulPanther weapons
+selectweapon "Souldrain Bite"
+init 3
+trgrank 1
+sound 22
+look 131
+dmgtype 3
+range 1
+an
+next
+
+newweapon "Devour Essence" #soulbite harvest
+selectweapon "Devour Essence"
+init 7
+trgrank 9
+dmgtype 7
+dmg 999
+undead
+inanimate
+hardmr
+
+newweapon "Smoke of Dispossession" #SoulPanther weapons
+selectweapon "Smoke of Dispossession"
+init 6
+trgrank 9
+nostr
+dmg 3
+sound 66
+look 146
+flylook 81
+flymode 8
+dmgtype 7
+range 4
+shieldneg
+reload2
+an
+dispossess
+aoe 4008
+
+newweapon "Summon Shade" #soulpanther shade spawner
+selectweapon "Summon Shade"
+init 7
+nostr
+dmgtype 18
+trgrank 7
+aoe 1
+sound 22
+
+newmonster "Soul Panther"
+descr "The Soul Panther was a creature described by the first man to control time. It looks much like a cat but at closer inspection is clearly something quite unique. The creature bears some resemblance to a displacer beast, but the similarities end quickly; a Soul Panther has large claws which appear to be made out of a material that looks like glass, the fur on its back is damp and clumped together with thick black liquid giving it the appearance of having large spines. It seems likely that the black substance dripping from the creature is its own liquefied ethereal flesh.  ^^Unfortunately all that is known about this creature is mostly what it looks like, for humans never survive a close encounter with it. The creature seems to exist only partially in the physical realm, and accounts of sightings with multiple witnesses relay different stories of the encounters altogether. Without calling into question the sanity of the witnesses, we can assume this means the creature can act as a plural entity and as one simultaneously.^The fangs and claws of this beast pass through flesh as though they were completely immaterial, leaving nothing but a lifeless corpse from a single swipe. It is for these reasons the legendary man called this creature a Soul Panther. In our most likely estimation, this creature is essentially made of the souls it steals, but like most things born in the void its origins are unclear.^^Timekeepers have tried to summon the unholy panther before, and never has one been successful in taming it. Fortunately for us humans these beasts prefer to live in the void and don't need to 'eat' for lack of a better term all that often. Although catmancy may have failed us in controlling this monstrosity, a particularly strategic summoning location might allow the Timekeepers to make use of such a volatile entity after all."
+spr1 "./CHRONALASSETS/SoulPanther.tga" #default sprite
+spr2 "./CHRONALASSETS/SoulPantherATK.tga" #attack image sprite
+size2x2
+hp 100
+str 7
+mor 25
+mr 11
+armor 0
+rank 1
+float
+horror
+fast
+aggressive
+ainofollower
+wander 1
+inanimate
+spiritsight
+stealth
+ethereal
+displaced 1
+immortalap 1
+reformloc -76
+fastheal
+void2
+voidsanity 15
+homeplane 9
+sleepres
+charmres
+diseaseres
+swallowres
+unaging
+bluntres
+slashres
+pierceres
+fireres -35
+coldres 100
+poisonres 100
+shockres 100
+hadesres 100
+fear 3
+maxsum 1
+affres 33
+miscslots
+meleeweapon 30 "Souldrain Bite"
+meleeweaponbonus 25 "Souldrain Claw"
+rangedweaponbonus 3 "Smoke of Dispossession"
+
+newweapon "Strange Lights" #Triptych siege
+selectweapon "Strange Lights"
+init 10
+trgrank 9
+nostr
+dmg 10
+sound 31
+flysound 66
+flylook 54
+flymode 9
+dmgtype 7
+range 40
+shieldneg
+scatter
+an
+aoe -4
+
+newweapon "Formation Beams" #Triptych Default
+selectweapon "Formation Beams"
+init 7
+trgrank 9
+dmg 17
+flysound 58
+flylook 214
+flymode 5
+dmgtype 4
+range 8
+reload2
+sound -1
+aoe -6
+next
+
+newweapon "beamburn" #triptych beams extra
+selectweapon "beamburn"
+dmgtype 12
+mr
+dmg 32
+
+newweapon "Displace Timelines" #Triptych displacement buff
+selectweapon "Displace Timelines"
+init 10
+trgrank -9
+flylook 81
+flymode 2
+flysound 24 
+dmgtype 13
+range 7
+aoe 3014
+oneshot
+
+newweapon "Stardust out of Flesh" #Triptych decay
+selectweapon "Stardust out of Flesh"
+init 7
+trgrank 9
+sound -1
+flysound 18
+flylook 129 #30
+flymode 2
+dmgtype 12
+range 100
+aoe 4080
+reload3
+easymr
+stone
+ethereal
+inanimate
+
+newmonster "Triptych"
+descr "In the Chronal Priest religion there is a trinity: light, darkness, and time. They claim that these three are the core essence of reality, and that all things are influenced by dark energy, light energy, and of course time. The Timekeeper's singular purpose is to understand time so intimately it can be manipulated like wool as they claim God can do. However it is still unknown whether El is the God referred to by the Chronal Priests; they tend to avoid speaking about the religion to those who have not ascended beyond a Tempo Mage, but one thing is certain, whatever it is the Timekeepers have found in their lunacy is a very real force, and one should not assume they are simply another fish obsessed cult.^If you take into consideration the nature of what the Chronal Priests are seeking, then whatever they might pull from the void should be truly feared."
+spr1 "./CHRONALASSETS/Triptych.tga" #default sprite
+spr2 "./CHRONALASSETS/TriptychATK.tga" #attack image sprite
+huge
+hp 240
+str 10
+mor 99
+mr 12
+armor 5
+rank 0
+unique
+frontpos
+float
+ainofollower
+inanimate
+reformloc 50
+noheal
+void2
+voidsanity 10
+sleepres
+charmres
+diseaseres
+swallowres
+unaging
+slashres
+pierceres
+fireres 100
+coldres 100
+poisonres 100
+shockres 100
+hadesres 100
+awe 5
+maxsum 0
+affres 33
+noeyes
+shockaura 1
+noslots
+siegeweapon 0 "Strange Lights"
+rangedweapon 4 "Stardust out of Flesh"
+rangedweaponbonus 2097152 "Displace Timelines"
+rangedweaponbonus 0 "Formation Beams"
+spellweapon 42 3 #void magic
+
+newmonster "Primordial Leech"
+descr "One must wonder what kind of beasts these monstrous leeches would live off of. For the most part these creatures are quick to anger and unpredictable. On the off chance they are captured by some cunning humans, you can be sure it will spend most of its time in a cage being watched by unnerved soldiers."
+spr1 "./CHRONALASSETS/PrimoLeech.tga" #default sprite
+spr2 "./CHRONALASSETS/PrimoLeechATK.tga" #attack image sprite
+animal
+hp 36
+str 7
+mor 6
+mr 4
+armor 0
+rank 1
+aihold 0
+extraeyes 2
+unaging
+swamp
+water
+wall
+aggressive
+swamp2
+coldres 50
+poisonres 100
+acidres 100
+bluntres
+noleader
+spread 3
+meleeweapon 12 "Corrosive Bite"
+rangedweaponbonus 4 "Acid Spit"
+miscslots
+
+newweapon "Rusty Katar" #specialized melee weapon
+selectweapon "Rusty Katar"
+init 2
+trgrank 1
+dmgtype 3
+dmg 2
+range 1
+mundane
+sound 8
+next
+
+newweapon "Tetanus" #rusty debuff
+selectweapon "Tetanus"
+dmgtype 12 #special dmg type
+dmg 2048 #bitmask
+strresist
+undead
+inanimate
+stone
+trgrank 1
+
+newweapon "Dark Beam" #dark one ranged
+selectweapon "Dark Beam"
+init 1
+range 4
+flymode 5
+flylook 135
+sound -1
+an
+flysound 66
+dmgtype 7
+next
+
+newweapon "Dark Beam Curse"
+selectweapon "Dark Beam Curse"
+init 7
+dmgtype 12
+dmg 2
+
+
+newmonster "Time Lost Dark One"
+descr "What place will humans have at the end of time?^^These creatures seem to be humans, but something has happened to them. Their skin is unnaturally blackened with strange glowing lines running down their entire body. They refuse to speak, and can act unpredictably."
+spr1 "./CHRONALASSETS/DarkAcolyte.tga" #default sprite
+spr2 "./CHRONALASSETS/DarkAcolyteATK.tga" #attack image sprite
+size1x1
+human
+hp 10
+str 5
+mor 8
+mr 6
+armor 0
+rank 1
+aihold 0
+noleader
+fireres 75
+rearpos
+aggressive
+unaging
+charmres
+voidsanity 3
+meleeweapon "Rusty Katar"
+meleeweaponbonus "Rusty Katar"
+rangedweapon25 6 "Dark Beam"
+allitemslots
+meleeambush 1
+
+newweapon "Rusty Cross Spear" #specialized melee weapon
+selectweapon "Rusty Cross Spear"
+init 6
+trgrank 1
+dmgtype 3
+dmg 4
+range 1
+mundane
+sound 1
+next
+
+newweapon "Tetanustwo" #rusty debuff
+selectweapon "Tetanustwo"
+dmgtype 12 #special dmg type
+dmg 2048 #bitmask
+strresist
+undead
+inanimate
+stone
+trgrank 1
+
+newweapon "Light Beam" #light one ranged
+selectweapon "Light Beam"
+init 1
+range 4
+flymode 5
+flylook 73
+sound -1
+flysound 66
+an
+dmgtype 7
+next
+
+newweapon "Light Beam Blind"
+selectweapon "Light Beam Blind"
+init 7
+dmgtype 12
+dmg 67108864
+inanimate
+
+newmonster "Time Lost Light One"
+descr "What place will humans have at the end of time?^^These creatures seem to be humans, but something has happened to them. The Light Ones have alabaster skin with thick gold colour bands. They refuse to speak and are quite unpredictable."
+spr1 "./CHRONALASSETS/LightAcolyte.tga" #default sprite
+spr2 "./CHRONALASSETS/LightAcolyteATK.tga" #attack image sprite
+size1x1
+human
+hp 10
+str 5
+mor 8
+mr 6
+armor 0
+rank 1
+rearpos
+aihold 0
+noleader
+fireres 75
+aggressive
+unaging
+charmres
+voidsanity 3
+meleeweapon "Rusty Cross Spear"
+rangedweapon25 6 "Light Beam"
+allitemslots
+
+newweapon "Machine Claw" #chronal beast melee
+selectweapon "Machine Claw"
+init 3
+range 1
+dmgtype 1
+sound 1
+mundane
+
+newweapon "Energy Pulse" #chronal beast ranged
+selectweapon "Energy Pulse"
+init 1
+aoe 1003
+range 3
+flymode 8
+flylook 71
+sound -1
+flysound 58
+dmgtype 6
+next
+
+newweapon "Pulse Stun" #energy pulse EX
+selectweapon "Pulse Stun"
+init 7
+dmgtype 12
+dmg 64
+inanimate
+
+newmonster "Chronal Beast"
+descr "There are many wonders hidden in the distant times of our reality. Perhaps some day, far ahead of our time, we will create animals which never sleep. These beasts would be like the constructs of the Hoburghers, but exquisitly crafted, so authentic they are indistinguishable from a real animal. The perfect hunter." 
+spr1 "./CHRONALASSETS/Chronos.tga" #default sprite
+spr2 "./CHRONALASSETS/ChronosATK.tga" #attack image sprite
+size1x1
+hp 27
+str 9
+mor 99
+mr 5
+armor 4
+rank 1
+frontpos
+aihold 0
+acutesenses
+fast
+snow
+desert
+sleepres
+charmres
+fireres 75
+coldres 75
+poisonres 100
+meleeweapon 13 "Machine Claw"
+rangedweapon50 9 "Energy Pulse"
+miscslots
+
+newweapon "Annihilation Blade" #apocalypse angel weapon
+selectweapon "Annihilation Blade"
+init 7
+range 1
+trgrank 1
+dmgtype 1
+sound 8
+sweep
+dmg 12
+next
+
+newweapon "Annihilation Blast" #blade explosion effect
+selectweapon "Annihilation Blast"
+init 7
+range 4
+dmgtype 4
+look 68
+an
+holykill
+hardmr
+shieldneg
+sound 16
+aoe 7
+dmg 12
+
+newweapon "Final Judgement" #snipe skill
+selectweapon "Final Judgement"
+init 7
+range 30
+trgrank 9
+dmgtype 4
+look 24
+an
+reload1
+holykill
+hardmr
+shieldneg
+sound 24
+dmg 999
+
+newmonster "Apocalypse Angel"
+descr "In the end of times the unworthy will be judged by vengeful angels as blood rains from the sky. Seraphiim wielding flaming swords will either convert the wretches or burn their sorry souls to ash."
+spr1 "./CHRONALASSETS/ApocalypseSeraph.tga" #default sprite
+spr2 "./CHRONALASSETS/ApocalypseSeraphATK.tga" #attack
+hp 77
+nametype 39
+str 9
+mor 15
+mr 10
+armor 1
+rank -1
+aihold 0
+shockres 100
+fireres 100
+holy
+awe 4
+fear 2
+flying
+pierceres
+bluntres
+slashres
+aggressive
+loner 1
+wander 5
+stupid
+fastheal
+spellrange 2
+more2spells 1
+meleeweapon 12 "Annihilation Blade"
+rangedweaponbonus 0 "Final Judgement"
+spellweapon 64 3 #divine
+spellweapon 56 2 #gold arcana
+miscslots
+
+newweapon "Soullux" #Kari blind
+selectweapon "Soullux"
+init 10
+trgrank 1
+sound -1
+flysound 29
+flylook 73
+flymode 8
+dmgtype 12
+onlyenemy
+range 100
+aoe 9999
+easymr
+inanimate
+
+newweapon "Millennium Scar" #Zenic Fear
+selectweapon "Millennium Scar"
+init 9
+trgrank 1
+sound -1
+flysound 87
+flylook 195
+flymode 8
+dmgtype 8
+range 100
+aoe 9999
+mr
+inanimate
+
+newmonster "Lightseeker"
+descr "The first priestess to walk the void is no stranger to other worlds. Along with her master, they have set us on this path, for we too wish to leave Elysium behind us and break free of this wretched place. Should they return from times and places we can only dream of, we hope they will see our works and recognize them as their own. Our apocalypse is the unveiling of the natural law that binds us to this reality.^^Millennium Gates provide her with pseudo-immortality."
+spr1 "./CHRONALASSETS/Kari.tga" #default sprite
+spr2 "./CHRONALASSETS/KariATK.tga" #attack image sprite
+size1x1
+human
+unique
+hp 5
+str 3
+mor 10
+mr 8
+armor 0 
+rank -1
+aihold 1
+noleader 
+holy
+ethereal
+awe 1
+mindexpl 1
+regeneration
+prebatweapon 67108864 "Soullux" #blind effect
+meleeweapon "Fist"
+weaponslots
+
+newweapon "Locked Bracer Blade" #Zenic's weapon
+selectweapon "Locked Bracer Blade"
+mundane
+init 4
+dmg 10
+trgrank 1
+dmgtype 3
+range 1
+sound 1
+
+newweapon "Killing Sweep" #Zenicspecial
+selectweapon "Killing Sweep"
+mundane
+init 3
+dmgtype 1
+range 1
+fullsweep
+reload1
+sound 8
+onlyenemy
+
+newmonster "Cryptic Nomad"
+descr "The first man to control time was essentially a nomad from a world not our own. His strange manner and desire to leave Elysium seemed to me a nomads restless manner if anything. We pray that our prophet will return and aid us in our own attempts to flee this realm. ^In our records it appears that the last message he left to our priests was the following: 'Only destiny will call me back, for I was sent here to die for my sins and that eventuality is set in stone.'^^Millennium Gates provide him with pseudo-immortality."
+spr1 "./CHRONALASSETS/Zenic.tga" #default sprite
+spr2 "./CHRONALASSETS/ZenicATK.tga" #attack image sprite
+size1x1
+human
+unique
+hp 8
+str 5
+mor 9
+mr 6
+armor 2 
+rank -1
+desert
+aihold 1
+noleader 
+berserker
+aggressive
+fear 1
+meleeweapon 0 "Locked Bracer Blade"
+meleeweapon 8 "Killing Sweep"
+allitemslots
+
+newmonster "Millennium Mage"
+descr "The madmen that we call Millennium Mages wear the same masks the Timekeepers do, and the implication would disturb saner men than the Timekeepers. The eccentric mages cover themselves completely with an excessively large robe speckled with silver, one would expect them to trip constantly however they never do, this has lead many to speculate that their body hovers slightly. This theory is only reinfoced by the smooth manner in which they move. They speak in disquieting soft voices at an even, monotonous tone. They demand much gold for their assistance but their power is unquestionable."
+spr1 "./CHRONALASSETS/MillMage.tga" #default sprite
+spr2 "./CHRONALASSETS/MillMageATK.tga" #attack image sprite
+size1x1
+human
+nametype 46
+hp 6
+str 5
+mor 8
+mr 9
+armor 0 
+rank -1
+aihold 0
+unaging
+fireres 75
+coldres 75
+voidsanity 4
+sleepres
+gatheranygems
+randomitem 50
+meleeweapon 0 "Fist"
+spellweapon 19 3
+spellweapon 52 3
+weaponslots
+
+newritpow #Creates the diviner rituals
+
+newritual "Lesser Ceremony of Divination"
+descr "Grants a new first level ritual."
+free
+level 1
+levelreq 2
+newrit 1
+soundfx 31
+cost 12 10
+cost 15 10
+
+newritual "Ceremony of Divination"
+descr "Grants a new second level ritual."
+free
+level 1
+levelreq 2
+newrit 2
+soundfx 31
+cost 12 30 
+cost 15 30
+apcost 2 #action point cost 
+
+newritual "Calico Summoning"
+descr "This ritual summons a Stray Calico to wander the land. The cat will wander of its own accord, providing scouting information and revealing nearby invisible units. The cat cannot be detected except by those who can detect invisible units." 
+level 1
+cost 12 7
+airare 15
+summoning
+addstring "Stray Calico"
+
+newritual "Diviner Catmancy"
+descr "The diviner uses Catmancy to call felines to her aid, the results tend to be unpredictable. ^^The Diviners are not expected to take part in the priesthood's rituals, despite this they have taken it upon themselves to study catmancy. Without the strict training of a Chronal Priest guiding them, the Diviners have developed their own novice form of catmancy."
+level 1
+start
+aiweakonly 200
+cost 12 30
+summoning
+sum0chance 3
+addstring "Northern Tiger"
+addstring "2*Tiger"
+addstring "5*Mountain Lion"
+addstring "Kithaironic Lion"
+addstring "10*Bobcat"
+addstring "4*Lynx & 1d6*Bobcat"
+addstring "3*Mountain Lion"
+addstring "1*Mountain Lion & 1*Snow Leopard"
+addstring "2*Snow Leopard & 3*Lynx"
+addstring "2*Lion"
+addstring "1d6*Mountain Lion & 1d6*Bobcat"
+addstring "Displacer Beast"
+addstring "Float Cat Horror"
+
+newritual "Seek Celestial Knowledge"
+descr "The Diviner searches the cosmos for astrological knowledge. Grants a new level 1 spell." 
+level 1
+levelreq 2
+airare 10
+terr 378
+cost 15 25
+apcost 3
+soundfx 31
+newspell1 61
+
+newritual "Seek Celestial Secrets"
+descr "The Diviner searches the cosmos for astrological secrets. Grants a new level 2 spell." 
+level 2
+airare 10
+afterprev
+terr 378
+cost 15 50
+apcost 3
+soundfx 31
+newspell2 61
+
+newritual "Gaze Into the Abyss"
+descr "The Diviner recieves a brief vision of the void. Gateways connecting the void to Elysium tend to be envisioned by the Diviner, but she also might see nothing but stars.^^Be warned; gaze into the abyss long enough, and the abyss will gaze into you."
+level 2
+airare -1
+rebateterr50 378
+soundfx 57
+cost 15 20
+setplane 9
+randterrloc -53
+closewin
+ornext 75
+scryloc 10
+randterrloc 50
+scatterscry 3
+
+newmonster "Diviner"
+descr "Diviners are young women tutored by Timekeepers in the ascertainment of future events. These Diviners are treated with the same respect as the Chronal Priests in the heirarchy of the Chronal Religion. Although they might not be quite as powerful in their magical abilities as a Chronal Priest, the Diviners get along quite well with the catmancer practicioners, and the cats they summon."
+spr1 "./CHRONALASSETS/Trinity.tga" #default sprite
+spr2 "./CHRONALASSETS/TrinityATK.tga" #attack image sprite
+size1x1
+human
+nametype 18
+hp 5
+str 5
+mor 5
+mr 7
+armor 0 
+rank -1
+aihold 0
+power 0 1
+randomitem 10
+gatherrelics
+gatheranygems
+meleeweapon 0 "Staff"
+spellweapon 61 1
+nobootslots
+
+newmonster "Celestial Diviner"
+descr "Chronal Priests from future times have bred black tigers of incredible intelligence and loyalty. These strange beasts are tame enough that the Diviners have found in them an unorthodox steed, and really only the Diviners could mount these animals due to their size. The most skilled of the Chronal Diviners may be given one of these tigers as a gift, which will protect her in battle and carry her on its back for expedient travel."
+spr1 "./CHRONALASSETS/TrinityPanthera.tga" #default sprite
+spr2 "./CHRONALASSETS/TrinityPantheraATK.tga" #attack image sprite
+size1x1
+nametype 18
+human
+spiritsight
+hp 17
+str 8
+mor 7
+mr 8
+armor 0
+rank -1
+snow
+coldres 50
+power 0 1
+power 0 2
+snowstealth
+fast
+gatherrelics
+gatheranygems
+meleeweapon 9 "Bite"
+meleeweaponbonus 6 "Claw"
+spellweapon 61 2
+nobootslots
+
+newmonster "Formless Angel"
+descr "It doesn't have any divine properties, it is only called angel colloquially, it's more like an angry tree made of black tentacles. It seems to like spreading its arms outward like wings, perhaps this serves some purpose we don't understand. Despite their immobile appearance, attemps to kill these creatures with arrows have ended quite poorly."
+spr1 "./CHRONALASSETS/FormlessAngel.tga" #default sprite
+spr2 "./CHRONALASSETS/FormlessAngelATK.tga" #attack image sprite
+hp 11
+str 4
+mor 99
+mr 8
+armor 1
+rank 1
+aihold 0
+noeyes
+unaging
+pierceres
+shockres 50
+sleepres
+displaced 1
+noleader
+meleeweapon 6 "Tentacle"
+meleeweaponbonus 6 "Tentacle"
+miscslots
+
+newmonster "Millennium Gate"
+descr "The Timekeepers plan to leave Elysium depends upon the construction of a suitable physical gate. The Millennium Gate is the closest thing they have to this ideal. It acts as a metaphorical fishing hook, creating a sort of anchor for time mages from other eras to latch on to. Those that discover your gateway may offer their help or technologies. Even the one of a kind humans that come through can be re-acquired if they've fallen in battle; for death is a minor inconvenience when all moments in time can be accessed. The mundane stone pillars of the gate are topped with glossy obsidian peaks, the magic imbued in this twin rock formation is enough that a Time mage need not keep watch over the gate in order for it to function."
+spr1 "./CHRONALASSETS/MillenniumGate.tga" #default sprite
+rank -1
+rearpos
+hp 50
+armor 4
+mor 99
+mr 6
+str 4
+immobile
+stationary
+shockres 50
+poisonres 100
+coldres 100
+fireres 100
+sleepres
+charmres
+diseaseres
+pierceres
+slashres
+bluntres
+inanimate
+noheal
+swallowres
+nozoc
+unimportant
+affres 100
+neverturn 1
+noeyes 1
+gatherrelics
+noslots
+
+newweapon "Destiny Blade" #Zenic's weapon
+selectweapon "Destiny Blade"
+init 4
+dmg 12
+trgrank 1
+dmgtype 3
+look 55
+range 1
+sound 1
+next
+
+newweapon "Triangular Gate" #destiny blade annihilation effect
+selectweapon "Triangular Gate"
+init 7
+trgrank 1
+dmgtype 4
+dmg 999
+range 1
+sound 16
+
+
+newweapon "Light's Edge" #Kari's weapon
+selectweapon "Light's Edge"
+init 4
+dmg 14
+trgrank 1
+dmgtype 1
+look 55
+range 1
+sweep
+sound 1
+next
+
+newweapon "Soul Stasis" #light's edge paralyze
+selectweapon "Soul Stasis"
+init 7
+dmgtype 17
+sound -1
+range 1
+
+newmonster "Seekers of Destiny"
+descr "I have lived in darkness, for all my life I've been pursued.^^We brought things to this world that have no place here. I will never return home again, it is my singular purpose to clear this realm of the darkness I have brought; the darkness I have taught you to coalesce with your magic, as if this realm were not filled with enough monsters; your foolish tampering with time has drawn Soul Panthers to this reality.^^K, and I, Z, shall hunt every one from this realm, for that is why we are here and that is why we fight for you. Our service is not complete until we are the last things on this land that don't belong. Make use of our power, it is all we have."
+spr1 "./CHRONALASSETS/ZK.tga" #default sprite
+spr2 "./CHRONALASSETS/ZKATK.tga" #attack image sprite
+size1x1
+human
+unique
+hp 14
+str 7
+mor 13
+mr 11
+armor 0 
+rank 0
+aihold 0
+noleader 
+spiritsight
+holy
+fear 1
+displaced 1
+charmres
+lucky
+extraeyes 2
+awe 1
+mindexpl 1
+regeneration
+prebatweapon 67108864 "Soullux"
+prebatweapon 7 "Millennium Scar"
+meleeweapon 10 "Killing Sweep"
+meleeweaponbonus 0 "Destiny Blade"
+meleeweaponbonus 0 "Light's Edge"
+noslots
+
+newmonster "Ancient Megalocrab" #CoE5 exclusive monster
+descr "The crustacean known as the Megalocrab, named for its sheer size, is really a gentle giant of the prehistoric era. The Timekeeper's soldiers often are seen hand feeding these ancient animals with large mounds of dead seaweed from the beaches. Although you should be careful not to let them grab a hold of your arms with their mandibles, as long as you don't fall asleep on a beach you probably wouldn't be eaten by this crab... probably. ^^The Megalocrab relies on its impenetrable outer shell and long rigid spine to defend itself, however it has no issues trampling over a band of brigands if it feels cornered."
+spr1 "./CHRONALASSETS/AegisCrab.tga" #default sprite
+spr2 "./CHRONALASSETS/AegisCrabATK.tga" #attack sprite
+size2x2
+animal
+hp 44
+str 8
+mor 4
+mr 3
+armor 4
+fastheal
+water
+rank 1
+frontpos
+coldblood
+unaging
+slashres
+pierceres
+trample 3
+aihold 0
+coastal
+noleader
+meleeweapon 5 "Tail Sweep"
+miscslots
+
+newmonster "Ancient Crabling" #CoE5 exclusive monster
+descr "The crablings that grow into the prehistoric megalocrab tend to hang around the adult crabs until they reach a certain size, that of a deer to be precise. Some scholars say the megalocrabs could live forever and they only died out because of predation. Well I suppose anything is possible, but unless some sort of ridiculous 'time mage' brings these creatures to the present, we won't ever really know."
+spr1 "./CHRONALASSETS/Crabling.tga" #default sprite
+spr2 "./CHRONALASSETS/CrablingATK.tga" #attack sprite
+size1x1
+animal
+hp 5
+str 3
+mor 3
+mr 3
+armor 3
+fastheal
+water
+rank 1
+frontpos
+coldblood
+unaging
+slashres
+pierceres
+aihold 0
+coastal
+noleader
+meleeweapon 0 "Tail Sweep"
+miscslots
+
+newweapon "Bracer Blade" #magic item weapon
+selectweapon "Bracer Blade"
+mundane
+init 4
+dmg 7
+trgrank 1
+dmgtype 1
+range 1
+sound 1
+
+newitem "Lost Destiny Blade" #new for CoE5
+descr "The awakened bracer blade of a certain cryptic Nomad. It isn't any more effective than a dagger in the hands of a normal man, despite its magic power."
+spr "./CHRONALASSETS/DBlade.tga"
+rarity 2
+type 7 
+protection 1
+charmres
+lucky
+awe 1
+twistfate
+
+newitem "Bracer Blade" #new for CoE5
+descr "An unremarkable blade designed to fit a certain kind of vambrace. Long enough to be wielded as a sword."
+spr "./CHRONALASSETS/BracerBlade.tga"
+rarity 2
+type 1
+berserker
+itemwep "Bracer Blade"
+
+newitem "Cracked Stopwatch" #new for CoE5
+spr "./CHRONALASSETS/Stopwatch.tga"
+rarity 0
+type 7
+displaced 1
+voidsanity 5
+
+#these lines set the recruitment options
+clearrec
+nostdtroops
+mercboost -100
+
+#resource types
+#0 gold
+#1 iron
+#2 herbs
+#3 fungus
+#4 sacr
+#5 hands
+#6 weed
+#7 ruby
+#8 sapphire
+#9 diamond
+#10 emerald
+#11 trade
+#12 relics
+#13 life force
+#14 corpses
+#15 generic gems (does not work with recxcost)
+
+# %chance,#units,#gold,+gold 1d#,#iron
+addunitrec "Nomad Mercenary" 100 4 50 0 0
+addunitrec "Nomad Longbowman" 100 4 50 0 0
+addunitrec "Skirmisher Crossbowman" 100 5 60 0 5
+recxcost 15 2
+
+addunitrec "Dark Zealot" 100 5 60 0 10
+recxcost 12 2
+reclimiter "+Timekeeper"
+
+addunitrec "Light Zealot" 100 5 50 0 25
+recxcost 12 2
+reclimiter "+Timekeeper"
+
+addunitrec "Catapult" 100 1 25 0 50
+
+addunitrec "Nomad Mercenary" 10 8 70 0 0
+recxcost 15 2
+
+addunitrec "Nomad Longbowman" 10 8 70 0 0
+recxcost 15 2
+
+addunitrec "Skirmisher Crossbowman" 8 10 75 0 10
+recxcost 15 4
+
+addunitrec "Dark Zealot" 7 10 75 0 15
+recxcost 12 3
+reclimiter "+Timekeeper"
+
+addunitrec "Light Zealot" 7 10 60 0 30
+recxcost 12 3
+reclimiter "+Timekeeper"
+
+addcomrec "Tempo Mage" 4 44 30 0
+templerec
+
+addcomrec "Diviner" 3 60 45 0
+libraryrec
+
+recasschance 2
+
+
+addunitrec "Cryptic Nomad" 3 1 50 0 0
+recxcost 12 40 #40 after test
+reclimiter "-Cryptic Nomad"
+reclimiter "-Lightseeker"
+reclimiter "-Seekers of Destiny"
+reclimiter "+Millennium Gate"
+
+addunitrec "Lightseeker" 3 1 50 0 0
+recxcost 12 40 #40 after test
+reclimiter "-Cryptic Nomad"
+reclimiter "-Lightseeker"
+reclimiter "-Seekers of Destiny"
+reclimiter "+Millennium Gate"
+
+addunitrec "Chronal Beast" 9 2 40 0 40
+reclimiter "+Millennium Gate"
+
+addcomrec "Millennium Mage" 3 400 200 0
+recxcost 15 50
+reclimiter "+Millennium Gate"
+libraryrec
+
+addunitrec "Seekers of Destiny" 2 1 200 0 0
+recxcost 12 100
+reclimiter "+Cryptic Nomad"
+reclimiter "=Cryptic Nomad"
+reclimiter "-Seekers of Destiny"
+
+addunitrec "Seekers of Destiny" 2 1 200 0 0
+recxcost 12 100
+reclimiter "+Lightseeker"
+reclimiter "=Lightseeker"
+reclimiter "-Seekers of Destiny"
+
+addmercrec "Celestial Diviner" 100 1 50 0 0
+recxcost 12 10
+reclimiter "+Millennium Gate"
+reclimiter "=Diviner"
+
+templebonusdescr "Tempo Mages"
+
+libbonusdescr "Mages and Diviners"
+
+
+#these lines dictate the starting army
+setmaincom "Chronal Priest"
+addstartunits "Nomad Mercenary" 8
+addstartunits "Nomad Longbowman" 6
+addstartcom "Tempo Mage"
+
+

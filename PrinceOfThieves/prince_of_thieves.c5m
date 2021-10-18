@@ -1,0 +1,587 @@
+icon "coe_banner.tga"
+description "Adds the Prince of Thieves faction, a rebellious bandit overlord; hero to some, devil to others. Has a number of unique outlaw troops in addition to standard bandits, several unique commanders, and multiple avenues to upgrade."
+
+selectterr 777
+name "Despoiled Graveyard"
+spr "despoiled_graveyard.tga"
+dead 3
+hands 1
+apcost 1
+
+newritpow "King"
+newritual "King's Pardon"
+descr "Dismantles a gallows and empties the local donjons, freeing all the condemned criminals there."
+level 1
+addstring "2d2*Highwayman & 2d2*Poacher & 3d4*Bandit"
+addstring "3d3*Highwayman & 3d3*Bandit"
+addstring "3d3*Poacher & 3d3*Bandit"
+addstring "2d2*Enforcer & 3d4*Bandit"
+addstring "c*Bandit Leader & 5d3*Bandit"
+addstring "c*Assassin & 3d3*Bandit"
+summoning
+terr 153
+alterloc 0
+free
+
+newmonster "Puppet King"
+spr1 "puppet_king.tga"
+spr2 "puppet_king.tga"
+descr "Thanks to the valiant efforts of the people's beloved champion, the pretender to the throne has been deposed and the rightful king restored. There are some that might cast doubt on the legitimacy of our king's claims to the throne, even going so far as to suggest that the 'hero' who saved the king is a villain and outlaw, a traitorous felon whose evil henchmen have overthrown the right true king and installed an easily controlled puppet in his place. Far be it from a humble scribe to spread such slanderous rumors however, and indeed unnecessary, for if such a vile act had actually transpired then surely the Lord would vent his displeasure upon the land and ruin would befall Elysium any day now. As such, the ongoing lack of any disasters must be taken as a sign of divine approval for the new king.^^For unrelated reasons the scholar's almanac has been edited to recommend that all persons stay away from volcanos, flood plains, unstable mountainsides, and magical portals for the foreseeable future."
+hp 6
+mr 4
+str 4
+armor 1
+mor 4
+power 0 1
+meleeweapon 0 "Scepter"
+rank -1
+
+newritpow "Friar"
+newritual "Dispense Alms"
+descr "Distributes ill-gotten gains to the poor, earning the loyalty of the town's beggars and inspiring commoners to join the cause. In larger cities this display of virtue may even attract wandering knights."
+level 1
+cost 0 25
+addstring "2d2*Beggar & 1d2*Yeoman & 0*Landless Knight"
+addstring "(-)Beggar"
+nomonreq
+terr -29
+terrboost -28
+sacrscale
+summoning
+free
+
+newritual "Sermon to Nature"
+descr "The friar gathers a flock of wild birds or animals and preaches a sermon to them. Given a sufficient display of devotion (likely assisted by a number of sanctified relics) it is miraculously possible that they may even listen."
+level 1
+cost 12 5
+specpow 1
+
+newmonster "Friar"
+descr "Some generations ago an order of mendicant monks was founded to live among the common folk. This was of course a terrible mistake. According to legend the founder of the order was known to deliver sermons to the birds and beasts of the woods, which strikes us as a far more productive use of their time than ministering to peasants. The deer, vicious though it may be, has at least some sense of nobility and intelligence, which is more than can be said of the peasant. The regrettable result of exposing itinerant priests to the common rabble is more likely to be the corruption of the priest rather than the enlightenment of the peasants. Indeed, such is the abasement these friars subject themselves to that they have oft been seen in the company of beggars, prostitutes, and thieves, even going so far as to treat them as peers and equals. The Academy has repeatedly petitioned the holy office for the dissolution of these dissolute orders, but for reasons unclear these petitions have fallen on deaf ears."
+spr1 "friar.tga"
+spr2 "friar.tga"
+gatherrelics
+hp 5
+mr 6
+str 4
+armor 0
+mor 7
+rank -1
+power 0 1
+spellweapon 25 1
+meleeweapon 0 "Staff"
+allitemslots
+human
+stealth
+
+newweapon "Subversion"
+trgrank 9
+range 20
+init 1
+dmgtype 14
+dmg 1
+aoe 3
+look 48
+sound 31
+sndvol -50
+easymr
+morale
+onlyenemy
+mind
+inanimate
+affecthuman
+
+newmonster "Minstrel"
+descr "Of all the thieves and criminals that beset Elysium, none is so vile as the Minstrel. The common cutpurse threatens only one's wallet; the minstrel, however, assails one's very virtue. These blackhearted knaves stalk from village to village, distracting the peasantry with bawdy doggerels and lowbrow plays. The countryside is so thick with minstrels that a legitimate writer can scarcely make a livelihood, the common folk being so taken with these wandering charlatans that they would hardly lend their ear or their purse to a true poet no matter how talented. Worse still, their burlesques often make a mockery of the rightful authorities while lionizing troublemakers and ne'er-do-wells. One shudders to think how many peasants, already morally questionable under the best of circumstances, may have been tempted into a life of crime by the honeyed tongues of these blackguards."
+spr1 "minstrel.tga"
+spr2 "minstrel.tga"
+hp 5
+mr 6
+str 4
+armor 0
+mor 6
+assassinweapon 0 "Subversion"
+rangedweapon 0 "Bow"
+meleeweapon 0 "Shortsword"
+human
+allitemslots
+
+newmonster "Beggar"
+spr1 "beggar.tga"
+spr2 "beggar.tga"
+descr "At the bottom of Elysium's social hierarchy is the common street beggar. While some see virtue in the beggar's stoic suffering, nothing could be further from the truth. They are merely layabouts and malingerers seeking to defraud well-intentioned citizens of their hard earned money. It follows, for example, that a man with half of his limbs ought to be able to account for half of his upkeep, yet you will frequently see beggars in such condition expecting the whole of their needs to be met by charity. It should come as no surprise that beggars often side with miscreants and felons against proper upstanding folk."
+hp 4
+mr 3
+str 4
+armor 0
+mor 2
+rangedweapon 0 "Throw Rock"
+meleeweapon 0 "Dagger"
+allitemslots
+human
+minorstartaff 50
+stationary
+rank 1
+
+newmonster "Rogue"
+spr1 "rogue.tga"
+spr2 "rogue.tga"
+descr "The streets and gutters of Elysium teem with the profligate and degenerate, low-level ne'er-do-wells who lack the moral turpitude to live a virtuous life but lack as well the courage to act on their baser impulses. Occasionally, they may be motivated to try their hand at a life of crime under the firm guidance of an enterprising criminal ringleader (or perhaps under the shaky guidance of a barrel of wine.) In the shadow wars of the underworld they are expendable footsoldiers, and while they hope for ill-gotten riches most of them should count themselves lucky if they get a hangman who knows what he's doing."
+hp 5
+mr 4
+str 4
+armor 0
+mor 3
+meleeweapon 0 "Shortsword"
+allitemslots
+human
+rank 1
+
+newmonster "Yeoman"
+spr1 "yeoman.tga"
+spr2 "yeoman.tga"
+descr "Truly, the only thing worse than a peasant is a peasant with pretensions. The yeoman is an object study in the importance of treating the lower classes with a firm hand, for the slightest taste of freedom will surely ruin them. No matter how much the tax collectors generously leave them the yeomanry will inevitably fly into rebellion at the slightest offense. One might think that they would be honored to have an august lord lavish their attentions on their undeserving daughter or wife, but no, inevitably these ingrates will take to the woods and form armed bands to harass their betters for merely exercising their ancient rights."
+hp 5
+mr 4
+str 4
+armor 0
+mor 4
+rangedweapon 0 "Bow"
+meleeweapon 0 "Shortsword"
+shield
+rank 1
+human
+allitemslots
+
+newmonster "Highwayman"
+spr1 "highwayman.tga"
+spr2 "highwayman.tga"
+descr "Bandits are a cowardly and superstitious lot. This can be observed in their modus operandi: you will notice the average bandit will readily attack helpless merchants and nobles, but you will rarely see them pick on intimidating targets such as burly laborers or outdoorsmen. Occasionally, however, a particularly lucky bandit may manage to lay their hands on some better weapons and armor. Their flimsy backbone thus reinforced by steel (and probably no small amount of wine) they may be able to muster the courage to waylay strong and healthy travelers on the road."
+hp 6
+mr 4
+str 4
+armor 1
+mor 4
+meleeweapon 0 "Shortsword"
+meleeweapon 0 "Dagger"
+foreststealth
+allitemslots
+human
+rank 1
+
+newmonster "Poacher"
+descr "While peasants are known to be universally lazy, some abandon their obligations to the land altogether and flee into the wilderness to live off the land, illegally seizing game that properly belongs to the king. While some might slay boar or deer simply to rid such monsters from the land, the poacher slays them simply seeking his supper. In this he proves his stupidity as well as his sinfulness, for who would be foolish enough risk the deer's razor teeth just to feed himself rather than live in his cozy hut tilling the lord's land? To these madmen, the hangman's noose surely must come as a mercy."
+spr1 "forester.tga"
+spr2 "forester.tga"
+hp 5
+mr 4
+str 4
+armor 0
+mor 4
+meleeweapon 0 "Shortsword"
+rangedweapon 0 "Longbow"
+allitemslots
+human
+foreststealth
+rank 0
+
+newweapon "Hand Crossbow"
+trgrank 1
+range 4
+init 2
+dmgtype 3
+dmg 4
+flymode 1
+flylook 0
+reload1
+mundane
+arrow
+rangepen
+
+newmonster "Enforcer"
+spr1 "enforcer.tga"
+spr2 "enforcer.tga"
+descr "There is no such thing as honor among thieves. When members of Elysium's criminal fraternity have a dispute with some local knight or baron, rather than facing them and their champions on the dueling ground like proper gentlemen they are much more likely to settle their scores with a blunt instrument on a dark road or shadowy alleyway. Seldom do they even risk doing their own dirty work, preferring to dispatch trusted henchmen to do the deed.^^Even then, these enforcers lack the patience and discretion of professional assassins. Often they can manage little more than kneecapping a target of opportunity, hoping that this may be enough to send a message."
+hp 7
+mr 4
+str 5
+armor 1
+mor 5
+assassinweapon 2 "Mace"
+meleeweapon 0 "Mace"
+rangedweapon 0 "Hand Crossbow"
+allitemslots
+human
+rank 0
+
+newweapon "Barrel of Oil"
+trgrank 9
+range 10
+init 1
+dmgtype 4
+dmg 10
+aoe 5
+look 68
+sound 16
+oneshot
+
+newmonster "Saboteur"
+spr1 "saboteur.tga"
+spr2 "saboteur.tga"
+descr "Many a petty lord has made the mistake of seeing the local banditry as a disorganized rabble and assumed that they would be safe within their tall walls and sturdy gates. Clearly a mere band of robbers would never be able to amass siege weapons capable of reducing fortifications, let alone have the discipline to maintain a siege long enough to use them. They underestimate the ingenuity of the criminal element at their own peril, however. Unable to seize a fort from without, bandits often resort to deception and trickery to weaken the defenses from within. A favorite tactic is to secret a cache of flammable oil and pitch with a slow burning fuse, hoping to set the fortifications (and perhaps a few unlucky defenders) alight at a critical moment. More than one prosperous noble has perished in flames after going to sleep secure in their defenses."
+hp 5
+mr 5
+str 4
+armor 0
+mor 5
+siegeweapon 0 "Barrel of Oil"
+meleeweapon 0 "Dagger"
+rangedweapon 0 "Crossbow"
+allitemslots
+human
+rank -1
+
+newmonster "Landless Knight"
+spr1 "landless_knight.tga"
+spr2 "landless_knight.tga"
+descr "While knightly orders are a venerable institution, regrettably lax standards for knighthood have led to a surfeit of knights in Elysium. With many knights lacking an estate or a lord to provide for them they experience a life of want, living off their martial skills for their daily bread. Do not feel sorry for them, for their moral character may be inferred from their meager circumstances. While a knight of dignity and virtue would surely have no difficulty acquiring land and titles, these disgraceful miscreants sully their order by selling themselves and their blades. Frequently they fall in with common brigands, moved by displays of misplaced charity or duped into joining some petty vendetta against duly appointed lawmen."
+hp 9
+mr 4
+str 5
+armor 3
+mor 6
+meleeweapon 1 "Broadsword"
+largeshield
+slow
+allitemslots
+human
+rank 1
+
+newritpow "Apothecary"
+newritual "Poison Trap"
+copyritual "Poison Gas Trap"
+descr "Creates a trap outside a Fortification. It explodes in a sizable Poison Cloud that will likely kill most human sized targets hit."
+level 1
+cost 0 5
+cost 10 0
+cost 16 0
+free
+
+newmonster "Apothecary"
+spr1 "apothecary.tga"
+spr2 "apothecary.tga"
+descr "Although apothecaries would prefer to be known as healers and benefactors of mankind, nothing could be further from the truth. They cater to the weak-willed with their promises of miracle cures, subverting the will of El by encouraging their patients to trust in the false powers of medicine over piety and prayer. Even the lowly peasants, unscrupulous as they are, prefer to bear their maladies with dignity rather than buying the apothecary's suspect wares. This is of little concern to the apothecary, for those that are unable to satisfy their greed with supposedly legitimate business have no compunctions whatsoever about turning to crime instead. Many a murderer relies on connections with a friendly apothecary to supply their deadly poisons." 
+hp 5
+mr 5
+str 4
+armor 0
+mor 5
+power 0 1
+spellweapon 55 1
+spellweapon 40 1
+meleeweapon 0 "Dagger"
+allitemslots
+human
+rank -1
+
+newritpow "Crime"
+
+newritual "Dispense Alms"
+copyritual "Dispense Alms"
+
+newritual "Poison Trap"
+copyritual "Poison Trap"
+
+newritual "Fence Relics"
+descr "Puts the word out on the street to find buyers willing to pay handsomely for stolen relics."
+level 1
+cost 12 10
+cost 0 -25
+terr -28
+free
+
+newritual "Appraise Relics"
+copyritual "Create Artifact"
+descr "Attempts to sort through looted religious artifacts to find objects of magical power. This requires time and money to seek out knowledgeable sources to examine the relics, and inevitably this will lead to a certain number of artifacts being stolen or destroyed in the process."
+level 1
+cost 15 0
+cost 12 20
+cost 0 25
+terr -28
+free
+
+newritual "Rob Graves"
+copyritual "Create Artifact"
+level 1
+descr "Digs through the tombs and crypts of a graveyard in search of treasure. Gold, holy relics, and even the occasional magical item can be found this way. Desecrating the dead is not without its risks however and such a disrespectful act is certain to draw the wrath of the residents of the graveyard. Only a very strong or very foolish bandit would think to rob the dead."
+apcost 3
+cost 12 -20
+cost 0 -10
+cost 15 0
+addstring "c*Mummy & 2d3+3*Longdead"
+addstring "c*Wraith & 2d3+3*Dispossessed Spirit"
+addstring "1d2+1*Ancestral Hero & 1d3+2*Ancestral Warrior & 1d3+2*Ancestral Archer"
+addstring "c*Ancestral Chief & 2d2+2*Ancestral Lancer & c*Ancestral Shaman"
+addstring "c*Vampire & 1d4+1*Ghoul"
+addstring "1d2+1*Ghost & c*Ghost Mage"
+addstring "c*Wight Mage & 1d2+2 Wight"
+addstring "1d2+1*Wight & 3d3+3*Longdead"
+addstring "c*Vampire Count & 1d2*Vampire"
+addstring "c*Necromancer& 1d3+1 Bane-Bones & 3d3*Longdead"
+defctrl -1
+summoning
+terr 16
+free
+airare -1
+ornext 75
+alterloc 777
+
+newritual "Install Puppet"
+level 2
+descr "Installs a friendly claimant to the throne of Elysium. The newly installed king can recruit knights and pardon criminals from the gallows. Any castle can be used to assert the claim; however, any other kings claiming the throne must be dealt with before a new king can be installed."
+addstring "c*Puppet King"
+addstring "(-)King"
+addstring "(-)Puppet King"
+summoning
+cost 0 300
+terr -108
+nomonworldreq
+free
+
+newritual "Build Camp"
+level 2
+descr "Establishes a new Brigand Lair in a forest. This process consumes a large quantity of money as supplies must be procured, henchmen hired, and bribes paid to ensure the locals look the other way. A brigand lair requires a great deal of distance from existing brigand lairs to prevent rivalry between local bandits, and cannot be built under the watchful eye of any fortresses."
+cost 0 250
+terr -6
+nonearby1req -31
+nonearby7req 125
+alterloc 125
+free
+
+newritual "Fortified Camp"
+copyritual "Bramble Fort"
+level 2
+descr "Fortifies a bandit lair with crude fortifications of branch and thorn. The walls are camoflauged with brambles to evade detection and hinder attackers, although they are not especially sturdy or fireproof."
+cost 0 75
+cost 2 0
+terr 125
+enchreqterr 125
+free
+
+newritual "Dark Baptism"
+addstring "Bandit Leader"
+addstring "Unholy Disciple"
+promotion 1
+level 3
+descr "Under the new moon, the Prince of Shadows anoints a bandit leader with ritually impure blood and drowns them to the very brink of death in a twisted baptismal ceremony. Those that have undergone the ritual will become stronger and imbued with demonic powers."
+cost 4 25
+terr -17
+free
+
+newritual "Promotion"
+level 1
+descr "By greasing the palms of his associates a bandit leader can be proclaimed Prince of Thieves, provided the position is currently empty."
+addstring "Prince of Thieves"
+addstring "(-)Prince of Thieves"
+addstring "(-)Prince of Shadows"
+addstring "(-)Prince of Hell"
+levelup 2
+newrit 2
+newrit 2
+newrit 2
+newrit 2
+cost 0 100
+terr 125
+nomonplayerreq
+free
+
+newritual "Unholy Pact"
+level 2
+descr "While devils are generally eager to offer power in exchange for souls, the souls of Elysium's most famous criminals and blackguards hold little appeal to them as they are already all but destined for Inferno in the afterlife. In order to entice a favorable deal from infernal powers, a more substantial offering is required. By collecting thirteen times thirteen holy relics and desecrating them the Prince of Thieves can prove his value to the forces of darkness and receive promotion to a commander of the infernal legions. Devils have a sense of poetic justice and this pact must be performed under the watchful eyes of a hanged criminal, a reminder of the fate the Prince of Thieves hopes to avert."
+addstring "Prince of Shadows"
+addstring "(-)Prince of Shadows"
+addstring "(-)Prince of Hell"
+levelup 3
+newrit 3
+newrit 3
+cost 12 169
+#cost 4 -666 debugging
+terr 153
+nomonplayerreq
+forgetcurrit
+free
+
+newritual "Unholy Throne"
+level 3
+descr "Having bargained away his soul to the lords of Inferno, the only way for the Prince of Shadows to escape his fate in the hereafter is to strike down the archdevils and seize the throne to reclaim mastery of his own soul. Dissolving the pact requires copies amounts of ritualistically sacrificed blood, although this is undoubtedly the easy part of the task compared to taking control of the infernal capital itself. By reuniting his demon-touched soul he gains tremendous power, but the demonic denizens of Inferno are unlikely to recognize this claim on the throne and will have to be bound through sacrifice or subdued with force."
+transformtarg 1
+addstring "Prince of Hell"
+addstring "(-)Prince of Hell"
+nomonplayerreq
+newrit 4
+newspell3 1
+newspell3 1
+newspell3 9
+newspell3 9
+cost 4 333
+terr 140
+forgetcurrit
+free
+
+newritual "Unholy Hack"
+level 4
+descr "You shouldn't actually be seeing this wtf"
+levelup 1
+free
+
+newmonster "Bandit Leader"
+descr "The concept of a bandit leader is something of an oxymoron, as bandits are defined by their inability to submit to authority. One must assume that their affairs are in a state of perpetual anarchy, each man refusing to obey any commands but his own. Nonetheless, somehow certain leaders manage to elevate themselves to some position of nominal authority."
+spr1 "bandit_leader.tga"
+spr2 "bandit_leader.tga"
+gatherrelics
+mastery 1
+power 0 1
+hp 7
+mr 4
+str 5
+armor 0
+mor 6
+rangedweapon 0 "Longbow"
+meleeweapon 1 "Staff"
+allitemslots
+human
+
+newmonster "Prince of Thieves"
+descr "The so-called Prince of Thieves is the most dastardly knave in all of Elysium, an unrepetant blackguard who wages a campaign of terror against the nobles of Elysium. He robs the royal tax collectors, depleting the treasury of valuable funds needed to arm the soldiers to enforce the tax decrees; the people will undoubtedly be impoverished due to the kingdom's hampered functioning. Even the title he takes for himself is a mockery of all that is right and just in the world, as such a lowly creature could no more be royalty than a frog could be a dragon."
+spr1 "prince_of_thieves.tga"
+spr2 "prince_of_thieves.tga"
+gatherrelics
+mastery 1
+power 0 2
+hp 9
+mr 6
+str 5
+armor 0
+mor 8
+rangedweapon 1 "Longbow"
+meleeweapon 1 "Broadsword"
+shield
+allitemslots
+human
+
+newmonster "Prince of Shadows"
+descr "Although this 'Prince of Thieves' has long been hailed by the peasantry as a champion of the common man, the more enlightened classes have seen through his charade all along. Reports of terrifying new infernal powers are disturbing but not surprising to those of us that knew his true nature to begin with. Now that the mask has finally slipped, we can only hope that the peasant rabble which has been supporting him will come to their senses and turn themselves in to the headsman to atone for their crimes."
+spr1 "prince_of_shadows.tga"
+spr2 "prince_of_shadows.tga"
+gatherrelics
+gathersacr
+power 0 3
+power 3 1
+hp 18
+mr 8
+str 6
+armor 0
+mor 10
+fireres 50
+poisonres 50
+spellweapon 1 2
+spellweapon 9 2
+rangedweapon 1 "Longbow"
+meleeweapon 1 "Broadsword"
+shield
+allitemslots
+human
+
+newmonster "Prince of Hell"
+descr "It is now rumored that the infamous Prince of Thieves, already known to dabble in the diabolical arts, is claiming rulership over Inferno itself. These rumors frankly defy all credibility and should be dismissed as the tavern gossip that they are. No, it is quite unbelievable that the Prince of Thieves made a pact with the dark powers, descended into the hells to overthrow his masters, and claimed their powers for their own. No, the answer is clearly much simpler: the upstart Prince of Thieves was a demon lord in mortal form all along. Certainly no mortal man could have been so cunning as to evade justice for so long, and no human soul could be so depraved as to commit such treasons as he. We fear the obvious conclusion is that the peasantry that has so enthusiastically supported his rebellion must have turned to demon worship and summoned their dark lord from the nether realms via unspeakable rites. Clearly the only way to quash the Prince of Thieves once and for all is to clamp down even harder on the peasants to purge their wickedness and sins."
+spr1 "prince_of_hell.tga"
+spr2 "prince_of_hell.tga"
+gatherrelics
+gathersacr
+power 0 3
+power 3 3
+hp 42
+mr 10
+str 6
+armor 2
+mor 12
+fireres 100
+poisonres 50
+spellweaponbonus 1 3
+spellweaponbonus 9 3
+rangedweapon 1 "Longbow"
+meleeweapon 1 "Broadsword"
+magicshield
+fear 2
+allitemslots
+human
+
+newmonster "Unholy Disciple"
+descr "Not content with his own damnation, the Prince of Shadows has begun inducting his lieutenants into his terrifying legion of the damned, adding their own souls to the fire. This is no great loss, since in no case could their traitorous souls have possibly hoped to escape their judgment anyhow. However, it does make them considerably more dangerous to those of us still living under the Prince's reign of terror."
+spr1 "unholy_disciple.tga"
+spr2 "unholy_disciple.tga"
+gatherrelics
+gathersacr
+power 0 1
+hp 15
+mr 6
+str 6
+armor 0
+mor 6
+spellweapon 1 1
+rangedweapon 1 "Longbow"
+meleeweapon 2 "Staff"
+allitemslots
+human
+
+newclass
+setclassname "Prince of Thieves"
+classdescr "Life in Elysium's criminal underworld corresponds in many ways to life among decent common folk. Just as the peasants owe fealty to their lord who in turn serves his liege, brigands and thieves invariably answer to bandit chiefs and outlaw ringleaders. At the center of this shadowy web of allegiances is a mysterious figure who claims authority over all of Elysium's outlaws and miscreants.^^Whispers and rumors abound about this criminal overlord and their empire of robbery and deception. Life in Elysium is harsh for the common people and many of them look up to the Prince of Thieves as their champion against the depradations of the nobility. Some even whisper that the Prince of Thieves is a wrongfully disgraced noble themselves, come to avenge themselves and the land from usurpers. However, his reputation is formidable and frightening and some would claim that his black heart dabbles in unspeakable deeds."
+classabdescr "Bandits are cheap, but slow to muster.^Brigand Lairs can be used as citadels. Additional Brigand Lairs can be established at sufficient distance from each other.^Loots relics from cities and temples.^Relics can be sold for gold and magic items.^Can distribute money to the poor to attract allies.^Can install a puppet king at a castle to unlock advanced recruits, as long as there is no other king.^May sell his soul for evil powers, although some recruits will stop appearing."
+addstartunits "Yeoman" 10
+addstartunits "Bandit" 10
+addstartunits "Poacher" 5
+setmaincom "Prince of Thieves"
+addstartcom "Assassin"
+hometerr 125
+#addstartterr 140 debugging
+#addstartterr 153 debugging
+addstartterr 7
+addstartterr 17
+likesnorth -2
+likessouth 0
+likescoast -2
+
+recasschance 20
+
+classcitterr 125
+
+addunitrec "Bandit" 100 2 10 0 0
+#addunitrec "Rogue" 100 2 10 0 0
+addunitrec "Yeoman" 100 2 15 0 0
+addunitrec "Highwayman" 100 2 20 0 5
+addunitrec "Poacher" 100 2 20 0 0
+addunitrec "Swordsman" 100 5 50 0 10
+reclimiter "+Puppet King"
+addunitrec "Crossbowman" 100 5 50 0 10
+reclimiter "+Puppet King"
+addunitrec "Zweihander" 100 5 50 0 10
+reclimiter "+Puppet King"
+addunitrec "Knight" 100 1 25 0 10
+reclimiter "+Puppet King"
+reclimiter "-Prince of Shadows"
+reclimiter "-Prince of Hell"
+addunitrec "Enforcer" 100 1 25 0 0
+addmercrec "Bandit" 8 5 20 10 0
+addmercrec "Scout" 20 1 15 10 0
+addmercrec "Saboteur" 10 1 40 10 0
+addcomrec "Hedge Wizard" 4 40 10 0
+addcomrec "Apothecary" 10 50 10 0
+addcomrec "Bandit Leader" 20 40 10 0
+addcomrec "Minstrel" 10 50 10 0
+reclimiter "-Prince of Shadows"
+reclimiter "-Prince of Hell"
+addcomrec "Friar" 10 50 10 0
+reclimiter "-Prince of Shadows"
+reclimiter "-Prince of Hell"
+templerec

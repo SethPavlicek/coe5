@@ -4,5 +4,5 @@
 
 # DRG Build
 *.final
-*.c5m
+DRG.c5m
 DRGmod
