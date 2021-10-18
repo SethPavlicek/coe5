@@ -2109,11 +2109,21 @@ templebonusdescr "Tempo Mages"
 
 libbonusdescr "Mages and Diviners"
 
+newmonster "Garrison Nomad Mercenary"
+copystats "Nomad Mercenary"
+stationary
+
+newmonster "Garrison Nomad Longbowman"
+copystats "Nomad Longbowman"
+stationary
 
 #these lines dictate the starting army
 setmaincom "Chronal Priest"
 addstartunits "Nomad Mercenary" 8
 addstartunits "Nomad Longbowman" 6
 addstartcom "Tempo Mage"
+
+addstartcom "Garrison Nomad Longbowman"
+addstartunits "Garrison Nomad Longbowman" 7
 
 
