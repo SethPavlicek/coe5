@@ -541,6 +541,7 @@ stationary
 newmonster "Garrison Poacher Commander"
 copystats "Poacher"
 gold 2
+relics 1
 trade 1
 stationary
 
@@ -554,7 +555,7 @@ addstartunits "Poacher" 5
 setmaincom "Prince of Thieves"
 addstartcom "Assassin"
 
-addstartcom "Garrison Poacher"
+addstartcom "Garrison Poacher Commander"
 addstartunits "Garrison Poacher" 20
 
 hometerr 125
