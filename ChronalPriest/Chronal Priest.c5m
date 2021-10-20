@@ -71,13 +71,13 @@ aiweakonly 320
 summoning
 sum0chance 5
 sum1chance 8
-addstring "White Cat"
-addstring "1*Tiger"
+#addstring "White Cat"
+addstring "2d3*Tiger"
 addstring "5*Mountain Lion"
 addstring "1d7+3*Bobcat"
 addstring "4*Lynx & 1d6*Bobcat"
 addstring "3*Mountain Lion"
-addstring "1*Mountain Lion & 1*Snow Leopard"
+addstring "1*Mountain Lion & 1d2*Snow Leopard"
 addstring "2*Snow Leopard & 3*Lynx"
 addstring "1d4+2*Lynx"
 
@@ -395,7 +395,7 @@ hp 5
 str 4
 mor 4
 mr 4
-armor 0
+armor 1
 rank 1
 desert2
 temple2
@@ -2109,21 +2109,27 @@ templebonusdescr "Tempo Mages"
 
 libbonusdescr "Mages and Diviners"
 
-newmonster "Garrison Nomad Mercenary"
-copystats "Nomad Mercenary"
-stationary
-
 newmonster "Garrison Nomad Longbowman"
 copystats "Nomad Longbowman"
 stationary
 
+newmonster "Garrison Nomad Captain"
+copystats "Nomad Mercenary"
+hp 10
+armor 2
+gold 2
+relics 1
+trade 1
+gatherrelics
+stationary
+
+
 #these lines dictate the starting army
 setmaincom "Chronal Priest"
-addstartunits "Nomad Mercenary" 8
-addstartunits "Nomad Longbowman" 6
+addstartunits "Nomad Mercenary" 15
+addstartunits "Nomad Longbowman" 10
 addstartcom "Tempo Mage"
-
-addstartcom "Garrison Nomad Longbowman"
-addstartunits "Garrison Nomad Longbowman" 7
+addstartcom "Garrison Nomad Captain"
+addstartunits "Garrison Nomad Longbowman" 12
 
 

@@ -295,8 +295,9 @@ copyritual "Poison Trap"
 newritual "Fence Relics"
 descr "Puts the word out on the street to find buyers willing to pay handsomely for stolen relics."
 level 1
+apcost 2
 cost 12 10
-cost 0 -25
+cost 0 -60
 terr -28
 free
 
@@ -444,7 +445,7 @@ power 0 1
 hp 7
 mr 4
 str 5
-armor 0
+armor 1
 mor 6
 rangedweapon 0 "Longbow"
 meleeweapon 1 "Staff"
@@ -460,8 +461,8 @@ mastery 1
 power 0 2
 hp 9
 mr 6
-str 5
-armor 0
+str 6
+armor 2
 mor 8
 rangedweapon 1 "Longbow"
 meleeweapon 1 "Broadsword"
@@ -543,6 +544,9 @@ copystats "Poacher"
 gold 2
 relics 1
 trade 1
+gatherrelics
+gatheranygems
+seegems
 stationary
 
 newclass
