@@ -2121,6 +2121,8 @@ gold 2
 relics 1
 trade 1
 gatherrelics
+gatheranygems
+seegems
 stationary
 
 

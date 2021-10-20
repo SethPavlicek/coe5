@@ -13,6 +13,7 @@ forgetcurrit
 rebatelvl 2
 soundfx 29
 cost 8 30
+aialways 999
 free
 
 newritual "Engineer Promotion - Gold"
@@ -24,6 +25,7 @@ forgetcurrit
 rebatelvl 3
 soundfx 29
 cost 8 60
+aialways 999
 free
 
 newritual "Engineer Promotion - Platinum"
@@ -35,6 +37,7 @@ forgetcurrit
 rebatelvl 4
 soundfx 29
 cost 8 120
+aialways 999
 free
 
 newritual "Engineer Promotion - Diamond"
@@ -49,6 +52,7 @@ addstring "(-)Diamond Engineer"
 addstring "(-)Diamond Explosives Engineer"
 soundfx 29
 cost 8 180
+aialways 999
 free
 
 

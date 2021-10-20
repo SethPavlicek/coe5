@@ -13,6 +13,7 @@ forgetcurrit
 rebatelvl 2
 soundfx 29
 cost 10 30
+aialways 999
 free
 
 
@@ -25,6 +26,7 @@ forgetcurrit
 rebatelvl 3
 soundfx 29
 cost 10 60
+aialways 999
 free
 
 
@@ -37,6 +39,7 @@ forgetcurrit
 rebatelvl 4
 soundfx 29
 cost 10 120
+aialways 999
 free
 
 
@@ -52,6 +55,7 @@ addstring "(-)Diamond Gunner"
 addstring "(-)Diamond Siege Gunner"
 soundfx 29
 cost 10 180
+aialways 999
 free
 
 

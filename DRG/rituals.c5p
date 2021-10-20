@@ -32,6 +32,8 @@ summoning
 addstring "10d6*Glyphid Swarmer"
 cost 0 20
 cost 15 5
+aiweakonly 200
+airare 15
 free
 
 newritual "Charm Glyphid Slashers"

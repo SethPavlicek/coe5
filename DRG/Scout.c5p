@@ -13,6 +13,7 @@ forgetcurrit
 rebatelvl 2
 soundfx 29
 cost 9 30
+aialways 999
 free
 
 newritual "Scout Promotion - Gold"
@@ -24,6 +25,7 @@ forgetcurrit
 rebatelvl 3
 soundfx 29
 cost 9 60
+aialways 999
 free
 
 
@@ -36,6 +38,7 @@ forgetcurrit
 rebatelvl 4
 soundfx 29
 cost 9 120
+aialways 999
 free
 
 
@@ -51,6 +54,7 @@ addstring "(-)Diamond Scout"
 addstring "(-)Diamond Assault Scout"
 soundfx 29
 cost 9 180
+aialways 999
 free
 
 
@@ -58,7 +62,7 @@ free
 newweapon "M1000 Classic"
 init 1
 range 12
-trgrank 8
+trgrank 9
 #aoe 0
 flylook 35
 flysound 11
@@ -67,6 +71,21 @@ dmgtype 3
 dmg 10
 shieldneg
 reload1
+
+newweapon "M1000A Sniper"
+init 1
+range 12
+trgrank 8
+#aoe 0
+flylook 35
+flysound 11
+flymode 1
+dmgtype 3
+dmg 8
+shieldneg
+oneshot
+
+
 
 newweapon "Laser Assault Rifle RF"
 aoe -2
@@ -163,7 +182,7 @@ acutesenses
 power 0 1
 #power -4 1
 mastery 1
-assassinweapon -2 "M1000 Classic"
+assassinweapon 0 "M1000A Sniper"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 0 "Sawed Off"
@@ -181,7 +200,7 @@ coldres 20
 shockres 20
 power 0 2
 #power -4 2
-assassinweapon 0 "M1000 Classic"
+assassinweapon 2 "M1000A Sniper"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweaponbonus 1 "Sawed Off"
@@ -204,7 +223,7 @@ power 0 3
 #power -4 3
 farsight 1
 float
-assassinweapon 2 "M1000 Classic"
+assassinweapon 4 "M1000A Sniper"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
@@ -228,7 +247,7 @@ power 0 4
 #power -4 4
 pierceres
 spiritsight
-assassinweapon 4 "M1000 Classic"
+assassinweapon 6 "M1000A Sniper"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"
@@ -251,7 +270,7 @@ coldres 50
 shockres 50
 power 0 5
 #power -4 5
-assassinweapon 6 "M1000 Classic"
+assassinweapon 8 "M1000A Sniper"
 meleeweapon50s 3 "DRG Pickaxe"
 meleeweaponbonus 0 "Power Pickaxe"
 rangedweapon 0 "Cryo Grenade"

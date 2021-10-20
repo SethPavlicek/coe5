@@ -13,6 +13,7 @@ forgetcurrit
 rebatelvl 2
 soundfx 29
 cost 7 30
+aialways 999
 free
 
 newritual "Driller Promotion - Gold"
@@ -24,6 +25,7 @@ forgetcurrit
 rebatelvl 3
 soundfx 29
 cost 7 60
+aialways 999
 free
 
 newritual "Driller Promotion - Platinum"
@@ -35,6 +37,7 @@ forgetcurrit
 rebatelvl 4
 soundfx 29
 cost 7 120
+aialways 999
 free
 
 newritual "Driller Promotion - Diamond"
@@ -49,6 +52,7 @@ addstring "(-)Diamond Driller"
 addstring "(-)Diamond Cryo Driller"
 soundfx 29
 cost 7 180
+aialways 999
 free
 
 # Flamethrower =========================================================================================================
