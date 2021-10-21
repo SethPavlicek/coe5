@@ -1,0 +1,13 @@
+[h1]Change Log[/h1]
+
+v1.0:
+[list]
+    [*]Initial release
+[/list]
+
+v1.1:
+[list]
+    [*]AI improvement - less chance to summon swarms
+    [*]AI improvement - high priority to promote miner
+    [*]Scout - M1000 no longer targets rear rank. Only assassination attack targets rear.
+[/list]
