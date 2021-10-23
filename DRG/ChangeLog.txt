@@ -10,4 +10,5 @@ v1.1:
     [*]AI improvement - less chance to summon swarms
     [*]AI improvement - high priority to promote miner
     [*]Scout - M1000 no longer targets rear rank. Only assassination attack targets rear.
+    [*]Higher iron costs for rituals: BET-C, Drilldozer, and Karl
 [/list]
