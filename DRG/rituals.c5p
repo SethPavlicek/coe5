@@ -92,7 +92,7 @@ level 3
 soundfx 31
 summoning
 addstring "BET-C"
-cost 1 60
+cost 1 90
 cost 15 20
 free
 
@@ -114,7 +114,7 @@ level 4
 soundfx 31
 summoning
 addstring "c*Doretta"
-cost 1 120
+cost 1 150
 cost 15 40
 free
 
@@ -147,7 +147,7 @@ newritual "Open Karl's Drop Pod"
 descr "Open Karl's Drop Pod to reveal a surprise. FOR KARL!!"
 level 5
 soundfx 57
-cost 1 250
+cost 1 300
 cost 15 150
 promotion -1
 addstring "Karl's Drop Pod"
