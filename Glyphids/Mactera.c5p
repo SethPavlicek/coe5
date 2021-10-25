@@ -1,4 +1,20 @@
 # Weapons
+newweapon "Mactera Bolt"
+range 6
+dmgtype 3
+dmg 3
+init 7
+flymode 1
+flyspr 34
+
+newweapon "Goo Bomb"
+aoe 9
+range 5
+dmgtype 3
+dmg 4
+init 7
+flymode 6
+flylook 223
 
 # Monsters
 newmonster "Mactera Spawn"
@@ -9,6 +25,7 @@ mor 99
 armor 1
 rank 1
 rearpos
+rangedweaponbonus 0 "Mactera Bolt"
 
 newmonster "Mactera Trijaw"
 hp 14
@@ -18,6 +35,9 @@ mor 99
 armor 1
 rank 1
 rearpos
+rangedweaponbonus 0 "Mactera Bolt"
+rangedweaponbonus 0 "Mactera Bolt"
+rangedweaponbonus 0 "Mactera Bolt"
 
 newmonster "Mactera Brundle"
 hp 16
@@ -27,6 +47,7 @@ mor 99
 armor 3
 rank 1
 rearpos
+rangedweaponbonus 0 "Mactera Bolt"
 
 newmonster "Mactera Goo Bomber"
 descr "Will drop sticky and disgusting goo all over your enemies."
@@ -37,3 +58,4 @@ mor 99
 armor 1
 rank 0
 frontpos
+rangedweaponbonus 0 "Goo Bomb"
