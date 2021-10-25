@@ -1,0 +1,47 @@
+# Monsters
+
+newmonster "Glyphid Grunt"
+descr "If only bugs were allowed on the space rig."
+spr1 "images/GlyphidGrunt.tga"
+hp 10
+str 5
+mr 2
+mor 5
+armor 1
+mountain
+rank 1
+noeyes
+wall
+snow
+meleeweapon 2 "Bite"
+
+newmonster "Glyphid Slasher"
+descr "Watch the sharp blades!"
+spr1 "images/GlyphidSlasher.tga"
+hp 14
+str 8
+mr 2
+mor 6
+armor 1
+mountain
+rank 1
+noeyes
+wall
+snow
+meleeweapon 6 "Bite"
+
+newmonster "Glyphid Guard"
+descr "That one is a tough bastard."
+spr1 "images/GlyphidGuard.tga"
+hp 20
+str 5
+mr 3
+mor 7
+armor 2
+shield 1
+mountain
+rank 1
+noeyes
+wall
+snow
+meleeweapon 3 "Bite"

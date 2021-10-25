@@ -27,3 +27,13 @@ mor 99
 armor 3
 rank 1
 rearpos
+
+newmonster "Mactera Goo Bomber"
+descr "Will drop sticky and disgusting goo all over your enemies."
+hp 30
+str 8
+mr 4
+mor 99
+armor 1
+rank 0
+frontpos

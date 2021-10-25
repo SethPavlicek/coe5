@@ -1,6 +1,71 @@
 # Weapons
 
+newweapon "Grab Dwarf"
+range 6
+dmgtype 20
+dmg 4
+init 7
+
+newweapon "Spitball"
+aoe 9
+range 10
+dmgtype 2
+dmg 4
+init 5
+flymode 6
+flylook 7
+
+newweapon "Warden Buff"
+aoe 25
+range 0
+dmgtype 13
+dmg 2048
+init 1
+nextalways
+newweapon "Warden Heal Buff"
+aoe 25
+range 0
+dmgtype 13
+dmg 4096
+init 1
+
+newweapon "Menace Spit"
+aoe -3
+range 8
+dmgtype 3
+dmg 5
+init 7
+flymode 1
+flyspr 12
+
+
+
 # Monsters
+
+newmonster "Glyphid Swarmer"
+descr "Get your stomping boots on."
+copystats "Small Spider"
+spr1 "images/GlyphidSwarmer.tga"
+clearweapons
+hp 1
+rank 1
+frontpos
+str 2
+mr 2
+mor 5
+noeyes
+wall
+mountain
+snow
+battlefast
+meleeweapon 1 "Bite"
+
+newweapon "Summon Glyphid Swarmer"
+trgrank 7
+dmg 1
+dmgtype 18
+range 1
+init 7
 
 newmonster "Spitballer"
 hp 40
@@ -13,6 +78,7 @@ shockres 50
 charmres
 stationary
 immobile
+rangedweaponbonus 0 "Spitball"
 
 newmonster "Glyphid Menace"
 descr "Your fast bug, but I'm fasta."
@@ -23,7 +89,12 @@ mor 99
 armor 1
 rank 0
 charmres
+noeyes
+wall
+mountain
+snow
 fast
+rangedweaponbonus 0 "Menace Spit"
 
 newmonster "Glyphid Warden"
 descr "*Glyphid noises* *Rumbling noises* and your swarmed"
@@ -34,6 +105,11 @@ mor 99
 armor 1
 rank 0
 charmres
+noeyes
+wall
+mountain
+snow
+rangedweaponbonus 0 "Warden Buff"
 
 newmonster "Broodnexus"
 descr "SPAWNER!!!"
@@ -44,11 +120,18 @@ mor 99
 armor 2
 rank 0
 charmres
+stationary
+immobile
+rangedweaponbonus 2 "Summon Glyphid Swarmer"
+rangedweaponbonus 2 "Summon Glyphid Swarmer"
 
 newmonster "Cave Leech"
-descr "Pro tip: Cave Leeches are not as afraid of you as you are of them."
+descr "Pro tip: Cave Leeches are not as afraid of you as you are of them. Also how do these things grab you within a cylinder and not a cone?!"
 hp 15
 str 10
 mr 4
 mor 99
 armor 0
+stationary
+immobile
+rangedweaponbonus 0 "Dwarf Grab"
