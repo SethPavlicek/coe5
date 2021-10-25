@@ -1,0 +1,29 @@
+# Weapons
+
+# Monsters
+newmonster "Mactera Spawn"
+hp 12
+str 8
+mr 4
+mor 99
+armor 1
+rank 1
+rearpos
+
+newmonster "Mactera Trijaw"
+hp 14
+str 8
+mr 4
+mor 99
+armor 1
+rank 1
+rearpos
+
+newmonster "Mactera Brundle"
+hp 16
+str 8
+mr 4
+mor 99
+armor 3
+rank 1
+rearpos
