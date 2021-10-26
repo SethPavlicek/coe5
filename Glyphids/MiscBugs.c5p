@@ -97,7 +97,7 @@ fast
 rangedweaponbonus 0 "Menace Spit"
 
 newmonster "Glyphid Warden"
-descr "*Glyphid noises* *Rumbling noises* and your swarmed"
+descr "*Glyphid noises* *Rumbling noises* *More Glyphid noises*"
 hp 30
 str 8
 mr 6
@@ -109,9 +109,10 @@ noeyes
 wall
 mountain
 snow
+prebattweapon 4 "Summon Glyphid Grunt"
 rangedweaponbonus 0 "Warden Buff"
 
-newmonster "Broodnexus"
+newmonster "Brood Nexus"
 descr "SPAWNER!!!"
 hp 50
 str 0

@@ -1,3 +1,27 @@
+# Weapons
+
+newweapon "Acid Spit"
+range 5
+dmgtype 10
+dmg 3
+init 3
+flymode 2
+flyspr 49
+
+newweapon "Web Spit"
+range 5
+dmgtype 2
+dmg 2
+init 3
+flymode 1
+flyspr 20
+nextalways
+newweapon "Enweb"
+range 0
+dmgtype 13
+dmg 512
+init 3
+
 # Monsters
 
 newmonster "Glyphid Grunt"
@@ -14,6 +38,13 @@ noeyes
 wall
 snow
 meleeweapon 2 "Bite"
+newweapon "Summon Glyphid Grunt"
+trgrank 7
+dmg 1
+dmgtype 18
+range 1
+init 7
+oneshot
 
 newmonster "Glyphid Slasher"
 descr "Watch the sharp blades!"
@@ -45,3 +76,31 @@ noeyes
 wall
 snow
 meleeweapon 3 "Bite"
+
+newmonser "Glyphid Web Spitter"
+hp 10
+str 5
+mr 2
+mor 5
+armor 0
+mountain
+rank 1
+noeyes
+wall
+snow
+rangedweapon 0 "Web Spit"
+meleeweapon 2 "Bite"
+
+newmonster "Glyphid Acid Spitter"
+hp 10
+str 5
+mr 2
+mor 5
+armor 0
+mountain
+rank 1
+noeyes
+wall
+snow
+rangedweapon 0 "Acid Spit"
+meleeweapon 2 "Bite"
