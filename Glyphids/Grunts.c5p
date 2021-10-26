@@ -78,6 +78,8 @@ snow
 meleeweapon 3 "Bite"
 
 newmonser "Glyphid Web Spitter"
+descr "Do you like moving? Well too bad."
+spr1 "images/GlyphidWebSpitter.tga"
 hp 10
 str 5
 mr 2
@@ -92,6 +94,8 @@ rangedweapon 0 "Web Spit"
 meleeweapon 2 "Bite"
 
 newmonster "Glyphid Acid Spitter"
+descr "Do you like acid? Well I have just the bug for you!"
+spr1 "images/GlyphidAcidSpitter.tga"
 hp 10
 str 5
 mr 2

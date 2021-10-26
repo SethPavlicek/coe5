@@ -82,6 +82,7 @@ rangedweaponbonus 0 "Spitball"
 
 newmonster "Glyphid Menace"
 descr "Your fast bug, but I'm fasta."
+spr1 "images/GlyphidMenace.tga"
 hp 30
 str 8
 mr 6
@@ -98,6 +99,7 @@ rangedweaponbonus 0 "Menace Spit"
 
 newmonster "Glyphid Warden"
 descr "*Glyphid noises* *Rumbling noises* *More Glyphid noises*"
+spr1 "images/GlyphidWarden.tga"
 hp 30
 str 8
 mr 6
@@ -114,6 +116,7 @@ rangedweaponbonus 0 "Warden Buff"
 
 newmonster "Brood Nexus"
 descr "SPAWNER!!!"
+spr1 "images/BroodNexus.tga"
 hp 50
 str 0
 mr 8
@@ -128,6 +131,7 @@ rangedweaponbonus 2 "Summon Glyphid Swarmer"
 
 newmonster "Cave Leech"
 descr "Pro tip: Cave Leeches are not as afraid of you as you are of them. Also how do these things grab you within a cylinder and not a cone?!"
+sp1 "images/CaveLeech.tga"
 hp 15
 str 10
 mr 4

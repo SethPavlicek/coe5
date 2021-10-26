@@ -18,6 +18,8 @@ flylook 223
 
 # Monsters
 newmonster "Mactera Spawn"
+descr "Flying bugs with pointy projectiles. How delightful."
+spr1 "images/MacteraSpawn.tga"
 hp 12
 str 8
 mr 4
@@ -25,9 +27,13 @@ mor 99
 armor 1
 rank 1
 rearpos
+flying
+coldres -50
 rangedweaponbonus 0 "Mactera Bolt"
 
-newmonster "Mactera Trijaw"
+newmonster "Mactera Tri-jaw"
+descr "Watch the sharp bla... I mean projectiles."
+spr1 "images/MacteraTri-jaw.tga"
 hp 14
 str 8
 mr 4
@@ -35,11 +41,15 @@ mor 99
 armor 1
 rank 1
 rearpos
+flying
+coldres -50
 rangedweaponbonus 0 "Mactera Bolt"
 rangedweaponbonus 0 "Mactera Bolt"
 rangedweaponbonus 0 "Mactera Bolt"
 
 newmonster "Mactera Brundle"
+descr "That one is a tough bas... I mean fly."
+spr1 "images/MacteraBrundle.tga"
 hp 16
 str 8
 mr 4
@@ -47,6 +57,8 @@ mor 99
 armor 3
 rank 1
 rearpos
+flying
+coldres -50
 rangedweaponbonus 0 "Mactera Bolt"
 
 newmonster "Mactera Goo Bomber"
@@ -58,4 +70,6 @@ mor 99
 armor 1
 rank 0
 frontpos
+flying
+coldres -50
 rangedweaponbonus 0 "Goo Bomb"
