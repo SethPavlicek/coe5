@@ -68,6 +68,8 @@ range 1
 init 7
 
 newmonster "Spitballer"
+descr "Pog Spitball Infector"
+spr1 "images/Spitballer.tga"
 hp 40
 str 8
 mr 6
