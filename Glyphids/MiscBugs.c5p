@@ -83,7 +83,7 @@ immobile
 rangedweaponbonus 0 "Spitball"
 
 newmonster "Glyphid Menace"
-descr "Your fast bug, but I'm fasta."
+descr "You're fast bug, but I'm fasta."
 spr1 "images/GlyphidMenace.tga"
 hp 30
 str 8

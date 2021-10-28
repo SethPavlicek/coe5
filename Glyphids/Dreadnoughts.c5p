@@ -28,6 +28,7 @@ wall
 snow
 
 newmonster "Glyphid Dreadnought"
+# TODO: get a proper directional image (screenshot).
 hp 150
 str 5
 mr 8
