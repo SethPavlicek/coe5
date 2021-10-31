@@ -1,0 +1,26 @@
+newmonster "Glyphid Praetorian"
+descr ""
+hp 60
+str 5
+mr 5
+mor 10
+armor 3
+mountain
+rank 1
+noeyes
+wall
+snow
+size2x2
+
+newmonster "Glyphid Oppressor"
+hp 80
+str 5
+mr 6
+mor 14
+armor 4
+mountain
+rank 1
+noeyes
+wall
+snow
+size2x2

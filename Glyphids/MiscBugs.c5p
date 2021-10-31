@@ -15,57 +15,14 @@ init 5
 flymode 6
 flylook 7
 
-newweapon "Warden Buff"
-aoe 25
+newweapon "PANIC"
 range 0
-dmgtype 13
-dmg 2048
-init 1
-nextalways
-newweapon "Warden Heal Buff"
-aoe 25
-range 0
-dmgtype 13
-dmg 4096
-init 1
-
-newweapon "Menace Spit"
-aoe -3
-range 8
-dmgtype 3
-dmg 5
-init 7
-flymode 1
-flyspr 12
-
-
+trgrank 0
+dmgtype 8
+dmg 999
+init 99
 
 # Monsters
-
-newmonster "Glyphid Swarmer"
-descr "Get your stomping boots on."
-copystats "Small Spider"
-spr1 "images/GlyphidSwarmer.tga"
-clearweapons
-hp 1
-rank 1
-frontpos
-str 2
-mr 2
-mor 5
-noeyes
-wall
-mountain
-snow
-battlefast
-meleeweapon 1 "Bite"
-
-newweapon "Summon Glyphid Swarmer"
-trgrank 7
-dmg 1
-dmgtype 18
-range 1
-init 7
 
 newmonster "Spitballer"
 descr "Pog Spitball Infector"
@@ -80,41 +37,8 @@ shockres 50
 charmres
 stationary
 immobile
+size2x2
 rangedweaponbonus 0 "Spitball"
-
-newmonster "Glyphid Menace"
-descr "You're fast bug, but I'm fasta."
-spr1 "images/GlyphidMenace.tga"
-hp 30
-str 8
-mr 6
-mor 99
-armor 1
-rank 0
-charmres
-noeyes
-wall
-mountain
-snow
-fast
-rangedweaponbonus 0 "Menace Spit"
-
-newmonster "Glyphid Warden"
-descr "*Glyphid noises* *Rumbling noises* *More Glyphid noises*"
-spr1 "images/GlyphidWarden.tga"
-hp 30
-str 8
-mr 6
-mor 99
-armor 1
-rank 0
-charmres
-noeyes
-wall
-mountain
-snow
-prebattweapon 4 "Summon Glyphid Grunt"
-rangedweaponbonus 0 "Warden Buff"
 
 newmonster "Brood Nexus"
 descr "SPAWNER!!!"
@@ -128,6 +52,7 @@ rank 0
 charmres
 stationary
 immobile
+size2x2
 rangedweaponbonus 2 "Summon Glyphid Swarmer"
 rangedweaponbonus 2 "Summon Glyphid Swarmer"
 
@@ -142,3 +67,34 @@ armor 0
 stationary
 immobile
 rangedweaponbonus 0 "Dwarf Grab"
+
+newmonster "Loot Bug"
+descr "How could you kill such a cute bug?"
+hp 5
+str 4
+mr 2
+mor 99
+armor 0
+stationary
+battleslow
+
+newmonster "Golden Loot Bug"
+descr "WE'RE RICH, but how could you kill such a cute bug?"
+hp 10
+str 4
+mr 2
+mor 99
+armor 1
+stationary
+battleslow
+shardexpl 10
+
+newmonster "Huuli Hoarder"
+descr "I see a juicy mineral hoarder. SQUISH IT!!!"
+hp 30
+str 4
+mr 2
+mor 99
+stupid
+fast
+size2x2
