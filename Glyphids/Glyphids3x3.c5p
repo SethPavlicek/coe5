@@ -1,3 +1,9 @@
+#weapons
+
+
+
+# monsters
+
 newmonster "Glyphid Dreadnought"
 # TODO: get a proper directional image (screenshot).
 hp 150
@@ -13,6 +19,8 @@ snow
 huge
 
 newmonster "Dreadnought Hiveguard"
+descr "This things eats bullets like Karl drinks beer."
+spr1 "images/DreadnoughtHiveguard.tga"
 hp 250
 str 5
 mr 10
@@ -26,6 +34,8 @@ snow
 huge
 
 newmonster "Dreadnought Arbalest"
+descr ""
+spr1 "DreadnoughtArbalest.tga"
 hp 125
 str 5
 mr 9
@@ -40,6 +50,8 @@ huge
 regeneration
 
 newmonster "Dreadnought Lacerator"
+descr ""
+spr1 "images/DreadnoughtLacerator.tga"
 hp 125
 str 5
 mr 9
@@ -52,3 +64,35 @@ wall
 snow
 huge
 regeneration
+
+newmonster "Bulk Detonator"
+descr "Great ancestors stay back from that thing it's unstable!"
+spr1 "images/BulkDetonator.tga"
+hp 150
+str 5
+mr 8
+mor 16
+armor 1
+mountain
+rank 1
+noeyes
+wall
+snow
+huge
+fireexpl 999
+
+newmonster "Crassus Detonator"
+descr "WE'RE RICH!"
+spr1 "images/CrassusDetonator.tga"
+hp 150
+str 5
+mr 8
+mor 16
+armor 6
+mountain
+rank 1
+noeyes
+wall
+snow
+huge
+fireexpl 999

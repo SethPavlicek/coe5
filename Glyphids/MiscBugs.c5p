@@ -58,7 +58,7 @@ rangedweaponbonus 2 "Summon Glyphid Swarmer"
 
 newmonster "Cave Leech"
 descr "Pro tip: Cave Leeches are not as afraid of you as you are of them. Also how do these things grab you within a cylinder and not a cone?!"
-sp1 "images/CaveLeech.tga"
+spr1 "images/CaveLeech.tga"
 hp 15
 str 10
 mr 4
@@ -70,6 +70,7 @@ rangedweaponbonus 0 "Dwarf Grab"
 
 newmonster "Loot Bug"
 descr "How could you kill such a cute bug?"
+spr1 "images/LootBug.tga"
 hp 5
 str 4
 mr 2
@@ -80,6 +81,8 @@ battleslow
 
 newmonster "Golden Loot Bug"
 descr "WE'RE RICH, but how could you kill such a cute bug?"
+spr1 "images/GoldenLootBug.tga"
+spr1
 hp 10
 str 4
 mr 2
@@ -87,10 +90,11 @@ mor 99
 armor 1
 stationary
 battleslow
-shardexpl 10
+shardexpl 1
 
 newmonster "Huuli Hoarder"
 descr "I see a juicy mineral hoarder. SQUISH IT!!!"
+spr1 "images/HuuliHoarder.tga"
 hp 30
 str 4
 mr 2
@@ -98,3 +102,4 @@ mor 99
 stupid
 fast
 size2x2
+meleeweapon 0 "PANIC"
