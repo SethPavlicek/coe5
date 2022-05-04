@@ -1,0 +1,2665 @@
+
+# ---------- The required mod info ---------------
+
+icon                "demonenhanced.tga"
+description         "This mod Enhances the Demonologist Class in many ways"
+
+#---------- New Demonologist Power rituals ---------------
+
+selectritual "Demon Summoning"
+level 9
+
+selectritual "Imp Summoning"
+level 9
+
+selectritual "Summon Demon Lieutenant"
+level 9
+
+selectritual "Greater Demon Summoning"  
+level 9
+
+selectritual "Infernal Horde"
+level 9
+
+newritual     "Greater Demon Summoning "                                   #  84
+ritpow                 3 # Demonology
+level                  2
+cost              4   20 # 40 Sacrifices
+terr                 -42 # Required terrain: any land.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               66 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "1d2+1*Hellhound"
+addstring     "Devil"
+addstring     "Disease Demon"
+addstring     "Storm Demon"
+addstring     "Demonic Giant"
+addstring     "1d3+1*Demonic Locust"
+addstring     "Snake Demon"
+free
+descr "With this ritual the Demonologist will summon a greater demon and try to control it. The more human sacrifices used, the greater the chance of successfully binding the demon. Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+newritual     "Kokytos Pact"
+ritpow                 3 # Demonology
+level                  1
+cost              4   50 # 50 Sacrifices
+castertarg
+promotion              1
+addstring		"Demonologist"
+addstring		"Demonologist of Kokytos"
+addstring		"Goetic Master"
+addstring		"Kokytos Master"
+#transformtarg           1
+#addstring      "Demonologist of Kokytos"
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (Summoning).
+free                     # Always start with this ritual in addition to the others.
+descr "Forms a pact with Kokytos granting the Demonologist Frost magic and the ability to recruit half demon warriors of Kokytos. This can be used be the Demonologist and the Geotic Master"
+
+newritual     "Abyssal Pact"
+ritpow                 3 # Demonology
+level                  1
+cost              4   50 # 50 Sacrifices
+castertarg
+promotion              1
+addstring		"Demonologist"
+addstring		"Demonologist of the Abyss"
+addstring		"Goetic Master"
+addstring		"Abyssal Master"
+#transformtarg           1
+#addstring      "Demonologist of Kokytos"
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (Summoning).
+free                     # Always start with this ritual in addition to the others.
+descr "Forms a pact with The Abyss granting the Demonologist Dark magic and the ability to recruit half demon warriors of The Abyss. This can be used be the Demonologist and the Geotic Master"
+
+newritual     "Inferno Pact"
+ritpow                 3 # Demonology
+level                  1
+cost              4   50 # 50 Sacrifices
+castertarg
+promotion              1
+addstring		"Demonologist"
+addstring		"Demonologist of Inferno"
+addstring		"Goetic Master"
+addstring		"Inferno Master"
+#transformtarg           1
+#addstring      "Demonologist of Kokytos"
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (Summoning).
+free                     # Always start with this ritual in addition to the others.
+descr "Forms a pact with The Abyss granting the Demonologist Dark magic and the ability to recruit half demon warriors of Inferno. This can be used be the Demonologist and the Geotic Master"
+
+newritual     "Pandemonium Pact"
+ritpow                 3 # Demonology
+level                  1
+cost              4   50 # 50 Sacrifices
+castertarg
+promotion              1
+addstring		"Demonologist"
+addstring		"Demonologist of Pandemonium"
+addstring		"Goetic Master"
+addstring		"Pandemonium Master"
+#transformtarg           1
+#addstring      "Demonologist of Kokytos"
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (Summoning).
+free                     # Always start with this ritual in addition to the others.
+descr "Forms a pact with Pandemonium granting the Demonologist Dark magic and the ability to recruit half demon warriors of Pandemonium. This can be used be the Demonologist and the Geotic Master"
+
+newritual     "Summon Imp Messenger"
+ritpow                 3 # Demonology
+level                  1
+free
+cost              4    5 # 10 Sacrifices
+terr                 -42 # Required terrain: any land.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "Imp Messenger"
+descr "With this ritual the Demonologist will summon a Imp Messanger which will roam the world scouting for the Demonologist."
+airare 20
+
+newritual     "Summoning of Kokytos"
+ritpow                 3 # Demonology
+level                  1
+free
+cost              4   10 # 20 Sacrifices
+terr                 -42 # Required terrain: any land.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               87 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "Frost Fiend"
+addstring     "Ice Demon"
+addstring     "2*Icicle Fiend"
+addstring     "Frigid Slither"
+addstring     "Lesser Ice Devil"
+addstring     "2*Demon Scavenger"
+addstring     "2*Demon Head Hunter"
+addstring     "1d4+1*Ice Imp"        
+addstring     "2d4+2*Frost Imp"        
+descr "With this ritual the Demonologist will summon one of the less powerful demons of Kokytos and try to control it. The more human sacrifices used, the greater the chance of successfully binding the demon. Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+newritual     "Summoning of the Abyss"
+ritpow                 3 # Demonology
+level                  1
+free
+cost              4   10 # 20 Sacrifices
+terr                 -42 # Required terrain: any land.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               87 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "Fiend of Darkness"
+addstring     "Rock Devil"
+addstring     "2*Shadow Demon"
+addstring     "2*Shadow Demon Caster"
+addstring     "1d2+1*Bone Devil"
+addstring     "Inhumer Devil"
+addstring     "4d4+2*Bone Imp"
+addstring     "1d4+1*Shadow Imp"     # Actual base control chance: 100%.
+descr "With this ritual the Demonologist will summon one of the less powerful demons of the Abyss and try to control it. The more human sacrifices used, the greater the chance of successfully binding the demon. Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+newritual     "Summoning of the Inferno"
+ritpow                 3 # Demonology
+level                  1
+free
+cost              4   10 # 20 Sacrifices
+terr                 -42 # Required terrain: any land.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               87 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "2d4+2*Imp"
+addstring     "2d4+2*Fiery Imp"
+addstring     "Demon Knight"
+addstring     "Fire Demon"
+addstring     "Wasteland Demon"
+addstring     "Immolator Demon"
+addstring     "2*Infernal Soldier"
+descr "With this ritual the Demonologist will summon one of the less powerful demons of Inferno and try to control it. The more human sacrifices used, the greater the chance of successfully binding the demon. Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+newritual     "Summoning of Pandemonium"
+ritpow                 3 # Demonology
+level                  1
+free
+cost              4   10 # 20 Sacrifices
+terr                 -42 # Required terrain: any land.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               87 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "2d4+2*Imp"
+addstring     "2d5+3*Poxling"
+addstring     "Imp Familiar"     # Actual base control chance: 100%.
+addstring     "2*Spine Devil"
+addstring     "Serpent Fiend"
+addstring     "Lesser Demon"
+addstring     "Demoness"
+addstring     "2*Plague Devil"
+descr "With this ritual the Demonologist will summon one of the less powerful demons of Pandemonium and try to control it. The more human sacrifices used, the greater the chance of successfully binding the demon. Demons do not like being bound to the service of mortals and if the binding fails the demon will attack at the first opportunity."
+
+newritual     "Summon Kokytos Demon Lieutenant"
+ritpow                 3 # Demonology
+level                  2
+free
+cost              4   30 # 120 Sacrifices
+terr                 -42 # Required terrain: any land.
+planereq               0 # Can only be cast on this plane: Elysium.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "c*Ice Devil"
+addstring     "c*Greater Kokytos Demon"
+addstring     "c*Frost Walker Warlord"
+addstring     "c*Greater Demon Hunter"
+addstring     "c*Kokytos Spirit"
+descr "With this ritual the Demonologist will summon a high ranking demon of Kokytos and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  The demon lieutenants are very powerful and can command armies, cast spells and perform rituals to summon more demons."
+#aialways 999
+
+newritual     "Summon Abyssal Demon Lieutenant"
+ritpow                 3 # Demonology
+level                  2
+free
+cost              4   30 # 120 Sacrifices
+terr                 -42 # Required terrain: any land.
+planereq               0 # Can only be cast on this plane: Elysium.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "c*Heliophagus"
+addstring     "c*Succubus"
+addstring     "c*Demon Bone Horror"
+addstring     "c*Greater Bone Devil"
+addstring     "c*Demon of Wrath"
+descr "With this ritual the Demonologist will summon a high ranking demon of the Abyss and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  The demon lieutenants are very powerful and can command armies, cast spells and perform rituals to summon more demons."
+#aialways 999
+
+newritual     "Summon Inferno Demon Lieutenant"
+ritpow                 3 # Demonology
+level                  2
+free
+cost              4   30 # 120 Sacrifices
+terr                 -42 # Required terrain: any land.
+planereq               0 # Can only be cast on this plane: Elysium.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+addstring     "c*Greater Demon"
+addstring     "c*Greater Devil"
+addstring     "c*Greater Demon of Rage"
+addstring     "c*Avarok"
+addstring     "c*Infernal General"
+descr "With this ritual the Demonologist will summon a high ranking demon of Inferno and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  The demon lieutenants are very powerful and can command armies, cast spells and perform rituals to summon more demons."
+#aialways 999
+
+newritual     "Summon Pandemonium Demon Lieutenant"
+ritpow                 3 # Demonology
+level                  2
+free
+cost              4   30 # 120 Sacrifices
+terr                 -42 # Required terrain: any land.
+planereq               0 # Can only be cast on this plane: Elysium.
+varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
+defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+failplayer            28 # Failed summons will be owned by this player: Inferno.
+summoning                # The ritual will summon the monsters specified in a random string.
+# Temp
+addstring     "c*Greater Plague Demon"
+addstring     "c*Greater Demoness"
+addstring     "c*Greater Serpent Demon"
+addstring     "c*Greater Tentacle Demon"
+addstring     "c*Tempest Devil"
+
+
+descr "With this ritual the Demonologist will summon a high ranking demon of Pandemonium and try to control it.  The more human sacrifices used, the greater the chance of successfully binding the demon.  The demon lieutenants are very powerful and can command armies, cast spells and perform rituals to summon more demons."
+#aialways 999
+
+# ---------- New Weapons ---------------
+
+newweapon "Glaive" #
+	mundane
+	range 1
+	init 2
+	dmgtype 1 #slash
+	dmg 7
+	sound 1
+
+newweapon "Ice Glaive" #
+	range 1
+	init 5
+	dmgtype 1 #slash
+	dmg 9
+	sound 1
+	next
+
+newweapon "Frost Damage"
+	blue
+	an
+	dmgtype 5
+	dmg 3
+	nostr
+
+newweapon     "Imp Frost"
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 4
+dmgtype              5 # Cold.
+rangepen
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  1 # Area: burst 3.
+an                     # Armor negating.
+flymode              7 # Single line, even if multiple squares are hit.
+flylook             89
+flysound            95 # 
+look                90
+
+newweapon     "Ice Smash"                                                      #   0
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              2 # Blunt.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+
+newweapon     "Ice Fist"                                                      #   0
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              2 # Blunt.
+dmg                  1 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+	next
+
+newweapon "Frosty Damage"
+	an
+	dmgtype 5
+	dmg 3
+	nostr
+
+newweapon     "Ice Bite"                                                      #  11
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              1 # Slash.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+next
+
+newweapon "Frost Damage"
+	an
+	dmgtype 5
+	dmg 2
+	nostr
+
+newweapon     "Frost Breath"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                5
+init                 7
+dmgtype              5 # Cold.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe               3005 # Area: cone, 7 squares.
+an                     # Armor negating.
+flymode              2 # Standard particle effect, one for each strike or square hit.
+flylook             97
+flysound            95 # 
+look                90
+
+newweapon     "Ice Greatsword"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              1 # Slash.
+dmg                  9 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sweep                  # Can continue to kill multiple targets
+sound                8 # sword.wav (Sword)
+
+newweapon     "Piercing Icicle"                                               # 359
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              3 # Pierce.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+nextdmg 128
+next
+
+newweapon "Bleeding Strike"
+	dmgtype 12
+	dmg 0
+	mr
+
+newweapon     "Ice Shard"
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 2
+dmgtype              3 # Pierce.
+dmg                  6 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+reload1
+arrow
+rangepen
+flymode              1 # Missile sprite, one for each strike or square hit.
+flylook             14
+flysound            13 # crossb.smp (Crossbow)
+nextwep             61 # Extra effect if target is affected: 61: Freeze.
+nextdmg              2 # d3 Cold damage.
+
+newweapon     "Icicle Spear"                                                 # 843
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 6
+dmgtype              3 # Pierce.
+dmg                  3 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextalwayswep      175 # Extra effect if target is hit: 175: Cold.
+nextdmg              1 # d6 Cold damage.
+
+newweapon "Icicle Javelin"
+	range               4
+	init                7
+	dmgtype             3
+	dmg                 3
+	arrow
+	flymode             1
+	flylook             1
+	flysound            19
+	nextalwayswep      175 # Extra effect if target is hit: 175: Cold.
+	nextdmg              1 # d6 Cold damage.
+
+newweapon     "Frost Greataxe"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              1 # Slash.
+dmg                  8 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sweep                  # Can continue to kill multiple targets
+sound                8 # sword.wav (Sword)
+nextalways
+nextdmg              2 # d2 Cold damage.
+
+newweapon     "Axe Cold"                                                      # 175
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              5 # Cold.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  3 # Area: burst 1.
+an                     # Armor negating.
+look               167
+sound                1 # spear.smp (Spear)
+
+newweapon     "Summon Frost Walker"                                               # 148
+trgrank              6 # Target: any border square, but not behind walls.
+reload2
+range                0
+init                 4
+dmgtype             18 # Summon (the monster specified in the weapon's name, after "Summon ").
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+an                     # Armor negating.
+look                 1
+sound               57 # orchhit.smp (Summoning)
+
+newweapon "Freezing Javelin"
+range               8
+init                7
+dmgtype             3
+dmg                 6
+arrow
+flymode             1
+flylook             1
+flysound            19
+scatter
+nextalways      
+nextdmg              3 # d3 Peircing damage.
+	
+newweapon     "Shattering"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              3 # Peircing.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  5 # Area: burst 1.
+an                     # Armor negating.
+look                18
+sound                1 # spear.smp (Spear)
+nextdmg 128
+next
+
+newweapon "Shatter Bleeding"
+dmgtype 12
+dmg 0
+mr
+nextalways      
+nextdmg              3 # d3 Cold damage.
+	
+newweapon     "Freezing Cold"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              5 # Cold.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: burst 1.
+an                     # Armor negating.
+look               167
+sound                1 # spear.smp (Spear)
+nextwep             15 # Extra effect if target is affected: 15: aff (mr).
+nextdmg           1024 # Imprison in Ice
+
+newweapon "Siege Freezing Javelin"
+reload1
+range               18
+init                7
+dmgtype             3
+dmg                 6
+arrow
+flymode             1
+flylook             1
+flysound            19
+scatter
+nextalways      
+nextdmg              3 # d4 Peircing damage.
+	
+newweapon     "Siege Shattering"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              3 # Peircing.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  5 # Area: burst 1.
+an                     # Armor negating.
+look                18
+sound                1 # spear.smp (Spear)
+nextdmg 128
+next
+
+newweapon "Siege Shatter Bleeding"
+dmgtype 12
+dmg 0
+mr
+nextalways      
+nextdmg              3 # d4 Cold damage.
+	
+newweapon     "Siege Freezing Cold"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              5 # Cold.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: burst 1.
+an                     # Armor negating.
+look               167
+sound                1 # spear.smp (Spear)
+nextwep             15 # Extra effect if target is affected: 15: aff (mr).
+nextdmg           1024 # Imprison in Ice
+
+newweapon     "Lesser Pain"                                                      #  16
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 1
+dmgtype              7 # Magic.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+rangepen
+mr                     # Resisted by rolling 2d4 < Magic Resistance.
+an                     # Armor negating.
+inanimate              # Doesn't affect inanimate units.
+flymode              5 # Line, one for each strike or square hit.
+flylook            170
+look                 1
+sound               32 # tortyr.smp (Pain)
+
+newweapon     "Lesser Flame Burst"
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 4
+dmgtype              4 # Fire.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  1 # Area: burst 1.
+rangepen
+flymode              5 # Line, one for each strike or square hit.
+flylook             66
+flysound            16 # fire.smp (Fire)
+look                68
+sound               68 # smallfire.smp (Small Fire)
+
+
+newweapon     "Demonic Shard"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                5
+init                 2
+dmgtype              3 # Pierce.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+arrow                  # Can be negated by air shield.
+rangepen               # Does half damage if distance >= half range.
+flymode              1 # Missile sprite, one for each strike or square hit.
+flylook             34
+flysound            21 # rapid.smp
+look                27
+nextdmg 128
+next
+
+newweapon "Shard Bleeding"
+dmgtype 12
+dmg 0
+mr      
+
+newweapon     "Infernal Lashes"
+trgrank              9 # Target: any enemy in range.
+reload3 
+range                20
+init                 4
+dmgtype              1 # Slash.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                 -3 # Area: 3 strikes.
+scatter
+flymode              5 # Line, one for each strike or square hit.
+flylook            172
+flysound            54 # whip.smp
+look               171
+nextwep            212 # Extra effect if target is affected: 212: aff (mr).
+nextdmg             64 # Stun
+
+newweapon     "Dark Tendril"
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 4
+dmgtype              7 # Magic.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  1 # Area: burst 1.
+mr                 	
+rangepen
+an                     # Armor negating.
+flymode              5 # Line, one for each strike or square hit.
+flylook            195
+look                39
+sound               54 # whip.smp
+nextwep             15 # Extra effect if target is affected: 15: aff (mr).
+nextdmg           2048 # Weakness
+
+newweapon     "Niefel Fire"                                             #  64
+trgrank              9 # Target: any enemy in range.
+range                8
+init                 4
+dmgtype              5 # Cold.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  5 # Area: burst 8.
+an                     # Armor negating.
+flymode              7 # Single line, even if multiple squares are hit.
+flylook             89
+flysound            39 # snow.sw (Frost)
+look                90
+
+newweapon     "Bone Claw"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              1 # Slash.
+dmg                  1 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+
+newweapon     "Summon Bone Devil"                                               # 148
+trgrank              7 # Target: any border square, but not behind walls.
+range                1
+init                 4
+dmgtype             18 # Summon (the monster specified in the weapon's name, after "Summon ").
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+an                     # Armor negating.
+look                 1
+sound               57 # orchhit.smp (Summoning)
+
+newweapon     "Hellbind Heart "
+reload1
+trgrank              9 # Target: any enemy in range.
+range                6
+init                 8
+dmgtype             19 # Enslave.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mr                     # Resisted by rolling 2d4 < Magic Resistance.
+an                     # Armor negating.
+mind                   # Doesn't affect mindless units.
+flymode              8 # Slow line, one for each strike or square hit.
+flylook            122
+flysound            94 # 
+look                 8
+
+newweapon     "Demon Stinger"                                              # 164
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 3
+dmgtype              3 # Pierce.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+an                     # Armor negating.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+nextwep              659
+nextdmg              6 # d6 Magic damage.
+
+newweapon     "Diseased Claw"                                                 #  33
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+mundane
+range                1
+init                 2
+dmgtype              1 # Slash.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextwep             50 # Extra effect if target is affected: 50: Disease.
+nextdmg              1 # Disease
+
+newweapon     "Plague Mace"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 3
+dmgtype              2 # Blunt.
+dmg                  5 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextwep             50 # Extra effect if target is affected: 50: Disease.
+nextdmg              1 # Disease
+
+newweapon     "Wrathful Whispers"
+trgrank              9 # Target: any enemy in range.
+range                16
+init                 4
+onlyenemy
+dmgtype             12 # Special damage (determined by bitmask where this attack is used).
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  7 # Area: burst 9.
+mr                     # Resisted by rolling 2d4 < Magic Resistance.
+mind                   # Doesn't affect mindless units.
+flymode              2 # Standard particle effect, one for each strike or square hit.
+flylook            159
+flysound            70 # echo.wav
+look                48
+sound              111 # windshort2.sw
+
+newweapon     "Smouldering Battle Axe"                                                # 258
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 3
+dmgtype              1 # Slash.
+dmg                  8 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                8 # sword.wav (Sword)
+nextalwayswep      174 # Extra effect if target is hit: 174: Fire.
+nextdmg              3 # d3 Fire damage.
+
+newweapon     "Smouldering Spear"                                                     #   4
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 6
+dmgtype              3 # Pierce.
+dmg                  4 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+nextalwayswep      174 # Extra effect if target is hit: 174: Fire.
+nextdmg              2 # d3 Fire damage.
+
+newweapon     "Smouldering Javelin"                                                   #  24
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                4
+init                 1
+dmgtype              3 # Pierce.
+dmg                  4 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+arrow                  # Can be negated by air shield.
+flymode              1 # Missile sprite, one for each strike or square hit.
+flylook              1
+flysound            19 # javelin.smp (Javelin)
+nextalwayswep      174 # Extra effect if target is hit: 174: Fire.
+nextdmg              2 # d3 Fire damage.
+
+newweapon     "Shadow Slash"
+trgrank              9 # Target: any enemy in range.
+range                4
+init                 4
+dmgtype              1 # Slash.
+dmg                  4 # Base damage (added to dmg value where this weapon is used).
+aoe                  1 # Area: burst 1.
+flymode              5 # Line, one for each strike or square hit.
+flylook            195
+look                39
+sound               54 # whip.smp
+nextwep             15 # Extra effect if target is affected: 15: aff (mr).
+nextdmg           2048 # Weakness
+
+newweapon     "Plague Scythe"                                                    # 100
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 5
+dmgtype              1 # Slash.
+dmg                  7 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+sweep
+nextwep             50 # Extra effect if target is affected: 50: Disease.
+nextdmg              1 # Disease
+
+newweapon     "Plague Breath" 
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 4
+dmgtype              7 # Magic.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  2 # Area: wide cone, 10 squares.
+an                     # Armor negating.
+rangepen
+flymode              2 # Standard particle effect, one for each strike or square hit.
+flylook            203
+flysound            96 # (Breath Weapon)
+look               205
+nextwep             50 # Extra effect if target is affected: 50: Disease.
+nextdmg              1 # Disease
+
+newweapon     "Fire Fist"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              2 # Blunt.
+dmg                  1 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextalwayswep      174 # Extra effect if target is hit: 174: Flames.
+nextdmg              4 # d3 Fire damage.
+
+newweapon     "Plague Bolt" 
+trgrank              9 # Target: any enemy in range.
+range                5
+init                 4
+dmgtype              7 # Magic.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                 -2 # Area: wide cone, 10 squares.
+an                     # Armor negating.
+hardmr
+flymode              2 # Standard particle effect, one for each strike or square hit.
+flylook            203
+flysound             3 # (Breath Weapon)
+look               205
+nextwep             50 # Extra effect if target is affected: 50: Disease.
+nextdmg              1 # Disease
+
+newweapon     "Giant Battle Axe"                                                # 258
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 3
+sweep
+dmgtype              1 # Slash.
+dmg                  10 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                8 # sword.wav (Sword)
+
+newweapon     "Infernal Babbling"
+trgrank              9 # Target: any enemy in range.
+range                4
+init                 1
+dmgtype              7 # Magic.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                 -3 # Area: 3 targets
+mr                     # Resisted by rolling 2d4 < Magic Resistance.
+an                     # Armor negating.
+inanimate              # Doesn't affect inanimate units.
+flymode              5 # Line, one for each strike or square hit.
+flylook            170
+look                 1
+sound               32 # tortyr.smp (Pain)
+
+newweapon     "Bloody Athame"                                                    # 731
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+mundane
+dmgtype              3 # Pierce.
+dmg                  3 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextdmg 128
+next
+
+newweapon "Athame Bleeding"
+dmgtype 12
+dmg 0
+mr    
+
+newweapon     "Fire Sword"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 4
+dmgtype              1 # Slash.
+dmg                  6 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                8 # sword.wav (Sword)
+nextalwayswep      174 # Extra effect if target is hit: 174: Flames.
+nextdmg              3 # d3 Fire damage.
+
+newweapon     "Icy Claw"                                                      #  12
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              1 # Slash.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+nextalwayswep      175 # Extra effect if target is hit: 175: Cold.
+nextdmg              1 # 1 Cold damage.
+
+newweapon     "Fiery Attack"
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 2
+dmgtype              1 # Slash.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextalwayswep      174 # Extra effect if target is hit: 174: Flames.
+nextdmg              6 # d3 Fire damage.
+
+newweapon     "Fire Spear"                                                     #   4
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 6
+dmgtype              3 # Pierce.
+dmg                  4 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound                1 # spear.smp (Spear)
+nextalwayswep      174 # Extra effect if target is hit: 174: Flames.
+nextdmg              4 # d3 Fire damage.
+
+newweapon     "Summon Infernal Soldier"                                               # 148
+trgrank              6 # Target: any border square, but not behind walls.
+reload2
+range                0
+init                 4
+dmgtype             18 # Summon (the monster specified in the weapon's name, after "Summon ").
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+an                     # Armor negating.
+look                 1
+sound               57 # orchhit.smp (Summoning)
+
+newweapon     "Lesser Barbed Tail"                                               # 536
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 1
+dmgtype              3 # Pierce.
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mundane                # Non-magic. Ethereal units have a 75% chance to be unaffected.
+sound              105 # whip2.sw (Tail Sweep)
+nextwep             35 # Extra effect if target is affected: 35: Poison.
+nextdmg              5 # d5 Poison damage.
+
+newweapon     "Strider Spear"                                                     #   4
+trgrank              1 # Target: front enemy (any enemy in range, preferring front-most).
+range                1
+init                 6
+dmgtype              3 # Pierce.
+dmg                  4 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+sound                1 # spear.smp (Spear)
+nextalways
+nextdmg           2048 # Weakness
+
+newweapon     "Desert Weakness"                                      # 707
+trgrank              9 # Target: any enemy in range.
+range                8
+init                 4
+dmgtype             12 # Special damage (determined by bitmask where this attack is used).
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: Single target.
+mr                     # Resisted by rolling 2d4 < Magic Resistance.
+nextalways
+nextdmg              8
+
+newweapon     "Desert Sleep" 
+trgrank              9 # Target: any enemy in range.
+range                8
+init                 4
+dmgtype             12 # Special damage (determined by bitmask where this attack is used).
+dmg                  0 # Base damage (added to dmg value where this weapon is used).
+aoe                  0 # Area: 2 strikes.
+easymr                 # Resisted by rolling 2d6 < Magic Resistance.
+an                     # Armor negating.
+mind                   # Doesn't affect mindless units.
+onlyenemy              # Only affects enemy units.
+flymode              2 # Line, one for each strike or square hit.
+look                11
+sound               92 # 
+
+
+
+
+# ---------- Modify Normal Demonologist Units ---------------
+
+selectmonster "Ice Imp"
+spr1 "./sprites/frostimp1.tga"
+spr2 "./sprites/frostimp2.tga"
+clearweapons
+rangedweapon25			   3 "Imp Frost"
+meleeweapon               -2 385 # Magic Staff: d3 Blunt damage.
+
+selectmonster "Shadow Imp"
+clearweapons
+rangedweapon25			   4 "Dark Tendril"
+meleeweapon               -1  88 # Pitchfork: d8 Pierce damage.
+
+selectmonster "Succubus"
+clearweapons
+spellweapon                1   1 # Infernal Magic at level 1.
+rangedweaponbonus			   1  "Hellbind Heart "
+meleeweapon                7  10 # Life Drain: d7 Magic damage.
+assassinweapon             1 729 # Dream Seduction: Charm.
+
+selectmonster "Bone Imp"
+hp 4
+pierceres
+#clearweapons
+
+selectmonster "Bone Devil"
+pierceres
+
+selectmonster "Serpent Fiend"
+coldblood
+
+# ---------- New Units ---------------
+
+newmonster "Snake Demon"
+descr "Snake Demons are the desired result of snake demons crossbreeding with humans, they wield serpentine magic and are tricky foes. They are adapt at hiding, can easily hold their own in combat and their deepest pleasure is enticing mortals to mate with them and crushing them to death during the twisted embrace."
+spr1 "./sprites/snakedemon1.tga"
+spr2 "./sprites/snakedemon2.tga"
+armor                          1 # Armor.
+hp                            55 # Hit Points.
+str                            6 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           0 # Front rank.
+spellweapon               21   2 # Serpent Magic at level 2.
+more2spells -1
+meleeweapon                 6 "Poison Spear"
+meleeweapon				    3 "Tail Sweep"
+poisonres 				  100
+coldblood
+swamp
+stealth
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    30 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster "Sand Strider"
+descr "Sand Striders are devil worshipping fanatics who roam the deserts looking for slaves to trade to demons for mystical powers."
+spr1 "./sprites/desertman1.tga"
+spr2 "./sprites/desertman2.tga"
+armor                          1 # Armor.
+hp                             7 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                    0 "Strider Spear"  
+desert
+shield
+mirrorimages 				   3
+fireres 					  50 # Fire Vulnability
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster "Tempest Devil"
+descr "Dubbed Tempest Devils these creatures are lords of the weather in the hells. Storm Demons answer to them and its said at the heart of violent storms you can find Tempest Devil reveling in the chaos of it all."
+spr1 "./sprites/maelstromdemon1.tga"
+spr2 "./sprites/maelstromdemon2.tga"
+armor                          0 # Armor.
+hp                            75 # Hit Points.
+str                            7 # Strength.
+mor                            9 # Morale.
+mr                             9 # Magic Resistance.
+rank                           0 # Middle rank.
+spellweapon                5   2 # Storm Magic at level 2.
+spellweapon                5   2 # Storm Magic at level 2.
+more2spells					   1
+meleeweapon                7 145 #
+meleeweapon                6 177 # Gusts of Winds: d6 Blunt damage.
+shockres                     100 # Shock immunity.
+ethereal
+flying
+float
+acutesenses
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  50 # 100% chance to spawn with a random magic weapon.
+randomitem                    75 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster "Infernal General"
+descr "Demons are not known for their tactical prowess but with the growing strength of humanoid realms and the anticipation of a orderly rupture come that fateful day the Demon Lords of the Inferno have designated some greater demons with the responsibilities of commanding armies. They are also able to summon Infernal Soldiers into battle."
+spr1 "./sprites/demongeneral1.tga"
+spr2 "./sprites/demongeneral2.tga"
+armor                          2 # Armor.
+hp                            70 # Hit Points.
+str                            7 # Strength.
+mor                            9 # Morale.
+mr                             8 # Magic Resistance.
+rank                           0 # Front rank.
+prebatweapon			   2 "Summon Infernal Soldier"
+rangedweaponbonus		   2 "Summon Infernal Soldier"
+spellweapon                1   1 # Inferal Magic at level 1.
+spellweapon                1   1 # Inferal Magic at level 1.
+more1spells 1
+meleeweapon                5 "Fire Spear"
+meleeweapon                5 "Fire Spear"
+fireres						  100
+leadership					   1
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+allitemslots                     # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  50 # 100% chance to spawn with a random magic weapon.
+randomitem                    75 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+drawsize 25
+
+newmonster "Avarok"
+descr "The Avarok are a race of Infernal Avians who have a bond with the fire of the inferno. Their bodies are composed of demonic fire, as such they are hard to hurt with mundane weapons and burn those foolish enough to try. They wield powerful magic and enjoy bathing in lava."
+spr1 "./sprites/demonbird1.tga"
+spr2 "./sprites/demonbird2.tga"
+armor                          0 # Armor.
+hp                            75 # Hit Points.
+str                            7 # Strength.
+mor                            8 # Morale.
+mr                             9 # Magic Resistance.
+rank                           0 # Middle rank.
+spellweapon               3   2 # Pyro Magic at level 2.
+spellweapon               3   2 # Pyro Magic at level 2.
+siegeweapon               40  98 # Drop Boulder: d40 Blunt damage.
+meleeweapon               14  "Fiery Attack" #
+meleeweapon               10  "Fiery Attack" #
+meleeweapon               10  "Fiery Attack" #
+fireres 				  100
+coldres					  -50
+fireaura					   5
+ethereal
+flying
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomitem                   100 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster "Frost Imp"
+copystats "Imp"
+coldres 100
+clearweapons
+meleeweapon 2 "Icy Claw"
+spr1 "./sprites/frostimp11.tga"
+spr2 "./sprites/frostimp22.tga"
+
+newmonster "Infernal Soldier"
+descr "The Demon Lords of the Inferno have embraced the modern ways of warfare more than any other layer of hell. In doing so they have Demonic Knights and Soldiers that far out rival their human equivalents."
+spr1 "./sprites/infernalsol1.tga"
+spr2 "./sprites/infernalsol2.tga"
+armor                          2 # Armor.
+hp                            16 # Hit Points.
+str                            6 # Strength.
+mor                            6 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                	   2 "Fire Sword"
+meleeweaponbonus           3 536
+shield
+flying
+fireres                      100 # Fire immunity.
+coldres                      -50 # Cold Vuln.
+maxsum 					     100
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+allitemslots                     # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster "Abyssal Lady"
+descr "Thought to be more bloodthirsty relatives of Succubus the Abyssal Lady's are very beautiful and mortals often don't wish to strike them, this error in judgement is usually paid with a dagger to the chest. These creatures are not true demons though so they do not posses demonic immunises and can not be banished."
+spr1 "./sprites/demonlady1.tga"
+spr2 "./sprites/demonlady2.tga"
+armor                          1 # Armor.
+hp                             9 # Hit Points.
+str                            5 # Strength.
+mor                            6 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                1 "Bloody Athame"
+meleeweapon                1 "Bloody Athame"
+flying
+awe							   1
+stealth
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster "Greater Tentacle Demon"
+descr "Many have seen what is called the Lesser Demon, considered a misfit and only stronger than Imps. The Greater Tentacle Demon is what was the desired result was. These demons do not know any magic but are physically strong and respected by lesser demons and devils. They also babble incessantly in an infernal language, hearing this babbling causes living beings intesne pain and even death."
+spr1 "./sprites/greatertentdemon1.tga"
+spr2 "./sprites/greatertentdemon2.tga"
+armor                          1 # Armor.
+hp                           150 # Hit Points.
+str                            8 # Strength.
+mor                            8 # Morale.
+mr                             8 # Magic Resistance.
+rank                           1 # Front rank.
+rangedweaponbonus          8  "Infernal Babbling"
+meleeweapon                8  44 # Tentacle: d4 Blunt damage.
+meleeweapon                8  44 # Tentacle: d4 Blunt damage.
+meleeweapon                8  44 # Tentacle: d4 Blunt damage.
+meleeweapon                8  44 # Tentacle: d4 Blunt damage.
+meleeweapon                8  44 # Tentacle: d4 Blunt damage.
+meleeweapon                8  44 # Tentacle: d4 Blunt damage.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                        # Only has 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomitem                   100 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+affres         33
+drawsize 25
+
+newmonster "Greater Demon of Rage"
+descr "When anger and rage manifests greatly enough it takes physical form in the Greater Demon of Rage or so the tales go. Others say that these are just crossbreeds between demons and horse like creatures."
+spr1 "./sprites/demonragelord1.tga"
+spr2 "./sprites/demonragelord1.tga"
+armor                          1 # Armor.
+hp                           150 # Hit Points.
+str                           10 # Strength.
+mor                            8 # Morale.
+mr                             8 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                20 "Giant Battle Axe" #
+meleeweapon                10 "Gore" #
+meleeweapon                8 "Burning Hoof" #
+berserker
+fireres						 100
+battlefast
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  50 # 100% chance to spawn with a random magic weapon.
+randomitem                    75 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+affres         33
+
+newmonster "Serpent Warrior"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a a humanoid and a Serpent Demon. These warriors have wings, are resistant to poison and are stronger than the average humanoid. However they are not true demons and can not be banished."
+spr1 "./sprites/serpentwarrior1.tga"
+spr2 "./sprites/serpentwarrior2.tga"
+armor                          2 # Armor.
+hp                            10 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+rangedweaponbonus		   3 46
+meleeweapon                1 "Spear"
+poisonres 					 100
+coldblood
+flying
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Plague Devil" 
+descr "Devils are infernal beings of great strength.  Only with human sacrifice is it possible to summon and bind these evil beings. Plague Devils are heralds of the end times and spread disease and pestilence."
+spr1 "./sprites/plaguedemon1.tga"
+spr2 "./sprites/plaguedemon2.tga"
+armor                          0 # Armor.
+hp                            26 # Hit Points.
+str                            6 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           0 # Mid rank
+rangedweapon			   3  "Plague Bolt"
+meleeweapon                1  "Plague Scythe" # Ice Glaive: d9 Slash damage.
+meleeweaponbonus           3 536 # Barbed Tail: d3 Pierce damage.
+poisonres					  50
+flying
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+allitemslots                     # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.     
+
+newmonster "Greater Serpent Demon"
+descr "When a Serpent Demon becomes old enough or worshipped enough they ascend to the status of Greater Serpent Demon. These demons are versed in powerful poisonous magic."
+spr1 "./sprites/greaterserpmentdemon1.tga"
+spr2 "./sprites/greaterserpmentdemon2.tga"
+armor                          2 # Armor.
+hp                            90 # Hit Points.
+str                            7 # Strength.
+mor                            8 # Morale.
+mr                             9 # Magic Resistance.
+rank                           0 # Front rank.
+spellweapon               21   3 # Serpent Magic at level 1.
+more3spells -1
+meleeweapon                20 "Strong Poisonous Bite" #
+meleeweapon				    5 "Tail Sweep"
+poisonres 				  100
+coldblood
+flying
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomitem                   100 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster "Immolator Demon"
+descr "Imolators are made of ash and fire, they can call fourth fire magic to immolate mortal beings."
+spr1 "./sprites/demonspirit1.tga"
+spr2 "./sprites/demonspirit2.tga"
+armor                          0 # Armor.
+hp                            25 # Hit Points.
+str                            5 # Strength.
+mor                            7 # Morale.
+mr                             7 # Magic Resistance.
+rank                           0 # Middle rank.
+spellweapon				   3   1
+more1spells 				   1
+meleeweapon                	   2 "Fire Fist"
+fireaura					   3
+fireres                      100 # Fire immunity.
+coldres                      -50 # Cold Vuln.
+ethereal
+float
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                        # Has 2 misc item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster "Wasteland Demon"
+descr "Though their origins are unknown Wasteland Demons seem to be some kind of demonic crossbreed with insectoid creatures, they are resistant but not fully immune to fire. On their home plane of Inferno these demons scavenge the ashen wastes for sinners and demons alike."
+spr1 "./sprites/scorpiandemonnotail1.tga"
+spr2 "./sprites/scorpiandemonnotail1.tga"
+armor                          2 # Armor.
+hp                            35 # Hit Points.
+str                            7 # Strength.
+mor                            7 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+rangedweapon50 				   5 678
+meleeweapon                	   6 "Pincer"
+meleeweapon                    6 "Pincer"
+wall
+desert
+fireres					  	  50
+acidres						  50
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                        # Has 2 misc item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+
+newmonster "Fire Demon"
+descr "Fire Demons are heat and rage incarnate, they love nothing more than to burn people alive, they feed of the agony of people slowly dying."
+spr1 "./sprites/firedemon1.tga"
+spr2 "./sprites/firedemon2.tga"
+armor                          0 # Armor.
+hp                            40 # Hit Points.
+str                            6 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                	   3 "Fire Fist"
+meleeweapon                    3 "Fire Fist"
+fireaura					   3
+fireres                      100 # Fire immunity.
+coldres                      -50 # Cold Vuln.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                        # Has 2 misc item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.    
+
+newmonster "Demonic Giant"
+descr "Because of their size, strength and bloodlust Demons are very interested in breeding with Giants. Giants don't always feel the same way and often overpower lusty demons but from time to time a demon-giant offspring arises and they are truly terrifying to behold."
+spr1 "./sprites/demongiant1.tga"
+spr2 "./sprites/demongiant2.tga"
+armor                          3 # Armor.
+hp                            80 # Hit Points.
+str                            9 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                16 "Battle Axe" #
+meleeweapon                7 "Gore" #
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    25 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster "Demoness"
+descr "Like most powerful beings Demoness start small and slowly grow into Greater Demoness. But even in their smaller state they are far beyond the capabilities of humans and love to engage in violence and debauchery."
+spr1 "./sprites/lesserdemoness1.tga"
+spr2 "./sprites/lesserdemoness1.tga"
+armor                          1 # Armor.
+hp                            35 # Hit Points.
+str                            5 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           1 # Front rank.
+#spellweaponbonus          11   1 # Blood Magic at level 1.
+meleeweapon                2 "Spear" #
+meleeweapon                2 "Shortsword" #
+meleeweapon                2 "Mace" #
+shield
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                        # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size1x1                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    15 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+drawsize -15
+
+newmonster "Greater Demoness"
+descr "Born of malice and trickery, Mother of countless demons the Greater Demoness revels in inflicting pain and suffering to mortals. They particularly like wading into battle and slaughtering foes with their many arms."
+spr1 "./sprites/greaterfemaledemon1.tga"
+spr2 "./sprites/greaterfemaledemon1.tga"
+armor                          2 # Armor.
+hp                           120 # Hit Points.
+str                            7 # Strength.
+mor                            9 # Morale.
+mr                             8 # Magic Resistance.
+rank                           1 # Front rank.
+spellweaponbonus          11   1 # Blood Magic at level 1.
+spellweaponbonus          11   1 # Blood Magic at level 1.
+more1spells 1
+meleeweapon                6 "Spear" #
+meleeweapon                6 "Shortsword" #
+meleeweapon                6 "Mace" #
+meleeweapon                6 "Broadsword" #
+meleeweapon                6 "Flail" #
+shield
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomitem                   100 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+affres         33
+
+newmonster    "Pandemonium Plague Spreader"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of the Pandemonium are demi-demons called Pandemonium Warriors. They are stronger, faster and exude sickness but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/pandiplague1.tga"
+spr2 "./sprites/pandiplague2.tga"
+armor                          1 # Armor.
+hp                             9 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Front rank.
+rangedweapon				   2 "Plague Breath"
+meleeweapon                    3 "Diseased Claw" 
+meleeweaponbonus         	   2 "Lesser Barbed Tail"
+poisonres 					 100
+swamp
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Pandemonium Warrior"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of the Pandemonium are demi-demons called Pandemonium Warriors. They are stronger, faster and exude sickness but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/pandiwarrior1.tga"
+spr2 "./sprites/pandiwarrior2.tga"
+armor                          1 # Armor.
+hp                            11 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                1 "Plague Scythe"
+meleeweaponbonus           2 "Lesser Barbed Tail"
+poisonres 					 100
+swamp
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Abyssal Warrior"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of the Abyss are demi-demons called Abyssal Warriors. They are stronger, faster and more evasive than humans but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/shadowwarrior1.tga"
+spr2 "./sprites/shadowwarrior2.tga"
+armor                          1 # Armor.
+hp                            11 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                1 "Shortsword"  
+meleeweapon                1 "Shortsword"  
+meleeweaponbonus           2 "Lesser Barbed Tail"
+evasion 					  25
+passwall
+stealth
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Abyssal Shadow Lasher"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of the Abyss are demi-demons called Abyssal Warriors. They are stronger, faster and more evasive than humans but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/shadowwhip1.tga"
+spr2 "./sprites/shadowwhip2.tga"
+armor                          1 # Armor.
+hp                             9 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Front rank.
+rangedweapon				   1 "Shadow Slash"
+meleeweapon                    3 "Claw"
+meleeweaponbonus         	   2 "Lesser Barbed Tail"
+evasion 					  25
+passwall
+stealth
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Inferno Javelineer"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of Inferno are demi-demons called Inferno Warriors. They are stronger, faster and more resistant to fire than humans but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/infernojav1.tga"
+spr2 "./sprites/infernojav2.tga"
+armor                          1 # Armor.
+hp                             9 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Front rank.
+meleeweapon                1 "Smouldering Spear"  
+rangedweapon			   1 "Smouldering Javelin"
+meleeweaponbonus           2 "Lesser Barbed Tail"
+desert
+fireaura 					   1
+fireres 					 100 # Fire Vulnability
+coldres                      -50 # Cold immunity.
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Inferno Warrior"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of Inferno are demi-demons called Inferno Warriors. They are stronger, faster and more resistant to fire than humans but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/infernowarrior1.tga"
+spr2 "./sprites/infernowarrior2.tga"
+armor                          1 # Armor.
+hp                            11 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                1 "Smouldering Battle Axe"  
+meleeweaponbonus           2 "Lesser Barbed Tail"
+desert
+fireaura 					   1
+fireres 					 100 # Fire Vulnability
+coldres                      -50 # Cold immunity.
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno. 
+
+newmonster    "Poxling"                                                      #  257
+descr "Imps come in all manner of types and colors.  Some are capable of casting spells and very useful in combat.  Some are less useful in combat but make good scouts.  Some are just useless and only want to kill things even though they are lousy at it."
+spr1 "./sprites/poxling1.tga"
+spr2 "./sprites/poxling2.tga"
+armor                          0 # Armor.
+hp                             7 # Hit Points.
+str                            3 # Strength.
+mor                            3 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                4 "Diseased Claw" # Claw: d4 Slash damage.                          
+diseaseres                       # Disease immunity.
+poisonres 					  50
+demonic                          # Demonic, Banishable.
+noleader                         # Even if this monster is a commander, it cannot lead other units.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+# fx145                       50 # Unhandled trait 145 with argument 50.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster    "Rock Devil"
+descr "Some people think that stone beings are slow and dull witted but the Rock Devil is anything but. They are tricky, almost impossible to see in mountainous areas and can travel to the earth easily to attack their enemies from behind."
+spr1 "./sprites/stonedemon1.tga"
+spr2 "./sprites/stonedemon2.tga"
+armor                          3 # Armor.
+hp                            37 # Hit Points.
+str                            6 # Strength.
+mor                            7 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                7 863 # Stone Fist
+meleeweapon                7 863 # Stone Fist
+water                            # The monster can enter water squares and is immune to drowning damage.
+mountain                         # -1 AP to enter mountainous terrain.
+stonebeing						 #
+terrstealth 				  -5 #
+tunnelmove 					   2 #
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 10 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster    "Shadow Demon Caster"
+descr "Shadow Demons are sometimes skilled in Dark Magic."
+spr1 "./sprites/shadowdemoncast1.tga"
+spr2 "./sprites/shadowdemoncast2.tga"
+armor                          0 # Armor.
+hp                            22 # Hit Points.
+str                            5 # Strength.
+mor                            7 # Morale.
+mr                             6 # Magic Resistance.
+rank                           0 # Middle rank.
+spellweapon                9   1 # Dark Magic at level 1.
+meleeweapon                0 385 # Magic Staff: d3 Blunt damage.
+float                          
+ethereal
+stealth                          # Can only be seen by units with Acute Senses or Spirit Sight.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 10 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster    "Shadow Demon"
+descr "Shadow Demons are slippery beings that enjoy ambushing creatures in total darkness."
+spr1 "./sprites/shadowdemon1.tga"
+spr2 "./sprites/shadowdemon2.tga"
+armor                          0 # Armor.
+hp                            22 # Hit Points.
+str                            5 # Strength.
+mor                            7 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                3 204 # Touch of the Dead: d4 Magic damage.
+meleeweapon                3 204 # Touch of the Dead: d4 Magic damage.
+float                          
+ethereal
+stealth                          # Can only be seen by units with Acute Senses or Spirit Sight.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 10 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster    "Lesser Ice Devil"                                                    #  277
+descr "Devils are infernal beings of great strength.  Only with human sacrifice is it possible to summon and bind these evil beings. Lesser Ice Devils are born in the Frozen wastes of Kokytos and are impervious to ice and frost. Lesser Frost Devils are not as resilient as Frost fiends but they make up for that with their knowledge of frost magic."
+spr1 "./sprites/icedemonnowing1.tga"
+spr2 "./sprites/icedemonnowing2.tga"
+armor                          1 # Armor.
+hp                            30 # Hit Points.
+str                            6 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           0 # Mid rank.
+spellweapon                27  1 # Frost at level 1.
+meleeweapon                2  "Ice Glaive" # Ice Glaive: d9 Slash damage.
+meleeweaponbonus           3 536 # Barbed Tail: d3 Pierce damage.
+snow                 
+more1spells                    1
+iceprot 					   1
+coldaura 					   2
+coldres                      100 # Cold immunity.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+allitemslots                     # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.                                           #  271
+
+newmonster    "Ice Demon"                                                    #  277
+descr "Ice Demons are stupider than Frost Fiends and Ice Devils and are more susceptible to magic infliction's. They are tougher and stronger though and enjoy violently smashing their enemies to pieces."
+spr1 "./sprites/newicedemon1.tga"
+spr2 "./sprites/newicedemon2.tga"
+armor                          1 # Armor.
+hp                            46 # Hit Points.
+str                            7 # Strength.
+mor                            6 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon               	   5  "Ice Bite"  # 
+meleeweapon                    4  "Ice Smash"    # 
+meleeweapon                    4  "Ice Smash"    # 
+berserker
+snow                 
+iceprot 					   2
+coldres                      100 # Cold immunity.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots            	         # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+drawsize 25
+
+newmonster    "Icicle Fiend"
+descr "Icicle Fiends resemble a demonic skeleton carved out of ice. However, they are vicious killers with long piercing appendages that cause their enemies to bleed profusely. They are also very difficult to harm with piercing weapons."
+spr1 "./sprites/iceiclefiend1.tga"
+spr2 "./sprites/iceiclefiend2.tga"
+armor                          1 # Armor.
+hp                            25 # Hit Points.
+str                            5 # Strength.
+mor                            7 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                    5  "Piercing Icicle"    # 
+meleeweapon                    5  "Piercing Icicle"    # 
+snow                 
+iceprot 					   1
+coldres                      100 # Cold immunity.
+fireres 					 -50 # Fire Vulnability
+pierceres
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots            	         # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+
+newmonster    "Frigid Slither"
+descr "Frigid Slithers are demons that usually live on the planes of Kokytos but they are sometimes bound to service by demonologists. Unlike other demons of Kokytos which tend to rigid and hard Slithers are soft and squishy, they slide and squish into tiny cracks and surprise entire groups of foes with their frozen breath. they're also hard to hurt with blunt weapons." 
+spr1 "./sprites/frostworm1.tga"
+spr2 "./sprites/frostworm2.tga"
+armor                          0 # Armor.
+hp                            45 # Hit Points.
+str                            6 # Strength.
+mor                            8 # Morale.
+mr                             7 # Magic Resistance.
+rank                           1 # Front rank.
+rangedweapon50				   2 "Frost Breath"
+meleeweapon               	   6  "Ice Bite"  # 
+snow                 
+snowstealth
+bluntres
+coldres                      100 # Cold immunity.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots            	         # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+drawsize 25
+
+newmonster    "Demon Scavenger"
+descr "Scavengers roam the icely plane of Kokytos searching for flesh to devour. They prefer decayed and frozen flesh but anything will do. Their claws are always covered in foul decay and will disease all but the strongest of foes. Their bodies are not icy and hard like many demons of Kokytos and are hard to hurt with blunt weapons. Scavengers will not stay in one location unless commanded to, instead they will roam the land looking for flesh to feast on." 
+spr1 "./sprites/scavenger1.tga"
+spr2 "./sprites/scavenger2.tga"
+armor                          0 # Armor.
+hp                            28 # Hit Points.
+str                            5 # Strength.
+mor                            7 # Morale.
+mr                             6 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon               	   5  "Diseased Claw"  # 
+meleeweapon               	   5  "Diseased Claw"  # 
+snow                 
+bluntres
+wall
+semistupid
+coldres                      100 # Cold immunity.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+miscslots            	         # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+drawsize 10
+
+newmonster    "Demon Head Hunter"
+descr "Demon Head Hunters are named so because of their love for parading around with heads of their slaughtered enemies."
+spr1 "./sprites/demonhunter1.tga"
+spr2 "./sprites/demonhunter2.tga"
+armor                          0 # Armor.
+hp                             22 # Hit Points.
+str                            5 # Strength.
+mor                            7 # Morale.
+mr                             6 # Magic Resistance.
+rank                           0 # Middle rank.
+rangedweapon				   3 "Icicle Javelin"
+meleeweapon                    3 "Icicle Spear"
+meleeweaponbonus			   3 "Gore"
+snow                 
+snowstealth
+demonic                          # Demonic, Banishable.
+coldres                      100 # Cold immunity.
+fireres 					 -25 # Fire Vulnability
+allitemslots                     # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    10 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+
+newmonster    "Kokytos Warrior"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of Kokytos are demi-demons called Kokytos Warriors. They are stronger, faster and more resistant to cold than humans but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/frostwarrior1.tga"
+spr2 "./sprites/frostwarrior2.tga"
+armor                          1 # Armor.
+hp                            11 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                1 770
+meleeweaponbonus           2 "Lesser Barbed Tail"
+shield
+snow                 
+iceprot 					   1
+coldaura 					   1
+coldres                      100 # Cold immunity.
+fireres 					 -50 # Fire Vulnability
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+
+newmonster    "Kokytos Shard Shooter"
+descr "Demons love breeding with creatures to see what terrible demonic monsters they may beget, although not their favourite creatures to breed with Demons often breed with humans and the result of such a union with a demon of Kokytos are demi-demons called Kokytos Shard Shooters fire ice shards that pierce the strongest of armour and chill the hardest of hearts but are not real demons so they can not be banished by holy magics."
+spr1 "./sprites/frostshardshooter1.tga"
+spr2 "./sprites/frostshardshooter2.tga"
+armor                          1 # Armor.
+hp                             9 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Middle rank.
+rangedweapon				   0 "Ice Shard"
+meleeweapon                    3 "Claw"
+meleeweaponbonus         	   2 "Lesser Barbed Tail"
+snow                 
+iceprot 					   1
+coldaura 					   1
+coldres                      100 # Cold immunity.
+fireres 					 -50 # Fire Vulnability
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+
+newmonster    "Frost Walker"
+descr "Frost Walkers are extra-planar humanoids who relish cold and violence above all else. This draws them to the icey realms of Kokytos where they battle for the favour of demons hoping to granted demonic powers. They can also enter the realms of Hades without being harmed."
+spr1 "./sprites/frostwarriora1.tga"
+spr2 "./sprites/frostwarriora2.tga"
+armor                          2 # Armor.
+hp                            11 # Hit Points.
+str                            5 # Strength.
+mor                            5 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                    1 "Ice Greatsword"
+snow                 
+hadesres 					   1
+maxsum 					     100
+coldres                      100 # Cold immunity.
+allitemslots                     # Has the full set of item slots.
+ctrlchance                    70 # 70% chance to control this monster when summoned.  Overrides defctrl.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                     5 # When owned by Inferno, will gather 20 sinners before returning.
+revertowner                   28 # Player 28: Inferno.  
+
+newmonster    "Greater Kokytos Demon"
+descr "Serpent and human crossbreedings are popular among the demons. Perhaps the Serpent's deviousness is sought after by the demons.  This particular variety seems to have been quite successful, because the demon can move at normal speed despite having the lower body of a giant Serpent.  However, it is still not able to climb and hide like a Serpent, nor does it possess the poisonous bite characteristic of Serpents and Snakes."
+spr1 "./sprites/greatericedemon1.tga"
+spr2 "./sprites/greatericedemon2.tga"
+armor                          1 # Armor.
+hp                            90 # Hit Points.
+str                            7 # Strength.
+mor                            9 # Morale.
+mr                             9 # Magic Resistance.
+rank                          -1 # Back rank.
+spellweapon                27  2 # Frost at level 2.
+spellweapon                1   2 # Infernal Magic at level 2.
+meleeweapon                9 "Ice Fist" # Ice Fist: 1d1+10 Magical Blunt damage.
+coldres 				     100 # Cold immunity.
+snow
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                 100 # 100% chance to spawn with a random magic weapon.
+randomitem                    25 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+      
+newmonster    "Frost Walker Warlord"
+descr "A Frost Walker Warlord is a Frost Walker of such great renown that a powerful demon has granted them Demonic strength. Although they can not cast magic they are physically huge, fast and command the respect of lesser demons. Additionally when they enter battle Frost Walkers from around the realms will plane shift into battle to bask in the Warlords glory and partake in the slaughter."
+spr1 "./sprites/bigfrostwalker1.tga"
+spr2 "./sprites/bigfrostwalker2.tga"
+armor                          3 # Armor.
+hp                            85 # Hit Points.
+str                            8 # Strength.
+mor                            10 # Morale.
+mr                             8 # Magic Resistance.
+rank                           1 # Front rank.
+prebatweapon 				3  "Summon Frost Walker" 
+rangedweaponbonus 		    3  "Summon Frost Walker" 
+meleeweapon                 8  "Frost Greataxe"
+meleeweapon                 8  "Frost Greataxe"
+coldres 				     100 # Cold immunity.
+snow
+hadesres 					   1
+affres         33
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+allitemslots                     # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  25 # 25% chance to spawn with a random magic weapon.
+randomitem                   100 # 100% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster    "Greater Demon Hunter"
+descr "This Greater Demon relishes hunting creatures in drawn out pursuits across harsh terrain, it feeds likes to reveal itself briefly to stoke fear and push its prey to exhaustion filling them with the fear of being hunted and seldom hope of escape. It likes to keep trophies from such pursuits usually in form of grisly necklaces or bracelets."
+spr1 "./sprites/greaterdemonhunter1.tga"
+spr2 "./sprites/greaterdemonhunter2.tga"
+armor                          1 # Armor.
+hp                           100 # Hit Points.
+str                            8 # Strength.
+mor                            9 # Morale.
+mr                             8 # Magic Resistance.
+rank                           0 # Front rank.
+siegeweapon 				   7  "Siege Freezing Javelin"
+rangedweapon				   7  "Freezing Javelin"
+meleeweapon                    7  "Icicle Spear"
+meleeweapon                    7  "Gore"
+meleeweapon                    7  "Claw"
+coldres 				     100 # Cold immunity.
+snow
+snowstealth
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Has the full set of item slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  50 # 25% chance to spawn with a random magic weapon.
+randomitem                    75 # 100% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+drawsize 25
+
+newmonster "Kokytos Spirit"
+descr "The Kokytos Spirit is a manifestation of of hatred and evil intent. It can call fourth infernal powers and spew Niefel fire onto their foes."
+spr1 "./sprites/frostdemonspirit1.tga"
+spr2 "./sprites/frostdemonspirit2.tga"
+armor                          0 # Armor.
+hp                            75 # Hit Points.
+str                            7 # Strength.
+mor                            9 # Morale.
+mr                             9 # Magic Resistance.
+rank                          -1 # Back rank.
+spellweapon                1   2 # Infernal Magic at level 2.
+rangedweaponbonus 		   12 "Niefel Fire" 
+meleeweapon                9  "Ice Fist" # Ice Fist: 1d1+10 Magical Blunt damage.
+ethereal
+float
+spiritsight
+coldres 				     100 # Cold immunity.
+fireres 					 -50 # Fire Vulnability
+snow
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  65 # 100% chance to spawn with a random magic weapon.
+randomitem                    65 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster    "Cultist Spearman"
+descr "You might think normal men might not follow a man who consorts with demons and devils but that depends on what a normal man is. People of all walks of life turn to the occult for all manner of reasons but few become powerful enough to actually summon demonic creatures. Cultistsare usually coerced into service with a small boon such as conjuring a demonic shield or the ability to hurling fire."
+spr1 "./sprites/cultspearshield1.tga"
+spr2 "./sprites/cultspearshield2.tga"
+armor                          0 # Armor.
+hp                             6 # Hit Points.
+str                            4 # Strength.
+mor                            3 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon                0   4 # Spear: d4 Pierce damage.
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+shield                           # Reduces damage from most weapons by 0-1; 0-2 against ranged weapons.
+allitemslots                     # Has the full set of item slots.
+
+newmonster    "Cultist Axeman"
+descr "You might think normal men might not follow a man who consorts with demons and devils but that depends on what a normal man is. People of all walks of life turn to the occult for all manner of reasons but few become powerful enough to actually summon demonic creatures. Cultistsare usually coerced into service with a small boon such as conjuring a demonic shield or the ability to hurling fire."
+spr1 "./sprites/cultaxeshield1.tga"
+spr2 "./sprites/cultaxeshield2.tga"
+armor                          1 # Armor.
+hp                             7 # Hit Points.
+str                            4 # Strength.
+mor                            3 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+meleeweapon              0 "Axe" # Spear: d4 Pierce damage.
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+shield                           # Reduces damage from most weapons by 0-1; 0-2 against ranged weapons.
+allitemslots                     # Has the full set of item slots.
+
+newmonster    "Cultist Heavy Infantry"
+descr "Even an army full of demon worshipping fanatics needs heavy infantry, producing their armour and weapons is resource intensive and they can manifest an even stronger demonic shield."
+spr1 "./sprites/culistheavy1.tga"
+spr2 "./sprites/culistheavy2.tga"
+armor                          2 # Armor.
+hp                             8 # Hit Points.
+str                            4 # Strength.
+mor                            4 # Morale.
+mr                             5 # Magic Resistance.
+rank                           1 # Front rank.
+fastheal
+meleeweapon              	   0 "Glaive" # Spear: d4 Pierce damage.
+slow                             # The monster only has 2 AP.
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+largeshield                           # Reduces damage from most weapons by 0-1; 0-2 against ranged weapons.
+allitemslots                     # Has the full set of item slots.
+
+newmonster    "Cultist Pain-Caster"
+descr "You might think normal men might not follow a man who consorts with demons and devils but that depends on what a normal man is. People of all walks of life turn to the occult for all manner of reasons but few become powerful enough to actually summon demonic creatures. Cultistsare usually coerced into service with a small boon such as conjuring a demonic shield or the ability to hurling fire."
+spr1 "./sprites/cultistpaincaster1.tga"
+spr2 "./sprites/cultistpaincaster2.tga"
+armor                          0 # Armor.
+hp                             5 # Hit Points.
+str                            4 # Strength.
+mor                            3 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Middle rank.
+rangedweapon			  	   5 "Lesser Pain"
+meleeweapon               	   0 "Dagger"
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+allitemslots                     # Has the full set of item slots.
+
+newmonster    "Cultist Fire-Caster"
+descr "You might think normal men might not follow a man who consorts with demons and devils but that depends on what a normal man is. People of all walks of life turn to the occult for all manner of reasons but few become powerful enough to actually summon demonic creatures. Cultistsare usually coerced into service with a small boon such as conjuring a demonic shield or the ability to hurling fire."
+spr1 "./sprites/cultistfirecaster1.tga"
+spr2 "./sprites/cultistfirecaster2.tga"
+armor                          0 # Armor.
+hp                             5 # Hit Points.
+str                            4 # Strength.
+mor                            3 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Middle rank.
+rangedweapon			  	   3 "Lesser Flame Burst"
+meleeweapon               	   0 "Dagger"
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+allitemslots                     # Has the full set of item slots.
+
+newmonster    "Cultist Shard-Caster"
+descr "You might think normal men might not follow a man who consorts with demons and devils but that depends on what a normal man is. People of all walks of life turn to the occult for all manner of reasons but few become powerful enough to actually summon demonic creatures. Cultistsare usually coerced into service with a small boon such as conjuring a demonic shield or the ability to hurling fire."
+spr1 "./sprites/cultistshard11.tga"
+spr2 "./sprites/cultistshard2.tga"
+armor                          0 # Armor.
+hp                             5 # Hit Points.
+str                            4 # Strength.
+mor                            3 # Morale.
+mr                             5 # Magic Resistance.
+rank                           0 # Middle rank.
+rangedweapon			  	   3 "Demonic Shard"
+meleeweapon               	   0 "Dagger"
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+allitemslots                     # Has the full set of item slots.
+
+newmonster    "Demonic Altar"
+descr "This foul altar can be carted around to unleash infernal magic upon the enemies of demonic cultists. It takes time to prepare the rituals so it is often used in sieges but it can be used in smaller skirmishes as well."
+spr1 "./sprites/alter1.tga"
+spr2 "./sprites/alter2.tga"
+armor                          0 # Armor.
+hp                            20 # Hit Points.
+str                            4 # Strength.
+mor                            4 # Morale.
+mr                             6 # Magic Resistance.
+rank                          -1 # Back rank.
+siegeweapon               12   "Infernal Lashes"
+rangedweapon		      12   "Infernal Lashes"
+meleeweapon                0   "Dagger"
+meleeweapon                0   "Dagger"
+slow
+battleslow2
+human                            # Vulnerable to weapons and spells that only affect humans; leaves a humanoid corpse on death.
+#size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+
+newmonster    "Cultist Captain"
+copystats "Captain"
+descr "The Cultist Captain is an officer that is capable of commanding armies and making strategic decisions that are good for his demonic masters."
+spr1 "./sprites/cultcap1.tga"
+spr2 "./sprites/cultcap2.tga"
+mr 5
+
+newmonster    "Cultist Spy"
+copystats "Scout"
+descr "Those who become Cultist Spies have received a boon from a shadow demon granting them the powers of stealth and shadow magic using this they can easily scout and spy on enemies revealing those who would ambush their commanders."
+spr1 "./sprites/shadowcultist1.tga"
+spr2 "./sprites/shadowcultist2.tga"
+mr 5
+clearweapons
+rangedweapon               4 "Dark Tendril"
+meleeweapon                0   1 # Dagger: d3 Pierce damage.
+rank                           0
+rearpos
+
+newmonster "Demonologist of Kokytos"
+copystats "Demonologist"
+descr "Some think Demonologists are brave, mad and daring, but it is really the opposite.  A brave Demonologist would die quickly as an apprentice, and only a very cautious man survives long enough to become a fully fledged Demonologist.  It can be debated whether Demonology should be allowed at all, because the risk of dealing with the Inferno might outweigh the possible benefits of doing so.  However, properly controlled demons have proved to be of great use when fighting the wildlife and if demons and beasts can kill each other, then life will be easier for everyone."
+spr1 "./sprites/frostdemonologist1.tga"
+spr2 "./sprites/frostdemonologist2.tga"
+clearweapons
+spellweapon                1   2 # Infernal Magic at level 2.
+spellweapon				   27  1 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+coldres 					   50
+snow
+power 					   0   2
+mastery                        1 
+
+newmonster    "Kokytos Master"
+copystats "Goetic Master"
+descr "Those dealing with the Inferno have a great responsibility to not let any Infernal Powers gain a foothold in Elysium.  An apprentice will probably only manage to kill himself, but a Goetic Master has the power to destroy Elysium if he should mess up badly.  Luckily, Demonologists are known to die early in case they are not very cautious individuals."
+spr1 "./sprites/frostdemonologistmaster1.tga"
+spr2 "./sprites/frostdemonologistmaster2.tga"
+clearweapons
+spellweapon                1   3 # Infernal Magic at level 3.
+spellweapon				   27  2 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+coldres 					   100
+snow
+power 					   0   3
+
+newmonster "Demonologist of the Abyss"
+copystats "Demonologist"
+descr "Some think Demonologists are brave, mad and daring, but it is really the opposite.  A brave Demonologist would die quickly as an apprentice, and only a very cautious man survives long enough to become a fully fledged Demonologist.  It can be debated whether Demonology should be allowed at all, because the risk of dealing with the Inferno might outweigh the possible benefits of doing so.  However, properly controlled demons have proved to be of great use when fighting the wildlife and if demons and beasts can kill each other, then life will be easier for everyone."
+spr1 "./sprites/abyssdemonologist1.tga"
+spr2 "./sprites/abyssdemonologist2.tga"
+clearweapons
+spellweapon                1   2 # Infernal Magic at level 2.
+spellweapon				   9   1 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+mr                             9
+stealth
+power 					   0   2
+mastery                        1 
+
+newmonster    "Abyssal Master"
+copystats "Goetic Master"
+descr "Those dealing with the Inferno have a great responsibility to not let any Infernal Powers gain a foothold in Elysium.  An apprentice will probably only manage to kill himself, but a Goetic Master has the power to destroy Elysium if he should mess up badly.  Luckily, Demonologists are known to die early in case they are not very cautious individuals."
+spr1 "./sprites/abyssdemonologistmaster1.tga"
+spr2 "./sprites/abyssdemonologistmaster1.tga"
+clearweapons
+spellweapon                1   3 # Infernal Magic at level 3.
+spellweapon				   9   2 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+mr                             10
+invisible 
+power 					   0   3
+
+newmonster "Demonologist of Inferno"
+copystats "Demonologist"
+descr "Some think Demonologists are brave, mad and daring, but it is really the opposite.  A brave Demonologist would die quickly as an apprentice, and only a very cautious man survives long enough to become a fully fledged Demonologist.  It can be debated whether Demonology should be allowed at all, because the risk of dealing with the Inferno might outweigh the possible benefits of doing so.  However, properly controlled demons have proved to be of great use when fighting the wildlife and if demons and beasts can kill each other, then life will be easier for everyone."
+spr1 "./sprites/infernodemonologist1.tga"
+spr2 "./sprites/infernodemonologist2.tga"
+clearweapons
+spellweapon                1   2 # Infernal Magic at level 2.
+spellweapon				   3   1 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+fireres						  50
+desert
+power 					   0   2
+mastery                        1 
+
+newmonster    "Inferno Master"
+copystats "Goetic Master"
+descr "Those dealing with the Inferno have a great responsibility to not let any Infernal Powers gain a foothold in Elysium.  An apprentice will probably only manage to kill himself, but a Goetic Master has the power to destroy Elysium if he should mess up badly.  Luckily, Demonologists are known to die early in case they are not very cautious individuals."
+spr1 "./sprites/infernodemonologistmaster1.tga"
+spr2 "./sprites/infernodemonologistmaster2.tga"
+clearweapons
+spellweapon                1   3 # Infernal Magic at level 3.
+spellweapon				   3   2 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+fireres						 100
+desert
+power 					   0   3
+
+newmonster "Demonologist of Pandemonium"
+copystats "Demonologist"
+descr "Some think Demonologists are brave, mad and daring, but it is really the opposite.  A brave Demonologist would die quickly as an apprentice, and only a very cautious man survives long enough to become a fully fledged Demonologist.  It can be debated whether Demonology should be allowed at all, because the risk of dealing with the Inferno might outweigh the possible benefits of doing so.  However, properly controlled demons have proved to be of great use when fighting the wildlife and if demons and beasts can kill each other, then life will be easier for everyone."
+spr1 "./sprites/panddemonologist1.tga"
+spr2 "./sprites/panddemonologist2.tga"
+clearweapons
+spellweapon                1   2 # Infernal Magic at level 2.
+spellweapon				  10   1 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+poisonres					  50
+swamp
+diseaseres
+power 					   0   2
+mastery                        1 
+
+newmonster    "Pandemonium Master"
+copystats "Goetic Master"
+descr "Those dealing with the Inferno have a great responsibility to not let any Infernal Powers gain a foothold in Elysium.  An apprentice will probably only manage to kill himself, but a Goetic Master has the power to destroy Elysium if he should mess up badly.  Luckily, Demonologists are known to die early in case they are not very cautious individuals."
+spr1 "./sprites/panddemonologistmaster1.tga"
+spr2 "./sprites/panddemonologistmaster2.tga"
+clearweapons
+spellweapon                1   3 # Infernal Magic at level 3.
+spellweapon				  10   2 #
+meleeweapon                0   5 # Staff: d3 Blunt damage.
+poisonres					 100
+swamp
+diseaseres
+power 					   0   3
+
+newmonster "Demon Bone Horror"
+descr "Demons and devils enjoy creating new demonic creatures by breeding with other creatures but even this has its limitations. Sometimes Greater Demons or Demon Lords will endeavour to create entirely new horrors out of the remains of failed demonic crossbreeds and the result of successful attempts at this are Bone Horrors. For some reason Bone Devils flock to these creatures, perhaps out of reverence or duty no one is sure."
+spr1 "./sprites/bonehorror1.tga"
+spr2 "./sprites/bonehorror2.tga"
+armor                          2 # Armor.
+hp                           100 # Hit Points.
+str                            7 # Strength.
+mor                            9 # Morale.
+mr                             8 # Magic Resistance.
+rank                           1 # Front rank.
+prebatweapon 			   4 "Summon Bone Devil"  
+meleeweapon                8 "Bone Claw"
+meleeweaponbonus           8 "Claw"
+meleeweaponbonus           8 "Demon Stinger"
+wall
+pierceres
+fear                           2 # Dread
+water                            # The monster can enter water squares and is immune to drowning damage.
+coldres                      100 # Cold immunity.
+poisonres                    100 # Poison immunity.
+undead
+sleepres                         # Sleep immunity.
+charmres                         # Charm immunity.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  75 # 100% chance to spawn with a random magic weapon.
+randomitem                    50 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+drawsize 20
+
+newmonster "Greater Bone Devil"
+descr "Sometimes Demon Lords kill display Greater Devils and Demons and reanimate them to exert control over them. This rarely works and they continue to be disloyal."
+spr1 "./sprites/bonefiend1.tga"
+spr2 "./sprites/bonefiend2.tga"
+armor                          1 # Armor.
+hp                            75 # Hit Points.
+str                            7 # Strength.
+mor                            8 # Morale.
+mr                             8 # Magic Resistance.
+rank                          -1 # Back rank.
+spellweapon                8   2 # Unlife at level 2.
+spellweapon                8   2 # Unlife at level 2.
+more1spells                    1 # Starts with 1 less level 1 spell of each known school.
+more2spells                   -1 # Starts with 1 less level 2 spell of each known school.
+meleeweapon                6 "Bone Claw"
+meleeweaponbonus           6 "Claw"
+flying
+pierceres
+water                            # The monster can enter water squares and is immune to drowning damage.
+coldres                      100 # Cold immunity.
+poisonres                    100 # Poison immunity.
+undead
+sleepres                         # Sleep immunity.
+charmres                         # Charm immunity.
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  75 # 100% chance to spawn with a random magic weapon.
+randomitem                    50 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+affres         33
+
+
+newmonster "Demon of Wrath"
+descr "Demons of Wrath are born of the vengeful thoughts of sentient beings. They have the power to goad people to give into their hatred and jealously turning small misunderstandings between people into personal insults and murderous vendettas."
+spr1 "./sprites/skulldemon1.tga"
+spr2 "./sprites/skulldemon1.tga"
+armor                          0 # Armor.
+hp                            55 # Hit Points.
+str                            6 # Strength.
+mor                            8 # Morale.
+mr                             9 # Magic Resistance.
+rank                          -1 # Back rank.
+spellweapon                1   1 # Infernal Magic at level 1.
+prebatweapon				   262144 "Wrathful Whispers"
+prebatweapon				   262144 "Wrathful Whispers"
+rangedweaponbonus		       262144 "Wrathful Whispers"
+meleeweapon                    5 "Bone Claw"
+flying
+float
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size1x1
+ctrlchance                    60 # 60% chance to control this monster when summoned.  Overrides defctrl.
+power                       3  1 # Demonology, level 1.
+randomweapon                 100 # 100% chance to spawn with a random magic weapon.
+randomitem                    50 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    50 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+
+newmonster "Greater Plague Demon"
+descr "Greater Plague Demon"
+spr1 "./sprites/blightlord1.tga"
+spr2 "./sprites/blightlord2.tga"
+armor                          0 # Armor.
+hp                           140 # Hit Points.
+str                            8 # Strength.
+mor                            8 # Morale.
+mr                             8 # Magic Resistance.
+rank                           0 # Back rank.
+spellweapon               10   3 # Foul at level 3.
+spellweapon                1   2 # Infernal Magic at level 2.
+more3spells                   -1 # Starts with 1 less level 3 spell of each known school.
+meleeweapon				  10  "Plague Mace"
+meleeweapon               10  33 # Foul Claw: d6 Slash damage.
+poisonres                     50 # Poison resist.
+putridexpl 					   6
+diseaseshield  				   2
+swamp
+unaging
+diseaseres                       # Disease immunity.
+demonic                          # Demonic, Banishable.
+weaponslots                      # Only has 1 weapon and 2 misc slots.
+banishsurv                       # Banished to Hades/Inferno/home instead of being destroyed.
+size2x2                          # Takes up 2x2 squares on the battlefield (overrides sprite size).
+power                       3  1 # Demonology, level 1.
+randomweapon                  50 # 100% chance to spawn with a random magic weapon.
+randomitem                    75 # 25% chance to spawn with a random magic item of any type.
+infwander                      6 # Will try to fulfill this objective if it is owned by Inferno: Devil.
+maxsinners                    60 # When owned by Inferno, will gather 60 sinners before returning.
+revertowner                   28 # Player 28: Inferno.
+drawsize 30
+
+newmonster "Hellgate Guard"
+spr1 "./sprites/hellgateguard01.tga"
+spr2 "./sprites/hellgateguard02.tga"
+descr "The Gates of Inferno are the gates of a prison, nobody with a remaining spark of sanity would want to enter, and every waking thought is one of escape. Holding these livid hordes at bay during any contact between our worlds is the duty of the Hellgate Guard. Chosen champions fused into an armor of living metal, bestowed with weapons forged from fallen stars and a drop of angel's blood. During their training the mind of the guard-to-be is banished into the shadows of the demon realm, meant to endure every kind of suffering known - and yet unknown - to mankind. Those who return gained intimate knowledge of their prey, numb and hollow on the inside, unimpressed even by the most gruesome of sights. But most do never return, their soul now part of the raging masses, storming the iron gates, thrown back by the unyielding shields of their former brothers."
+hp 18
+str 6
+mor 11
+mr 6
+armor 3
+rank 1
+human
+fastheal
+coldres 75
+fireres 100
+poisonres 75
+largeshield
+allitemslots
+meleeweapon 64 "Shield Wall"
+meleeweapon 0 "Purgatory Spear"
+
+newmonster "Hellgate Guardian"
+spr1 "./sprites/hellgateguard03.tga"
+spr2 "./sprites/hellgateguard04.tga"
+descr "The Gates of Inferno are the gates of a prison, nobody with a remaining spark of sanity would want to enter, and every waking thought is one of escape. Holding these livid hordes at bay during any contact between our worlds is the duty of the Hellgate Guard. Chosen champions fused into an armor of living metal, bestowed with weapons forged from fallen stars and a drop of angel's blood. During their training the mind of the guard-to-be is banished into the shadows of the demon realm, meant to endure every kind of suffering known - and yet unknown - to mankind. Those who return gained intimate knowledge of their prey, numb and hollow on the inside, unimpressed even by the most gruesome of sights. But most do never return, their soul now part of the raging masses, storming the iron gates, thrown back by the unyielding shields of their former brothers."
+hp 18
+str 6
+mor 11
+mr 6
+armor 3
+rank 1
+human
+fastheal
+coldres 100
+fireres 75
+poisonres 75
+largeshield
+allitemslots
+meleeweapon 64 "Shield Wall"
+meleeweapon 0 "Purgatory Spear"
+
+# ---------- New Unit Recruit logic ---------------
+
+
+selectclass 3
+clearrec
+nostdtroops
+
+# Unit Rec
+
+addunitrec  "Cultist Spearman"               100  5   50   0    0
+addunitrec  "Cultist Axeman"                 100  5   50   0    5
+addunitrec  "Cultist Heavy Infantry"         100  5   50   0   15
+
+addunitrec  "Cultist Pain-Caster"            100  5   50   0    0
+addunitrec  "Cultist Fire-Caster"            100  5   50   0    0
+addunitrec  "Cultist Shard-Caster"           100  5   50   0    0
+
+addunitrec  "Demonic Altar"                  100  1   50   0   50
+
+addunitrec  "Pandemonium Warrior"            100  5  50   0   5
+recxcost 									 4 5
+reclimiter  "+Demonologist of Pandemonium"
+reclimiter  "+Pandemonium Master"
+addunitrec  "Pandemonium Plague Spreader"    100  5  60   0   5
+recxcost 									 4 5
+reclimiter  "+Demonologist of Pandemonium"
+reclimiter  "+Pandemonium Master"
+
+addunitrec  "Abyssal Warrior"                100  5  50   0   5
+recxcost 									 4 5
+reclimiter  "+Demonologist of the Abyss"
+reclimiter  "+Abyssal Master"
+addunitrec  "Abyssal Shadow Lasher"          100  5  60   0   5
+recxcost 									 4 5
+reclimiter  "+Demonologist of the Abyss"
+reclimiter  "+Abyssal Master"
+
+addunitrec  "Inferno Warrior"                100  5  50   0   5
+recxcost 									 4 5
+reclimiter "+Demonologist of Inferno"
+reclimiter "+Inferno Master"
+addunitrec  "Inferno Javelineer"             100  5  60   0   5
+recxcost 									 4 5
+reclimiter "+Demonologist of Inferno"
+reclimiter "+Inferno Master"
+
+addunitrec  "Kokytos Warrior"                100  5  50   0   5
+recxcost 									 4 5
+reclimiter "+Demonologist of Kokytos"
+reclimiter "+Kokytos Master"
+addunitrec  "Kokytos Shard Shooter"          100  5  60   0   5
+recxcost 									 4 5
+reclimiter "+Demonologist of Kokytos"
+reclimiter "+Kokytos Master"
+
+addunitrec "Serpent Warrior"                 100  5  50   0   5
+recxcost 									 4 10
+reclimiter  "+Demonologist of Pandemonium"
+reclimiter  "+Pandemonium Master"
+
+addunitrec "Abyssal Lady"                 100  5  50   0   5
+recxcost 									 4 10
+reclimiter  "+Demonologist of the Abyss"
+reclimiter  "+Abyssal Master"
+
+addunitrec  "Frost Walker"                   100  5  50   0   10
+recxcost 									 4 10
+reclimiter "+Demonologist of Kokytos"
+reclimiter "+Kokytos Master"
+
+addunitrec  "Sand Strider"                   100  5  50   0   5
+reclimiter "+Demonologist of Inferno"
+reclimiter "+Inferno Master"
+#### DONE ABOVE
+addunitrec  "Bloodsworn"                     100  5  100  0   25
+recxcost 									 4 25
+reclimiter "+Goetic Master"
+reclimiter "+Kokytos Master"
+reclimiter "+Inferno Master"
+reclimiter  "+Abyssal Master"
+reclimiter  "+Pandemonium Master"
+
+# hellgate guards
+addmercrec "Hellgate Guard" 35 3 30 0 15
+recxcost 4 5
+reclimiter "+Goetic Master"
+reclimiter "+Kokytos Master"
+reclimiter "+Inferno Master"
+reclimiter  "+Abyssal Master"
+reclimiter  "+Pandemonium Master"
+
+addmercrec "Hellgate Guardian" 35 3 30 0 15
+recxcost 4 5
+reclimiter "+Goetic Master"
+reclimiter "+Kokytos Master"
+reclimiter "+Inferno Master"
+reclimiter  "+Abyssal Master"
+reclimiter  "+Pandemonium Master"
+
+addmercrec  "Cultist Spy"                    10   1  25  10   0
+
+# Commander Rec
+
+addcomrec   "Cultist Captain"                45      40 15   0
+addcomrec   "Cultist"                        25      55  20  0 # once per offer; extra; boosted chance if no caster (?).
+templerec                                     # Each temple owned increases chance by an undocumented amount.                
+#addcomrec   "Court Mage"                    3      45 10   0
+#libraryrec      
+
+clearstartunits
+
+addstartunits "Hellgate Guard" 3
+addstartunits "Hellgate Guardian" 3
+addstartunits    "Cultist Pain-Caster"          3
+addstartunits    "Cultist Fire-Caster"          3
+addstartunits    "Cultist Shard-Caster"         3
+
+addstartcom      "Cultist"
+#addstartcom     "Avarok"
+#addstartcom     "Avarok"
+#addstartcom     "Avarok"
+
+#addstartcom     "Greater Tentacle Demon"
+#addstartcom     "Greater Tentacle Demon"
+#addstartcom     "Greater Demon of Rage"
+#addstartcom     "Greater Demon of Rage"
+#addstartcom     "Greater Demoness"
+#addstartcom     "Greater Demoness"
+#addstartcom     "Infernal General"
+#addstartcom     "Infernal General"
+#addstartcom     "Tempest Devil"
+#addstartcom     "Tempest Devil"
+#addstartunits    "Snake Demon"         20
+
+# ---------- New Events ---------------
+
+
+
+
+ 
+
+
+
+
+
+
