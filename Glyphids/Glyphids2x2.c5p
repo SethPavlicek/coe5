@@ -1,0 +1,29 @@
+newmonster "Glyphid Praetorian"
+descr "Focus fire!"
+spr1 "images/GlyphidPraetorian.tga"
+hp 60
+str 5
+mr 5
+mor 10
+armor 3
+mountain
+rank 1
+noeyes
+wall
+snow
+size2x2
+
+newmonster "Glyphid Oppressor"
+descr "What do we say to oppression lads?"
+spr1 "images/GlyphidOppressor.tga"
+hp 80
+str 5
+mr 6
+mor 14
+armor 4
+mountain
+rank 1
+noeyes
+wall
+snow
+size2x2
