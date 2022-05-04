@@ -6,3 +6,9 @@
 *.final
 DRG.c5m
 DRGmod
+
+# not enabled mods
+warlock_enh/
+Lanka/
+barb_enhanced/
+pascal_army_dark/
