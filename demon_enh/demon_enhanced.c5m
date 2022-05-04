@@ -1010,7 +1010,43 @@ flymode              2 # Line, one for each strike or square hit.
 look                11
 sound               92 # 
 
+#hellguards
 
+newweapon "Shield Wall"
+init 8
+range 1
+dmgtype 12
+#dmg 64
+trgrank 1
+strresist
+sound 11
+#nostr
+mundane
+large
+nextalways
+
+newweapon "Shield Wall Blunt"
+dmgtype 2
+dmg 2
+sound -1
+
+newweapon "Purgatory Spear"
+init 6
+range 1
+dmgtype 3
+dmg 7
+trgrank 1
+sound 1
+holykill
+next
+nextdmg 32
+
+newweapon "Purgatory Spear Burn"
+dmgtype 12
+sound 68
+look 162
+nostr
+mr
 
 
 # ---------- Modify Normal Demonologist Units ---------------
