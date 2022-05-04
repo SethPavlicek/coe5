@@ -40,22 +40,6 @@ immobile
 size2x2
 rangedweaponbonus 0 "Spitball"
 
-newmonster "Brood Nexus"
-descr "SPAWNER!!!"
-spr1 "images/BroodNexus.tga"
-hp 50
-str 0
-mr 8
-mor 99
-armor 2
-rank 0
-charmres
-stationary
-immobile
-size2x2
-rangedweaponbonus 2 "Summon Glyphid Swarmer"
-rangedweaponbonus 2 "Summon Glyphid Swarmer"
-
 newmonster "Cave Leech"
 descr "Pro tip: Cave Leeches are not as afraid of you as you are of them. Also how do these things grab you within a cylinder and not a cone?!"
 spr1 "images/CaveLeech.tga"

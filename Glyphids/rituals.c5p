@@ -1,0 +1,19 @@
+newritpow
+
+newritual "Summon Brood Nexus"
+level 1
+descr "A Brood Nexus will continuously summon swarmers."
+summoning
+addstring "Brood Nexus"
+cost 0 15
+cost 15 1
+free
+
+newritual "Summon Grunt Nexus"
+level 2
+descr "A Grunt Nexus will continuously summon swarmers."
+summoning
+addstring "Grunt Nexus"
+cost 0 50
+cost 15 10
+free

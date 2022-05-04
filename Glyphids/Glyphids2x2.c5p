@@ -6,6 +6,8 @@ str 5
 mr 5
 mor 10
 armor 3
+power 0 1
+mastery 1
 mountain
 rank 1
 noeyes
@@ -21,6 +23,7 @@ str 5
 mr 6
 mor 14
 armor 4
+power 0 2
 mountain
 rank 1
 noeyes
