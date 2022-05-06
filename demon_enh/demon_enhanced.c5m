@@ -199,7 +199,7 @@ newritual     "Summon Kokytos Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   30 # 120 Sacrifices
+cost              4   47 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
@@ -218,7 +218,7 @@ newritual     "Summon Abyssal Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   30 # 120 Sacrifices
+cost              4   47 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
@@ -237,7 +237,7 @@ newritual     "Summon Inferno Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   30 # 120 Sacrifices
+cost              4   47 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
@@ -256,7 +256,7 @@ newritual     "Summon Pandemonium Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   30 # 120 Sacrifices
+cost              4   47 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
