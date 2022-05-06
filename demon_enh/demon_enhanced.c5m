@@ -27,7 +27,7 @@ level                  2
 cost              4   20 # 40 Sacrifices
 terr                 -42 # Required terrain: any land.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
-defctrl               66 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+defctrl               87 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
 failplayer            28 # Failed summons will be owned by this player: Inferno.
 summoning                # The ritual will summon the monsters specified in a random string.
 addstring     "1d2+1*Hellhound"
@@ -199,11 +199,11 @@ newritual     "Summon Kokytos Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   47 # 120 Sacrifices
+cost              4   45 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
-defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+defctrl               66 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
 failplayer            28 # Failed summons will be owned by this player: Inferno.
 summoning                # The ritual will summon the monsters specified in a random string.
 addstring     "c*Ice Devil"
@@ -218,11 +218,11 @@ newritual     "Summon Abyssal Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   47 # 120 Sacrifices
+cost              4   45 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
-defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+defctrl               66 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
 failplayer            28 # Failed summons will be owned by this player: Inferno.
 summoning                # The ritual will summon the monsters specified in a random string.
 addstring     "c*Heliophagus"
@@ -237,11 +237,11 @@ newritual     "Summon Inferno Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   47 # 120 Sacrifices
+cost              4   45 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
-defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+defctrl               66 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
 failplayer            28 # Failed summons will be owned by this player: Inferno.
 summoning                # The ritual will summon the monsters specified in a random string.
 addstring     "c*Greater Demon"
@@ -256,11 +256,11 @@ newritual     "Summon Pandemonium Demon Lieutenant"
 ritpow                 3 # Demonology
 level                  2
 free
-cost              4   47 # 120 Sacrifices
+cost              4   45 # 120 Sacrifices
 terr                 -42 # Required terrain: any land.
 planereq               0 # Can only be cast on this plane: Elysium.
 varcost              100 # Can set Sacrifice Level anywhere from 0 to 200. Multiplies cost and control chance, with straight scaling below 100, and diminishing benefit to control chance above 100.
-defctrl               75 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+defctrl               66 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
 failplayer            28 # Failed summons will be owned by this player: Inferno.
 summoning                # The ritual will summon the monsters specified in a random string.
 # Temp
