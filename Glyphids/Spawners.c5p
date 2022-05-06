@@ -1,0 +1,40 @@
+newmonster "Brood Nexus"
+descr "SPAWNER!!!"
+spr1 "images/BroodNexus.tga"
+hp 50
+str 0
+mr 8
+mor 99
+armor 2
+rank 0
+charmres
+stationary
+immobile
+size2x2
+spawnmon1d6 100
+rangedweaponbonus 2 "Summon Glyphid Swarmer"
+rangedweaponbonus 2 "Summon Glyphid Swarmer"
+
+newmonster "Swarmer Spawn"
+copystats "Glyphid Swarmer"
+stupid
+
+newmonster "Grunt Nexus"
+descr "SPAWNER!"
+hp 50
+str 0
+mr 8
+mor 99
+armor 2
+rank 0
+charmres
+stationary
+immobile
+size2x2
+spawnmon 225
+rangedweaponbonus 2 "Summon Glyphid Grunt"
+
+newmonster "Grunt Spawn"
+copystats "Glyphid Grunt"
+stupid
+
